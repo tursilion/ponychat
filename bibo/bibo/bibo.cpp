@@ -32,7 +32,7 @@ int len1, len2, len3, len4;
 
 HANDLE hSrch;
 WIN32_FIND_DATA findDat;
-bool opendir(string path) {
+bool opendirect(string path) {
 	hSrch = FindFirstFile(path.c_str(), &findDat);
 	if (INVALID_HANDLE_VALUE == hSrch) return false;
 	return true;
@@ -56,29 +56,54 @@ FILE* filopen(const char* fn, const char* mode) {
 	return f;
 }
 
+string makefilename() {
+	string fn = SRCPATH;
+	size_t p = fn.find('*');
+	fn = fn.substr(0, p);
+	fn += getfilename();
+	return fn;
+}
+
+
 #else
 
 // linux
+#include <sys/types.h>
+#include <string.h>
+#include <stdlib.h>
 #include <dirent.h>
 DIR* dir;
 struct dirent* d_ent;
-#define SRCPATH = "/home/tursilion/ponychat/*.txt"
+#define SRCPATH "/home/tursilion/ponychat/SeparateChars"
 
-bool opendir(string path) {
+void myreaddir() {
+  if (NULL == dir) return;
+  for (;;) {
+    d_ent = readdir(dir);
+    if (NULL == d_ent) return;
+    string x = d_ent->d_name;
+    if (x.length() <= 4) continue;
+    if (x.substr(x.length()-4, 4) != ".txt") continue;
+    break;
+  }
+}
+
+bool opendirect(string path) {
 	dir = opendir(path.c_str());
 	if (dir == NULL) return false;
-	d_ent = readdir(dir);
+	myreaddir();
 
 	if (NULL == d_ent) return false;
 	return true;
 }
 
 string getfilename() {
+        if (NULL == d_ent) return "";
 	return string(d_ent->d_name);
 }
 
 bool nextdir() {
-	d_ent = readdir(dir);
+	myreaddir();
 	if (NULL == d_ent) return false;
 	return true;
 }
@@ -88,6 +113,13 @@ void klosedir() {
 }
 
 #define filopen fopen
+
+string makefilename() {
+	string fn = SRCPATH;
+	fn += '/';
+	fn += getfilename();
+	return fn;
+}
 
 #endif
 
@@ -150,7 +182,8 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
 	}
 	else {
 		// we want to kind of balance out the chat log with the source text...
-		int l2cnt = len1 / len2;
+                // 50:50 was cute but repetitive, let's try 75:25
+		int l2cnt = (len1/2) / len2;
 		if (l2cnt == 0) l2cnt = 1;
 		if (len1+len2*l2cnt > buflen) {
 			buf = (char*)realloc(buf, len1+len2*l2cnt + 1);
@@ -167,7 +200,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
 		len = len1 + len2 * l2cnt;
 	}
 
-	int pos = rand() % len;
+	int pos = rand() % len1;  // force the new string to start in the char's voice
 	if (pos == 0) pos = 1;
 	if (pos > 1) {
 		// seek to the beginning of a line
@@ -210,14 +243,20 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
 	}
 
 finish:
+	// capitalize first letter
 	output[0] = toupper(output[0]);
+	// if no punctuation at end, add one (space also at end)
+	if (NULL == strchr(".!?]", output[output.length()-2])) {
+           output[output.length()-1] = '.';
+           output += ' ';
+        }
 	printf("%s", output.c_str());
 	return output;
 }
 
 // return a valid random filename
 int randomfile() {
-	if (!opendir(SRCPATH)) {
+	if (!opendirect(SRCPATH)) {
 		printf("no dir\n");
 		return 0;
 	}
@@ -275,6 +314,7 @@ void strreplaceyou(string& s, string src, string rep1, string rep2) {
 // swap pronouns
 void fixpronouns(string& s) {
 	// inverts pronouns to make talking back make a little more sense
+	if (s[0] != 'I') s[0] = tolower(s[0]);
 	s = ' ' + s + ' ';
 
 	// substitute with temp strings so the second pass is clean
@@ -314,7 +354,7 @@ void fixpronouns(string& s) {
 
 // list (no arg)
 void runlist() {
-	if (!opendir(SRCPATH)) {
+	if (!opendirect(SRCPATH)) {
 		printf("no dir\n");
 		return;
 	}
@@ -338,7 +378,7 @@ void runquote(const char* who) {
 	if (w == 0) {
 		w = randomfile();
 	}
-	if (!opendir(SRCPATH)) {
+	if (!opendirect(SRCPATH)) {
 		printf("No dir\n");
 	}
 	printf("\n<html><body>\n");
@@ -357,15 +397,12 @@ void runquote(const char* who) {
 	printf(": ");
 
 	// suck the file into memory
-	fn = SRCPATH;
-	size_t p = fn.find('*');
-	fn = fn.substr(0, p);
-	fn += getfilename();
+	fn = makefilename();
 	klosedir();
 
 	FILE* fp = filopen(fn.c_str(), "r");
 	if (NULL == fp) {
-		printf("No file");
+		printf("No file %s\n", fn.c_str());
 		return;
 	}
 	fseek(fp, 0, SEEK_END);
@@ -395,7 +432,7 @@ void runscene(const char* who1, const char* who2) {
 	if (w == 0) {
 		w = randomfile();
 	}
-	if (!opendir(SRCPATH)) {
+	if (!opendirect(SRCPATH)) {
 		printf("No dir\n");
 	}
 
@@ -414,15 +451,12 @@ void runscene(const char* who1, const char* who2) {
 	un1+=": ";
 
 	// suck the file into memory
-	fn = SRCPATH;
-	size_t p = fn.find('*');
-	fn = fn.substr(0, p);
-	fn += getfilename();
+	fn = makefilename();
 	klosedir();
 
 	FILE* fp = filopen(fn.c_str(), "r");
 	if (NULL == fp) {
-		printf("No file");
+		printf("No file %s\n", fn.c_str());
 		return;
 	}
 	fseek(fp, 0, SEEK_END);
@@ -441,7 +475,7 @@ void runscene(const char* who1, const char* who2) {
 	if (w == 0) {
 		w = randomfile();
 	}
-	if (!opendir(SRCPATH)) {
+	if (!opendirect(SRCPATH)) {
 		printf("No dir\n");
 	}
 
@@ -460,15 +494,12 @@ void runscene(const char* who1, const char* who2) {
 	un2 += ": ";
 
 	// suck the file into memory
-	fn = SRCPATH;
-	p = fn.find('*');
-	fn = fn.substr(0, p);
-	fn += getfilename();
+	fn = makefilename();
 	klosedir();
 
 	fp = filopen(fn.c_str(), "r");
 	if (NULL == fp) {
-		printf("No file");
+		printf("No file %s\n", fn.c_str());
 		return;
 	}
 	fseek(fp, 0, SEEK_END);
@@ -536,7 +567,7 @@ void runaddchat(int cnt, char* str[]) {
 // entry point
 int main(int argc, char* argv[]) {
 	if (argc < 2) {
-		printf("Command must be passed. List should be here someday.\n");
+		printf("Command must be passed. then list, quote or scene.\n");
 		return 99;
 	}
 

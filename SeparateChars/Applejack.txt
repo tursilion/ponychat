@@ -2359,8 +2359,7 @@ I know what my first entry will be!
 Dear Diary, I'm glad Granny Smith's legend wasn't true.
 I came to invite you personally, but it seems you were a speck too busy reading the last Daring Do book for the twelfth time.
 Hoo-wee, somepony really trashed this place.
-We didn't do this, Ms.
-Yearling?
+We didn't do this, Ms Yearling?
 whoa!
 Amazing!
 We can't go back now!
@@ -4201,8 +4200,7 @@ All we have to do is solve our friendship problem and get back home.
 'Course, we have to find it first.
 Gladmane?
 I have to admit you're not the type of pony I expected to find in Las Pegasus.
-Lead the way, Mr.
-Gladmane!
+Lead the way, Mr Gladmane!
 Howdy!
 [hushed]
 Doesn't look like there's any friendship problems here.
@@ -4649,8 +4647,7 @@ You're right.
 We're not here for that.
 Then let's go!
 Thanks, Burnt Oak!
-Hi, Mrs.
-Cake.
+Hi, Mrs Cake.
 We heard you and our ma used to be real good friends, and we were hopin' you could tell us a bit about her.
 [to Apple Bloom]
 Just like you, sugarcube!
@@ -4841,8 +4838,7 @@ All those legendary ponies were real, too?
 And then none of them were ever heard from again?
 Y'all mean the Elements came from you?
 I bet the Pony of Shadows would've loved the Ghastly Caverns before a thousand years of erosion turned it into the Ghastly Gorge.
-Beggin' your pardon, Mr.
-the Bearded!
+Beggin' your pardon, Mr the Bearded!
 But Twilight doesn't do anythin' halfway!
 The Hollow Shades.
 I think a branch of the Apple family lives there.
@@ -6424,8 +6420,7 @@ Hoo-wee!
 What's the lowdown on the after-party hoedown?
 I'm ready to throw down!
 If he's gonna be stubborn about it, so can we.
-Hey there, Mr.
-Cranky Doodle.
+Hey there, Mr Cranky Doodle.
 I heard ya won't let us borrow your projector for our party.
 I'm askin' nice.
 Not leavin' without it.
@@ -6555,8 +6550,7 @@ Hoo-wee!
 What's the lowdown on the after-party hoedown?
 I'm ready to throw down!
 If he's gonna be stubborn about it, so can we.
-Hey there, Mr.
-Cranky Doodle.
+Hey there, Mr Cranky Doodle.
 I heard ya won't let us borrow your projector for our party.
 I'm askin' nice.
 Not leavin' without it.
