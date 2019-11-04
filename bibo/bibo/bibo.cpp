@@ -290,6 +290,7 @@ void strreplace(string& s, string src, string rep) {
 void strreplaceyou(string& s, string src, string rep1, string rep2) {
 	size_t conjunct = s.find(" and ");
 	if (conjunct == string::npos) conjunct = s.find(" but ");
+	if (conjunct == string::npos) conjunct = s.find(" if ");
 
 	for (;;) {
 		size_t p = s.find(src);
