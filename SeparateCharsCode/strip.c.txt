@@ -1,0 +1,91 @@
+    {
+        // split the MLP transcript up. Look for names by a line up to the first colon (max of 1 space)
+        FILE *fp = fopen(R"(D:\Documents\Text\STORIES\My Little Pony\All transcripts.txt)", "r");
+        int line = 0;
+        while (!feof(fp)) {
+            char buf[8192];
+            // read the line
+            if (NULL == fgets(buf, sizeof(buf), fp)) break;
+            // find the character name
+            char *p = strchr(buf, ':');
+            if (NULL == p) continue;
+            if (p-buf > 63) continue; // (too long)
+            // pull out the name
+            char name[64];
+            memset(name, 0, sizeof(name));
+            memcpy(name, buf, p-buf);
+            // skip background text, starts with '['
+            if (name[0] == '[') continue;
+            // skip groups, contain commas or 'and'
+            p = strchr(name, ',');
+            if (NULL != p) continue;
+            p = strstr(name, " and ");
+            if (NULL != p) continue;
+            // and "allbuts"
+            if (0 == strncmp(name, "All ", 4)) continue;
+            // everyone...
+            if (0 == strncmp(name, "Everyone", 8)) continue;
+            if (0 == strncmp(name, "Everypony", 9)) continue;
+
+            // now remove spaces or quotes
+            for (;;) {
+                p = strchr(name, ' ');
+                if (NULL != p) {
+                    memmove(p, p+1, strlen(p));
+                    continue;
+                }
+                p = strchr(name, '\"');
+                if (NULL == p) break;
+                memmove(p, p+1, strlen(p));
+            }
+            // we'll hope for the best for consistent case - makes better display
+            char fn[256];
+            sprintf(fn, R"(D:\Documents\Text\STORIES\My Little Pony\SeparateChars\%s.txt)", name);
+            FILE *fout = fopen(fn, "a");
+            p = strchr(buf, ':');   // just find it again
+            ++p;
+            while ((*p)&&(*p <= ' ')) ++p;
+            // process into separate lines
+            while (*p) {
+                char out[8192];
+                memset(out, 0, sizeof(out));
+                char *pout = out;
+                // if it /starts/ with an elipsis, keep that
+                if ((*p=='.')&&(*(p+1)=='.')&&(*(p+2)=='.')) {
+                    strcpy(out,"...");
+                    pout+=3;
+                    p+=3;
+                }
+                // find the end of the current sentence
+                char *pend = strpbrk(p, "].!?");
+                if (NULL == pend) pend=strchr(p, '\0');
+                memcpy(pout, p, pend-p+1);
+                if (*pend == '.') {
+                    // check for elipsis
+                    while (*(++pend) == '.') strcat(out, ".");
+                }
+                if (*pend != '\0') ++pend;
+                // make sure there's no line ending in there still...
+                char *x = strchr(out, '\0');
+                --x;
+                while (*x <= ' ') --x;
+                ++x; 
+                *x = '\0';
+                // and strip out quotes, they interfere more often than not
+                for (;;) {
+                    x = strchr(out, '\"');
+                    if (NULL == x) break;
+                    memmove(x, x+1, strlen(x));
+                }
+                if (strlen(out) > 3) {
+                    fprintf(fout, "%s\n", out);
+                }
+                // move the pointer
+                p = pend;
+                while ((*p)&&(*p <= ' ')) ++p;
+            }
+            fclose(fout);
+            ++line;
+            if (line%100 == 0) printf("\r%d...", line);
+        }
+    }
