@@ -218,6 +218,19 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
 		for (int idx = 0; idx < cnt; ++idx) {
 			w = pullword(buf, len, pos);
 			if (w.empty()) break;
+			if ((w[w.length()-1]==']')&&(w[0]!='[')) {
+				// remove close braces without an open
+				int p=output.length()-2; // -2 to skip the bracket we found
+				while (p >= 0) {
+					if (output[p]=='[') break;
+					if (output[p]==']') p=0;
+					--p;
+				}
+				if (p < 0) {
+					output += w.substr(0,w.length()-1) + ' ';
+					continue;
+				}
+			}
 			output += w + ' ';
 		}
 
@@ -243,8 +256,29 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
 	}
 
 finish:
+        // look for open brace with no close, and add one (asides, etc)
+        bool brace=false;
+        for (int idx=0; idx<output.length(); ++idx) {
+          if (output[idx]=='[') {
+              if (brace) {
+		// nested brace, fix it
+		output.replace(idx,1,"][");
+                brace = false;
+              } else {
+                brace = true;
+              }
+          } else if (output[idx]==']') {
+              brace = false;
+          }
+        }
+	if (brace) {
+	    output[output.length()-1] = ']';
+            output += ' ';
+	}
+
 	// capitalize first letter
 	output[0] = toupper(output[0]);
+
 	// if no punctuation at end, add one (space also at end)
 	if (NULL == strchr(".!?]", output[output.length()-2])) {
            output[output.length()-1] = '.';
@@ -291,6 +325,8 @@ void strreplaceyou(string& s, string src, string rep1, string rep2) {
 	size_t conjunct = s.find(" and ");
 	if (conjunct == string::npos) conjunct = s.find(" but ");
 	if (conjunct == string::npos) conjunct = s.find(" if ");
+	if (conjunct == string::npos) conjunct = s.find(" with ");
+	if (conjunct == string::npos) conjunct = s.find(" how ");
 
 	for (;;) {
 		size_t p = s.find(src);
