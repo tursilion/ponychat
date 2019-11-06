@@ -150,14 +150,28 @@ const char* strsearch(const char* a, const char* b) {
 // add the style tags needed for the pic
 void addstyle() {
   printf("<style>\n.parent{\n  position: relative;\n  top:0;\n  left:0;\n  right:100%\n  z-index:0;\n}\n");
-  printf(".over-img1{\n  position:absolute;\n  bottom: 5%;\n  left: 5%;\n  z-index:1;\n}\n");
-  printf(".over-img2{\n  position:absolute;\n  bottom: 5%;\n  right: 5%;\n z-index:1;\n  transform: scaleX(-1);\n}\n");
-  printf(".over-img3{\n  position:absolute;\n  bottom: 5%;\n  left: 40%;\n z-index:1;\n}\n");
-  printf(".torch-img1{\n  position:absolute;\n  bottom: -28%;\n  left: 5%;\n  z-index:1;\n}\n");
-  printf(".torch-img2{\n  position:absolute;\n  bottom: -28%;\n  right: 5%;\n z-index:1;\n  transform: scaleX(-1);\n}\n");
-  printf(".torch-img3{\n  position:absolute;\n  bottom: -28%;\n  left: 40%;\n z-index:1;\n}\n");
+  printf(".over-img1{\n  position:absolute;\n  left: 5%;\n  z-index:1;\n}\n");
+  printf(".over-img2{\n  position:absolute;\n  right: 5%;\n z-index:1;\n  transform: scaleX(-1);\n}\n");
+  printf(".over-img3{\n  position:absolute;\n  left: 40%;\n z-index:1;\n}\n");
 
   printf("</style>\n");
+}
+
+// extract size tags from a filename
+void getsizes(const string &name1, int &width, int &voff) {
+  width = 25;  // 25% by default
+  voff = 5;    // 5% by default
+  
+  size_t p = name1.find("~~");
+  if (p != string::npos) {
+    p+=2;
+    width = atoi(name1.c_str()+p);
+    p = name1.find('~', p);
+    if (p != string::npos) {
+      ++p;
+      voff = atoi(name1.c_str()+p);
+    }
+  }
 }
 
 // generate the bottom picture...
@@ -200,18 +214,17 @@ void makepic(const string &fn1, const string &fn2) {
     p = strrchr(buf, '\\');
     if (p) memmove(buf, p+1, strlen(p));
     printf("<!-- %s -->\n", buf);
-    if (0 == strcmp(buf, "DragonLordTorch")) clss.replace(0,4,"torch");
 
     if (opendirect(IMGPATH, ".png")) {
       for (;;) {
         if (getfilename().substr(0,strlen(buf)) == buf) {
           // got it
           name1=getfilename();
-          if (0 == strcmp(buf, "CutieMarkCrusaders")) {
-            printf("<img width=\"50%\" src=\"/ponyimages/%s\" class=\"%s\">\n", name1.c_str(), clss.c_str());
-          } else {
-            printf("<img width=\"25%\" src=\"/ponyimages/%s\" class=\"%s\">\n", name1.c_str(), clss.c_str());
-          }
+
+          // filename can specify alternate width and vertical offset
+          int width, voff;
+          getsizes(name1, width, voff);
+          printf("<img width=\"%d%%\" src=\"/ponyimages/%s\" class=\"%s\" style=\"bottom:%d%%\">\n", width, name1.c_str(), clss.c_str(), voff);
           break;
         }
         if (!nextdir()) break;
@@ -231,18 +244,16 @@ void makepic(const string &fn1, const string &fn2) {
       p = strrchr(buf, '\\');
       if (p) memmove(buf, p+1, strlen(p));
       printf("<!-- %s -->\n", buf);
-      if (0 == strcmp(buf, "DragonLordTorch")) clss.replace(0,4,"torch");
 
       if (opendirect(IMGPATH, ".png")) {
         for (;;) {
           if (getfilename().substr(0,strlen(buf)) == buf) {
             // got it
             name2=getfilename();
-            if (0 == strcmp(buf, "CutieMarkCrusaders")) {
-              printf("<img width=\"50%\" src=\"/ponyimages/%s\" class=\"%s\">\n", name2.c_str(), clss.c_str());
-            } else {
-              printf("<img width=\"25%\" src=\"/ponyimages/%s\" class=\"%s\">\n", name2.c_str(), clss.c_str());
-            }
+            // filename can specify alternate width and vertical offset
+            int width, voff;
+            getsizes(name2, width, voff);
+            printf("<img width=\"%d%%\" src=\"/ponyimages/%s\" class=\"%s\" style=\"bottom:%d%%\">\n", width, name2.c_str(), clss.c_str(), voff);
             break;
           }
           if (!nextdir()) break;
@@ -740,6 +751,9 @@ int main(int argc, char* argv[]) {
 	}
 
 	int seed = (int)time(NULL);
+        if (argc > 4) {
+           seed = atoi(argv[4]);
+        }
 	srand(seed);
 	printf("<!-- Seed: %d -->\n", seed);
 
