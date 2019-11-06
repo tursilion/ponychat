@@ -29,10 +29,11 @@ int len1, len2, len3, len4;
 #ifdef _WIN32
 #include <windows.h>
 #define SRCPATH "C:\\work\\ponychat\\SeparateChars\\*.txt"
-
+#define IMGPATH "C:\\work\\ponychat\\images\\*.png"
 HANDLE hSrch;
 WIN32_FIND_DATA findDat;
-bool opendirect(string path) {
+
+bool opendirect(string path, string /*ext*/) {
 	hSrch = FindFirstFile(path.c_str(), &findDat);
 	if (INVALID_HANDLE_VALUE == hSrch) return false;
 	return true;
@@ -56,8 +57,7 @@ FILE* filopen(const char* fn, const char* mode) {
 	return f;
 }
 
-string makefilename() {
-	string fn = SRCPATH;
+string makefilename(string fn) {
 	size_t p = fn.find('*');
 	fn = fn.substr(0, p);
 	fn += getfilename();
@@ -74,7 +74,9 @@ string makefilename() {
 #include <dirent.h>
 DIR* dir;
 struct dirent* d_ent;
-#define SRCPATH "/home/tursilion/ponychat/SeparateChars"
+string dirext;
+#define SRCPATH "/home/ponychat/SeparateChars"
+#define IMGPATH "/home/ponychat/ponyimages/"
 
 void myreaddir() {
   if (NULL == dir) return;
@@ -83,13 +85,15 @@ void myreaddir() {
     if (NULL == d_ent) return;
     string x = d_ent->d_name;
     if (x.length() <= 4) continue;
-    if (x.substr(x.length()-4, 4) != ".txt") continue;
+    if (x.substr(x.length()-4, 4) != dirext) continue;
     break;
   }
 }
 
-bool opendirect(string path) {
+bool opendirect(string path, string ext) {
+        dirext = ext;
 	dir = opendir(path.c_str());
+
 	if (dir == NULL) return false;
 	myreaddir();
 
@@ -114,8 +118,7 @@ void klosedir() {
 
 #define filopen fopen
 
-string makefilename() {
-	string fn = SRCPATH;
+string makefilename(string fn) {
 	fn += '/';
 	fn += getfilename();
 	return fn;
@@ -142,6 +145,118 @@ const char* strsearch(const char* a, const char* b) {
 		++a;
 	}
 	return NULL;
+}
+
+// add the style tags needed for the pic
+void addstyle() {
+  printf("<style>\n.parent{\n  position: relative;\n  top:0;\n  left:0;\n  right:100%\n  z-index:0;\n}\n");
+  printf(".over-img1{\n  position:absolute;\n  bottom: 5%;\n  left: 5%;\n  z-index:1;\n}\n");
+  printf(".over-img2{\n  position:absolute;\n  bottom: 5%;\n  right: 5%;\n z-index:1;\n  transform: scaleX(-1);\n}\n");
+  printf(".over-img3{\n  position:absolute;\n  bottom: 5%;\n  left: 40%;\n z-index:1;\n}\n");
+  printf(".torch-img1{\n  position:absolute;\n  bottom: -28%;\n  left: 5%;\n  z-index:1;\n}\n");
+  printf(".torch-img2{\n  position:absolute;\n  bottom: -28%;\n  right: 5%;\n z-index:1;\n  transform: scaleX(-1);\n}\n");
+  printf(".torch-img3{\n  position:absolute;\n  bottom: -28%;\n  left: 40%;\n z-index:1;\n}\n");
+
+  printf("</style>\n");
+}
+
+// generate the bottom picture...
+void makepic(const string &fn1, const string &fn2) {
+    const int numpics = 20;
+    string bgname, name1, name2;
+    if (!opendirect(IMGPATH, ".png")) return;
+
+    printf("<div class=\"parent\">\n");
+
+    int img=rand()%numpics+1;
+    char buf[1024];
+    sprintf(buf, "bg%d_by_", img);
+    printf("<!-- %s -->\n", buf);
+
+    for (;;) {
+      if (getfilename().substr(0,strlen(buf)) == buf) {
+        // got it!
+        bgname = getfilename();
+        printf("<img width=\"100%\" src=\"/ponyimages/%s\">\n", bgname.c_str());
+        break;
+      }
+      if (!nextdir()) break;
+    }
+    klosedir();
+
+    string clss;
+    if (fn2.empty()) {
+      clss="over-img3";
+    } else {
+      clss="over-img1";
+    }
+
+    strncpy(buf, fn1.c_str(), sizeof(buf));
+    buf[sizeof(buf)-1]='\0';
+    char *p = strrchr(buf, '.');
+    if (p) *p='\0';
+    p = strrchr(buf, '/');
+    if (p) memmove(buf, p+1, strlen(p));
+    p = strrchr(buf, '\\');
+    if (p) memmove(buf, p+1, strlen(p));
+    printf("<!-- %s -->\n", buf);
+    if (0 == strcmp(buf, "DragonLordTorch")) clss.replace(0,4,"torch");
+
+    if (opendirect(IMGPATH, ".png")) {
+      for (;;) {
+        if (getfilename().substr(0,strlen(buf)) == buf) {
+          // got it
+          name1=getfilename();
+          if (0 == strcmp(buf, "CutieMarkCrusaders")) {
+            printf("<img width=\"50%\" src=\"/ponyimages/%s\" class=\"%s\">\n", name1.c_str(), clss.c_str());
+          } else {
+            printf("<img width=\"25%\" src=\"/ponyimages/%s\" class=\"%s\">\n", name1.c_str(), clss.c_str());
+          }
+          break;
+        }
+        if (!nextdir()) break;
+      }
+      klosedir();
+    }
+
+    if (!fn2.empty()) {
+      clss = "over-img2";
+
+      strncpy(buf, fn2.c_str(), sizeof(buf));
+      buf[sizeof(buf)-1]='\0';
+      char *p = strrchr(buf, '.');
+      if (p) *p='\0';
+      p = strrchr(buf, '/');
+      if (p) memmove(buf, p+1, strlen(p));
+      p = strrchr(buf, '\\');
+      if (p) memmove(buf, p+1, strlen(p));
+      printf("<!-- %s -->\n", buf);
+      if (0 == strcmp(buf, "DragonLordTorch")) clss.replace(0,4,"torch");
+
+      if (opendirect(IMGPATH, ".png")) {
+        for (;;) {
+          if (getfilename().substr(0,strlen(buf)) == buf) {
+            // got it
+            name2=getfilename();
+            if (0 == strcmp(buf, "CutieMarkCrusaders")) {
+              printf("<img width=\"50%\" src=\"/ponyimages/%s\" class=\"%s\">\n", name2.c_str(), clss.c_str());
+            } else {
+              printf("<img width=\"25%\" src=\"/ponyimages/%s\" class=\"%s\">\n", name2.c_str(), clss.c_str());
+            }
+            break;
+          }
+          if (!nextdir()) break;
+        }
+        klosedir();
+      }
+    }
+    printf("</div>\n");
+        
+    printf("\n<font size=\"-1\">\n");
+    printf("%s<br>\n", bgname.c_str());
+    printf("%s<br>\n", name1.c_str());
+    printf("%s<br>\n", name2.c_str());
+    printf("</font>\n");
 }
 
 // pull the current word and return it, update pos
@@ -290,7 +405,7 @@ finish:
 
 // return a valid random filename
 int randomfile() {
-	if (!opendirect(SRCPATH)) {
+	if (!opendirect(SRCPATH, ".txt")) {
 		printf("no dir\n");
 		return 0;
 	}
@@ -391,12 +506,13 @@ void fixpronouns(string& s) {
 
 // list (no arg)
 void runlist() {
-	if (!opendirect(SRCPATH)) {
+	if (!opendirect(SRCPATH, ".txt")) {
 		printf("no dir\n");
 		return;
 	}
 
 	printf("<html><body>");
+ 	addstyle();
 
 	int cnt = 1;
 	for(;;) {
@@ -415,10 +531,11 @@ void runquote(const char* who) {
 	if (w == 0) {
 		w = randomfile();
 	}
-	if (!opendirect(SRCPATH)) {
+	if (!opendirect(SRCPATH, ".txt")) {
 		printf("No dir\n");
 	}
 	printf("\n<html><body>\n");
+	addstyle();
 
 	while (--w > 0) {
 		nextdir();
@@ -434,7 +551,7 @@ void runquote(const char* who) {
 	printf(": ");
 
 	// suck the file into memory
-	fn = makefilename();
+	fn = makefilename(SRCPATH);
 	klosedir();
 
 	FILE* fp = filopen(fn.c_str(), "r");
@@ -459,6 +576,9 @@ void runquote(const char* who) {
 		generateLine(buf1, len1, NULL, 0);
 	}
 
+        // and finally, generate the bottom image
+        makepic(fn, "");
+
 	printf("\n</body></html>\n");
 
 }
@@ -469,10 +589,11 @@ void runscene(const char* who1, const char* who2) {
 	if (w == 0) {
 		w = randomfile();
 	}
-	if (!opendirect(SRCPATH)) {
+	if (!opendirect(SRCPATH, ".txt")) {
 		printf("No dir\n");
 	}
 
+        int wold=w;
 	while (--w > 0) {
 		nextdir();
 	}
@@ -488,7 +609,7 @@ void runscene(const char* who1, const char* who2) {
 	un1+=": ";
 
 	// suck the file into memory
-	fn = makefilename();
+	fn = makefilename(SRCPATH);
 	klosedir();
 
 	FILE* fp = filopen(fn.c_str(), "r");
@@ -508,17 +629,22 @@ void runscene(const char* who1, const char* who2) {
 	++len1;
 
 	// now babbler 2
-	w = atoi(who1);
-	if (w == 0) {
-		w = randomfile();
+        while (wold == w) {
+ 	 	w = atoi(who1);
+ 		if (w == 0) {
+			w = randomfile();
+		}
 	}
-	if (!opendirect(SRCPATH)) {
+	if (!opendirect(SRCPATH, ".txt")) {
 		printf("No dir\n");
 	}
 
 	while (--w > 0) {
 		nextdir();
 	}
+
+        // save the name
+        string fn1 = fn;
 
 	// work out the name of the character, from the filename
 	fn = getfilename();
@@ -531,7 +657,7 @@ void runscene(const char* who1, const char* who2) {
 	un2 += ": ";
 
 	// suck the file into memory
-	fn = makefilename();
+	fn = makefilename(SRCPATH);
 	klosedir();
 
 	fp = filopen(fn.c_str(), "r");
@@ -551,13 +677,14 @@ void runscene(const char* who1, const char* who2) {
 	++len2;
 
 	printf("\n<html><body>\n");
+	addstyle();
 
 	// now start babbling
 	len3 = 0;
 	len4 = 0;
-	int lps = rand() % 8 + 2;
+	int lps = rand() % 4 + 2;
 	for (int lp = 0; lp < lps; ++lp) {
-		int cnt = rand() % 3 + 2;
+		int cnt = rand() % 1 + 1;
 		if (lp & 1) {
 			printf("%s", un2.c_str());
 			for (int idx = 0; idx < cnt; ++idx) {
@@ -592,6 +719,9 @@ void runscene(const char* who1, const char* who2) {
 		}
 		printf("\n<br><br>\n");
 	}
+
+	// bottom image
+	makepic(fn1, fn);
 
 	printf("\n</body></html>\n");
 }
