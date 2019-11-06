@@ -629,9 +629,10 @@ void runscene(const char* who1, const char* who2) {
 	++len1;
 
 	// now babbler 2
-        while (wold == w) {
- 	 	w = atoi(who1);
- 		if (w == 0) {
+ 	w = atoi(who1);
+ 	if (w == 0) {
+                w = wold;
+	        while (wold == w) {
 			w = randomfile();
 		}
 	}
