@@ -729,7 +729,7 @@ void runscene(const char* who1, const char* who2) {
 	for (int lp = 0; lp < lps; ++lp) {
 		int cnt = rand() % 1 + 1;
 		if (lp & 1) {
-                        printf("<div class=\"talk2\">\n");
+                        printf("<p class=\"talk2\">\n");
 			printf("<b>%s</b>", un2.c_str());
 			for (int idx = 0; idx < cnt; ++idx) {
 				string s = generateLine(buf2, len2, buf4, len4) + '\n';
@@ -744,10 +744,10 @@ void runscene(const char* who1, const char* who2) {
 				strcat(&buf3[len3], s.c_str());
 				len3 += s.length();
 			}
-                        printf("</div><br><br>\n");
+                        printf("</p><br>\n");
 		}
 		else {
-                        printf("<div class=\"talk1\">\n");
+                        printf("<p class=\"talk1\">\n");
 			printf("<b>%s</b>", un1.c_str());
 			for (int idx = 0; idx < cnt; ++idx) {
 				string s = generateLine(buf1, len1, buf3, len3) + '\n';
@@ -762,7 +762,7 @@ void runscene(const char* who1, const char* who2) {
 				strcat(&buf4[len4], s.c_str());
 				len4 += s.length();
 			}
-                        printf("</div><br>\n");
+                        printf("</p><br>\n");
 		}
 	}
 
