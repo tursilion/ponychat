@@ -24,6 +24,13 @@ using namespace std;
 char* buf1, * buf2, * buf3, *buf4;
 int len1, len2, len3, len4;
 
+// enable this to test for sizing against preferred background and
+// reference character Cheerilee (specify char number)
+// (comment out, not 0, to disable)
+// OR, define on commandline: -DGFX_TEST=1
+//#define GFX_TEST 1
+
+// where is the cgi?
 #define CHAT_URL "http://harmlesslion.com/ponychat/ponychat.cgi"
 
 #ifdef _WIN32
@@ -150,9 +157,11 @@ const char* strsearch(const char* a, const char* b) {
 // add the style tags needed for the pic
 void addstyle() {
   printf("<style>\n.parent{\n  position: relative;\n  top:0;\n  left:0;\n  right:100%\n  z-index:0;\n}\n");
-  printf(".over-img1{\n  position:absolute;\n  left: 5%;\n  z-index:1;\n}\n");
-  printf(".over-img2{\n  position:absolute;\n  right: 5%;\n z-index:1;\n  transform: scaleX(-1);\n}\n");
-  printf(".over-img3{\n  position:absolute;\n  left: 40%;\n z-index:1;\n}\n");
+  printf(".over-img1{\n  position:absolute;\n  z-index:1;\n}\n");
+  printf(".over-img2{\n  position:absolute;\n  z-index:2;\n  transform: scaleX(-1);\n}\n");
+  printf(".over-img3{\n  position:absolute;\n  z-index:1;\n}\n");
+  printf(".talk1{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0FFF0; display: inline-block; margin: 0 25%% 0 0; }\n");
+  printf(".talk2{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0F0FF; display: inline-block; float:right; margin: 0 0 0 25%%; }\n");
 
   printf("</style>\n");
 }
@@ -183,6 +192,9 @@ void makepic(const string &fn1, const string &fn2) {
     printf("<div class=\"parent\">\n");
 
     int img=rand()%numpics+1;
+#ifdef GFX_TEST
+    img = 3; // preferred background - throneroom
+#endif
     char buf[1024];
     sprintf(buf, "bg%d_by_", img);
     printf("<!-- %s -->\n", buf);
@@ -199,10 +211,13 @@ void makepic(const string &fn1, const string &fn2) {
     klosedir();
 
     string clss;
+    int offsetSize;  // used to calculate centering
     if (fn2.empty()) {
       clss="over-img3";
+      offsetSize = 100; // entire width
     } else {
       clss="over-img1";
+      offsetSize = 50;  // just half
     }
 
     strncpy(buf, fn1.c_str(), sizeof(buf));
@@ -222,9 +237,14 @@ void makepic(const string &fn1, const string &fn2) {
           name1=getfilename();
 
           // filename can specify alternate width and vertical offset
-          int width, voff;
+          int width, voff, hoff;
           getsizes(name1, width, voff);
-          printf("<img width=\"%d%%\" src=\"/ponyimages/%s\" class=\"%s\" style=\"bottom:%d%%\">\n", width, name1.c_str(), clss.c_str(), voff);
+          if (width < offsetSize) {
+            hoff = (offsetSize-width)/2;
+          } else {
+            hoff = 1;
+          }
+          printf("<img width=\"%d%%\" src=\"/ponyimages/%s\" class=\"%s\" style=\"bottom:%d%%; left:%d%%;\">\n", width, name1.c_str(), clss.c_str(), voff, hoff);
           break;
         }
         if (!nextdir()) break;
@@ -251,9 +271,14 @@ void makepic(const string &fn1, const string &fn2) {
             // got it
             name2=getfilename();
             // filename can specify alternate width and vertical offset
-            int width, voff;
+            int width, voff, hoff;
             getsizes(name2, width, voff);
-            printf("<img width=\"%d%%\" src=\"/ponyimages/%s\" class=\"%s\" style=\"bottom:%d%%\">\n", width, name2.c_str(), clss.c_str(), voff);
+            if (width < offsetSize) {
+              hoff = (offsetSize-width)/2;
+            } else {
+              hoff = 1;
+            }
+            printf("<img width=\"%d%%\" src=\"/ponyimages/%s\" class=\"%s\" style=\"bottom:%d%%; right:%d%%;\">\n", width, name2.c_str(), clss.c_str(), voff, hoff);
             break;
           }
           if (!nextdir()) break;
@@ -600,6 +625,9 @@ void runscene(const char* who1, const char* who2) {
 	if (w == 0) {
 		w = randomfile();
 	}
+#ifdef GFX_TEST
+	w = 72; // preferred reference is Cheerilee (check for changes)
+#endif
 	if (!opendirect(SRCPATH, ".txt")) {
 		printf("No dir\n");
 	}
@@ -647,6 +675,9 @@ void runscene(const char* who1, const char* who2) {
 			w = randomfile();
 		}
 	}
+#ifdef GFX_TEST
+	w = GFX_TEST;
+#endif
 	if (!opendirect(SRCPATH, ".txt")) {
 		printf("No dir\n");
 	}
@@ -698,7 +729,8 @@ void runscene(const char* who1, const char* who2) {
 	for (int lp = 0; lp < lps; ++lp) {
 		int cnt = rand() % 1 + 1;
 		if (lp & 1) {
-			printf("%s", un2.c_str());
+                        printf("<div class=\"talk2\">\n");
+			printf("<b>%s</b>", un2.c_str());
 			for (int idx = 0; idx < cnt; ++idx) {
 				string s = generateLine(buf2, len2, buf4, len4) + '\n';
 				// add the string to the chat
@@ -712,9 +744,11 @@ void runscene(const char* who1, const char* who2) {
 				strcat(&buf3[len3], s.c_str());
 				len3 += s.length();
 			}
+                        printf("</div><br><br>\n");
 		}
 		else {
-			printf("%s", un1.c_str());
+                        printf("<div class=\"talk1\">\n");
+			printf("<b>%s</b>", un1.c_str());
 			for (int idx = 0; idx < cnt; ++idx) {
 				string s = generateLine(buf1, len1, buf3, len3) + '\n';
 				// add the string to the chat
@@ -728,8 +762,8 @@ void runscene(const char* who1, const char* who2) {
 				strcat(&buf4[len4], s.c_str());
 				len4 += s.length();
 			}
+                        printf("</div><br>\n");
 		}
-		printf("\n<br><br>\n");
 	}
 
 	// bottom image
