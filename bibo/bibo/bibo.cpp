@@ -160,8 +160,8 @@ void addstyle() {
   printf(".over-img1{\n  position:absolute;\n  z-index:1;\n}\n");
   printf(".over-img2{\n  position:absolute;\n  z-index:2;\n  transform: scaleX(-1);\n}\n");
   printf(".over-img3{\n  position:absolute;\n  z-index:1;\n}\n");
-  printf(".talk1{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0FFF0; display: inline-block; margin: 0 25%% 0 0; }\n");
-  printf(".talk2{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0F0FF; display: inline-block; float:right; margin: 0 0 0 25%%; }\n");
+  printf(".talk1{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0FFF0; display: inline-block; margin: 1px 25%% 1px 0; }\n");
+  printf(".talk2{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0F0FF; display: inline-block; float:right; margin: 1px 0 1px 25%%; }\n");
 
   printf("</style>\n");
 }
@@ -203,7 +203,7 @@ void makepic(const string &fn1, const string &fn2) {
       if (getfilename().substr(0,strlen(buf)) == buf) {
         // got it!
         bgname = getfilename();
-        printf("<img width=\"100%\" src=\"/ponyimages/%s\">\n", bgname.c_str());
+        printf("<img style=\"border: 1px solid black;\" width=\"100%\" src=\"/ponyimages/%s\">\n", bgname.c_str());
         break;
       }
       if (!nextdir()) break;
