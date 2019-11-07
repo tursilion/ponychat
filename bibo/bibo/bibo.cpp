@@ -160,6 +160,7 @@ void addstyle() {
   printf(".over-img1{\n  position:absolute;\n  z-index:1;\n}\n");
   printf(".over-img2{\n  position:absolute;\n  z-index:2;\n  transform: scaleX(-1);\n}\n");
   printf(".over-img3{\n  position:absolute;\n  z-index:1;\n}\n");
+  printf(".talkpad{  font-size:25px; display: inline-block; margin: 1px 0 1px 0; }\n");
   printf(".talk1{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0FFF0; display: inline-block; margin: 1px 25%% 1px 0; }\n");
   printf(".talk2{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0F0FF; display: inline-block; float:right; margin: 1px 0 1px 25%%; }\n");
 
@@ -729,6 +730,7 @@ void runscene(const char* who1, const char* who2) {
 	for (int lp = 0; lp < lps; ++lp) {
 		int cnt = rand() % 1 + 1;
 		if (lp & 1) {
+			printf("<p class=\"talkpad\">&nbsp</p>");
                         printf("<p class=\"talk2\">\n");
 			printf("<b>%s</b>", un2.c_str());
 			for (int idx = 0; idx < cnt; ++idx) {
