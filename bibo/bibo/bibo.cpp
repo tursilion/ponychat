@@ -837,7 +837,7 @@ int main(int argc, char* argv[]) {
     if (argc > 4) {
         seed = atoi(argv[4]);
     }
-    srand(1573253442); //seed);
+    srand(seed);
     printf("<!-- Seed: %d -->\n", seed);
 
     if (0 == strcmp(argv[1], "list")) {
