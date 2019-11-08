@@ -24,6 +24,10 @@ using namespace std;
 char* buf1, * buf2, * buf3, *buf4;
 int len1, len2, len3, len4;
 
+// enable this to make the text go left/right instead of all stacked on the left
+// it was hard to make that work right so I want to save the code ;)
+//#define TEXT_LEFTRIGHT
+
 // enable this to test for sizing against preferred background and
 // reference character Cheerilee (specify char number)
 // (comment out, not 0, to disable)
@@ -161,8 +165,13 @@ void addstyle() {
   printf(".over-img2{\n  position:absolute;\n  z-index:2;\n  transform: scaleX(-1);\n}\n");
   printf(".over-img3{\n  position:absolute;\n  z-index:1;\n}\n");
   printf(".talkpad{  font-size:25px; display: inline-block; margin: 1px 0 1px 0; }\n");
+#ifdef TEXT_LEFTRIGHT
   printf(".talk1{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0FFF0; display: inline-block; margin: 1px 25%% 1px 0; }\n");
   printf(".talk2{  font-size:25px; border: 1px solid black; border-radius:6px; background:#F0F0FF; display: inline-block; float:right; margin: 1px 0 1px 25%%; }\n");
+#else
+  printf(".talk1{  font-size:25px; border: 1px solid #d0dfd0; border-radius:6px; background:#F0FFF0; display: inline-block; margin: 1px 0 1px 0; }\n");
+  printf(".talk2{  font-size:25px; border: 1px solid #d0d0df; border-radius:6px; background:#F0F0FF; display: inline-block; margin: 1px 0 1px 0; }\n");
+#endif
 
   printf("</style>\n");
 }
@@ -730,7 +739,9 @@ void runscene(const char* who1, const char* who2) {
 	for (int lp = 0; lp < lps; ++lp) {
 		int cnt = rand() % 1 + 1;
 		if (lp & 1) {
+#ifdef TALK_LEFTRIGHT
 			printf("<p class=\"talkpad\">&nbsp</p>");
+#endif
                         printf("<p class=\"talk2\">\n");
 			printf("<b>%s</b>", un2.c_str());
 			for (int idx = 0; idx < cnt; ++idx) {
@@ -769,6 +780,9 @@ void runscene(const char* who1, const char* who2) {
 	}
 
 	// bottom image
+#ifndef TEXT_LEFTRIGHT
+        printf("<br>\n");
+#endif
 	makepic(fn1, fn);
 
 	printf("\n</body></html>\n");
