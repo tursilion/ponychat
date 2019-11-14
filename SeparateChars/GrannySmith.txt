@@ -1,6 +1,5 @@
 [snort]
-Wha..
-Soup's on?
+Wha.. Soup's on?
 I'm up, here I come, ahm comin'...
 [sniffs]
 Aaah!
@@ -11,11 +10,8 @@ Waa-hoo!
 Soup's on!
 I should have been asleep five hours ago.
 Is this thing on?
-[to Big McIntosh]
 I don't think this thing is on.
-[to the megaphone]
 Hello!
-[Big McIntosh whispers into her ear]
 What is the- e- oh.
 You have to say so.
 Confangled modern doohickeys.
@@ -23,16 +19,10 @@ Now, the event you've all been waiting fer!
 The Sister Soci- The Socialhooves- Oh, dabnabbit, you know, the big race!
 We have five teams this year fer the event!
 So y'all head on up to the finish line, y'hear?
-[Big McIntosh whispers into her ear]
-[to Big McIntosh]
-[to the megaphone]
 The start line!
-[to Big McIntosh]
 That's what I said.
 And may the best sisters win!
-On your marks...
-get set...
-Gooooo!
+On your marks... get set... Gooooo!
 Why, the way you were a-hoopin' and a-hoppin' and kickin' and spinnin' reminded me of when I was a spry young filly.
 Guh, charley horse, charley horse!
 Ooh, that's better.
@@ -135,7 +125,6 @@ I'm as happy as a pig in a fresh mudpile to be here!
 Er, no, it came.
 And Uncle Apple Strudel was on it.
 Long ago, when I was a little pony, things were very different here in Ponyville, 'cause there was no Ponyville!
-[voiceover]
 That's right, my little ponies.
 Me and my family were pilgrim pony folk, back when I was a little filly.
 Oh, we ventured far and wide, collecting new seeds and sellin' the old.
@@ -154,18 +143,15 @@ We quickly found that land near the Everfree Forest, and we built our first home
 Next, we planted our first orchards.
 But an orchard don't grow overnight, and we were getting mighty short on food.
 Now mind you, we were cautioned about the forest, and we knew that it was not fit to enter.
-[voiceover]
 But I knew there was critters livin' there.
 There must be somethin' to eat.
 It was dark and musty, and I won't lie, it was scary.
 But every inch was covered in plant life, and before I knew it, wasn't I standin' in front of the most incredible apple trees!
 I had never seen anything that bore this kind of colorful fruit!
 Oh I started picking apples quick as a whip!
-[voiceover]
 I turned, and there before me stood the timberwolves!
 I've never run so fast in my life.
 I did the only thing I could think of.
-[voiceover]
 My pa and I planted those special apple seeds, and before our eyes they grew like wildfire.
 Why, we had full grown trees faster than you could say 'lickety split'.
 Then each year, I paid close attention to the signs of the zap apples' special harvesting times.
@@ -181,7 +167,6 @@ Just funny that way.
 Then ponies started comin' to our farm from far and wide just to get a taste of my zap apple jam.
 Some of them decided to stay, like Stinkin' Rich, Diamond Tiara's great grandfather.
 Matter of fact, the first thing he ever sold was my zap apple jam.
-[voiceover]
 And before we knew it, we had ourselves a nice little town, bustling with all kinds of ponies.
 And that is how Ponyville was founded.
 Oh, thank you kindly, little ponies.
@@ -198,7 +183,6 @@ somethin'.
 I want you to show all them highfalutin rodeo ponies what a real rodeo pony's like!
 And she loves Sweet Apple Acres!
 Thank you, girls!
-[to Big McIntosh]
 Our little bushel just lost one apple.
 Not so fast!
 No way no how that machine matches up with the care we put in our cider!
@@ -234,7 +218,6 @@ Who's showin' their muzzle at the reunion?
 Everypony?
 [aside, to Applejack]
 Feathers on a goat.
-[to Apple Bloom]
 Are you sure?
 Guh?
 I think we're gonna need a bigger cider trough.
@@ -610,7 +593,6 @@ I ain't goin' anywhere anytime soon!
 Runnin' the farm.
 Not after this display!
 Not likely!
-[to Filthy Rich]
 And don't you go gettin' any ideas about cuttin' ties with Sweet Apple Acres, or I'm goin' right to your grandpappy.
 Get me?
 Now, who here still wants to hear about the apple blight?
@@ -729,15 +711,12 @@ Your sister was plumb loco about catchin' the Great Seedlin' when she was your a
 Same as you are now.
 Worse, even.
 Well, it must've been the last Conflu-inky, I reckon.
-I was supposed to keep an eye on your sister, but...
-[voiceover]
-...she was slipperier than an apple seed.
+I was supposed to keep an eye on your sister, but... she was slipperier than an apple seed.
 Applejack!
 Get your flank back here!
 You're supposed to be sortin' in the barn!
 Bust my buds.
 Where's that young'un get to?
-[voiceover]
 She spent the better half of the day stuck in that trap!
 [laughs]
 Oh, we finished the harvest just fine.

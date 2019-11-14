@@ -20,9 +20,7 @@ Let me be the first to tell you...
 You don't!
 If you had what it took to be an elite flyer, you'd already be a Wonderbolt!
 Still think you're something special?
-[to Bulk Biceps]
 Ya think you're hot stuff?
-[to Rainbow Dash]
 You look like you're the worst flyer in the whole academy!
 You'll probably quit after the first day!
 What about you?
@@ -49,7 +47,6 @@ very dizzy.
 Your task is to try and recover and fly straight again, as soon as possible.
 Once you have recovered you must come in for a smooth landing.
 Now, who's first?
-[to Meadow Flower]
 You.
 You're up.
 Now!
@@ -256,7 +253,6 @@ Go, go, go!
 Well, isn't that sweet?
 Now get going on those laps!
 Welcome, Princess Twilight.
-[to Rainbow Dash]
 What are you doing back so soon?
 Not really, but it's not my job to worry about their relationships.
 I'm here to make them elite flyers.
@@ -291,7 +287,6 @@ All right, Wonderbolts!
 Let's hit the showers and give Rainbow Dash some time to spend with her family.
 Whoa!
 Since when did we add fireworks to the show?
-[to Rainbow]
 You really do got yourself your very own mega-fans.
 Lucky you.
 Happy to help.
@@ -300,12 +295,10 @@ Nice work, Crash.
 You really added that sparkle to that pressure diamond-drop.
 Uh, affirmative.
 Or, uh, negative.
-Um...
-I-I-I mean, she wasn't seen eating one.
+Um... I-I-I mean, she wasn't seen eating one.
 Are we under investigation?
 Well, we have been getting mysterious monthly pie donations.
 I got this.
-[to Scootaloo]
 You know what happens when something goes wrong with the Crushinator Jaws of Smashalot?
 You end up in a full body wing-and-hoof cast drinkin' through a straw!
 Practice?

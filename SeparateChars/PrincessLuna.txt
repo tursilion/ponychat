@@ -356,9 +356,7 @@ They've taken my sister and I!
 It's worse than the last time!
 Well done, Starlight Glimmer.
 It seems as though you've learned a great deal since we last spoke.
-[sourly]
 Everything's perfect as usual, sister.
-[sourly]
 Too tired.
 [chomp]
 Please excuse me.
@@ -373,7 +371,6 @@ I beg your pardon?
 I...
 Well, I...
 I-It's not the best feeling.
-[to Celestia]
 I'm sorry I never noticed that you make fruit faces on pancakes, but nights are long for me.
 You might be a morning pony, but I am half-asleep.
 Like smiling is so hard.

@@ -128,7 +128,6 @@ Didn't quite catch that.
 Well, um, it looks like your birds are back, so I guess everything's in order.
 Keep up the good work!
 Oookay.
-[to Spike]
 Well, that was easy.
 Well, in that case we'd better be going.
 [groan]
@@ -814,13 +813,9 @@ Wow.
 Catchy.
 This is all just a lot of gossip and rumors.
 Now tell me; what exactly have you actually seen Zecora do?
-[dramatically]
 Oooooh.
-[dramatically]
 Oh, my.
-[dramatically]
 Good gracious!
-[normal tone]
 Okay, I'm sorry.
 But how is any of this bad?
 Maybe she comes to town to visit?
@@ -838,9 +833,7 @@ It's a skill you're born with.
 Curses are artificial, fake magic.
 It's conjured with potions and incantations; all smoke and mirrors meant to scare.
 But curses have no real power, they're just an old pony tale.
-Ugh...
-what a dream...
-Curses, schmurses.
+Ugh... what a dream... Curses, schmurses.
 Whoa!
 [chuckle]
 Maybe Zecora cursed my hair.
@@ -1544,15 +1537,12 @@ Remember, just stick to what you know best.
 I can't wait to hear you sing, Sweetie Belle.
 Costumes?
 Really, girls?
-Are you sure...
-Break a le?
-Uh...
-good luck!
+Are you sure... Break a leg?
+Uh... good luck!
 Congratulations, ponies!
 Job well done.
 Hey, you don't sound too excited.
-Oh, girls...
-Tell me.
+Oh, girls... Tell me.
 I'd love to make a special report to the Princess.
 Yes?
 And?
@@ -1574,18 +1564,13 @@ Puh!
 Quick!
 We gotta get down one before they're all filled up.
 Oh, Rarity...
-[worryingly]
 Ooh.
 Poor Rarity.
 What are we gonna do?
-Spike, it is very noble of you...
-[quieter]
-...to sacrifice the gem Rarity gave you.
+Spike, it is very noble of you to sacrifice the gem Rarity gave you.
 Applejack!
-Um...
-Which way do we go?
-All these tunnels...
-How are we ever gonna find Rarity?
+Um... Which way do we go?
+All these tunnels... How are we ever gonna find Rarity?
 But Spike, Rarity is the only one who knows how to find gems.
 Oh my gosh!
 You're right!
@@ -1594,8 +1579,7 @@ If I can just remember...
 We're getting close.
 I can feel it.
 And just what do you think you're doing?
-Eh...
-fine.
+Eh... fine.
 [neighs]
 Excuse me?
 I can't wait to write to Princess Celestia to tell her what you taught me today.
@@ -1778,16 +1762,12 @@ No, it's my fault!
 Fluttershy really did do everything she could to try to take care of Philomena for you.
 Should I write you a letter about that lesson, Princess?
 As a young filly in Canterlot, I always wanted to go to the Summer Sun Celebration, where Princess Celestia raises the sun.
-[voiceover]
 And I saw the most amazing, most wonderful thing I've ever seen.
-[voiceover]
 I poured myself into learning everything I could about magic.
-[voiceover]
 My parents decided to enroll me in Princess Celestia's School for Gifted Unicorns.
 It was a dream come true!
 Except for one thing...
 I had to pass an entrance exam!
-[voiceover]
 I knew it was the most important day of my life, that my entire future would be affected by the outcome of this day and I was about to blow it!
 ...yesyesyesyes...
 ...yesyes, yeeees!
@@ -1960,7 +1940,6 @@ Shh!
 Is Pinkie Pie around?
 Good.
 I don't wanna her to know anything about this.
-[muffled]
 Thanks, and remember, not a word to Pinkie Pie.
 Hey!
 What's with the tin can?
@@ -3042,30 +3021,20 @@ I haven't done a thing to prevent the catastrophe!
 If Tuesday's tomorrow, and the disaster happens by Tuesday morning, then there's only one solution.
 I'll just have to...
 stop time!
-[hushed]
 Okay, the Canterlot archives are right over there.
 Let's move!
-[hushed]
 Guard!
 C'mon, you guys!
 [exhales]
 That was close.
-[hushed]
 No, there's nothing fun about this!
-[hushed]
 Focus, guys!
 The only way to prevent this disaster is to stop time!
 Time spells are kept in the Star Swirl the Bearded wing, the most secure section of the archives.
 That's why we're sneaking around!
-[hushed]
 No, it's not fun!
-[hushed]
 The coast is clear.
-Now slowly lift me into the window so we can?
-[hushed]
-Okay, if my calculations are correct, the Star Swirl the Bearded wing should be right...
-here.
-[hushed]
+Okay, if my calculations are correct, the Star Swirl the Bearded wing should be right... here.
 What is it, Spike?
 I don't understand.
 It's supposed to be right here...
@@ -3137,13 +3106,10 @@ Aw, Fluttershy, we just don't want you to miss out.
 Well...
 yeah!
 [gasps]
-[hushed]
 I don't see any dragons.
-[hushed]
 No, I don't think so.
 We're just a little early, and I'm glad we are.
 This way, we can watch every moment of the migration without bringing any unwanted attention to ourselves!
-[hushed]
 You look very nice, Rarity, but could you maybe look nice down here in the trench with us?
 Wow, amazing!
 Or act like them.
@@ -3180,10 +3146,8 @@ We have faith in you!
 Of course.
 [sounds of exertion]
 Shh!
-[hushed]
 We'll never pass if they hear three voices coming out of one dragon!
 Now come on, let's go!
-[deep voice]
 Aheh...
 yeah...
 hilarious.
@@ -3193,10 +3157,8 @@ That letter could be something important!
 I know, I know!
 There's no reason to disrespect Princess Celestia that way!
 Let's go!
-[deep voice]
 I challenge Spike to a tail wrestle!
 Oof!
-[hushed]
 Spike's on his own this time.
 Oh no, this is terrible!
 No, Rainbow Dash, this is all my fault!
@@ -3217,9 +3179,7 @@ Please, we need to have a germ-free environment.
 We have 9.
 wing power.
 wing power!
-[hushed]
 Tell her!
-[hushed]
 No, you!
 That's wonderful, Flitter.
 Much better than yesterday.
@@ -3381,7 +3341,6 @@ What do you say, bakers?
 Well, everypony, we finally have the mystery solved.
 Care for a bite?
 Dear Twilight, I am sure you are as excited as I am about the upcoming wedding in Canterlot.
-[to the others]
 Wedding?
 [reading]
 I will be presiding over the ceremony, but would very much like you and your friends to help with the preparations for this wonderful occasion.
@@ -3890,8 +3849,7 @@ Okay, when do we start?
 [grunts]
 [yelps]
 I'm sorry, Zecora.
-I'm trying my best, but...
-I can't stop thinking about Trixie.
+I'm trying my best, but... I can't stop thinking about Trixie.
 There was something different about her.
 It's like she's gone from high and mighty to mean and nasty.
 I can't believe I didn't recognize the Alicorn Amulet!
@@ -3908,12 +3866,9 @@ I know you cheated.
 Yeah.
 And I thought you might wanna see what a real magical amulet looks like.
 Zecora gave it to me.
-[muffled]
 It's from beyond the Everfree Forest, [normal]
 and it's way more powerful than your measly little Alicorn Amulet!
-[muffled]
 Care to put your amulet where your mouth is?
-[normal]
 How about another duel?
 That's up to you!
 But I guess you'll never see the totally awesome magic from beyond the Everfree Forest.
@@ -4000,7 +3955,6 @@ You sure you're okay with this?
 You do?
 And you really think that'll work?
 Okay, but if you need us, all you need to do is whisper help, and we'll be back here with our elements.
-[to Discord]
 So watch that goat-legged step of yours, pal!
 That's what she said.
 And I think I know just the trick.
@@ -4080,7 +4034,6 @@ Everypony, just be on the look out for the pony with the flower print luggage.
 We bring the Games Inspector back to the castle, put on our big welcome committee how-do-you-do and then...
 What do you mean?
 Be cool.
-[to Ms Peachbottom]
 Well, I know you're not expecting us, but we're here to personally welcome you to the Crystal Empire.
 Uh, well, um...
 yes!
@@ -4097,7 +4050,6 @@ Princess Cadance would be so glad to hear that!
 Of course she does!
 She's been looking forward to your visit for weeks!
 Uh...
-[hushed]
 Dash!
 We've hardly ever even been here before!
 [breathes in]
@@ -4436,12 +4388,9 @@ The Journal of the Two Sisters.
 [gasp]
 Maybe this is the book Princess Celestia was talking about!
 Spike, you've got to hear this.
-[reading]
 I love to duck behind the paintings, and though the Hall of Hooves still gives her a bit of a fright, the trap door slide is Luna's favorite.
-[reading]
 Soon the Organ to the Outside will be finished.
 I can hardly wait.
-[happily]
 I have no idea!
 Oh, Spike.
 Quit being such a scaredy-dragon.
@@ -4455,7 +4404,6 @@ Have you all spent the whole night running around, scaring each other?
 On what?
 Oh, that's just an old ponies' tale.
 We're going to find out.
-[whispered]
 The Pony of Shadows!
 See?
 What'd I tell ya?
@@ -4601,7 +4549,6 @@ C'mon!
 We'll reverse the spell and make it right!
 Oh, Fluttershy, where are you?
 We'll never get her back unless we corner her and catch her so I can reverse the spell!
-[hushed]
 There she is!
 Oh, this is no use.
 I think the only way we're gonna catch her is if we find a way to lure her closer to us.
@@ -4644,7 +4591,6 @@ Just some genealogical research.
 Maybe you should pick one from the...
 top?
 Good luck!
-[to Rainbow Dash]
 It was nice of you to be part of the team that doesn't have...
 uh...
 the strongest flyers.
@@ -4695,7 +4641,6 @@ Just quiet time.
 Your Highness.
 Boy, have I.
 Hang on just one second.
-[to rest of main cast]
 You guys-
 You really are the best friends a pony could ever have.
 Coming, Cadance!
@@ -4897,7 +4842,6 @@ We'll just wait for your word.
 I've been studying an old spell book from the Castle of the Two Sisters.
 There's a spell that I think could help us!
 This is probably gonna feel a little funny at first, but you're gonna have to trust me.
-[high-pitched]
 Okay, gather round.
 Not a chance.
 I hope everything's okay.
@@ -5022,7 +4966,6 @@ stand for what?
 The original aerial team performed for...
 The Wonderbolts were given their name by this famous Pegasus.
 Who is she?
-[to herself]
 Please don't say Colonel Waffle...
 Or what.
 You didn't get one answer correct.
@@ -5304,7 +5247,6 @@ I will not fail to do my duty!
 Yep!
 Everything's fine!
 [chuckles nervously]
-[hushed]
 That's strange.
 The sun should be up by now...
 [gasps]
@@ -5388,23 +5330,18 @@ A cutie mark is a representation of a pony's unique talents and skills.
 How is it possible to?
 Uh, no!
 We're good!
-[hushed]
 Fluttershy's right.
 If we're going to get to the bottom of why the map sent us here, we'll need the help of these ponies.
-[hushed]
 Maybe you're right.
 But we're here now, and it sure feels like something's wrong.
 Then I guess we'll take six muffins!
-[hushed]
 Come on, girls.
 We've got to stick together.
 It doesn't matter what happened before, we're here now.
 We are friends.
 A simple disagreement wouldn't change that.
-[hushed]
 Let's all sit here and eat these muffins and act normal.
 I think we're being watched.
-[hushed]
 No, not like that!
 I mean somepony here doesn't want us talking to Sugar Belle.
 Nice work, Pinkie.
@@ -5415,11 +5352,8 @@ How do you take somepony's cutie mark anyway?
 But nopony should keep you from your cutie mark.
 It represents such an essential part of who you are.
 Can we visit this cave?
-[hushed, over]
 This must be the reason we're here.
-[hushed]
 No, helping those ponies get their cutie marks back.
-[hushed]
 Then why did they want to meet us in secret?
 And why did they ask us not to tell Starlight who told us about the vault?
 Something's not right.
@@ -5568,7 +5502,6 @@ Everypony, look out!
 Rainbow Dash!
 Are you alright?
 I don't know what we can do.
-[to Applejack]
 You too?
 Look, everypony, I know how hard it is to say goodbye?
 What?
@@ -5584,7 +5517,6 @@ Well?
 Ready for some winter fun?
 Anything I can do to make it easier on you.
 I'll take care of this.
-[hushed]
 What are you doing here with...
 that?
 This night is extremely important to me, Discord.
@@ -5630,7 +5562,6 @@ No, no, if the map wanted me to go to the coolest kingdom in all of Equestria an
 You two can handle whatever the issue is just fine.
 I'll stay here and do important princessy things.
 I guess.
-[voiceover]
 Upon arriving in Griffon Gorge, be sure to pause and cast your eyes northerly, up the Hyperborean Mountains, taking in the breathtaking beauty of Griffonstone.
 Once in Griffonstone proper, go immediately to the palace and introduce yourself to the king.
 Bygone Griffons of Greatness was written a long time ago, and it ends with the coronation of the fourteenth king of the griffons, King Guto.
@@ -5647,14 +5578,12 @@ You know something, girls?
 We are so lucky to live in this town.
 I love you all!
 Sorry!
-[tired]
 Thank you, everypony.
 With delegates from over fifty cities attending three days of conferences, receptions, and meetings, this is the largest Grand Equestria Pony Summit yet.
 And let me tell you, putting it all together has led to more than one sleepless night.
 We're so excited to have you here and to learn more about life all across this great land of ours.
 And now my faithful assistant Spike would like to say a few words.
 [groans]
-[tired]
 I'm sorry, Spike.
 I just...
 [yawns]
@@ -6168,7 +6097,6 @@ Rainbow Dash bonding with Discord, Rarity finding something he did genuinely fun
 Must've been some weekend.
 Of course not.
 What's got you two in hysterics?
-[hushed]
 He's everywhere today, isn't he?
 Eh, I don't get it.
 I guess that's funny?
@@ -6316,7 +6244,6 @@ C'mon, Fluttershy.
 There are four Alicorn princesses in Equestria now.
 I am Twilight Sparkle, the Princess of Friendship.
 We are not spies!
-[to Fluttershy]
 Why does everypony assume we're spies?
 Well, actually, that's why we're here ?
 to solve your problem with the Hooffields.
@@ -6328,7 +6255,6 @@ They're just really upset you ruined their farmhouse.
 Have you tried meeting at a neutral location, talking about your problems, and really listening to each other?
 Well, they'll listen to me.
 I'm an impartial third party.
-[voice amplified]
 Attention, Hooffields and McColts!
 I'm not on anypony's side, but I can see you're both wasting time and resources on being mean to each other.
 Ponies are supposed to help each other and be kind.
@@ -6578,7 +6504,6 @@ The future of Equestria's at stake!
 I have to get back to the map so I can stop Starlight from changing the past, because every present I come to is worse than the last!
 ...Alright.
 We have no choice, Spike.
-[to Nightmare Moon]
 I can take you to it, but you'll have to get past the timberwolves.
 I know you can.
 A pony from my time used this spell to travel back and change the past.
@@ -6778,16 +6703,12 @@ This could be my chance to make a great contribution to the knowledge of Equestr
 [beat]
 And be there for Spike, heh, of course.
 I think we might want something a little more practical this time.
-[hushed]
 It's not supposed to be flattering.
 It's supposed to blend in!
-[hushed]
 This is fascinating!
 Dragons are notoriously reckless, but they do whatever the Dragon Lord says!
-[hushed]
 When the scepter disappeared, the dragons stopped glowing!
 We are learning so much!
-[hushed]
 Oh, my gosh!
 But what can we do?
 There has to be another way.
@@ -6798,12 +6719,9 @@ Spike!
 Her behavior does seem contradictory to everything I've noted about dragons so far.
 Good luck.
 We'll meet you at the top.
-[hushed]
 We'll be right behind you!
 Is it just me, or have we seen this crevasse three times already?
-[muffled]
 Look!
-[hushed]
 Awww!
 You did well, Spike.
 With Ember as Dragon Lord, the ponies will be safe and you've gained us a powerful ally.
@@ -6843,12 +6761,10 @@ So, um, what brings you to Ponyville?
 Starlight?
 A moment?
 Over here?
-[hushed]
 I know I said make friends with anypony, but, well, with Trixie's past, and your past, I'm not sure she's the best...
 first friend.
 Of course.
-It's just...
-She wasn't the nicest pony.
+It's just... She wasn't the nicest pony.
 [sighs]
 You're right.
 I trust you.
@@ -6859,7 +6775,6 @@ Pssssssst!
 Pssst!
 Psssssst!
 Shhhhhh!
-[hushed]
 So, how's it going with your new friend?
 Because you know, if it isn't working out for any reason, I could introduce you to my friend here.
 No, no!
@@ -6868,10 +6783,8 @@ You like music, right?
 DJ Pon-3'd be the perfect friend for tonight's incredibly important dinner with Celestia.
 You know, if you decide to make a last-minute change.
 Heh.
-[nervously]
 Who can really say who said what?
 I know I can't!
-[to DJ Pon-3]
 Can you?
 Starlight, I'm just trying to look out for you.
 That's kind of what I'm afraid of.
@@ -6881,14 +6794,12 @@ Now he'd be perfect!
 Starlight Glimmer should be here, heh, any minute, heh.
 Any minute now...
 [nervous laugh]
-[forced]
 How about I introduce everyone?
 Our friendship lessons are going so well!
 She made three new friends!
 She has such great taste in friends.
 I don't know where she would've learned that!
 [nervous laugh]
-[nervously]
 Ha-ha, Cranky Doodle!
 You're so funny!
 If you'll excuse me, I'm gonna check the kitchen.
@@ -6993,10 +6904,8 @@ Heh.
 Rarity, it's lovely.
 But are you sure you'll be ready to open tonight?
 Well, sweeping can be fun, too.
-[to the beat]
 Sweep, sweep, sweep, sweep.
 Sweep, sweep, sweep, sweep, sweep...
-[to the beat]
 Sweep, sweep, sweep, sweep...
 Well, opening a store in Manehattan is a pretty big deal.
 It's natural that Rarity would be a little stressed about how it was going.
@@ -7025,16 +6934,13 @@ Yep.
 We're workin' on it!
 How did this happen?
 Rarity asked us to help her with everything because she knows all of us so well.
-[to Fluttershy]
 She knows how much you care for animals.
 She'd trust you to solve the problem your way.
-[to the others]
 Maybe we should all do the same.
 Doing this our way is what Rarity wants.
 It's not too late.
 Let's all dig in and we can fix this.
 Before Rarity finds out how bad we messed up.
-[awkwardly]
 Wow, looks like we fixed that door just in time!
 The whole place organized by style, cross-referenced by size, and reverse-indexed by fabric.
 She'll be able to find anything in three seconds flat!
@@ -7151,7 +7057,6 @@ Spike, I'm so proud of you.
 Of course!
 You're a celebrity here in the Crystal Empire, and you just risked all of it for a friend!
 I can't imagine anything more brave than that.
-[to others]
 As the Princess of Friendship, I try to set an example for all of Equestria.
 But today, it was Spike who taught me that a new friend can come from anywhere.
 I guess everypony still has things to learn about friendship.
@@ -7305,7 +7210,6 @@ Yours!
 I know you each have a different perspective on how the boat capsized and blame each other, but if you come on the boat with me I'll show you what really happened.
 Don't worry, Spike.
 I've got it all under control.
-[to the others]
 While all of your stories seem very different, they all had something in common ?
 cucumber sandwiches.
 You also mentioned the bubbling water.
@@ -7546,7 +7450,6 @@ I will always need you.
 Maybe it is.
 Just a little.
 Thank you.
-[sarcastically]
 Gee, thanks, Discord.
 If I could have everypony's attention!
 As you all know, Starlight Glimmer's been my pupil for a while now, and I'd hoped she'd be my pupil for a long time yet to come.
@@ -7555,7 +7458,6 @@ Starlight, you have proved yourself to be a kind, loyal, strong, honest, and tru
 Just looking around this room at all the new friendships you've made, I know there's nothing more I need to teach you.
 So we have a second reason to celebrate today.
 Three cheers for Starlight Glimmer on her graduation day!
-[to Starlight]
 The future's in your own hooves now.
 Congratulations.
 So how do you feel?
@@ -7667,7 +7569,6 @@ You want to play, don't you?
 Well, I know a game that's even more fun!
 [aside to Spike]
 And more efficient.
-[to Flurry Heart]
 Playing race carts!
 Ha-ha!
 Woo-hoo!
@@ -7812,7 +7713,6 @@ Ohh, that would be great.
 [chuckle]
 I'll have to check with Spike, but I think we're free.
 A friendship problem?
-[simultaneously]
 Okay!
 Wow, Fluttershy!
 I've never heard you speak with such conviction.
@@ -7820,7 +7720,6 @@ So what are you gonna do now?
 Ooh, a library cave?
 I thought you said no more experts.
 Big Daddy McColt!
-[to the others]
 We met each other back when the map called me and Fluttershy to the Smokey Mountains!
 [strained gasping]
 [babbles]
@@ -7845,7 +7744,6 @@ Luna and Celestia would never fight.
 Again.
 Psst!
 Pssst!
-[quickly]
 I'm not.
 I'm still home.
 It's an easy spell.
@@ -7858,7 +7756,6 @@ kind of way.
 So, how's it going?
 Oh, no, that's terrible!
 I mean, what makes you say that?
-[nervously]
 Noooooo...
 Heh.
 Oh, I wish I could help you, but I can't ?
@@ -7894,7 +7791,6 @@ The actual princesses' cutie marks?
 He's not the only one.
 This is big!
 Like, really big!
-[quickly]
 I already know!
 I mean, I don't know everything.
 I just got here to bring you your toothbrush!
@@ -8035,7 +7931,6 @@ This journal is a record of things that actually happened to us!
 We made mistakes, and we learned from them!
 Wait a minute, everypony!
 Listen to me!
-[amplified]
 Listen to me!
 So you see, everypony?
 None of us ever claimed to be perfect.
@@ -8172,7 +8067,6 @@ I met a colt today.
 He pulled my mane, so I put a frog on his head.
 Also not helpful, but I do kinda want to see where it goes.
 [grumbles]
-[slightly muffled]
 Are you sure these are necessary?
 I said, are you sure these are necessary?
 What you can't risk is getting any sicker!
@@ -8270,17 +8164,13 @@ I don't have the prize.
 That's the prize?
 Okay, well...
 I guess you should come with us, honorary family member.
-[amplified]
 Ahem!
 Is everypony ready?
 Dad?
-[amplified]
 What did you say?
 Um, thanks.
-[amplified]
 I-19!
 Did you get that one, Dad?
-[amplified]
 Can anypony tell me how my dad is doing?
 [forced laugh]
 Phew!
@@ -8328,7 +8218,6 @@ The cruise ponies are happy.
 My family is happy.
 Even Iron Will is happy.
 You know who isn't happy?
-[insincerely]
 I'm sorry.
 But maybe that wouldn't have happened if you weren't practically standing on my tail!
 Not even my real family stands so close!
@@ -8345,11 +8234,9 @@ You should stay.
 I have something to tell you.
 All of you.
 I'm glad you all got to do the things you wanted, but I should have stood up for myself so that I could do what I wanted, too.
-[to Star Tracker]
 It wasn't fair of me to lash out at you.
 If I felt like you were standing too close, I should have said something.
 I'm sorry.
-[to everypony]
 What do you say we do something off the schedule?
 Yup!
 We're gonna do something I want us to do, as a family.
@@ -8652,10 +8539,8 @@ I see.
 [laughs nervously]
 Well, Chancellor, we have other classes.
 We can just?
-[voiceover]
 Of course, we want to instill a sense of loyalty towards others.
 We encourage acts of generosity and kindness.
-[voiceover]
 And appreciation for the value of laughter...
 ...and to always be honest in any situation.
 Uh, look at the time!
@@ -8874,7 +8759,6 @@ To give her that, you just need to be yourselves.
 [clears throat]
 Page one, act one, scene one.
 Action!
-[to Spike]
 Even I can't believe how good my play is!
 The sets, the props, the outfits ?
 they're all great!
@@ -9034,7 +8918,6 @@ Really...
 Thank you for telling me.
 I'm so glad to hear your field trip was a success.
 I'll make sure to schedule another one right away.
-[to Rainbow Dash and Applejack]
 You were actually just competing the entire time, weren't you?
 [groans]
 I can't believe you're still asleep!
@@ -9103,7 +8986,6 @@ Why don't you three come with me?
 Spike, you're in charge.
 No, thanks, Starlight.
 I've got this.
-[to Cutie Mark Crusaders]
 I'm sorry to have to tell you this, but...
 you can't be my students.
 Yes, but we teach friendship lessons here.
@@ -9136,7 +9018,6 @@ Now.
 Which is why I wanted to talk to you.
 Thank you, Cozy Glow.
 Honesty is one of the pillars of friendship.
-[to Cutie Mark Crusaders]
 But you already know that.
 Which is why I'd like to give you these.
 And if you're interested, I think Starlight has a place for you at my school after all.
@@ -9317,7 +9198,6 @@ And until I find out, I'm begging you, come to my school instead.
 You don't think they're running an actual friendship school, do you?
 But we can't go poking around the school.
 Everypony'll think I'm still just threatened by the competition.
-[muffled]
 I don't know, Rarity.
 Sorry, Plainity.
 But I'm pretty sure this isn't enough of a disguise.
@@ -9398,7 +9278,6 @@ Uh-oh.
 [laughs nervously]
 Surely, you don't mean that.
 You're just having a little disagreement.
-[to students]
 Sometimes that happens between pals.
 But no matter what, they can always get past the problem and stay good friends.
 [panicking noises]
@@ -9409,7 +9288,6 @@ If it falls into the wrong hooves, Equestria will be in grave danger!
 Thank you!
 I'll feel so much better knowing you two are looking for it together!
 Not exactly.
-[to students]
 See?
 Good friends always work through their differences.
 It's called a yovidaphone.
@@ -9977,7 +9855,6 @@ Why don't we all go in together?
 [gasps]
 Do you know what this means?
 When Shining Armor and I were small, we competed over everything.
-[voiceover]
 To keep it friendly, our parents gave us gold stars every time we did something special.
 Sharing...
 getting good grades...
@@ -10121,7 +9998,6 @@ Dusty Pages?
 The head librarian?
 She's worked here forever.
 [nervous giggle]
-[hushed]
 Not to me it doesn't!
 [sighs]
 Fine.
@@ -10151,7 +10027,6 @@ I was hoping I could talk to Dusty Pages about that.
 Mm-mm.
 Wait.
 Forced to leave?
-[nervously]
 Uh-huh.
 Would, uh, you excuse me?
 Dusty Pages isn't working at the library any more because I didn't return this book!
@@ -10176,7 +10051,6 @@ This has to be it!
 Terrible, I know!
 There's not a single bookshelf in sight!
 Poor Dusty...
-[to receptionist]
 Excuse me!
 Do you have a resident named Dusty Pages?
 Thank you!
@@ -10273,15 +10147,11 @@ the Pony Pal Contest, the lucky pot dinner.
 You'll love it!
 So, like this says, get your pony pal and come along.
 Now, who wants to help me hang more posters?
-[amplified]
 Welcome, everycreature, to our school's first annual Amity Ball!
 For those of you who've never attended a Fetlock Fete, we can't wait to show you some of our fun traditions on this special night!
-[amplified]
 So, Spike...
-[amplified]
 Uh, right.
 Scales-n-Tail.
-[to crowd]
 Let's get this party started!
 And that's why we're giving you this.
 From now on, it's the annual Amity Ball Award for Friendship!
@@ -10321,7 +10191,6 @@ If it's written down, I'm sure we can handle it.
 Have fun!
 [nervous laugh]
 We won't let you down, princesses.
-[to Spike]
 Please tell me that scroll says what the the Royal Swanifying is.
 It doesn't matter.
 This is our chance to show Celestia and Luna we'll do whatever the job requires.
@@ -10612,7 +10481,6 @@ Panicking won't solve anything.
 But we can handle whatever problems come our way as long as we handle them together!
 I love a good to-do list.
 So tell me exactly what happened so we can figure out exactly what to do to fix it.
-[amplified]
 This Celebration has always been a reminder not to fear the night, for there is always a new day to look forward to.
 But as we look towards Equestria's future, I am sad to say today will be the last Summer Sun Celebration.
 Because there is something even more important to celebrate.
@@ -10746,7 +10614,6 @@ Right!
 Spike!
 Send a letter to Star Swirl!
 Tell him we need the Pillars to guard the border of Canterlot!
-[voiceover]
 If the villains are coming for a fight, we'll have one waiting for them!
 With Chrysalis on the loose, she'll go after Starlight!
 Warn Cadance and Shining Armor!
@@ -11204,7 +11071,6 @@ The portal!
 That'll be too late!
 [panting]
 Yes!
-[to herself]
 Only it's not okay.
 It's not okay at all!
 If I don't get my crown tonight, I won't be able to go back to Equestria for another thirty moons!
@@ -11314,7 +11180,6 @@ Ready, Spike?
 Oof.
 I'm back.
 And I've got some bad news about those new girls.
-[excitedly]
 Flash Sentry was asking about me?
 [clears throat]
 Isn't that nice?
@@ -11361,7 +11226,6 @@ But I'm sure I could figure out how to write one.
 Technically, I helped finish a spell.
 And there was a little more to it than that, Spike.
 I've got this.
-[to Spike]
 C'mon!
 Well, last time we were here, Spike and I spent the night in the library.
 Huh?
@@ -11391,7 +11255,6 @@ One more time from the top!
 What?
 But it's not ready!
 If we play our counter-spell in the first round and it doesn't work, the sirens will know what we're up to and make sure we don't get a chance to play it again!
-[not so confidently]
 Right.
 Remember, we have to be good enough to make it through but not so good we let the sirens see the magic within us.
 They could realize we plan to use it against them.
@@ -11505,7 +11368,6 @@ No, we don't!
 But that's just it!
 I'll never be able to control it!
 I didn't mean to!
-[to herself]
 No, it was me.
 Keep it together.
 Deep breaths.
@@ -11536,11 +11398,9 @@ She's still part of me.
 I can feel it.
 And I think her magic is infecting my friends.
 I don't know what I can do.
-[laughs nervously]
 Mm-hmm.
 We're...
 we're meeting a cab to take us home.
-[to herself]
 No, it was me.
 I think it's Midnight Sparkle.
 She's still part of me.
@@ -11638,7 +11498,6 @@ Oh, okay.
 But I was thinking that we could?
 Actually, I thought we'd?
 I guess we're splitting up?
-[to Rainbow Dash]
 I don't suppose you want to?
 You read my mind!
 The Staff!
@@ -11676,19 +11535,15 @@ And she did.
 What she didn't expect was for Rainbow Dash to come to the Tricorners set before she was able to sneak them off to a safer hiding place.
 So she was forced to hide them in the first place she could find.
 But she knew she couldn't leave them there.
-[voiceover]
 So the first chance she got, she tried to sneak them away.
 Unfortunately for her, we spotted her!
 But Juniper knows every inch of this place like the back of her hand...
-[voiceover]
 ...and was able to trap us and lose Rainbow Dash.
-[voiceover]
 For a while.
 But when Rainbow Dash managed to figure out where she'd run off to, she locked her in a closet with a set of keys that gives her access to just about every door in this place...
 ...which gave her the time she needed to hide the relics here.
 I started to piece things together when I unlocked the door to get you out of the supply closet.
 But I knew Juniper would never admit she was the one who had taken the relics.
-[to Canter Zoom]
 Which is why I told you to send her on that smoothie run.
 So she'd think she had the opportunity to get the relics off the lot where we'd never find them.
 There's more bothering you than just journal pages, isn't there, Sunset?
@@ -12279,7 +12134,6 @@ All that's left is to hold this lead wire in place while the auxiliary unit cycl
 two...
 one?
 Aah!
-[indignantly]
 Do you know which sorcerer can conjure the greatest magic of all?
 Mother Nature.
 What you saw was probably nothing more than an innate phosphorescent biochemical property of common algae.
@@ -12313,13 +12167,10 @@ Fine.
 [yells, screams, yells, growls, pants, yells]
 [groans]
 [giggles, screeches, yells, growls]
-[indignantly]
 Did you find any?
-[sighs, under her breath]
 Typical Rainbow Dash!
 [scoffs]
 That giant plant monster!
-[struggling]
 We're trying!
 [gasps]
 [gasps, struggles]
@@ -12530,7 +12381,6 @@ No no no no no!
 Ohhh!
 Tempest!
 Are you kidding me?
-[whispering loudly]
 We have to get off this ship before they tell Tempest we're here!
 [sighs]
 I've got this!
@@ -12758,7 +12608,6 @@ I'll have my usual mane style.
 Thank you, Aloe.
 Do you need some water?
 I'm not sure I want my mane to scream anything.
-[to Aloe]
 I'll just have the same as always.
 What can I say?
 I know what I like.
@@ -12769,7 +12618,6 @@ I can't believe you figured it out!
 What's the secret to the spell?
 [giggles]
 [sneezes]
-[congested]
 I told you, Spike.
 It's just a little spring allergy?
 [sneezes]
@@ -13065,9 +12913,7 @@ Eh, why not?
 Yee-haw!
 All right, ha!
 Where'd you get that?
-[voiceover]
 Of course we're friends!
-[voiceover]
 Are you okay?
 What's going on?
 Sunset?
@@ -13164,7 +13010,6 @@ But it doesn't say how to get your memories back.
 [gasps, reading]
 Perhaps if I had destroyed the Stone right away, some of my memories could have returned.
 But when the sun sets by the third day after a memory has been taken, it is erased forever.
-[voiceover]
 Sunset, we think the Memory Stone was buried under this rock formation.
 And if you don't destroy the Memory Stone by the time the sun sets today, all those memories will be erased forever.
 A little higher on the left.
@@ -13240,7 +13085,6 @@ A program that allows me to focus all my attention on my own advanced math and s
 What a dream come true!
 That is why it's called an independent study program.
 I guess.
-[to Puppy Spike]
 What's she so worried about?
 Everton is exactly what I need right now.
 [sighs]
@@ -13292,7 +13136,6 @@ Oof!
 Oh, sorry.
 I didn't mean to.
 [groans]
-[to Sour Sweet]
 Oh, sorry.
 Why don't you go ahead?
 Um, hi.

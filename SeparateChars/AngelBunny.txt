@@ -76,14 +76,10 @@ That's what you're worried about?
 Well, maybe I don't want to switch back.
 I've only been able to talk to you since we met.
 And now I can talk to anypony I want!
-[to Rose]
 Roses are red, violets are blue!
 You sell flowers...
-[to Daisy]
 ...and so do you!
-[to Cultivar]
 Rubber baby buggy bumpers!
-[to Cream Puff]
 Rubber baby buggy bumpers!
 Toy boat, toy boat, toy bo?
 Aah!
@@ -145,7 +141,6 @@ There's some carrot extract with my name on it.
 Okay!
 Let's get you fed and off to dreamland!
 What do you eat anyway?
-[to Antoine]
 What do you say, snake?
 Can you find something else to eat if I borrow those cookies for my friend here?
 Eh, I'm sure that's normal.

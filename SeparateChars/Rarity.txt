@@ -874,7 +874,6 @@ Why didn't you clean it first?
 It's gonna leave a staaain!
 And the wagon's getting heeeavy, why do I have to pull it?
 But I thought you wanted whiiining!
-[dreamily]
 Anything?
 [sigh]
 This water is hardly sparkling.
@@ -1077,10 +1076,8 @@ Put me down!
 Are you girls still obsessing over your cutie marks?
 Mmm, I know how you feel.
 For the longest time I couldn't figure out why I didn't have mine.
-[voiceover]
 I tried every trick I could think of, but nothing seemed to work.
 The costumes just weren't right, and the play opened that night.
-[voiceover]
 I had no idea where my horn was taking me.
 But unicorn magic doesn't happen without a reason.
 I knew this had to do with my love of fashion and maybe even my cutie mark!
@@ -1709,7 +1706,6 @@ I learned that no matter where you go in life, you should never forget that you 
 And that is something always to be proud of, no matter what.
 [muffled]
 Hellooo?
-[normal]
 Anypony home?
 Twilight?
 [gasps]
@@ -1718,18 +1714,14 @@ Huh, that must be at least twenty carats!
 No inclusions, pristine facets...
 Oh, uh, of course.
 I just came by to see if you had any books on historical fashion...
-[to Spike]
-Did you say...
-delicious?
+Did you say... delicious?
 Thanks, Twilight.
 I've got a feeling ruffled taffeta capes are going to make a huge comeback this season, and I want to be ahead of the game...
-[to Spike]
 I hope it's as tasty as it is beautiful, Spike.
 I've never seen anything quite so stunning before.
 Like it?
 It's magnificent.
-I don't know what to say...
-this is so thoughtful.
+I don't know what to say... this is so thoughtful.
 Oh, my little Spikey-wikey!
 [kisses]
 Thank you so much!
@@ -1925,9 +1917,7 @@ I cannot believe what that monster Iron Will has done to you!
 Fluttershy, are you in there?
 Oh, sweetie, we all said things that we regret.
 Shh.
-[muffled]
-Sweetie, [normal]
-Pinkie Pie doesn't blame you, nor do I.
+Sweetie, Pinkie Pie doesn't blame you, nor do I.
 You just received some bad advice from that Iron Will character.
 Yes!
 [muffled]
@@ -2223,7 +2213,6 @@ Now, first, you must lift your foreleg up to your forehead, like so?
 Timberwolf!
 [sobbing]
 We are doomed!
-[to Applejack]
 See?
 Like that.
 Wait, you were actually stuck?
@@ -2809,10 +2798,8 @@ Simple Ways!
 Well?
 What's so funny?
 Fun-nay?
-[normal voice]
 Well of course I'm serious?
 [clears throat]
-[back in country accent]
 Why wouldn't I be?
 And I can like plowin' fields and haulin' apples just as much.
 How do you know what I like?
@@ -2825,31 +2812,24 @@ Now, to be a model in the Simple Ways fashion show, you might think simple means
 Well, that just ain't so.
 If you want to be real simple, more is more.
 Now, y'all go off and make yourselves look just like that.
-[to Spike]
 Who's our next model for the fashion show?
 Who the hay is that?
 Is this some kind of joke?
-[normal voice]
 Because you would never wear an ensemble like that.
 You like plowing fields and hauling apples?
-[back in country accent]
 But you don't!
 Fine.
 But I got a whole festival to plan, so if you're goin' to start modelin', just get on with it!
-[normal voice]
 You're a trend-setting fashionista?
 Why, that is the most ridiculous thing I've ever?
 I mean...
-[back in country accent]
 Good for you.
 I, on the other hoof, couldn't care less how I look, long as I get the chores done.
-[mule bray]
 Yes, indeedy-doodle!
 Well, my mane is full of dust and split ends.
 My hooves are cracked and dry from working in the fields!
 I wear droopy drawers!
 I love being covered in mud!
-[normal voice]
 Goodness!
 Your couture!
 Ooh, it's bad.
@@ -2960,7 +2940,6 @@ Big Mac's voice is all better!
 Now you can bathe in the poison joke antidote and sound like your lovely self again.
 Fluttershy, stop!
 Ohhh...
-[to Big McIntosh]
 Would it be okay if Fluttershy sang for you one last time?
 Hardly!
 Can we please stop running?
@@ -3070,7 +3049,6 @@ the what now?
 Sweetie Belle, if I did anything to upset you, then--
 I thought they were supposed to be good.
 I only tried to do what I thought you wanted.
-[to Opalescence]
 I should probably go talk to her, hm?
 Perhaps waiting would be best.
 [snoring]
@@ -3543,7 +3521,6 @@ Well, despite my 'nubby scrubby buffy pony pedi, I actually have been working ve
 However, I never could have gotten the boutique ready for the grand opening without the help of my new manager Sassy Saddles!
 I knew I needed a manager for Canterlot Carousel, so when Sassy showed me her resum‚ and I saw that she worked in all of the finest boutiques in Canterlot, I hired her right on the spot!
 So I created a collection that beautifully revolves around the royal element of Canterlot!
-[to Twilight]
 In every poll Sassy Saddles took, you were the most popular princess!
 Coincidentally, one of my gowns is inspired by the window in Canterlot Castle commemorating your coronation!
 While I've always prided myself on paying attention to detail, I've taken my latest collection to a whole new level with Rarity's Rules of TLC!
@@ -3634,10 +3611,8 @@ This is not your boutique!
 And if this is what success in Canterlot looks like, I want no part of it!
 Now, make up flyers for a going-out-of-business sale!
 I'm closing Canterlot Carousel!
-[to a dress]
 Oh, don't you look lovely?
 Nice to see you out here again.
-[to herself, hushed]
 Seems Sassy Saddles isn't rushing to open the door this time.
 Welcome to the going-out-of-business sale of Canterlot Carousel.
 Oh, no, I'm sorry, the Princess Dress has been discontinued.
@@ -3652,7 +3627,6 @@ Perhaps you'd be even more taken with this one.
 It was inspired by the fountain in the Canterlot Castle garden.
 I call it the Fountain of Truth!
 Well, then I'll finish it, and the gown shall be yours!
-[to herself]
 How can I have forgotten?
 This is what I've been dreaming about!
 Attention, everypony!
@@ -3739,7 +3713,6 @@ Well, not too long because we didn't have much time, but the point is...
 I was up for the challenge.
 [narrating]
 There I was, surveying the crime scene, and looking trŠs chic while doing it.
-[normally]
 This must be the envelope for the letter Spitfire got!
 [sniffs]
 Hmm.
@@ -3753,7 +3726,6 @@ Rainbow Dash was right.
 In order to solve the mystery, we had to be focused.
 Driven.
 One hundred percent in the?
-[normally]
 Ooh!
 The damask pattern on these curtains is exquisite!
 Oh, and this velvet rope-holder ?
@@ -3765,7 +3737,6 @@ I just have a few questions for you, and I'm sure once we get some things cleare
 The waters were getting choppy.
 Rainbow Dash's tactics were, well, horrid.
 It was time for another approach.
-[normally]
 Perhaps I should take it from here!
 You castle guards have such a difficult job.
 I'm guessing that at times it can be rather...
@@ -3863,7 +3834,6 @@ Kch.
 More like three times!
 Why, it's not only home to the Haypacking District ?
 it's also home to the Fashion District!
-[to Twilight]
 Hmm.
 Shame you weren't called as well, though, darling.
 You did end up quite a fan of the hustle and bustle of Manehattan on our last visit.
@@ -3887,7 +3857,6 @@ Here.
 This will do splendidly.
 Oh, no-no, please, please, keep it.
 I can always make another.
-[to Applejack]
 And you thought we wouldn't discover our purpose here!
 Pff.
 Kch.
@@ -4020,7 +3989,6 @@ It's your first Nightmare Night out and about, and we do want you to be comforta
 Oh, sure, dear.
 That's...
 fine.
-[to herself]
 It's so plain, it's frightening.
 [out loud]
 Oh, my!
@@ -4238,7 +4206,6 @@ Because I'm looking at one just like it!
 Maybe if you can catch up with him, you could ask?
 Probably?
 Oh, you're back!
-[to Maud]
 Darling, I want to get one more picture of you with that astounding fissure in the sidewalk, and the inspiration just struck me for the perfect shot!
 Uh, be a dear and go stand behind it.
 Okay, now just, uh, back up a little bit!
@@ -4262,7 +4229,6 @@ you're Pinkie Pie.
 You're supposed to be all [quickly]
 Oh, I'm so excited I bought the rock pouch!
 And I know I say excited a lot when I'm actually just kind of excited, but this time I'm really excited about how excited I am about being this excited over the rock pouch!
-[normally]
 And then you fire off your party cannon.
 Say, where is your cannon?
 [gasps]
@@ -4563,13 +4529,11 @@ How will I handle them all?
 [reading]
 In the end, Rarity's grand opening was a smashing success!
 True, it got off to a rocky start, but somehow this rag-tag group of ne'er-do-wells...
-[to ponies]
 Oh, heavens, I think he means you.
 [continues reading]
 ame together and created the perfect boutique.
 A vision of Rarity combined with the expertise of her friends!
 This reporter, for one, is a believer.
-[to ponies]
 Why didn't you tell me there were so many problems?
 [giggles]
 Ne'er-do-wells or not, I know I can always count on all of you.
@@ -4724,7 +4688,6 @@ The food is excellent, but I'm not sure there's much you and I can do to help th
 That's it!
 The flow has led us here!
 This is our mission!
-[to Saffron and Coriander]
 We are going to get you a three-hoof rating and save your restaurant!
 I can get Zesty Gourmand here!
 [singsong]
@@ -4827,8 +4790,7 @@ Darling, I hope you're ready to get an early start tomorrow!
 And my cart wins most creative!
 Yes, that's what we said, darling.
 [muffled]
-Oh-ho-ho-ho, darling, [normal]
-the fringe is not exactly big!
+Oh-ho-ho-ho, darling, the fringe is not exactly big!
 And that yellow is the least bold color I can imagine!
 Sweetie Belle, precious face, old-timey is just another word for pass‚.
 Remember, big and bold!
@@ -5144,7 +5106,6 @@ I'm coming!
 [singsongy]
 Guess who's here to spend the whole day with her little sister?
 Mmmm!
-[to Zipporwhill]
 Heh-heh.
 So sorry, dear.
 You're tiny.
@@ -5894,19 +5855,15 @@ It's just that I absolutely must have a model for my phoenix feather dress, and 
 Zecora!
 Hello?
 Are you there?
-[loudly]
 Oh, dear!
 I'm talking even louder than I thought, aren't I?
-[loudly]
 Eh, I-I'm sorry?
 I can't seem to hear anything!
 I was hoping you could help!
 I have no idea what happened!
 One minute, I was sewing phoenix feathers onto a dress, and the next I couldn't hear my own voice!
-[loudly]
 I only know you're talking 'cause your mouth is going up and down.
 [sighs, sniffs, coughs]
-[normal volume]
 Oh, goodness!
 I hope that incredibly pungent odor belongs to some sort of magical curative.
 [loudly]
@@ -5983,7 +5940,6 @@ You look a little peaky.
 And where's your wagon?
 Really?
 I can't believe you've never told us that story before.
-[to Mean Applejack]
 I'm going to make sure that she doesn't break a hoof out there, and then you and I are going to have a serious talk!
 Starlight!
 Please stop running!
@@ -6041,7 +5997,6 @@ Now, I've read enough Shadow Spade to know the key to going undercover is rehear
 I'm Plainity.
 and I love bland old normal stuff.
 No frills for me.
-[normal voice]
 Okay!
 Your turn.
 Perfect!
@@ -6072,7 +6027,6 @@ Think of your reputation!
 I think not!
 [affected voice]
 Not Plainity, but...
-[normal voice]
 Rarity!
 We decided to bring somepony else here to listen to everything you just said!
 I still don't understand how Flim and Flam could have gotten a copy of your book.
@@ -6230,7 +6184,6 @@ Enjoy.
 Good.
 Uh, now, which way did the sparkly thing go?
 Thank you!
-[to Rainbow Dash]
 Well, what are you waiting for?
 Go on!
 Fly up there and get that amulet!
@@ -6336,12 +6289,9 @@ Oh, dear.
 I hadn't thought of that.
 Not everything can be solved with brute force.
 We need magic to escape.
-[to Cerberus]
 Down!
-[to Cerberus]
 Sit!
 Good!
-[to Twilight Sparkle]
 I can't say for how much longer.
 I'm not sure we did!
 Good point.
@@ -6414,7 +6364,6 @@ But you shouldn't pull every lever you come across!
 Half of them are traps!
 It's not worth the risk!
 Oh, hello, Spike.
-[to Rainbow Dash]
 Even if we did find our way back to the castle, we'd still have all of those guar?
 Spike?
 Fluttershy?
@@ -6446,13 +6395,9 @@ Well, uh, y-y-yes, if that's what you really want.
 In that case, at an elegant affair like a pony dance, one must converse in a sophisticated fashion.
 Talking with Brussels sprouts in your mouth helps you to learn to [elocuting]
 ar-ti-cu-late.
-[normally]
 Take a mouthful, and repeat after me.
-[elocuting]
 How kind of you to ask me to tea.
-[elocuting]
 May I offer you a glass of punch?
-[elocuting]
 The weather is quite agreeable today.
 Let's move on.
 We will need to do something about your hairstyle.
@@ -6461,11 +6406,8 @@ Now, purple taffeta, frosted chiffon...
 [gasps]
 Gold brocade!
 One of my favorites!
-Blech...
-Earth tones.
-They're so...
-[laughs nervously]
-...earthy, aren't they?
+Blech... Earth tones. 
+They're so... [laughs nervously] ...earthy, aren't they?
 Don't worry.
 We shall find something to make you stand out.
 [sighs]
@@ -6509,7 +6451,6 @@ Ah, what a relief.
 How rude.
 So we're just going to have to do with sequins!
 Still rude.
-[to Jet Set]
 I need gemstones!
 And purple satin!
 Gosh, Cheese hardly seems the factory type.
@@ -6606,7 +6547,6 @@ That's perfect!
 It'll give me a chance to practice.
 Uh, you stand there and tell me if I hit the right apologetic notes.
 Darling, I don't see why that matters.
-[overdramatically]
 And that is why I simply cannot bear the thought of having hurt you!
 And even though I don't know what it is that I did, I want you to know that it doesn't matter!
 Because I am prepared to do anything to make it right!
@@ -6621,11 +6561,9 @@ I don't know how I could be more genuine.
 I mean?
 [gasps]
 Spike!
-[overdramatically]
 Oh, Spike!
 I am so sorry!
 Please forgive me!
-[overdramatically]
 You have to forgive me!
 I don't know what I did or why you're mad at me!
 Just please say you forgive me!
@@ -6837,9 +6775,7 @@ Pff.
 Kch.
 Don't play innocent, Pinkie Pie!
 You are no better than she is!
-[to Twilight]
 I am happy to offer up my assistance as well.
-[to Pinkie]
 To someone who would appreciate what I have to offer!
 You mean like how you've gotten over what happened with Rainbow Dash?
 Yes.
@@ -6852,7 +6788,6 @@ That's a good sign!
 I...
 really thought you were gonna...
 pull it off there in the end!
-[laughs nervously]
 Don't even think about it!
 You're already trying to get her crown.
 Who knows what Sunset Shimmer would do if you ended up getting her ex-boyfriend too?
@@ -6912,7 +6847,6 @@ What kind of person doesn't put a piano on wheels?
 Just look at me.
 I'm a mess.
 What I need is a bit more muscle.
-[to Rover, Fido, and Spot]
 Oh, boys!
 I simply cannot thank you enough.
 And while I am a bit repulsed by your musky smell, I can appreciate that you're all diamonds in the rough.
@@ -6931,7 +6865,6 @@ Ooh!
 Oooh!
 Oh, my!
 Fine, fine.
-[to Rover, Fido, and Spot]
 I don't suppose...
 [plays keytar riff]
 Why, you only paid Granny Smith two dollars for it!
@@ -6951,7 +6884,6 @@ Your band?
 Well.
 [giggles]
 Someone is quite the smitten kitten.
-[to Sunset Shimmer]
 Sorry.
 I always forget you and Flash used to be an item.
 Mmm...
@@ -7113,7 +7045,6 @@ I-I believe I'd like to come down now!
 [screams]
 Applejack!
 What are you doing?
-[breathing heavily]
 I was scared half to death!
 No, thank you!
 Oh, dear!
@@ -7222,9 +7153,7 @@ They're making a video, too.
 I-Is that a problem, darling?
 Okay, before we get started with the choreographing of our dance moves and [mumbling]
 , there's just one tiny, teeny-weensey, little thing I forgot to mention.
-Uhhhh...
-[quickly]
-I would need to use our fundraiser money to buy costume materials for the video!
+Uhhhh... I would need to use our fundraiser money to buy costume materials for the video!
 More than double what we need to fix up Camp Everfree!
 All right, girls.
 Who's ready to shoot our winning dance music video?
@@ -7563,7 +7492,6 @@ Darling, that seems a bit excessive!
 Yes, this is positively electrifying.
 [clears throat]
 [yawns]
-[sarcastically]
 Oh, now the real fun begins.
 I've been having so much fun the whole time.
 [sighs]
@@ -8191,7 +8119,6 @@ Did I say that?
 [gasps]
 Listen, tonight's a huge opportunity.
 And not just for me now, but for all of us!
-[to Applejack]
 Honestly, I don't know why you're giving me your frowny eyebrows.
 Uhhh, well, uh...
 enjoy the park.
@@ -8201,24 +8128,20 @@ I have three minutes' break at four o'clock, and I can give you two of them.
 [laughs]
 Rare, out!
 Applejack, this parade is a living, breathing dance of light and sound!
-[to assistants]
 Love it, lock it, stitch it.
 Beautiful, perfect, I just threw up, love it.
 Now hurry up!
 I need these done yesterday!
 Play a great show tonight?
-[to mascot]
 Excuse me!
 I know I am not seeing a lapped zipper on that faux fur!
 A lapped zipper is simply a stuck zipper waiting to happen!
 Ugh!
-[to Applejack]
 This is what I'm up against.
 I'd love to, darling, but I am a tad super-insanely busy.
 Heh.
 Rain?
 I didn't plan for rain!
-[to assistant]
 Get me one hundred ponchos, stat!
 Finished!
 [sighs]
@@ -8319,7 +8242,6 @@ And especially not your friends.
 Hmmm.
 You've got one.
 If you want.
-[to Applejack]
 If you're up for it.
 [sighs]
 Twilight, this is a most deserved respite.
@@ -8382,12 +8304,10 @@ I hate this!
 I'll make a new lifeboat!
 Take care of yourself.
 Ragamuffin, don't let anyone tell you you can't be a dancer.
-[dramatically]
 For all coal turns to diamonds!
 Thank yo?
 Wait.
 What?
-[sarcastically]
 How was the show?
 [scoffs]
 I was being judgmental, darling.
@@ -8431,7 +8351,6 @@ You were going to sell us?
 Rats?
 [yelps]
 There's pudding?
-[breathes loudly]
 Oh, for Celestia's sake!
 [screams]
 Ooh!
@@ -8457,7 +8376,6 @@ These fins are divine!
 Ooh, ooh...
 That sounds lovely, darling, but you must realize, we can't stay.
 [gasping, faints]
-[angrily]
 Well!
 Look what the cat dragged in!
 Himself!
@@ -8512,10 +8430,8 @@ Oh, I don't know about most famous.
 The hat is indeed for somepony very special.
 And I couldn't bear to see him part with it.
 But if I hear you call yourself a nopony again, you shan't be my guest for Fashion Week in Manehattan.
-[softly]
 Sorry, Applejack.
 Well...
-[grunting]
 A little help, please!
 Whoa!
 [sighs]

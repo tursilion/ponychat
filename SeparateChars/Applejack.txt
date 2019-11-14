@@ -1039,16 +1039,12 @@ I never told you that story?
 Why, shoot.
 I was just a little filly.
 Even littler than y'all.
-[voiceover]
 I didn't want to spend my life on a muddy old apple farm.
 I wanted to live the sophisticated life, like my Aunt n' Uncle Orange.
 So I set out to try my luck in the big city, Manehattan!
 The most cosmopolitan city in all of Equestria.
-[voiceover]
 I knew I'd find out who I was meant to be in Manehattan.
-[voiceover]
 I never felt so homesick in all my days as I did right then.
-[voiceover]
 It was amazin'!
 A rainbow pointin' right back to...
 home.
@@ -1526,7 +1522,6 @@ What the hay?
 Hey!
 Cut that out!
 Whoa!
-[to coach ponies]
 I'll pay you double to outrun them.
 I'll pay you quadruple to leave them in the dust!
 Hyah!
@@ -2030,7 +2025,6 @@ Attagirl!
 Just had a couple minor hiccups along the way.
 Dear Princess Celestia,
 Come 'n' get me, ya big goons!
-[to Spike]
 Run!
 Whew!
 Aw, don't mention it, Spike.
@@ -2437,7 +2431,6 @@ We've gotta round up these beasts with wings first.
 Time's a-wastin'!
 Good work, everypony!
 I think we got 'em all!
-[to Fluttershy]
 Now all we need is for you do to your Stare.
 Good...
 Now you go, Twilight!
@@ -3377,7 +3370,6 @@ I sure hope Apple Bloom and Sweetie Belle aren't too upset.
 [gulps]
 Ponies move so fast here.
 Not at all like back home.
-[to herself]
 Eyes peeled, ears open.
 Eyes peeled, ears open.
 [snorts]
@@ -3489,7 +3481,6 @@ When duty calls, I gotta answer right away.
 What kind of an example would I be settin' for my little sister if I didn't?
 [sighs]
 I'm sorry, Apple Bloom.
-[to Big Mac]
 Try and cheer her up, won't you?
 Oh, sugarcube, if Mom and Dad were here, they'd be so proud of ya.
 Now go on and party with your pals.
@@ -3688,15 +3679,11 @@ That there's the very same cutie mark!
 Nah.
 This was clearly some sort of misunderstandin', 'cause Rara was just as down home as me!
 Even that big name was too fancy for her, so I shortened Coloratura to Rara!
-[voiceover]
 We had the best time at Camp Friendship!
-[voiceover]
 Rara was just so easygoin'!
 We were like two apples from the same branch.
-[voiceover]
 Rara and I prepared this song for the camp talent show.
 When we performed, she belted it out, singin' in the most colorful, clear voice I'd ever heard!
-[voiceover]
 After camp, we wrote to each other for a bit, but...
 ...then we lost touch.
 But Rara always did want to go to Manehattan to try and make it big.
@@ -3776,9 +3763,7 @@ Different how?
 That's easy enough.
 [sighs]
 When the Crystal Empire returned, it brought King Sombra back with it.
-[voiceover]
 And it didn't take long for him to force every one of his subjects to fight for him against Equestria.
-[voiceover]
 And even with Princess Celestia leadin' the charge, it still takes every last pony in Equestria doin' their part, workin' day and night, to keep up the fight.
 But we aren't friends.
 At least not here.
@@ -3853,7 +3838,6 @@ Uh, fabric?
 Oh, no?
 [sighs, to herself]
 What would Rarity want?
-[to Plaid Stripes]
 You know, I like you, Plaid Stripes.
 If it were up to me, we'd have a spoon clothes store right next to Stinky Bottom's Discount Hat Emporium.
 But it ain't up to me, so the answer is no.
@@ -4112,7 +4096,6 @@ They meet in the middle of the field for the buckoff.
 They both try to be the first one to kick it.
 [grunts]
 And all the unicorns have to do is float these here baskets around the outside of the field and catch as many balls as possible for their team.
-[to Pinkie and Fluttershy]
 You two get the idea?
 Okay, just try your best, Pinkie.
 I have been doin' this a lot longer than you.
@@ -4251,7 +4234,6 @@ Flim and Flam told us you'd see right through the fake rich pony bit, and that o
 This was all part of the plan!
 Gladmane has left the buildin'!
 And if it weren't for you wantin' to show even those two con-ponies kindness, we never would have been able to trick the trickster.
-[to Flim and Flam]
 Must've felt pretty nice to finally put all your connivin' and cheatin' skills to good use.
 Flim and Flam!
 Are you sure this is what Twilight would want?
@@ -4479,7 +4461,6 @@ depressing.
 Maybe to fashion experts like you.
 But to ponies like me, it's still black.
 And I'm not sure how you wear singin' birds or the future.
-[to Rarity]
 I don't think they liked what I had to say.
 Are you puttin' holes in the clothes?
 On purpose?
@@ -4626,7 +4607,6 @@ We can ask Goldie Delicious!
 If anypony knows about the feud, it's the family historian!
 Well, Goldie, we were hopin' you could tell us about the, uh...
 feud with the Apples and the Pears.
-[voiceover]
 Wait an apple-pickin' minute!
 Bright Mac and Buttercup?
 Those are our parents' names!
@@ -4649,7 +4629,6 @@ Then let's go!
 Thanks, Burnt Oak!
 Hi, Mrs Cake.
 We heard you and our ma used to be real good friends, and we were hopin' you could tell us a bit about her.
-[to Apple Bloom]
 Just like you, sugarcube!
 Or rather, you're just like her!
 I mean, I figured the Pears moved, but I didn't know all that stuff happened before with Granny and Grand Pear.
@@ -5105,9 +5084,7 @@ Sorry, y'all.
 We would've been here sooner, but we had to take the long way after Rarity ran off with all my stuff.
 What?
 You know I ain't no liar!
-[to Starlight Glimmer]
 Where's all your gear?
-[to Starlight Glimmer]
 Hey, sorry if I got carried away with all that campin' stuff.
 Spoken like a true camper.
 Do y'all know what this means?
@@ -5231,7 +5208,6 @@ Show yourself!
 Well, hi.
 I'm Applejack, and this here's Fluttershy.
 Huh.
-[to Fluttershy]
 Quiet bunch, ain't they?
 [clears throat]
 We're from Equestria, and we're plumb tickled to meet y'all.
@@ -5408,12 +5384,9 @@ definitely unexpected.
 How about somethin' a little more down-to-earth?
 Like, I distract the guard ponies with a farewell performance by my alter ego, famous country-western superstar Apple Chord!
 Well, it's a long story.
-[voiceover]
 Back on the farm, playin' music was about makin' her family smile.
 Word of her talent spread, and soon, Apple Chord was playin' real shows.
-[voiceover]
 The more she played, the bigger those shows got.
-[voiceover]
 But she missed playin' for her family...
 So one day, she gave it all up.
 Seein' her family smile was all she ever wanted from her music.
@@ -5518,7 +5491,6 @@ Well, if enough apples fell or got knocked down by the wind maybe.
 Or animals.
 I'm just sayin' there's a lot of possible explanations.
 And the rest of 'em ain't!
-[voiceover]
 And missed out on helpin' with the harvest because I was chasin' somethin' for little foals.
 I felt guilty everypony else had to work harder because of me.
 So I decided right then and there I was too old to waste any more time on Great Seedlin'.
@@ -5820,7 +5792,6 @@ So how was the tour?
 Don't worry, y'all.
 We'll let Principal Celestia know all about this and those girls will be kicked to the curb in no time.
 Last thing she needs is another CHS event almost ruined by some power-crazed lunatic.
-[to Sunset]
 Er, no offense.
 The Dazzlings?
 They did?
@@ -5917,7 +5888,6 @@ That was as close to winnin' as Canterlot's ever been.
 I don't know.
 She doesn't seem like the magic-stealin' type.
 Oh, it puts you on a playin' field, alright.
-[to Rarity]
 I don't suppose you made motocross outfits.
 [breathes]
 You said it.
@@ -6116,7 +6086,6 @@ Heh.
 Thanks.
 Hey!
 This is the song I requested!
-[to Apple Bloom]
 Care to cut a rug with your big sis, sugarcube?
 [laughs]
 Yee-haw!
@@ -6183,7 +6152,6 @@ What's the plan?
 That's not my way.
 Gotta be prepared.
 Just doin' ma job, ma'am.
-[to Timber]
 Uh, I got here first, so I just took care o' savin' that kid for ya.
 You're welcome!
 Giddy up!
@@ -6246,7 +6214,6 @@ Let's meet 'em!
 This is the backstage area, where the pets get fresh and spiffy before the competition.
 Right, Fluttershy?
 Why, look at this handsome feller!
-[to Flash]
 Tell us about your pooch!
 Uh, I think the show will be startin' soon, so we should wrap this up.
 Winona?
@@ -6318,7 +6285,6 @@ You never heard of this trick?
 Everyone does it.
 And I mean everyone.
 Told ya.
-[voiceover, echoing]
 Picture everyone in the audience as a bunch of chickens...
 [clucking]
 Heh.
@@ -6399,7 +6365,6 @@ Yeah, that, but...
 maybe a little louder?
 Go get 'em!
 Fluttershy needs our help!
-[to Snips and Snails]
 Quick!
 I need a costume!
 [facepalms, groans]
@@ -6448,7 +6413,6 @@ You never heard of this trick?
 Everyone does it.
 And I mean everyone.
 Told ya.
-[voiceover, echoing]
 Picture everyone in the audience as a bunch of chickens...
 [clucking]
 Heh.
@@ -6529,7 +6493,6 @@ Yeah, that, but...
 maybe a little louder?
 Go get 'em!
 Fluttershy needs our help!
-[to Snips and Snails]
 Quick!
 I need a costume!
 [facepalms, groans]
@@ -7170,7 +7133,6 @@ Thank y'all so much for lettin' me stay!
 Oh, it's simply divine.
 Although, I must admit the city noise took some getting used to.
 Where I'm from, nights are so quiet, you seldom hear a peep until the roosters wake you.
-[voiceover]
 What's he talking about?
 What do I say?
 I don't wanna look like a fool.

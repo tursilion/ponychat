@@ -851,7 +851,6 @@ Wanna go to Sugarcube Corner?
 Cutie mark?
 Come with me and I'll tell you how I got mine!
 All right!
-[voiceover]
 My sisters and I were raised on a rock farm outside of Ponyville.
 We spent our days working the fields.
 There was no talking.
@@ -859,7 +858,6 @@ There was no smiling.
 [sigh]
 There were only rocks.
 We were in the south field, preparing to rotate the rocks to the east field, when all of a sudden...
-[voiceover]
 I'd never felt joy like that before!
 It felt so good I just wanted to keep smiling forever!
 And I wanted everyone I knew to smile too, but rainbows don't come along that often.
@@ -1451,7 +1449,6 @@ Tractors that small?
 The other day, I spilled spot remover on my dog...
 and now I can't find him!
 Gee, tough crowd.
-[to herself]
 Tell me about it.
 Fine, I wasn't gonna pull off a show stopper, but you're a lovely audience and I think you deserve it!
 There, see?
@@ -1698,7 +1695,6 @@ So much for dazzling.
 [muffled]
 Is her face gonna stay that way?
 Ooh, just like a spider!
-[to Doctor Horse]
 Did the crash somehow give her super-duper spider powers?
 And look!
 You have a roommate!
@@ -1861,10 +1857,8 @@ What were you doin' there?
 Oooh, I'm always trying to find friends, and today I found you.
 See how good I am at it?
 Like me?
-[to herself]
 Yes!
 I'm in!
-[to Cranky]
 Woow, where in Equestria did you get this, Cranky?
 It's awfully pretty.
 Huh?
@@ -2020,7 +2014,6 @@ I have balls stashed all over Ponyville, in case of ball emergency.
 Come...
 Enter the chamber of Madame Pinkie Pie...
 For the answers you seek, let us consult the mystical orb of fate's destiny...
-[normal]
 Do you like my mystical orb of fate's destiny?
 I just got it.
 Cool, huh?
@@ -2044,7 +2037,6 @@ Gosh, I haven't seen Twilight since the flowerpot incident.
 Hope she still isn't mad.
 Uhhhh...
 Twilight's really serious about finding out about that cool birthday present, isn't she?
-[to Twilight]
 Are...
 you okay?
 Sure!
@@ -2183,7 +2175,7 @@ Because the obvious answer is...
 'Cause I know who did it.
 How could I possibly not know?
 Clearly this dastardly deed was done by the baker, who knew their dessert could not measure up to the mastery of the Marzipan Mascarpone Meringue Madness.
-I guess you feared your ‚clairs lacked flair, Gustave!
+I guess you feared your eclairs lacked flair, Gustave!
 Thus, destroying the cake and the Cakes' chance of winning the National Dessert Competition.
 What do you mean, lowly assistant?
 Huh...
@@ -2193,12 +2185,9 @@ You're right, my fine fellow.
 Gustave le Grand is clearly in the clear, which means the MMMM was destroyed by another baker.
 A baker who's donuts are do-nots.
 That's right, it was Joe!
-[voiceover]
-Or as he's known the spy world, Mane.
-Con Mane.
+Or as he's known the spy world, Mane. Con Mane.
 Crushing the Cakes' chances to win!
-Huh...
-You may be right, lowly assistant.
+Huh... You may be right, lowly assistant.
 Now that I'm taking a closer look at these desserts, I see that one simply cannot look me in the eye.
 Yes, and the mule behind the moose panicked when she saw the mastery of the MMMM.
 Mulia Mild!
@@ -2210,7 +2199,7 @@ But I was so sure that it was one of the other bitter bakers that destroyed the 
 That way, their delicious dessert would reign supreme.
 I mean, just look at Joe's Donutopia.
 It's a spectacular city of donutty delight, topped temptingly in sprinklicious sprinkles.
-And Gustave's ‚clairs look incredibly edible, with glistening glaziness.
+And Gustave's eclairs look incredibly edible, with glistening glaziness.
 But then there's Mulia Mild's Mousse Moose.
 [sighs]
 why, this mouth-wateringly marvelous mousse moose tempts the taste buds with its silky, smooth, yummy-nummy, chocolateyness.
@@ -2225,17 +2214,14 @@ And then I chased the culprit down the train towards the caboose, but when I got
 Already?
 I heard somepony else in the dessert car and chased them up to the engine.
 But when I got there, all I saw was the conductor shoveling coal.
-Well...
-I went back to the dessert car.
+Well... I went back to the dessert car.
 The curtains mysteriously closed, all on their own.
-I heard hoofsteps, a loud thud...
-...and then they were gone!
+I heard hoofsteps, a loud thud... and then they were gone!
 When I opened the curtains, I saw that the portrait by the door was all crooked.
 [growling]
 That's it.
 I was here guarding the cake the rest of the night.
-I mean...
-I slept by the cake the rest of the night.
+I mean... I slept by the cake the rest of the night.
 Exactly.
 A-ha!
 A blue feather!
@@ -2255,10 +2241,9 @@ Look for clues!
 [sniffing]
 Uh-huh, uh-huh, uh-huh.
 I most certainly did.
-It was none other than...
-the bakers!
+It was none other than... the bakers!
 First of all, Gustave has mousse in his moustache!
-And Joe has ‚clair in his hair!
+And Joe has eclair in his hair!
 And Mulia has sprinkles in her wrinkles!
 I think we can fix that.
 Come on!
@@ -2591,7 +2576,6 @@ Okay.
 I'm done!
 DON'T FORGET TO WRITE!
 [echoing]
-[to others]
 Do you think she heard me?
 New spells, huh?
 Okay.
@@ -2847,7 +2831,6 @@ Tag you're it!
 Tag you're it!
 Cupcakes?
 Eh, we had a good half second before we got sucked back out of the comic, and the Maretropolis bakery was only sixty-five blocks away!
-[to the tune of Winter Wrap Up]
 Fruit bat round-up, fruit bat round-up!
 [giggles]
 I got it.
@@ -2992,7 +2975,6 @@ What do you mean?
 You can't know!
 Ooh!
 Say 'best family hug ever'!
-[to the viewers]
 Look at me!
 I'm part of the Apple family too!
 I'm arguing!
@@ -3376,7 +3358,6 @@ According to the rules of the Exchange, a trade is only fair if both ponies end 
 You can't break the rules!
 Did anypony see you do it?
 I don't think anypony saw!
-[to Chirpy Hooves]
 But you're not gonna say anything, are you?
 Haha, I'm just kidding!
 Or am I?
@@ -3397,7 +3378,6 @@ So who wants to start the bidding?
 [hushed]
 I know you're not better than everypony!
 Just leave this to me!
-[to crowd, normal]
 Did I mention that Princess Twilight got these books from Princess Celestia?
 Oh, that's right!
 Double princess!
@@ -3518,7 +3498,6 @@ It was like she never wanted to?
 Exactly!
 [chomp]
 Eventually we ran out of time so we just went with every-berry-any-chip-surprise!
-[to Rarity, hushed]
 The surprise is I lost a measuring spoon in the batter.
 Somepony's gonna get a very special pancake!
 [coughs]
@@ -3683,13 +3662,10 @@ Word on the street is that Griffonstone has an amazing library chock-full of ans
 Okay, maybe not this street, but on other streets, your library is the talk of the town.
 [gasps]
 Maybe it's good that Twilight didn't come...
-[to statue]
 It's sad what happened to your town, King, but Rainbow Dash can't be right.
 This can't all be because of a missing hunk of gold.
-[as King Grover]
 You are right, Pinkie!
 And you've got amazing hair!
-[normal]
 Aw, King Grover, you old charmer!
 [gasps]
 I know what Griffonstone needs!
@@ -3749,7 +3725,6 @@ Of course it's your problem!
 She's your friend!
 Can't you remember when she was?
 Duly noted.
-[to the audience]
 Except it does!
 Rainbow Dash!
 I'm coming for you!
@@ -3773,7 +3748,6 @@ Baking powder makes baked goods and friendships fluffy and delicious!
 [tearing up]
 Hugging!
 Hugging now!
-[to statue]
 See ya later, you old charmer.
 Nopony!
 Come on, let's go home and see how Gummy did with Granny Pie's marjolaine recipe!
@@ -4214,11 +4188,8 @@ Maybe.
 Unless we're related!
 Which maybe we're not.
 I think I just confused myself.
-[as unicorn pony]
 I don't like you!
-[as Pegasus pony]
 I don't like you either!
-[as Pegasus pony]
 Beat it, Windigos!
 [chewing, with mouth full]
 I don't know...
@@ -4710,7 +4681,6 @@ You did it again!
 Your gifts are always better than mine!
 Next year, I'm gonna have to really step it up and?
 Awwww!
-[to Rarity]
 There you are!
 You've sure been washing your hooves for a long time!
 We've got a train to catch here!
@@ -4796,7 +4766,6 @@ Really?
 If you say so!
 Obviously, DJ Pon-3 only plays the sickest of beats.
 I just wouldn't want her to miss out on the coolest new music straight from the back-alley underground, zip-zap party scene!
-[to DJ Pon-3]
 I'd play the whole thing if I were you, no matter what other ponies think.
 Oh, no!
 Not a shopping music mashup!
@@ -4991,7 +4960,6 @@ More cookies...
 [droning]
 But we dooooooo...
 We want cookiiiiiiiieeeeeeees...
-[normal]
 Exactly!
 Of course not, silly!
 Aw, shucks, it was nothing!
@@ -5564,7 +5532,6 @@ still doesn't make any sense.
 Ooh!
 Ooh!
 Lemme try!
-[to Cherry Fizzy]
 Excuse me.
 Have you ever heard of Applejack?
 Aw, booooo!
@@ -5601,7 +5568,6 @@ You'll never guess what I just got!
 A good thing!
 Prince Rutherford is officially inviting me to Yickslurbertfest in Yakyakistan!
 I subtly hinted for an invitation in my letters to him.
-[voiceover]
 May I please come to Yickslurbertfest?
 Pretty please?
 Pretty please?
@@ -5753,7 +5719,6 @@ A yak tradition, right?
 Yay!
 This is a story about a group of...
 uh, goats!
-[voiceover]
 Who lived in the desert.
 There was a sandstorm, and their entire village was buried in sand.
 There was nothing they could do.
@@ -5763,7 +5728,6 @@ iches!
 Get it?
 ...Okay.
 Anyway...
-[voiceover]
 Finally, the goats' brave, wise leader ?
 let's just call him Prince...
 uh...
@@ -5876,7 +5840,6 @@ I'll catch up!
 You all know what to do!
 [nervous gasping]
 Just play it cool!
-[to Prince Rutherford]
 We didn't help fix Yakyakistan!
 [nervous chuckle]
 No, no!
@@ -5907,7 +5870,6 @@ All you have to do is make Fluttershy feel comfortable.
 It should be pretty easy for you.
 You know her so well!
 Eh, it's what I do.
-[to Cherry Fizzy]
 Excuse me!
 Where can I find the glowing, flying, self-folding napkins?
 Wait a minute.
@@ -6004,7 +5966,6 @@ Mmmmm.
 My nose is telling me to help myself to muffins.
 Ooh, she's fancy.
 I got this.
-[to Mrs Trotsworth]
 A good evening to you, madame.
 We are but weary travelers who humbly wish to inquire on the status of a certain mare of intrigue taking residence here.
 Is it true that Daring Do stays here?
@@ -6027,7 +5988,6 @@ I'm...
 coming...
 Rainbow...
 Dash...
-[to Daring Do]
 I knew you'd come!
 You won't.
 I just do!
@@ -6366,7 +6326,6 @@ Weren't you listening?
 [gasps]
 You figured something out?
 [slurps]
-[to Twilight]
 Well, you did ask for a magical explanation.
 I suppose being trapped for all time with a super-duper bad guy in limbo might be okay if you were doing the limbo, but that's still pushing it.
 And the blindfold Somnambula wore when she faced that nasty sphinx!
@@ -6716,7 +6675,6 @@ It was all your amazing boyfriend's idea.
 He said the best present would be me throwing you a surprise party you didn't have to go to.
 [through gritted teeth]
 Technically...
-[normally]
 You're right!
 Sorry, but it's pie season and the pie orders are piling up.
 Maybe it's just three really, really fast ponies that really, really look like her!
@@ -6769,7 +6727,6 @@ Hey!
 Is this the shouting closet?
 Because I've got a free day, and I'm totally up for some shouting!
 [sniffs]
-[normal voice]
 Also, where's that brussel-sprouts-covered-in-cotton-candy smell coming from?
 Because it is really interesting.
 Whooooo's ready for cupcakes?
@@ -6841,7 +6798,6 @@ Then you've got a super weird way of showing it!
 Twilight is so into her retreat that she doesn't even care if her friends are upset!
 She just wants us to stay on schedule!
 I never said that!
-[to Twilight Sparkle]
 I'm sorry that you thought that I thought your plan was lame.
 Your plans are the most un-lamest!
 [laughing]
@@ -6950,7 +6906,6 @@ You think so?
 Even though it wasn't perfect?
 Well if that's the case, lemme play you the song I just wrote two seconds ago!
 It's called I've Got the Best Most Supportive Friends a Pony Could Ever Ask For!
-[aside]
 It's a working title.
 [inhales]
 Pfft, well, yeah!
@@ -7013,7 +6968,6 @@ Leave him to me.
 Tirek's in!
 All eternity!
 There's your cue, you evil centaur, you.
-[to Lord Tirek]
 Thanks for the assist, your redness!
 Yay!
 Twilight did it!
@@ -7069,9 +7023,7 @@ Yes, sir, Twilight, sir!
 Yeah, it was fast-ish.
 Ooh, ooh, ooh!
 I know what I can do!
-[voiceover]
 You're gonna need a lookout, so I can be your eye in the sky.
-[on-screen]
 Too low, silly!
 Up here!
 [laughs]
@@ -7681,7 +7633,6 @@ I don't actually know what that is!
 Okay, first of all, if there was bubble-blowing going on, why wasn't I told about it?
 And secondly, if the connection is totally cut off, how was Sunset Shimmer able to get a message to Twilight?
 Yeah, I get that a lot.
-[to Rainbow Dash]
 Now about those bubbles...
 Duh!
 She's gonna take the magic in here and put it in there.
@@ -7809,7 +7760,6 @@ We're gonna roast marshmallows and eat marshmallows and sleep on marshmallow pil
 Maybe you're not.
 I'll say!
 We fought three evil sirens who tried to hypnotize everybody with their singing, one ridiculously competitive rival school, and two demon friends!
-[to Sunset and Twilight]
 Uh, heh-heh, no offense.
 Cookie decorating!
 [slurps]
@@ -8004,10 +7954,8 @@ Jaaaaaazzzz!
 Wow!
 That sounded great, Wondertones!
 I think our cheering worked again!
-[to Fluttershy]
 C'mon!
 Another team needs us!
-[to the Wondertones, through bullhorn]
 Hey!
 You guys wanna join?
 To the gym!
@@ -8258,7 +8206,6 @@ I coulda told you that!
 Snack Psychic
 Welcome, girls!
 Be back soon!
-[to Flash]
 Big test?
 When you're stressed, you always order grilled cheese.
 [gasps]
@@ -8274,7 +8221,6 @@ Chlorine!
 [sniffing]
 And soup.
 Aw, candy corn!
-[to Crystal Prep students]
 Eating soup after the big loss at the swim meet today?
 That's not true!
 Hold on.
@@ -8303,9 +8249,7 @@ Cup of sugar, tablespoon of baking powder, dash of vanilla, pinch of salt, and f
 Mmmm...
 Cotton candy.
 This is taaaaaasty!
-[as Gummy]
 You've really outdone yourself, Pinkie!
-[normally]
 Aw, thanks, Gummy!
 Now for the not-so-secret ingredient ?
 chocolate!
@@ -8313,7 +8257,6 @@ chocolate!
 Mmmm...
 mmm...
 [continues munching]
-[as Gummy]
 Don't eat all the chips!
 [gulps, normally]
 Whoa.
@@ -8412,7 +8355,6 @@ Eh, your loss.
 [eating noisily]
 Why not take a chance on a mystery line?
 It could lead to the coolest place you've ever seen!
-[to person in line]
 Do you know where this line goes?
 Me, neither!
 But if it's this long, it's got to be good, right?
@@ -8462,7 +8404,6 @@ I can't believe I got to come up with my very own chemical formula ?
 jalapeno supernova cupcake frosting!
 [slurps]
 Aw, you sound just like my lab partners.
-[to Snips and Snails]
 Couldn't have done it without you guys!
 You bet!
 Ooh!
@@ -8554,7 +8495,6 @@ I can't believe I got to come up with my very own chemical formula ?
 jalapeno supernova cupcake frosting!
 [slurps]
 Aw, you sound just like my lab partners.
-[to Snips and Snails]
 Couldn't have done it without you guys!
 You bet!
 Ooh!
@@ -8803,7 +8743,6 @@ Look!
 So many lines to stand in!
 This day's already amazing!
 Let's go!
-[to Cherry Crash]
 You come to this line often?
 Any other sweet lines we should hit up?
 Aw, cheer up.
@@ -9279,7 +9218,6 @@ I need something special for only her!
 I don't think Twilight likes rocks as much as you do, Maud.
 Thanks for the vote of confidence, Gummy.
 But this is the biggest holiday challenge I've ever faced!
-[to Limestone]
 Uh, this one's for you.
 Hey!
 This is the biggest holiday challenge I've ever faced!
@@ -9354,7 +9292,6 @@ It can never be bought yet is easily sought.
 What's so funny?
 Mmmm!
 Don't you just love Granny's Hearth's Warming fruitcake?
-[to Applejack]
 Uh, what's wrong with her?
 Wow.
 There's Triple Pony Dares, and then there's just impossible!
@@ -9456,7 +9393,6 @@ Mmmm!
 Melted is my new favorite flavor!
 [singsongy]
 Road trip!
-[normal]
 Okay, not technically a road trip, because we're taking that.
 Uh-huh.
 Whoa!

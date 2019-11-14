@@ -276,7 +276,6 @@ Now, I must return to Canterlot for Equestria's royal summit.
 You may release Discord when ready.
 Congratulations on your success, ponies.
 I definitely sense a big change in Discord.
-[to Twilight]
 I'll leave the Elements of Harmony with you, Twilight.
 Just in case.
 [echoing]
@@ -418,7 +417,6 @@ You and your friends.
 The birth of an Alicorn is something Equestria has never seen!
 It appears her magic is more powerful than that of a newborn unicorn!
 In light of the little one's abilities, this Crystalling might be more important than ever.
-[to Cadance]
 Perhaps you should address your subjects and remind them of that.
 I'm afraid Twilight is correct, and the storm clouds are already forming.
 I wouldn't advise it, Rainbow Dash.
@@ -466,25 +464,20 @@ Oh, Twilight, I'm not.
 I'm laughing because I had the exact same fears you're having.
 Let me tell you a story.
 Once upon a time, there was a very bright young filly.
-[voiceover]
 She was truly one of my best students.
-[voiceover]
 Yes, Spike.
 I was constantly surprised and impressed with her discoveries.
 But I noticed that her pursuit of academia was preventing her from reaching her full potential.
-[voiceover]
 Uh, yes, Spike.
 I had a decision to make.
 Oh, but it wasn't easy.
 Maybe I could close the library or throw a party in the castle.
 Oh, she'd have to talk to the other fillies then!
 I must send her away.
-[voiceover]
 I knew there was a special group of fillies in Ponyville, but I kept inventing all kinds of reasons why I shouldn't send you.
 What if she runs into a manticore?
 Or what if she gets pulled into Tartarus?
 Or, worst of all, what if she doesn't get along with anypony?
-[voiceover]
 I kept you in Canterlot longer than I should have.
 Eventually, I realized all the anxiety I felt was because I didn't want you to go.
 I loved having you as a student.
@@ -972,7 +965,6 @@ We really are both just so proud of you.
 If you need a moment, that's all right.
 It is your coronation.
 Very well.
-[to audience]
 Citizens of Equestria and beyond!
 My sister and I have ruled this land for quite some time, but even we know that change eventually comes to us all.
 And though we know it can be unsettling, it's as natural as the rising and setting of the sun and the moon.
@@ -1175,7 +1167,6 @@ Okay, who knows the three types?
 You're sure Vice Principal Luna can't handle it?
 [sighs]
 I'll be right there.
-[to students, sighs]
 Won't be but a moment!
 [laughs]
 I'm back!

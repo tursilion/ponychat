@@ -120,7 +120,6 @@ Oh, Rarity, you would do that for me?
 Fortunately, I have all the precise instructions right here.
 You sure you're up to this?
 Oh, Rarity, that's wonderful!
-[to Golden Hooves]
 You said you had a second bit of news?
 So, uh...
 how's it going so far?
@@ -179,9 +178,7 @@ Getting to face all these challenges today was just what I needed.
 And facing them with you just made me realize even more how lucky I am to have somepony like you as a friend.
 We may not see each other very often, but I know you'll always be there when I need you.
 Just like she was there for you, Discord.
-[to guards]
 Thanks for bringing Spike to us.
-[to Spike]
 It's okay, Spike.
 We'll have our hoofponies go back for your bags.
 You are known throughout my empire as Great and Honorable Spike the Brave and Glorious.

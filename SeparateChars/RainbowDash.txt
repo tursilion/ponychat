@@ -896,19 +896,11 @@ You should go over there and tickle them!
 Yeah!
 [laughs]
 I hear you're looking for my cutie mark story.
-It all happened during the race at Flight Camp...
-[voiceover]
-...where I stood alone against all odds to defend Fluttershy's honor.
-[voiceover]
+It all happened during the race at Flight Camp...where I stood alone against all odds to defend Fluttershy's honor.
 I've never flown like that before!
 That freedom was unlike anything I've ever felt!
-The speed, the adrenaline, the wind in my mane...
-I liked it...
-a lot!
-[voiceover]
-Turns out the only thing I liked more than flying fast...
-was winning!
-[voiceover]
+The speed, the adrenaline, the wind in my mane... I liked it... a lot!
+Turns out the only thing I liked more than flying fast... was winning!
 Most people thought that the sonic rainboom was just an old mare's tale.
 But that day...
 The day I discovered racing...
@@ -1009,7 +1001,6 @@ Wonderbolts!
 [squee, giggle]
 Hey, Spitfire!
 You ever done a rain cloud double backflip?
-[to Soarin]
 You ever soared past lightning?
 It's awesome!
 This isn't hanging out.
@@ -1141,7 +1132,6 @@ And may the best pet win!
 [blows whistle]
 [blows whistle]
 Shh!
-[to assembled animals]
 You all think you've got what it takes to be my pet, do ya?
 Well, we'll just see about that!
 If any of you don't think you can handle it, bow out now before you humiliate yourself in front of your peers.
@@ -1180,7 +1170,6 @@ pretty speedy...
 could be more speedy...
 Yeah!
 That's speed!
-[to the tortoise]
 Tsk-tsk.
 That's just sad.
 Agility!
@@ -1188,7 +1177,6 @@ Sorta agile...
 not agile...
 pretty agile...
 could be more agile...
-[to the tortoise]
 Wanna know the opposite of agility?
 That.
 Yeah, baby, now that's what I call agility!
@@ -1209,15 +1197,10 @@ Not what I had in mind.
 I can't hear you!
 Eugh.
 Now that's a cool sound!
-[to bat]
 Sorta awesome.
-[to toucan]
 Not awesome.
-[to flamingo]
 Could be more awesome.
-[to owl]
 Ho ho ho, yeah, that is awesome!
-[to tortoise]
 Uh, you did that already.
 That's pretty much all you can do, huh?
 Whoa!
@@ -1723,19 +1706,14 @@ Few days...
 it might as well be a few months, or a few years!
 Huh.
 I'm right there with you, sister.
-[voiceover]
 The mosquitoes buzzed loudly.
 The macaws cried from the high trees.
 Yet all of these distracting noises were not enough to cover the sound of the predators following her every step.
-[voiceover, steadily getting more excited]
 Safely landing on the other side, Daring finally allowed herself a moment to breathe.
 She turned around to find herself face to face with the long lost temple that she had sought tirelessly for over sixty days and nights!
-I hate to admit it to myself, and would really hate to admit it to my friends, but...
-I love this story!
-I, I...
-I love reading!
+I hate to admit it to myself, and would really hate to admit it to my friends, but... I love this story!
+I, I... I love reading!
 I'm an egghead.
-[voiceover]
 The smell of decay and danger hit Daring Do as she peered into the dimly-lit entrance of the ancient temple.
 Uh, hey, guys...
 [short nervous laugh]
@@ -1761,7 +1739,6 @@ It's nap time for me!
 [mocks snoring]
 [yawns]
 Daring Do stood at the entrance to the central temple chamber.
-[voiceover]
 At last, she was face-to-face with the legendary sapphire statue!
 Uh, well, guys, thanks for visiting, but?
 Oh, just in time.
@@ -1819,12 +1796,9 @@ I'm sorry I made such a big deal about all of this.
 I thought reading was just for smart ponies like you.
 Yeah, I get it.
 I shouldn't knock something until I've tried it.
-[to Spike]
 Didja get all that?
 Great!
 You write the letter, I've gotta finish this book!
-[bites]
-[voiceover]
 And so, with Ahuizotl defeated, and the sapphire statue secured...
 he world was safe and sound once again, thanks to Daring Do!
 [sighs in admiration]
@@ -2378,7 +2352,6 @@ Puh-lease.
 He'll quit way before there's even a chance of getting hurt!
 [hushed, to Applejack]
 Leave this to me.
-[to Spike]
 Sooo, Spike, Applejack was gonna help me stack some hay so I could practice smashing through it, but I'm feeling extra, extra powerful today.
 Yeah, I am.
 So instead of hay, I'm gonna smash through rocks!
@@ -2387,7 +2360,6 @@ A huge tower of rocks!
 And you're gonna build it!
 Yeah, I mean, unless you don't wanna help Applejack...
 Then get to it!
-[to Applejack]
 Trust me.
 This is gonna work like a charm!
 Huh.
@@ -2764,7 +2736,6 @@ That's starting to hurt.
 Yow!
 Stop!
 Wait, don't go!
-[to herself]
 Think fast.
 This is your big chance to impress her with your quick wit and courage.
 [nervously]
@@ -2908,7 +2879,6 @@ See you in the morning!
 How's my favorite routine going today?
 Oh, I just can't keep it in!
 I want you to win so bad!
-[to the BGM]
 Bom, bom, bom, bom...
 and then Scootaloo does that [half-whistles]
 through the hoop!
@@ -3453,12 +3423,10 @@ I've gotta get that book!
 There it is!
 The first edition of Daring Do and the Sapphire Statue!
 It hasn't been traded yet!
-[to stallholder]
 Lucky for you, because I've brought my most valuable possession to trade for it: My lucky horseshoe!
 What?
 [sighs]
 You got it!
-[to Fluttershy]
 I don't know how, but somehow, we're gonna get that Orthros.
 [gulps]
 Okay, I can see you're busy, so I'll give it to you straight.
@@ -3581,7 +3549,6 @@ Awesome!
 Ya done good, squirt!
 Psst, here he comes now!
 Act casual!
-[to Spike]
 'Sup?
 But Cloudsdale has two ice archery finalists down there now!
 If they both place, Cloudsale wins the medal count!
@@ -3628,7 +3595,6 @@ Great idea, AJ.
 Let's go!
 Ugh.
 Thanks a lot, map.
-[to Applejack]
 Be ready to fight.
 We don't know what's gonna come through that door.
 [groans]
@@ -3766,7 +3732,6 @@ If you think hiber...
 you know, that napping thing ?
 is so cute, why don't you go do it?
 Somewhere far away from here?
-[to rest of Mane Six]
 What are you looking at?
 Pinkie Pie and I are just having a conversation!
 Who said anything about anger?
@@ -4097,7 +4062,6 @@ What are you doing?
 We don't have time to look at the d‚cor!
 They're gonna kick me out of the Wonderbolts unless we solve this thing!
 Come on, Rarity, we don't have all day!
-[to a guard]
 Where were you on the night of last night at midnight?
 A likely story.
 What are you tryin' to say?
@@ -4408,7 +4372,6 @@ Yessiree, just call me Care Mare.
 Um, but if you're busy now, I can just come back later...
 [imitating Fluttershy]
 Or, you know, not at all...
-[to herself]
 Okay.
 [imitating Rarity]
 I must tell you how much I just love these uniforms.
@@ -4523,10 +4486,8 @@ Hey, you're not writing this down, are you?
 Rarity For You is only hiring the best of the best.
 And to me, that means the fastest.
 Now, uh, before we begin, uh...
-[to herself]
 Am I doing this right?
 What would Rarity want?
-[to applicants]
 New plan!
 Who can be the first one to tell me what fabric this is?
 Are you sure?
@@ -4559,10 +4520,8 @@ I just came in for a deep tissue sports massage.
 I-I'm pretty sure that wasn't what I signed up for.
 And it seems like you're really busy today anyway!
 I'll just come back tomorrow.
-[to Rarity and Applejack]
 Uh, see you two later!
 Have fun!
-[to Lavender Essence, whispered]
 But put me down for the same thing.
 [sighs]
 Thanks for letting me know there was an opening.
@@ -5346,11 +5305,9 @@ It looks like I won something awesome, but actually...
 Granted, I was the youngest pony in the senior competitive circuit.
 Most other ponies my age were still in the Junior Flappers' Club.
 I thought it was utterly mortifying having my parents cheer me on even when I lost!
-[voiceover]
 But then, when I started to win competitions ?
 which didn't take very long, by the way ?
 things got even worse!
-[voiceover]
 Being the best came with consequences.
 Very loud, very embarrassing consequences.
 [sighs]
@@ -5563,7 +5520,6 @@ It looks just like that village in your last book where Daring Do recovers the D
 Daring Do thwarts Ahuizotl's evil plot to separate the Sister Crown Relics.
 And if it wasn't for her, the region would be cursed with eternal night, and the entire town of Somnambula would have sunk into the ground!
 Watch this.
-[to Cortland]
 Hiya there, mister!
 I was hoping you could tell me about a pony named Daring Do.
 I hear she's an awesome adventure-pony hero.
@@ -5588,7 +5544,6 @@ No, no, no.
 You've got it all wrong.
 Daring Do was trying to save everypony from the curse of the Doomed Diadem of Xilati.
 And she was only in a rush because she had to get the crown back to the Tiara of Teotlale before the curse took effect.
-[to Pinkie Pie]
 Chapter seventeen.
 Hmmm...
 Listen, A.
@@ -6003,7 +5958,6 @@ Uh, Granny Smith's right.
 Let's not overdo it.
 How about a nice nap so you can really enjoy Las Pegasus?
 Uh, if you say so!
-[to Lemon Squeezy]
 What?
 They'll be in here sleeping the whole time I'm gone!
 Quit judging me!
@@ -6258,7 +6212,6 @@ Rarity, why is Applejack carrying all your stuff?
 We're looking for Fluttershy!
 [grunts]
 Hey!
-[to Applejack]
 I'm guessing some kind of curse?
 Maybe poison joke?
 Hey, hey, we're all friends here!
@@ -6349,7 +6302,6 @@ We're supposed to be on an adventure together!
 Fine by me!
 Maybe I can spend some time doing something I actually like now!
 I don't think we can.
-[to Rarity]
 You don't care about any of the things I like!
 It's always about you and your boring fashions!
 ...And I told her a thousand times Pegasi don't even want restrictive heavy dresses!
@@ -6615,7 +6567,6 @@ To hear what the actual Wonderbolts think about you joining just to drop out for
 Ever seen two simultaneous inverse displacement rolls before?
 You...
 What?
-[to Spitfire]
 See?
 This is what I was telling you about.
 Patent pending?
@@ -6723,7 +6674,6 @@ Then I guess we'll just have to bust our way out!
 [groans]
 That didn't work.
 [groans]
-[to Cerberus]
 Good boy!
 Race ya!
 It's about time you noticed!
@@ -6828,7 +6778,6 @@ Uh, it's a buckball field.
 And you are?
 Whaaaa...
 Um, you've met Daring Do, so that's probably an exaggeration.
-[to Clear Sky]
 No offense.
 And who is this?
 [chuckles]
@@ -6848,7 +6797,6 @@ It's easy.
 Yeah, I don't think she's fooled.
 No problem.
 I've totally got your flank.
-[to Wind Sprint]
 Trust me, the game's a lot harder to play with apples.
 Who do you think taught them?
 Of course, being a Wonderbolt takes up most of my time, so I don't get to practice as much as I'd like.
@@ -6972,7 +6920,6 @@ Well, there are waaaay more fun things to do than follow us around.
 One question.
 Why?
 And we're nowhere near ready!
-[to Upper Crust]
 You!
 You're on food duty!
 I thought Pinkie Pie said to get here right away.
@@ -7176,8 +7123,7 @@ Why would AK Yearling write that about herself?
 Who?
 A bad one.
 [reading]
-The only thing worse than Daring Do's destruction of temples is her cruelty to the mild-mannered Dr.
-Caballeron?
+The only thing worse than Daring Do's destruction of temples is her cruelty to the mild-mannered Dr Caballeron?
 More like a disaster!
 Listen!
 [reading]
@@ -7196,24 +7142,19 @@ The only true thing in that pack of lies is that Daring Do is real.
 Are you serious right now?
 A random writer trashes our friend and exposes her secret, and you want to talk about birds?
 What?
-In order to save precious artifacts from the bad guy, who you seem to have forgotten is Dr.
-Caballeron!
+In order to save precious artifacts from the bad guy, who you seem to have forgotten is Dr Caballeron!
 Are you sure you read the same series I did?
 Well, at least AK Yearling's true fans know Martingale's book is bogus.
-I...
-guess we're a little late to warn you about the new book, huh?
+I... guess we're a little late to warn you about the new book, huh?
 No way!
 He's doing a signing across the street?
 [gasps]
 That's not Martingale!
-It's Dr.
-Caballeron in disguise!
+It's Dr Caballeron in disguise!
 Now it all makes sense!
 Daring Do's archnemesis created a fake author self so he can write books that make him sound like a hero!
 Who does that?
 This is totally different.
-[to Dr.
-Caballeron]
 Well, well, well!
 Up to your old tricks again, huh?
 Just like in Somnambula!
@@ -7232,9 +7173,7 @@ What took you so long?
 Say whaaaaaaat?
 [panting]
 You have to help me!
-Groom Q.
-Martingale is really Dr.
-Caballeron, and he has Fluttershy!
+Groom Q Martingale is really Dr Caballeron, and he has Fluttershy!
 The book thing was his new plan to ruin Daring Do's reputation, and he's trying to make my friend a criminal!
 They're off to Tenochtitlan right now!
 That's gotta be why Caballeron tricked Fluttershy into joining his gang!
@@ -7441,7 +7380,6 @@ Are you guys even trying?
 We compete in the Battle of the Bands for real!
 I take over lead vocals again and we stay alive until the finals!
 We unleash the counter-spell then!
-[to Twilight]
 You'll have figured it out by finals, right?
 Then let's go win us a Battle of the Bands!
 Let's get ready to rock!
@@ -7771,7 +7709,6 @@ Go for it!
 Oh, yeah!
 [screams]
 Challenge accepted!
-[to Scootaloo]
 C'mon, kid!
 Let's show 'em what we've got!
 Top that, Apples!
@@ -8203,12 +8140,10 @@ You gonna eat that stress salad?
 We're no strangers to getting stuck in magical objects.
 Whoa!
 The Rainbooms are trending on Snapgab!
-[to Fluttershy]
 You're not too nervous?
 I've gotta hand it to ya.
 You really have an eye for climactic battle settings!
 Imagine going head to head with a sea monster by the pool!
-[voiceover]
 Ka-chow!
 Evil Equestrian magic flows up the diving pool!
 [imitates explosion]
@@ -8419,7 +8354,6 @@ Heh.
 Sorry.
 I'll be more careful from now on.
 You said it, Sunset.
-[to Security Guard]
 What's with these long lines, man?
 Starswirled day one!
 Come and get it!

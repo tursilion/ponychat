@@ -129,12 +129,9 @@ Twily!
 Everything okay?
 Come on, gang!
 Are we gonna gallop, or are we gonna trot!
-[to Twilight]
 Castle tour, huh?
 I'm pretty sure I can give you a hoof with that.
-[to athletes]
 Let's move, move, move!
-[to Twilight]
 Everything's gonna be okay.
 Uh, what the?
 Watch it!
@@ -162,7 +159,6 @@ Our next event...
 ...the aerial relay!
 Congratulations to all our medalists.
 And now, the anthem of?
-[to Spike, hushed]
 Spike, what are you doing?
 And now...
 um...
@@ -359,13 +355,10 @@ But!
 If you fail, I keep the crown.
 And there aren't.
 I've designed a multi-tiered, impenetrable, triple-backed-up line of defense.
-[voiceover]
 The castle is surrounded by shards of Queen Chrysalis' throne.
 Thanks to Star Swirl, its anti-magic powers are now tuned to stop anycreature from using a spell to get inside.
 You can't fly in, either.
-[voiceover]
 Giant fans keep anycreature from flying too close to the castle.
-[voiceover]
 Plus, the entrances to the tunnels below the castle have been sealed, so there's no underground access.
 And even if you could get in ?
 which you can't ?
