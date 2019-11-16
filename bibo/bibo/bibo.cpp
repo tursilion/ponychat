@@ -602,7 +602,8 @@ void populateNameList() {
 // a couple of honorable mentions... this is MLP specific
     nameList.emplace_back("Sonata Blaze");
     nameList.emplace_back("Gummy");
-
+    nameList.emplace_back("Impossibly Rich");
+    nameList.emplace_back("Princess Twilight");
 
     // debug
 //    for (string x : nameList) {
@@ -642,7 +643,11 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
     if (isFirst) {
         // first word, but there may be some before
         string first;
-        if (p > 0) first = str.substr(0,p);
+        if (p > 0) {
+            // if we are in the middle, we MUST be followed by a comma
+            if (str[p+tstname.length()] != ',') return false;
+            first = str.substr(0,p);
+        }
         str = first + on + str.substr(p+tstname.length());
     } else {
         // last word plus punctuation
@@ -690,9 +695,12 @@ void nameSubstitution(string &str, const string &n) {
                 // (note there may be more than two names!)
                 string n1,n2;
                 n1 = x.substr(0, x.find(' '));
-                // special case 'Big' and 'The' and 'Dragon'
-                if ((n1 == "Big")||(n1 == "The")||(n1 == "Dragon")) {
+                // special case 'Big' and 'Dragon'
+                if (n1 == "Big") {
                     n1 = x.substr(0, x.find(' ', 4));
+                }
+                if (n1 == "Dragon") {
+                    n1 = x.substr(0, x.find(' ', 7));
                 }
                 n2 = x.substr(x.find(' ',n1.length())+1);
                 // extra special case for 'The'
@@ -723,7 +731,6 @@ void nameSubstitution(string &str, const string &n) {
                         l = tstname.length();
                     }
 
-
                     // first name
                     if (p == string::npos) {
                         tstname = n1;
@@ -748,7 +755,7 @@ void nameSubstitution(string &str, const string &n) {
 
         // there is a match, check start or end, and full name! (Cause 'Ma' is short)
         if (strchr("!?,. ", str[p+tstname.length()])) {
-            if ((p >= str.length()-tstname.length()-1) && (str[p-1]==' ') && (str[p-2] == ',')) {
+            if ((p > 1) && (str[p-1]==' ') && (str[p-2] == ',')) {
                 // end
                 replaceName(tstname, str, n, p, false);
                 break;
@@ -756,6 +763,7 @@ void nameSubstitution(string &str, const string &n) {
                 // beginning
                 replaceName(tstname, str, n, p, true);
                 break;
+            }
         }
     }
 
@@ -1096,7 +1104,7 @@ int main(int argc, char* argv[]) {
             printf("Missing name of both quoters\n");
             return 99;
         }
-        runscene(argv[2], argv[3]);
+        for (;;) runscene(argv[2], argv[3]);
     } else if (0 == strcmp(argv[1], "addchat")) {
         runaddchat(argc, argv);
     } else {
