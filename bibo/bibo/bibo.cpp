@@ -238,6 +238,7 @@ void makepic(const string &fn1, const string &fn2) {
     if (p) memmove(buf, p + 1, strlen(p));
     p = strrchr(buf, '\\');
     if (p) memmove(buf, p + 1, strlen(p));
+    strcat(buf, "_by_");
     printf("<!-- %s -->\n", buf);
 
     if (opendirect(IMGPATH, ".png")) {
@@ -273,6 +274,7 @@ void makepic(const string &fn1, const string &fn2) {
         if (p) memmove(buf, p + 1, strlen(p));
         p = strrchr(buf, '\\');
         if (p) memmove(buf, p + 1, strlen(p));
+        strcat(buf, "_by_");
         printf("<!-- %s -->\n", buf);
 
         if (opendirect(IMGPATH, ".png")) {
@@ -654,7 +656,7 @@ void runscene(const char* who1, const char* who2) {
         w = randomfile();
     }
 #ifdef GFX_TEST
-    w = 72; // preferred reference is Cheerilee (check for changes)
+    w = 80; // preferred reference is Cheerilee (check for changes)
 #endif
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
