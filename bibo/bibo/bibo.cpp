@@ -195,10 +195,18 @@ void getsizes(const string &name1, int &width, int &voff) {
 
 // generate the bottom picture...
 void makepic(const string &fn1, const string &fn2) {
-    const int numpics = 20;
+    int numpics = 0;
     string bgname, name1, name2;
+    // work out how many pics there are...
     if (!opendirect(IMGPATH, ".png")) return;
+    for (;;) {
+        if ((getfilename().substr(0,2) == "bg") && (isdigit(getfilename()[2]))) ++numpics;
+        if (!nextdir()) break;
+    }
+    klosedir();
 
+    // now do it for real
+    if (!opendirect(IMGPATH, ".png")) return;
     printf("<div class=\"parent\">\n");
 
     int img = rand() % numpics + 1;
