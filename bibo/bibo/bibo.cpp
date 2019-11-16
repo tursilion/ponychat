@@ -599,6 +599,11 @@ void populateNameList() {
 
     klosedir();
 
+// a couple of honorable mentions... this is MLP specific
+    nameList.emplace_back("Sonata Blaze");
+    nameList.emplace_back("Gummy");
+
+
     // debug
 //    for (string x : nameList) {
 //        printf("<!-- '%s' -->\n", x.c_str());
@@ -635,8 +640,10 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
 
     // and do the replace
     if (isFirst) {
-        // first word
-        str = on + str.substr(p);
+        // first word, but there may be some before
+        string first;
+        if (p > 0) first = str.substr(0,p);
+        str = first + on + str.substr(p+tstname.length());
     } else {
         // last word plus punctuation
         // might be an elipsis
@@ -683,11 +690,13 @@ void nameSubstitution(string &str, const string &n) {
                 // (note there may be more than two names!)
                 string n1,n2;
                 n1 = x.substr(0, x.find(' '));
-                // special case 'Big'
-                if (n1 == "Big") {
+                // special case 'Big' and 'The' and 'Dragon'
+                if ((n1 == "Big")||(n1 == "The")||(n1 == "Dragon")) {
                     n1 = x.substr(0, x.find(' ', 4));
                 }
                 n2 = x.substr(x.find(' ',n1.length())+1);
+                // extra special case for 'The'
+                if (n1.substr(0,4) == "The ") n1=n1.substr(4);
 
                 if (n1.length() != x.length()) {
                     // replace "Princess" with "Principal" (Celestia and Luna)
@@ -696,6 +705,24 @@ void nameSubstitution(string &str, const string &n) {
                         p = str.find(tstname);
                         l = tstname.length();
                     }
+
+                    // try Ms/Mrs/Mr lastname
+                    if (p == string::npos) {
+                        tstname = "Ms " + n2;
+                        p = str.find(tstname);
+                        l = tstname.length();
+                    }
+                    if (p == string::npos) {
+                        tstname = "Mrs " + n2;
+                        p = str.find(tstname);
+                        l = tstname.length();
+                    }
+                    if (p == string::npos) {
+                        tstname = "Mr " + n2;
+                        p = str.find(tstname);
+                        l = tstname.length();
+                    }
+
 
                     // first name
                     if (p == string::npos) {
@@ -721,18 +748,14 @@ void nameSubstitution(string &str, const string &n) {
 
         // there is a match, check start or end, and full name! (Cause 'Ma' is short)
         if (strchr("!?,. ", str[p+tstname.length()])) {
-            if ((p == 0) && (strchr("!?,.", str[l]))) {
-                // beginning
-                // p needs to point after the word
-                p = tstname.length();
-                replaceName(tstname, str, n, p, true);
-                break;
-            } else if ((p >= str.length()-tstname.length()-1) && (str[p-1]==' ') && (str[p-2] == ',')) {
+            if ((p >= str.length()-tstname.length()-1) && (str[p-1]==' ') && (str[p-2] == ',')) {
                 // end
-                // p is in the right place
                 replaceName(tstname, str, n, p, false);
                 break;
-            }
+            } else if ((strchr("!?,.", str[p+l])) && ((p==0)||(str[p-1]==' '))) {
+                // beginning
+                replaceName(tstname, str, n, p, true);
+                break;
         }
     }
 
