@@ -354,8 +354,8 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
         len = len1;
     } else {
         // we want to kind of balance out the chat log with the source text...
-                // 50:50 was cute but repetitive, let's try 75:25
-        int l2cnt = (len1 / 2) / len2;
+        // 50:50 was cute but repetitive, 75:25 a bit sparse, try 65:35
+        int l2cnt = (len1 * 35) / 100;
         if (l2cnt == 0) l2cnt = 1;
         if (len1 + len2*l2cnt > buflen) {
             buf = (char*)realloc(buf, len1 + len2*l2cnt + 1);
@@ -668,6 +668,8 @@ void runscene(const char* who1, const char* who2) {
 #ifdef GFX_TEST
     w = 80; // preferred reference is Cheerilee (check for changes)
 #endif
+    printf("<!-- %d -->\n", w);
+
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
     }
@@ -710,7 +712,7 @@ void runscene(const char* who1, const char* who2) {
     fixbuf(buf1, len1);
 
     // now babbler 2
-    w = atoi(who1);
+    w = atoi(who2);
     if (w == 0) {
         w = wold;
         while (wold == w) {
@@ -720,6 +722,8 @@ void runscene(const char* who1, const char* who2) {
 #ifdef GFX_TEST
     w = GFX_TEST;
 #endif
+    printf("<!-- %d -->\n", w);
+
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
     }
