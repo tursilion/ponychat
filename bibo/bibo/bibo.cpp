@@ -205,6 +205,8 @@ void makepic(const string &fn1, const string &fn2) {
     }
     klosedir();
 
+    printf("<!-- %d bgs -->\n", numpics);
+
     // now do it for real
     if (!opendirect(IMGPATH, ".png")) return;
     printf("<div class=\"parent\">\n");
