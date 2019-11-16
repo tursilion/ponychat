@@ -19,10 +19,12 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <time.h>
+#include <vector>
 using namespace std;
 // up to three buffers - char 1, char 2, reply 1, reply 2
 char* buf1, *buf2, *buf3, *buf4;
 int len1, len2, len3, len4;
+vector<string> nameList;    // only populated if we need it
 
 // enable this to make the text go left/right instead of all stacked on the left
 // it was hard to make that work right so I want to save the code ;)
@@ -354,7 +356,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
         len = len1;
     } else {
         // we want to kind of balance out the chat log with the source text...
-                // 50:50 was cute but repetitive, let's try 75:25
+        // 50:50 was cute but repetitive, let's try 75:25
         int l2cnt = (len1 / 2) / len2;
         if (l2cnt == 0) l2cnt = 1;
         if (len1 + len2*l2cnt > buflen) {
@@ -459,7 +461,6 @@ finish:
             output[output.length() - 1] = '.';
             output += ' ';
         }
-        printf("%s", output.c_str());
     }
     return output;
 }
@@ -563,6 +564,170 @@ void fixpronouns(string& s) {
     s[0] = toupper(s[0]);
 }
 
+// convert a filename into a character name
+string parseToName(const string &fn) {
+    string un1;
+    for (unsigned int idx = 0; idx < fn.length(); ++idx) {
+        if (fn[idx] == '.') break;
+        // >1 covers AK yearling and gives room to test for Mc
+        if ((idx > 1) && (fn[idx] >= 'A') && (fn[idx] <= 'Z') 
+            // special case for Hoo'Far
+            && (fn[idx-1] != '\'')
+            // special case for McIntosh and McColt
+            && ((fn[idx-2] != 'M')||(fn[idx-1] != 'c'))
+            ) 
+        {
+            un1 += ' ';
+        }
+        un1 += fn[idx];
+    }
+    return un1;
+}
+
+// fills in nameList if needed
+void populateNameList() {
+    if (nameList.size() > 0) return;    // already loaded
+
+    if (!opendirect(SRCPATH, ".txt")) {
+        printf("No dir for namelist\n");
+        return;
+    }
+
+    do {
+        nameList.emplace_back(parseToName(getfilename()));
+    } while (nextdir());
+
+    klosedir();
+
+    // debug
+//    for (string x : nameList) {
+//        printf("<!-- '%s' -->\n", x.c_str());
+//    }
+}
+
+// replace a potential name tstname in str with on at p
+// return true if we did it
+bool replaceName(const string &tstname, string str, const string &n, size_t p) {
+    // make sure we got something
+    if ((string::npos == p) || (tstname.empty())) {
+        // shouldn't happen, but at this point we're committed
+        return false;
+    }
+
+    printf("<!-- look for '%s' -->\n", tstname.c_str());
+
+    // okay, so now we need to compare against the list to see
+    // if it's a match. Names we don't know can't be replaced,
+    // but that's okay. This covers most cases.
+    bool match = false;
+    for (string x : nameList) {
+        if (x == str) {
+            match = true;
+            break;
+        }
+    }
+    if (!match) {
+        // not a name we know, might not be a name
+        return false;
+    }
+
+    // If we get here, then it's a match! Replace with the other character
+    // First, we need to choose a word from the name
+    string on = n;
+    // strip down to first or last name, except rarely
+    if (rand()%100 > 15) {
+        size_t op = on.find(' ');
+        if (op != string::npos) {
+            // choose a word
+            if (rand()%100 > 35) {
+                // second word is less respectful
+                on = on.substr(op+1);
+            } else {
+                on = on.substr(0, op);
+            }
+        }
+    }
+
+    // fix up certain pronouns
+    if (on == "Mr") on = "Sir";
+    else if (on == "Mrs") on = "Ma'am";
+    else if (on == "Ms") on = "Ma'am";
+    else if (on == "Dr") on = "Doctor";
+
+    printf("<!-- replace with for '%s' -->\n", on.c_str());
+
+    // and do the replace
+    if (p == 0) {
+        // first word
+        str = on + str.substr(p);
+    } else {
+        // last word plus punctuation
+        // might be an elipsis
+        string last;
+        size_t pp = str.length()-1;
+        while (!isalpha(str[pp])) {
+            --pp;
+        }
+        if (pp < str.length()) ++pp;
+        last = str.substr(pp);
+        str = str.substr(0, pp);
+
+        str = str.substr(0, p-1) + on + last;
+    }
+
+    return true;
+}
+
+// perform name substitution in the string str
+// n is the name of the other character, if we decide to use it
+void nameSubstitution(string &str, const string &n) {
+    // Rules: It might be a name to substitute only if it's the
+    // first or the name. Punctuation is used to verify. (If it's
+    // in the middle, it's more likely a third party).
+    string tstname;
+
+    // get the names from the disk
+    populateNameList();
+
+    // make sure beginning and end have no spaces
+    while ((str.length())&&(str[0] == ' ')) str = str.substr(1);
+    while ((str.length())&&(str[str.length()-1] == ' ')) str=str.substr(0,str.length()-1);
+
+    // search away
+    size_t p = str.find_first_of(",!? ");   // see if the first is punctuation or a space
+    if (string::npos == p) {
+        // that seems impossible, but okay (this covers start and end)
+        return;
+    }
+    if (str[p] != ' ') {
+        // try the first word
+        tstname = str.substr(0, p);
+        if (replaceName(tstname, str, n, p)) {
+            return;
+        }
+    }
+
+    // wasn't the first word, check the end
+    p = str.find_last_of(' ');
+    if (string::npos == p) {
+        // this really should be impossible...
+        return;
+    }
+    if (p == 0) {
+        // so does this...
+        return;
+    }
+    --p;
+    tstname.empty();
+    if (str[p] == ',') {
+        // this is the case I wanted, BobbySmith
+        p+=2;
+        tstname = str.substr(p);
+    }
+    // don't care now on success or failure
+    replaceName(tstname, str, n, p);
+}
+
 // list (no arg)
 void runlist() {
     if (!opendirect(SRCPATH, ".txt")) {
@@ -649,6 +814,7 @@ void runquote(const char* who) {
     int cnt = rand() % 5 + 2;
     for (int idx = 0; idx < cnt; ++idx) {
         string s = generateLine(buf1, len1, NULL, 0);
+        printf("%s", s.c_str());
         if (s.empty()) --idx;   // if there's a blank line in the database, then we get an empty output. Ignore it.
     }
 
@@ -679,13 +845,7 @@ void runscene(const char* who1, const char* who2) {
 
     // work out the name of the character, from the filename
     std::string fn = getfilename();
-    string un1;
-    for (unsigned int idx = 0; idx < fn.length(); ++idx) {
-        if (fn[idx] == '.') break;
-        if ((idx > 0) && (fn[idx] >= 'A') && (fn[idx] <= 'Z')) un1 += ' ';
-        un1 += fn[idx];
-    }
-    un1 += ": ";
+    string un1 = parseToName(fn);
 
     // suck the file into memory
     fn = makefilename(SRCPATH);
@@ -733,13 +893,7 @@ void runscene(const char* who1, const char* who2) {
 
     // work out the name of the character, from the filename
     fn = getfilename();
-    string un2;
-    for (unsigned int idx = 0; idx < fn.length(); ++idx) {
-        if (fn[idx] == '.') break;
-        if ((idx > 0) && (fn[idx] >= 'A') && (fn[idx] <= 'Z')) un2 += ' ';
-        un2 += fn[idx];
-    }
-    un2 += ": ";
+    string un2 = parseToName(fn);
 
     // suck the file into memory
     fn = makefilename(SRCPATH);
@@ -777,7 +931,7 @@ void runscene(const char* who1, const char* who2) {
             printf("<p class=\"talkpad\">&nbsp</p>");
 #endif
             printf("<p class=\"talk2\">\n");
-            printf("<b>%s</b>", un2.c_str());
+            printf("<b>%s: </b>", un2.c_str());
             for (int idx = 0; idx < cnt; ++idx) {
                 string s = generateLine(buf2, len2, buf4, len4);
                 if (s.empty()) {
@@ -785,6 +939,8 @@ void runscene(const char* who1, const char* who2) {
                     --idx;
                     continue;
                 }
+                nameSubstitution(s, un1);
+                printf("%s", s.c_str());
                 s += '\n';
                 // add the string to the chat
                 fixpronouns(s);
@@ -800,7 +956,7 @@ void runscene(const char* who1, const char* who2) {
             printf("</p><br>\n");
         } else {
             printf("<p class=\"talk1\">\n");
-            printf("<b>%s</b>", un1.c_str());
+            printf("<b>%s: </b>", un1.c_str());
             for (int idx = 0; idx < cnt; ++idx) {
                 string s = generateLine(buf1, len1, buf3, len3);
                 if (s.empty()) {
@@ -808,6 +964,8 @@ void runscene(const char* who1, const char* who2) {
                     --idx;
                     continue;
                 }
+                nameSubstitution(s, un2);
+                printf("%s", s.c_str());
                 s += '\n';
                 // add the string to the chat
                 fixpronouns(s);
@@ -865,7 +1023,7 @@ int main(int argc, char* argv[]) {
             printf("Missing name of both quoters\n");
             return 99;
         }
-        runscene(argv[2], argv[3]);
+        for (;;) runscene(argv[2], argv[3]);
     } else if (0 == strcmp(argv[1], "addchat")) {
         runaddchat(argc, argv);
     } else {
