@@ -345,7 +345,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
     static int buflen = 0;
     int len;
 
-    if (buf2 == NULL) {
+    if ((buf2 == NULL)||(len2==0)) {
         if (len1 > buflen) {
             buf = (char*)realloc(buf, len1 + 1);
             buf[len1] = '\0';
@@ -356,8 +356,8 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
         len = len1;
     } else {
         // we want to kind of balance out the chat log with the source text...
-        // 50:50 was cute but repetitive, let's try 75:25
-        int l2cnt = (len1 / 2) / len2;
+        // 50:50 was cute but repetitive, 75:25 a bit sparse, try 65:35
+        int l2cnt = (len1 * 35 / 100) / len2;
         if (l2cnt == 0) l2cnt = 1;
         if (len1 + len2*l2cnt > buflen) {
             buf = (char*)realloc(buf, len1 + len2*l2cnt + 1);
@@ -607,7 +607,7 @@ void populateNameList() {
 
 // replace a potential name tstname in str with on at p
 // return true if we did it
-bool replaceName(const string &tstname, string str, const string &n, size_t p) {
+bool replaceName(const string &tstname, string &str, const string &n, size_t p, bool isFirst) {
     // make sure we got something
     if ((string::npos == p) || (tstname.empty())) {
         // shouldn't happen, but at this point we're committed
@@ -621,7 +621,7 @@ bool replaceName(const string &tstname, string str, const string &n, size_t p) {
     // but that's okay. This covers most cases.
     bool match = false;
     for (string x : nameList) {
-        if (x == str) {
+        if (x == tstname) {
             match = true;
             break;
         }
@@ -654,10 +654,10 @@ bool replaceName(const string &tstname, string str, const string &n, size_t p) {
     else if (on == "Ms") on = "Ma'am";
     else if (on == "Dr") on = "Doctor";
 
-    printf("<!-- replace with for '%s' -->\n", on.c_str());
+    printf("<!-- replace with '%s' -->\n", on.c_str());
 
     // and do the replace
-    if (p == 0) {
+    if (isFirst) {
         // first word
         str = on + str.substr(p);
     } else {
@@ -672,7 +672,7 @@ bool replaceName(const string &tstname, string str, const string &n, size_t p) {
         last = str.substr(pp);
         str = str.substr(0, pp);
 
-        str = str.substr(0, p-1) + on + last;
+        str = str.substr(0, p) + on + last;
     }
 
     return true;
@@ -702,7 +702,7 @@ void nameSubstitution(string &str, const string &n) {
     if (str[p] != ' ') {
         // try the first word
         tstname = str.substr(0, p);
-        if (replaceName(tstname, str, n, p)) {
+        if (replaceName(tstname, str, n, p, true)) {
             return;
         }
     }
@@ -718,14 +718,15 @@ void nameSubstitution(string &str, const string &n) {
         return;
     }
     --p;
-    tstname.empty();
+    tstname.erase();
     if (str[p] == ',') {
         // this is the case I wanted, BobbySmith
         p+=2;
         tstname = str.substr(p);
+        while ((tstname.length()) && (!isalpha(tstname[tstname.length()-1]))) tstname = tstname.substr(0, tstname.length()-1);
     }
     // don't care now on success or failure
-    replaceName(tstname, str, n, p);
+    replaceName(tstname, str, n, p, false);
 }
 
 // list (no arg)
@@ -834,6 +835,8 @@ void runscene(const char* who1, const char* who2) {
 #ifdef GFX_TEST
     w = 80; // preferred reference is Cheerilee (check for changes)
 #endif
+    printf("<!-- %d -->\n", w);
+
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
     }
@@ -870,7 +873,7 @@ void runscene(const char* who1, const char* who2) {
     fixbuf(buf1, len1);
 
     // now babbler 2
-    w = atoi(who1);
+    w = atoi(who2);
     if (w == 0) {
         w = wold;
         while (wold == w) {
@@ -880,6 +883,8 @@ void runscene(const char* who1, const char* who2) {
 #ifdef GFX_TEST
     w = GFX_TEST;
 #endif
+    printf("<!-- %d -->\n", w);
+
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
     }
@@ -1023,7 +1028,7 @@ int main(int argc, char* argv[]) {
             printf("Missing name of both quoters\n");
             return 99;
         }
-        for (;;) runscene(argv[2], argv[3]);
+        runscene(argv[2], argv[3]);
     } else if (0 == strcmp(argv[1], "addchat")) {
         runaddchat(argc, argv);
     } else {
