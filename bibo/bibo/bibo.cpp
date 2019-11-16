@@ -608,29 +608,6 @@ void populateNameList() {
 // replace a potential name tstname in str with on at p
 // return true if we did it
 bool replaceName(const string &tstname, string &str, const string &n, size_t p, bool isFirst) {
-    // make sure we got something
-    if ((string::npos == p) || (tstname.empty())) {
-        // shouldn't happen, but at this point we're committed
-        return false;
-    }
-
-    printf("<!-- look for '%s' -->\n", tstname.c_str());
-
-    // okay, so now we need to compare against the list to see
-    // if it's a match. Names we don't know can't be replaced,
-    // but that's okay. This covers most cases.
-    bool match = false;
-    for (string x : nameList) {
-        if (x == tstname) {
-            match = true;
-            break;
-        }
-    }
-    if (!match) {
-        // not a name we know, might not be a name
-        return false;
-    }
-
     // If we get here, then it's a match! Replace with the other character
     // First, we need to choose a word from the name
     string on = n;
@@ -654,7 +631,7 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
     else if (on == "Ms") on = "Ma'am";
     else if (on == "Dr") on = "Doctor";
 
-    printf("<!-- replace with '%s' -->\n", on.c_str());
+    printf("<!-- replace '%s' with '%s' (first:%d) -->\n", tstname.c_str(), on.c_str(), isFirst);
 
     // and do the replace
     if (isFirst) {
@@ -693,6 +670,73 @@ void nameSubstitution(string &str, const string &n) {
     while ((str.length())&&(str[0] == ' ')) str = str.substr(1);
     while ((str.length())&&(str[str.length()-1] == ' ')) str=str.substr(0,str.length()-1);
 
+    // go through the name list, and replace only first or last words in the sentence,
+    // with separating punctuation
+    for (string x : nameList) {
+        size_t p = str.find(x);
+        size_t l = 0;
+        string tstname;
+
+        if (p == string::npos) {
+            // try some variations
+            if (string::npos != x.find(' ')) {
+                // (note there may be more than two names!)
+                string n1,n2;
+                n1 = x.substr(0, x.find(' '));
+                // special case 'Big'
+                if (n1 == "Big") {
+                    n1 = x.substr(0, x.find(' ', 4));
+                }
+                n2 = x.substr(x.find(' ',n1.length())+1);
+
+                if (n1.length() != x.length()) {
+                    // replace "Princess" with "Principal" (Celestia and Luna)
+                    if (n1 == "Princess") {
+                        tstname = "Principal " + n2;
+                        p = str.find(tstname);
+                        l = tstname.length();
+                    }
+
+                    // first name
+                    if (p == string::npos) {
+                        tstname = n1;
+                        p = str.find(n1);
+                        l = n1.length();
+                    }
+
+                    // last name 
+                    if (p == string::npos) {
+                        tstname = n2;
+                        p = str.find(n2);
+                        l = n2.length();
+                    }
+                }
+            }
+        } else {
+            tstname = x;
+            l = x.length();
+        }
+        // if still nothing, search on
+        if (p == string::npos) continue;
+
+        // there is a match, check start or end, and full name! (Cause 'Ma' is short)
+        if (strchr("!?,. ", str[p+tstname.length()])) {
+            if ((p == 0) && (strchr("!?,.", str[l]))) {
+                // beginning
+                // p needs to point after the word
+                p = tstname.length();
+                replaceName(tstname, str, n, p, true);
+                break;
+            } else if ((p >= str.length()-tstname.length()-1) && (str[p-1]==' ') && (str[p-2] == ',')) {
+                // end
+                // p is in the right place
+                replaceName(tstname, str, n, p, false);
+                break;
+            }
+        }
+    }
+
+#if 0
     // search away
     size_t p = str.find_first_of(",!? ");   // see if the first is punctuation or a space
     if (string::npos == p) {
@@ -727,6 +771,7 @@ void nameSubstitution(string &str, const string &n) {
     }
     // don't care now on success or failure
     replaceName(tstname, str, n, p, false);
+#endif
 }
 
 // list (no arg)
