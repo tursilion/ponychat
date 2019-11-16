@@ -1,14 +1,14 @@
 Yeeeeeeeeeeeeeeeeeeeeaaaahh!
 Get out!
 Get out of here!
-(Laughing) Gets 'em ev'ry time.
+[Laughing] Gets 'em ev'ry time.
 Ewww...
 All righty, what have we got here?
 Jeez, its a lion!
 Run Pumbaa!
 Move it!
 Pumbaa, are you nuts?
-(Speaking normal) We're talking about a lion.
+[Speaking normal] We're talking about a lion.
 Lions eat guys like us.
 He's gonna get bigger.
 Hah!
@@ -34,7 +34,7 @@ Nothing he's at the top of the food chain.
 Ahhhhh- ha ha ha ha.
 The food cha-haain.
 Heh heh.
-(Realizing his joke flopped) Ah- ahem.
+[Realizing his joke flopped] Ah- ahem.
 So...
 where you from?
 Ahh.
@@ -52,7 +52,7 @@ Wrong!
 When the world turns its back on you, you turn your back on the world!
 Then maybe you need a new lesson.
 Repeat after me.
-(clears throat) Hakuna Matata.
+[clears throat] Hakuna Matata.
 Hakuna Matata!
 What a wonderful phrase!
 It means no worries For the rest of your days!
@@ -63,9 +63,9 @@ Hahahah...
 That's right!
 Take Pumbaa for example.
 Why, when he was a young warthog.
-(Speaking, cleaning ear) Very nice.
-(Singing) He found his aroma lacked a certain appeal, He could clear the Savannah after ev'ry meal!
-(Interrupting) Pumbaa!
+[Speaking, cleaning ear] Very nice.
+[Singing] He found his aroma lacked a certain appeal, He could clear the Savannah after ev'ry meal!
+[Interrupting] Pumbaa!
 Not in front of the kids.
 Yeah, sing it kid.
 Welcome!
@@ -80,15 +80,15 @@ If you live with us, you have to eat like us.
 Hey, this looks like a good spot to rustle up some grub.
 A grub.
 What's it look like?
-(eating, mouth is full) Mmmm.
+[eating, mouth is full] Mmmm.
 Tastes like chicken.
-(grabbing a bug) These are rare delicacies.
+[grabbing a bug] These are rare delicacies.
 Mmmm.
 Mmmm...
-(crunches) Pecan, with a very pleasant crunch.
+[crunches] Pecan, with a very pleasant crunch.
 I'm telling you, kid-- this is the great life.
 No rules, no responsibilities.
-(picks a bug) Oooh!
+[picks a bug] Oooh!
 The little cream-filled kind.
 And best of all, no worries.
 Well kid?
@@ -104,11 +104,11 @@ got stuck up on that big bluish-black thing.
 Pumbaa-- with you, everything's gas.
 You mean a bunch of royal dead guys are watching us?
 Who told you something like that?
-(laughs) What mook made that up?
-(laughs more)
+[laughs] What mook made that up?
+[laughs more]
 Ah, you're killing me.
 Was it something I said?
-(Singing) In the Jungle, the mighty Jungle, the Lion sleeps tonight.
+[Singing] In the Jungle, the mighty Jungle, the Lion sleeps tonight.
 Pumbaa?
 Pumbaa!
 Pumbaa!
@@ -150,7 +150,7 @@ and you never told us?
 But with power!
 Hey, whatever she has to say, she can say in front of us.
 Right Simba?
-(Timon's jaw hangs loose for a moment) It starts.
+[Timon's jaw hangs loose for a moment] It starts.
 You think you know a guy.
 I tell you, Pumbaa-- this stinks.
 Not you.

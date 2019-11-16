@@ -604,6 +604,11 @@ void populateNameList() {
     nameList.emplace_back("Gummy");
     nameList.emplace_back("Impossibly Rich");
     nameList.emplace_back("Princess Twilight");
+    nameList.emplace_back("Scoot");
+    nameList.emplace_back("Pink Pony");
+    nameList.emplace_back("Big Mac");
+    nameList.emplace_back("Sunny Skies");
+    nameList.emplace_back("Pear Butter");
 
     // debug
 //    for (string x : nameList) {
@@ -633,6 +638,7 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
 
     // fix up certain pronouns
     if (on == "Mr") on = "Sir";
+    else if (on == "Miss") on = "Ma'am";
     else if (on == "Mrs") on = "Ma'am";
     else if (on == "Ms") on = "Ma'am";
     else if (on == "Dr") on = "Doctor";
@@ -722,6 +728,11 @@ void nameSubstitution(string &str, const string &n) {
                     }
                     if (p == string::npos) {
                         tstname = "Mrs " + n2;
+                        p = str.find(tstname);
+                        l = tstname.length();
+                    }
+                    if (p == string::npos) {
+                        tstname = "Miss " + n2;
                         p = str.find(tstname);
                         l = tstname.length();
                     }
@@ -1104,7 +1115,7 @@ int main(int argc, char* argv[]) {
             printf("Missing name of both quoters\n");
             return 99;
         }
-        for (;;) runscene(argv[2], argv[3]);
+        runscene(argv[2], argv[3]);
     } else if (0 == strcmp(argv[1], "addchat")) {
         runaddchat(argc, argv);
     } else {

@@ -1,22 +1,22 @@
-(Interrupting) Didn't your mother ever tell you not to play with your food?
+[Interrupting] Didn't your mother ever tell you not to play with your food?
 I'm here to announce that King Mufasa is on his way.
 So you'd better have a good excuse for missing the ceremony this morning.
 Hah!
 You'll lose more than that when the king gets through with you.
 He's as mad as a Hippo with a Hernia.
-(very concerned) Now Scar, don't look at me that way...
+[very concerned] Now Scar, don't look at me that way...
 HELP!
 Impeccable timing your majesty.
-(slimed) errrah.
+[slimed] errrah.
 Yes, well, as slippery as your mind is, as the king's brother, you should have been first in line!
 Pity!
 Why not?
-(deep sigh) There's one in every family, sire... two in mine, actually.
+[deep sigh] There's one in every family, sire... two in mine, actually.
 And they always manage to ruin special occasions.
 He'd make a very handsome throw rug.
 And just think!
 Whenever he gets dirty, you could take him out and beat him.
-(Lights on a nearby rock) Good morning sire!
+[Lights on a nearby rock] Good morning sire!
 Checking in with the morning report.
 Well, the buzz from the bees is that the leopards are in a bit of a spot...
 And the baboons are going ape over this.
@@ -24,23 +24,23 @@ Of course, the giraffes are acting like they're above it all....
 ... The tick birds are preening on the elephants.
 I told the elephants to forget it, but they can't...
 Yes, sire.
-(continuing immediately) The Cheetahs are hard up but I always say -- cheetahs never prosper.
-(realizing something is amiss) What's going on?
+[continuing immediately] The Cheetahs are hard up but I always say -- cheetahs never prosper.
+[realizing something is amiss] What's going on?
 Oh very good.
 Pouncing.
-(Realizing) Pouncing !
+[Realizing] Pouncing !
 Oh, no, sire -- you can't be serious...
 Oh, this is so humiliating.
 What are you telling him, Mufasa?
 Simba?
 Yes?
-(interrupting and with urgency) Sire!
+[interrupting and with urgency] Sire!
 Hyenas!
 In the pride lands!
 Oh, young master, one day you will be king; then you can chase those slobbering, mangy, stupid poachers from dawn until dusk.
 Step Lively.
 The sooner we get to the water hole, the sooner we can leave.
-(Flying down) Oh, just look at you two.
+[Flying down] Oh, just look at you two.
 Little seeds of romance blossoming in the savannah.
 Your parents will be thrilled, what, with your being betrothed and all.
 Betrothed.
@@ -73,7 +73,7 @@ I, madam, am the king's Majordomo.
 A-ha-ha, technically, they can.
 We are on their land.
 Ix-nay on the oopid-stay.
-(Harried) My, my, my.
+[Harried] My, my, my.
 Look at the sun.
 It's time to go.
 Oh no.
@@ -96,7 +96,7 @@ I'll go back for help!
 That's what I'll do!
 Nobody knows The trouble I've seen... nobody knows my sorrow...
 It's a small world after all...
-I've got a lovely bunch of Coconuts (diddely-dee-dee) There they are a standing in the row.
+I've got a lovely bunch of Coconuts [diddely-dee-dee] There they are a standing in the row.
 Oooh, I would never have had to do this for Mufasa.
 Oh, nothing!
 Yes, sire.

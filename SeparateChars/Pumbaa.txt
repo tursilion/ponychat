@@ -34,8 +34,8 @@ I'm a sensitive soul Though I seem thick-skinned
 Sorry.
 Yup.
 Home is where your rump rests.
-(loud raunchy belch) I'm starved.
-(*SLURP*) Slimy, yet satisfying.
+[loud raunchy belch] I'm starved.
+[*SLURP*] Slimy, yet satisfying.
 You'll learn to love 'em.
 Me too.
 I ate like a pig.
@@ -48,11 +48,11 @@ Simba, what do you think?
 Aw come on.
 Give, Give, Give.... Pleease.
 Well come on Simba, we told you ours.
-(awed) Really?
-(singing) A weemboway, A weemboway
-(spooked) Timon?
+[awed] Really?
+[singing] A weemboway, A weemboway
+[spooked] Timon?
 YEEEEAAAHHH!
-(Terrified) SHE'S GONNA EAT ME!
+[Terrified] SHE'S GONNA EAT ME!
 Pleased to make your acquaintance.
 King?
 Your Majesty.

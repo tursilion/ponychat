@@ -4,7 +4,7 @@ That hairball is my son... and your future king.
 Don't turn your back on me, Scar.
 Is that a challenge?
 What am I going to do with him?
-(Chiding) Zazu!
+[Chiding] Zazu!
 Before sunrise, he's your son.
 Okay, okay.
 I'm up.
@@ -26,28 +26,28 @@ And the antelope eat the grass.
 And so we are all connected in the great circle of life.
 Good morning, Zazu.
 Fire away.
-(uninterested) Oh, really?
+[uninterested] Oh, really?
 What are you doing, son?
 Let an old pro show you how its done.
 Zazu, would you turn around?
-(Whispering) Stay low to the ground.
+[Whispering] Stay low to the ground.
 A pouncing lesson.
-(still whispering) Try not to make a sound.
+[still whispering] Try not to make a sound.
 Hahaha.
 That's very good.
 Hahah...
 Now, this time...
 Zazu!
 Take Simba home.
-(curtly) No, son.
-(half roar) Silence!
+[curtly] No, son.
+[half roar] Silence!
 If you ever come near my son again...
 You deliberately disobeyed me.
-(Stern) Let's go home.
-(Still Stern) Zazu.
-(Stern) Take Nala home.
+[Stern] Let's go home.
+[Still Stern] Zazu.
+[Stern] Take Nala home.
 I've got to teach my son a lesson.
-(Calling, still very stern) Simba.
+[Calling, still very stern] Simba.
 Simba, I'm very disappointed in you.
 You could have been killed.
 You deliberately disobeyed me.
@@ -58,10 +58,10 @@ I was today.
 Yes... I thought I might lose you.
 Mm-hmm.
 What?
-(gentle laugh) Cause nobody messes with your dad.
+[gentle laugh] Cause nobody messes with your dad.
 Come here, you.
 Hmm?
-(Gentle laugh) Right.
+[Gentle laugh] Right.
 Simba... let me tell you something that my father told me.
 Look at the stars.
 The great kings of the past look down on us from those stars.
@@ -75,7 +75,7 @@ Scar!
 Brother.
 Help me!
 Aaaaaaahh!
-(quietly at first) Simba... Simba.
+[quietly at first] Simba... Simba.
 You have forgotten me.
 You have forgotten who you are and so forgotten me.
 Look inside yourself, Simba.
