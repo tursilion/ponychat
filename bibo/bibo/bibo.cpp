@@ -673,9 +673,9 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
     return true;
 }
 
-// perform name substitution in the string str
+// perform name substitution in the string str, us is our name
 // n is the name of the other character, if we decide to use it
-void nameSubstitution(string &str, const string &n) {
+void nameSubstitution(string &str, const string &n, const string &us) {
     // Rules: It might be a name to substitute only if it's the
     // first or the name. Punctuation is used to verify. (If it's
     // in the middle, it's more likely a third party).
@@ -691,6 +691,8 @@ void nameSubstitution(string &str, const string &n) {
     // go through the name list, and replace only first or last words in the sentence,
     // with separating punctuation
     for (string x : nameList) {
+	if (x == us) continue;  // don't replace self references
+
         size_t p = str.find(x);
         size_t l = 0;
         string tstname;
@@ -1031,7 +1033,7 @@ void runscene(const char* who1, const char* who2) {
                     --idx;
                     continue;
                 }
-                nameSubstitution(s, un1);
+                nameSubstitution(s, un1, un2);
                 printf("%s", s.c_str());
                 s += '\n';
                 // add the string to the chat
@@ -1056,7 +1058,7 @@ void runscene(const char* who1, const char* who2) {
                     --idx;
                     continue;
                 }
-                nameSubstitution(s, un2);
+                nameSubstitution(s, un2, un1);
                 printf("%s", s.c_str());
                 s += '\n';
                 // add the string to the chat
