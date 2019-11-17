@@ -520,6 +520,7 @@ void strreplaceyou(string& s, string src, string rep1, string rep2) {
         }
         s.replace(p, src.length(), replace);
     }
+    
 }
 
 
@@ -559,6 +560,10 @@ void fixpronouns(string& s) {
     strreplace(s, " `I'm ", " I'm ");
     strreplace(s, " `I ", " I ");
     strreplace(s, " `me ", " me ");
+
+    // special peephole optimizations...
+    strreplace(s, " you want I ", " you want me ");
+    strreplace(s, " Well, ", " Wait, ");
 
     s = s.substr(1, s.length() - 2);
     s[0] = toupper(s[0]);
@@ -609,6 +614,7 @@ void populateNameList() {
     nameList.emplace_back("Big Mac");
     nameList.emplace_back("Sunny Skies");
     nameList.emplace_back("Pear Butter");
+    nameList.emplace_back("Star Swirl");
 
     // debug
 //    for (string x : nameList) {
