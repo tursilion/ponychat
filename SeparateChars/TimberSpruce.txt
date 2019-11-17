@@ -66,14 +66,12 @@ I was ten.
 I really wanted to hang out at the mall.
 I've never told that to anyone.
 You must be special.
-[beat]
 And not just because you have tree branch in your hair.
 Not long.
 Just the whole time we were talking.
 I better make sure my sister doesn't need anything.
 See you later?
 There you are!
-[hushed]
 Filthy Rich is back.
 Do you want me to handle it?
 Hey, cool lantern!
@@ -92,8 +90,7 @@ What about you two?
 Why are you hanging out in the woods in the middle of the night?
 Come on.
 I'll walk you guys back.
-I'll protect you from [spookily]
-Gaea Everfree!
+I'll protect you from [spookily] Gaea Everfree!
 Everfree!
 Everfree!
 Oh, no.

@@ -1,7 +1,6 @@
 [whinnies]
 Yes?
 What can I do for you?
-[beat]
 Oh, of course!
 S-Starlight!
 My goodness, it-it's been a long time!
@@ -14,12 +13,9 @@ Uh, y-yes, that's me, yup.
 Important wizard!
 Really busy with lots of, uh, wi-wizarding...
 stuff.
-[beat]
 Right.
-Uh, well...
-good to see you.
-So...
-the Princess of Friendship wants you and I to be friends again?
+Uh, well... good to see you.
+So... the Princess of Friendship wants you and I to be friends again?
 Uh, I don't understand.
 Did something happen to you after I left for magic school?
 What?
@@ -33,8 +29,7 @@ I know Princess Twilight is keen on the two of us rekindling our friendship, but
 it's been so long.
 I don't see how anything on that list is going to help.
 Well, actually, there's several.
-Mistmane's Material Amity, Rockhoof's Rapport, Flash Prance's Fellow...
-ship...
+Mistmane's Material Amity, Rockhoof's Rapport, Flash Prance's Fellow... ship...
 [ahem]
 But I-I get the feeling the princess isn't looking for a spell.
 Uh, I don't see how that would help.
@@ -42,8 +37,7 @@ What?
 Right, yes, heh-heh!
 Uh, no rest for the wizardly.
 Snow?
-That's...
-not right.
+That's... not right.
 The Crystal Heart?
 Really?
 Right...
@@ -76,8 +70,7 @@ Maybe if I had reached out, you could have helped me at magic school, and I coul
 When you showed up thinking I was some big wizard...
 I'm sorry.
 I should have told you the truth.
-Crystalling...
-Of course!
+Crystalling... Of course!
 I know how to stop this!
 The baby did this?
 The spell of Relic Reconstitution.

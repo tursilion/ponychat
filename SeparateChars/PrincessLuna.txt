@@ -1,12 +1,10 @@
 [gasp]
 I'm so sorry!
 I missed you so much, big sister!
-[booming voice]
 Citizens of Ponyville!
 We have graced your tiny village with our presence, so that you might behold the real Princess of the Night!
 A creature of nightmares no longer, but instead a pony who desires your love and admiration!
 Together we shall change this dreadful celebration into a bright and glorious feast!
-[normal voice]
 What?
 No, children, no!
 You no longer have reason to fear us!
@@ -21,52 +19,29 @@ Star Swirl the Bearded.
 Commendable costume!
 Thou even got the bells right.
 Twilight Sparkle.
-[booming voice]
 It was thou who unleashed the powers of harmony upon us and took away our dark powers!
-[normal voice]
 But of course.
 We could not be happier.
 Is that not clear?
 But this is the traditional royal Canterlot voice!
-It is tradition to speak using the royal we, and to use [booming voice]
-this much volume when addressing our subjects!
-[booming voice]
+It is tradition to speak using the royal we, and to use this much volume when addressing our subjects!
 Change our approach?
-[normal voice]
 Ohhh.
 We have been locked away for a thousand years.
-We are...
-not sure we can.
-[booming voice]
+We are... not sure we can.
 Charmed.
-[booming voice]
 Twilight Sparkle hath spoken of the sweetness of thy voice.
 We ask thou teachest to us to speak as thou speakest.
-[booming voice]
 Shall our lessons begin?
-[booming voice]
 Shall we mimic thy voice?
-[booming voice]
 How is this?
-[booming voice]
-How is...
-[loud voice]
-this?
-[loud voice]
-How...
-about...
-now?
-[normal voice]
-And...
-how about now?
-[booming voice]
+How is... this?
+How... about... now?
+And... how about now?
 I thank thee, dear Fluttershy!
 Our normal speaking voice shall surely win us the hearts of thy fellow villagers.
-[booming voice]
 Nay, children, wait!
-[normal voice]
-I mean...
-nay, children, no, wait.
+I mean... nay, children, wait.
 It is of no use, Twilight Sparkle.
 They have never liked us and they never shall.
 Fun?
@@ -95,9 +70,7 @@ Huzzah!
 How many points do I receive?
 Do not run away!
 As your princess, we command you!
-[deafening voice]
 Be still!
-[booming voice]
 No, Twilight Sparkle!
 We must use the traditional royal Canterlot voice for what we are about to say.
 Since you choose to fear your princess rather than love her, and dishonor her with this insulting celebration, we decree that Nightmare Night shall be canceled!
@@ -120,12 +93,9 @@ Art thou saying that thou...
 likest me to scare you?
 It...
 Well then.
-We shall have to bring [booming voice]
-Nightmare Night back!
+We shall have to bring Nightmare Night back!
 Can it be true?
-[thunder, booming voice]
-Oh, most wonderful of -- [normal voice]
-I mean...
+Oh, most wonderful of... I mean...
 Oh, most wonderful of nights.
 [laughter]
 Rest, my sister.
@@ -213,12 +183,9 @@ It's been a busy night for us all, but I think it's time to bring it to a close.
 I know you've all had a lot on your minds tonight, but I think Apple Bloom has something she'd like to share before you wake.
 And when the day comes that you all finally get your cutie marks, you can be sure they'll fit you to a T.
 Good idea.
-[hushed]
 I thought you were bringing it!
-[hushed]
 I handled the gift for Cadance and Shining Armor!
 You were supposed to do this one, remember?
-[hushed]
 Fine.
 Welcome to the Grand Equestria Pony Summit!
 Greetings, Tantabus.
@@ -416,7 +383,6 @@ I don't...
 I mean, I do!
 Celestia!
 I'm so glad you're...
-[speaking normally]
 I've seen a lot, but I haven't seen this before.
 If you don't fix this soon, it could have a grave consequence on Starlight's psyche.
 I have your magic, remember?
@@ -488,7 +454,6 @@ Sister!
 Another false alarm from Shining Armor's guard geese!
 [flashback]
 I said we could do it ourselves, but some ponies are a bit more stubborn.
-[forced]
 If you think it's worth discussing.
 Stay back, friends!
 My sister and I will take care of the beast!
@@ -536,7 +501,6 @@ Wait for it...
 Yes, but I didn't give it to you.
 A mailpony took it from me, searched to find who it was meant for, and gave it to you!
 It's about the process!
-[flatly]
 I wonder why.
 I have always wanted to try this!
 Isn't this wonderful, sister?

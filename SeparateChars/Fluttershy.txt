@@ -7,11 +7,8 @@ A-one, a-two, a-one two three-
 [yelp]
 Um...
 I'm Fluttershy.
-[even quieter]
 Um...
 My name is Fluttershy.
-[squeaking]
-[squeaking]
 [gasp]
 A baby dragon!
 Oh, I've never seen a baby dragon before.
@@ -63,7 +60,6 @@ Don't get me started on the fauna.
 There's loons and toucans and bitterns, oh my!
 Hummingbirds that can really hum, and buzzards that can really buzz.
 White-blue jays, and red jays, and green jays, pink jays and pink flamingos!
-[humming]
 Oh, well, hello Twilight.
 I hope you don't mind, but we're all doing a little spring cleaning for you.
 Oh, well, better late than never, right?
@@ -251,7 +247,6 @@ And then, she digs at the ground.
 What if she's digging for innocent creatures?
 The door's open.
 ... it's a curse.
-[deep male voice]
 I don't want to talk about it.
 Uh, I don't know.
 Seems awfully dangerous.
@@ -263,7 +258,6 @@ Are you coming?
 [sigh]
 You made me sound ridiculous!
 And the chanting?
-[normal voice]
 ... Yes.
 La, la la, la la, la la, la la.
 Thank you little squirrel, but remember: these flowers are for Princess Celestia.
@@ -366,12 +360,10 @@ We just followed your brilliant design.
 Oh, I'm so, so sorry.
 You okay, Twilight Sparkle?
 I just couldn't stand to see the pond getting so over-populated, what with the frogs all hopping into each other and all, so I decided to fly as many as I can on over to Froggy Bottom Bogg.
-[muffled]
 Bye-bye!
 Of course.
 Oh, I'm so sorry.
-A hop, skip, and a...
-jump!
+A hop, skip, and a... jump!
 Loss of control.
 Screaming and hollering.
 Passion!
@@ -551,7 +543,6 @@ They've really bitten off more than they can chew!
 Oh, just like me!
 I never should have offered to watch them.
 [deep breath]
-[whispering]
 Girls?
 [gulp]
 Girls?
@@ -994,8 +985,6 @@ Oh my!
 A meadowlark!
 I think she's calling to me.
 It's exactly what I wished for!
-[humming]
-[humming]
 [gasp]
 My little meadowlark is right around this bend!
 Was that you?
@@ -1011,7 +1000,6 @@ You're such a loudmouth.
 This isn't what I wished for.
 ...for this moment!
 I just have to be more bold, like Twilight says.
-[loudly]
 I'm so sorry to have scared you, my friends!
 But I'm leaving now, so you can all come out!
 Gotcha!
@@ -1040,7 +1028,6 @@ I'd hate to have to share them.
 Can we go home now?
 W-We have to go in there?
 [scream]
-[gasping]
 What's that?
 Who's there?
 Girls!
@@ -1079,11 +1066,9 @@ Hey, Twilight, what's soaking wet and clueless?
 Your face!
 [bang]
 Hah!
-[sing-song voice]
 Keep away!
 Hmph!
 Garbage.
-[mockingly]
 Oops, sorry, Rainbow Crash.
 [chuckle]
 Yeah!
@@ -1094,11 +1079,8 @@ She's not here.
 Got it!
 Um...
 'm just wondering if it's okay if I hold you down against your will for a little bit?
-[whimper/crying]
 I can't!
-That big...
-dumb...
-MEANIE!
+That big... dumb... MEANIE!
 [assorted grunts]
 [continued assorted grunts]
 You really should have come to me sooner.
@@ -1121,15 +1103,10 @@ Ah, and Nightmare Moon.
 [gasp]
 Nightmare Moon?
 [yelps]
-[timidly]
 Likewise.
-[very quiet]
 Okay.
-[whisper]
 Okay.
-[quiet]
 Okay.
-[hurriedly]
 Perfect, lesson over!
 [nervous, dazed laughter]
 Yes.
@@ -1244,7 +1221,6 @@ Ooh...
 Can you please slow down?
 Help!
 STOP!
-[panting]
 Applejack, we can always find a way to fix that hole in the roof.
 But if you don't come back, we'll never be able to fix the hole in our hearts.
 [yawns]
@@ -1263,7 +1239,6 @@ I love your new style.
 For the record, I don't mind?
 Uh, Pinkie Pie?
 Got it.
-[muffled]
 Oh, I'm so worried!
 It's not so bad, Rainbow Dash.
 We thought we'd come and cheer you up!
@@ -1364,7 +1339,6 @@ excuse me!
 Who, me?
 [gulps]
 Uh, well...
-[whispering]
 Okay.
 Um, politely walk around him?
 Gingerly tip-toe around him?
@@ -1393,7 +1367,6 @@ What do you think you're doing?
 Didn't you see me?
 'Maybe'?
 Maybes are for babies!
-[growling]
 Now go to the back of the line where you belong!
 Iron Will's not a monster.
 He's a minotaur, and a true inspiration.
@@ -1419,7 +1392,6 @@ He's delivered the wrong mail, again!
 And new Fluttershy does not want the wrong mail delivered to her cottage.
 You apologize, I penalize!
 [bites]
-[muffled]
 Sure, you just?
 [gasps]
 [growls]
@@ -1444,13 +1416,10 @@ Iron Will's not a monster, he's a minotaur!
 [growls]
 [whimper]
 I'm the monster.
-[muffled]
 Go away!
 Go away before nasty Fluttershy strikes again!
-[muffled]
 Pinkie's right.
 I'm the only one to blame.
-[normal]
 But don't worry, I'm never coming out of my house again.
 Everypony will be a lot safer with me and my mean mouth locked away.
 I-I'm not sure I can.
@@ -1490,17 +1459,13 @@ Thanks, but...
 no thanks!
 I...
 said...
-[high-pitched growling]
 [whimpers]
 Achoo.
 Hi, Rainbow Dash.
 [coughs weakly]
-Oh, I [sniffs]
-I think I have [coughs weakly]
-the pony pox.
+Oh, I [sniffs] I think I have [coughs weakly] the pony pox.
 I'm sorry.
-I really, really wanted to come to training day today [coughs weakly]
-, but this pony pox has really knocked me for a loop.
+I really, really wanted to come to training day today [coughs weakly], but this pony pox has really knocked me for a loop.
 Achoo.
 [coughs weakly]
 I know, plenty of bed?
@@ -1528,13 +1493,10 @@ I'll do it.
 I will.
 I'm game.
 [takes deep breath]
-[crying]
-[crying]
 Yes!
 I'm sorry, Rainbow Dash, I just [between sobs]
 don't have the courage right now...
 [squeaks]
-[crying]
 [sniffles]
 Oh, thank you, but I'm afraid a couple of little acorns won't solve my big flying problem.
 I tried, but you should've seen those ponies laughing at me...
@@ -1575,7 +1537,6 @@ wing power is still too little!
 Whuh, what?
 Did we do it?
 Dear Princess Celestia,
-[muffled crying]
 [gasp]
 Oh my.
 So did I.
@@ -1639,11 +1600,9 @@ Of course she's good with magic.
 Twilight's great with magic.
 I guess I just don't want my little friends to be scared.
 Oh, oh, look how scared they are!
-[high-pitched]
 I know!
 Stop, stop!
 They can't take it!
-[teeth chattering]
 Um, I think I may have found something?
 Um, this sounds an awful lot like Trixie's magic?
 Um, there's a picture here of that necklace?
@@ -1659,7 +1618,6 @@ I'll crack under the pressure!
 I'll snap like a twig!
 But?
 but I, I?
-[teeth chattering]
 [sighs]
 Okay.
 Oh, oh dear!
@@ -1907,7 +1865,6 @@ You could stub your toe, or, or trip on a loose stone...
 You have to be careful!
 Well, it certainly could use some restoration.
 [grunts]
-[scared yelling]
 Ow...
 I think I hurt my wing.
 Oh, of course.
@@ -1928,7 +1885,6 @@ What is it?
 Angel!
 But we can't leave now, not with Angel lost somewhere in this dangerous old castle!
 He could be trapped under a crumbling statue, or stuck high in a tower without food or water or any friends at all!
-[calling]
 Angel!
 Angel!
 Angel?
@@ -1938,29 +1894,20 @@ They're lovely, Rarity, but...
 I have to keep looking for Angel.
 Oh, I hope he doesn't think I've given up on him.
 [screams]
-[calling]
 Rarity!
 I know hiding isn't really your sense of humor, but please let this be a joke!
-[panicked screaming, panting]
-[whispered yelling]
 Angel!
 Rarity!
 Oh...
 I hope you two are together.
-[screaming]
-[whimpering]
 [gasp]
 Angel?
 AAANGEEEEEL!
-[grunting]
 It's okay, Angel!
 You're okay!
 You're okay!
-[sobbing]
 Aaangeeeeel!
-Must...
-save...
-Ange?
+Must... save... Ange?
 ...Oh.
 Now don't go running off again!
 Oh, I can't believe I was so frightened.
@@ -1985,22 +1932,18 @@ be very...
 polite!
 Oh, I don't think she's home.
 Maybe we should just come back later.
-[whimpering]
 Well, I'm not so much angry as I am concerned, bordering on terrified!
 Ahem.
 I don't mean to interrupt, but aren't you forgetting about somepony?
 I'm trying!
-[straining noises]
 You seem to have everything under control.
 I'm sorry, it's just that nothing is making me mad.
 Oh, goodness!
 Are you okay?
 Are you kidding me?
-I mean, I know you're evil and everything, but [getting frustrated]
-you hurt a teensy, little, harmless firefly?
+I mean, I know you're evil and everything, but you hurt a teensy, little, harmless firefly?
 Really?
 Well you're just a great, big, meanie!
-[voice getting deeper]
 There!
 I said it!
 What makes you think you're so special?
@@ -2009,7 +1952,6 @@ Like the rules of common courtesy don't apply to you?
 Why don't you pick on somepony your own size?
 [roars]
 [roars]
-[roaring]
 [spits]
 Oh, I'm sure if we just let them know how special that particular apple is to you, they'll leave it alone.
 Um, excuse me, Mr Vampire Bat--
@@ -2048,17 +1990,11 @@ I just hope you can forgive me...
 I'm sorry.
 I don't.
 Maybe we should just call this off.
-Not sure about the rest of you guys, [entranced]
-but I'm really hungry...
-[drip, drip, gulp]
-[sniffing]
+Not sure about the rest of you guys, but I'm really hungry...
 I have a bad feeling about this.
 A really bad feeling about this...
 That apple...
-It looks...
-[entranced]
-so juicy...
-and sweet...
+It looks... so juicy... and sweet...
 [slurps]
 [hisses]
 [slurps]
@@ -2103,10 +2039,7 @@ Oh, thanks, Pinkie Pie.
 That was a scary- I mean, great cheer.
 [laughs nervously]
 [yelps]
-[straining]
-[gasping]
 I am so proud to be representing Ponyville.
-[straining]
 Oh, it's such an honor to even try out for the Games.
 I just hope I don't let anypony down.
 Right.
@@ -2116,13 +2049,11 @@ Oh, Rainbow Dash, I'm just so proud of you.
 You scooped Soarin out of the sky and brought him down to the ground and now, now he's okay.
 At least, I hope he's okay.
 Are you okay?
-[whispering]
 Um, 'Rainbow Dash' actually starts with an 'R'.
 Um...
 I'm ready to take the horseshoe, if you want me to.
 [yelps]
 Oof!
-[chewing]
 [giggles]
 What's happened?
 Do you think you'll be better by tryouts?
@@ -2208,7 +2139,6 @@ A remedy!
 Follow me!
 Oh, no!
 Where are we ever going to find a deep voice to replace Big Mac's?
-[from Bridle Gossip, deep male voice]
 I don't want to talk about it.
 [gasps]
 Flutterguy!
@@ -2225,31 +2155,18 @@ Okay then...
 Mix it up!
 [inhales]
 [inhales]
-[deep male voice]
 Oh, Rarity, we can't disappoint that sweet little filly.
-[deep male voice]
 But we wouldn't want to disappoint the Mayor.
-[deep male voice]
 We wouldn't want to disappoint the spa patrons.
-[deep male voice]
 We wouldn't want to disappoint the schoolponies.
-[deep male voice]
 It's just...
 I didn't know that last performance was my last performance.
-[deep male voice]
-[starts crying]
-[normal voice]
 Yes...
 I'm here.
-[crying]
 It was.
-[crying]
-[out of breath crying]
-[crying]
 Well, thank you all.
 I'm glad you enjoyed it.
 Because I'm never going to sing in front of anypony ever again.
-[panting]
 You mean, you knew I really wanted to perform?
 Oh...
 Yes!
@@ -2280,10 +2197,8 @@ Quiet doesn't come naturally for everypony.
 Let's try it again.
 Perhaps just a little bit quieter.
 Just a little quieter.
-[loudly]
 Perfect!
-Oh, um, I mean...
-yay.
+Oh, um, I mean... yay.
 Well, you see, it's the breeze that activates the Breezies' magic, and that magic protects the pollen they're carrying from being destroyed.
 That's right!
 And they only have two days to get that pollen back before the portal to their home closes.
@@ -2386,7 +2301,6 @@ Oh...
 But the truth of the matter is that I must be firm!
 You must go, now!
 [sniffs]
-[crying]
 Oh, my.
 Maybe it's because there are too few of them.
 When they started their journey, there was more of them to face the breeze together.
@@ -2519,13 +2433,10 @@ I'm sure Discord will catch Tirek and this will all be over soon.
 [gasps]
 You're back!
 Did you bring the cucumber sandwiches?
-[crying]
 Why are you doing this?
 I thought we were friends!
-[crying]
 I didn't.
 I really didn't.
-[muffled]
 We aren't worth it!
 I know.
 I don't think you're quite there yet.
@@ -2546,12 +2457,10 @@ I wish everypony in Equestria was as friendly as these ponies are.
 Rainbow Dash, don't be so rude.
 I don't think we should judge them.
 They all seem perfectly happy with their choice.
-[hushed]
 Really, girls!
 They may do things a bit differently than we're used to, but that's no reason to be rude.
 We shouldn't be bickering like this in front of our new friends.
 Really, Applejack, you're almost as bad as Rainbow Dash!
-[hushed]
 Oh, are you sure, Twilight?
 Maybe they miss them a little, but even they didn't seem all that unhappy.
 Why are our cutie marks over there?
@@ -2573,7 +2482,6 @@ aside from locking us in here and trying to brainwash us into abandoning the thi
 Okay.
 I'll do it.
 But what do I do once I'm out?
-[gulping]
 I'd like to join!
 If giving up my cutie mark means I get to stay in this lovely village with these lovely ponies, then I'll do it.
 [gulps]
@@ -2581,7 +2489,6 @@ Um, I don't know who they were.
 Um, I'm sorry.
 I don't know your names and faces yet.
 Gosh, you really are the nicest ponies I've ever met.
-[coughing]
 Brrrrrr!
 [sighs]
 Get the cutie marks back.
@@ -2619,9 +2526,7 @@ Isn't that right?
 I for one am exhausted.
 [yawns]
 Plus, I really need to rest up for that big pancake breakfast tomorrow.
-[beat]
 And I'm sure you have to get the castle ready.
-[knocking]
 Um, Angel?
 Leave?
 Um, I don't mean to sound unappreciative, but has anypony else noticed that Twilight has been a little too helpful lately?
@@ -2660,23 +2565,18 @@ It's not a joke.
 Rainbow Dash, Tank needs to hibernate.
 It's healthy for him, just like sleeping is healthy for us.
 Where are you going?
-[groaning]
 How are you feeling, Rainbow Dash?
 Let me handle this.
 Rainbow Dash, your winter is going to be pet-less.
 Because she'll never get past this until she lets it all out.
-[hushed]
 She's got to be about done by now.
 Can't be too much left in there.
 Feeling better?
 Oh, you poor, poor thing...
-[starts crying]
 Happy winter.
 [laughs]
 Oh, Discord, I've never known anypony as funny as you!
-I love that story about the time you tried to train your right paw...
-[giggles]
-...to fetch your left leg!
+I love that story about the time you tried to train your right paw... to fetch your left leg!
 [giggles]
 Oh, I do love our Tuesday teas, and I can't wait for you to meet my friend Tree Hugger.
 She's going to love you too.
@@ -2689,7 +2589,6 @@ I'm sorry, Discord.
 I assumed you'd have your own ticket since you and Princess Celestia are friends now.
 Were you not invited?
 But we haven't had any of our Tuesday teacakes.
-[laughing]
 Oh, my, you are funny!
 Oh, how rude of me.
 Tree Hugger, this is Discord.
@@ -2711,7 +2610,6 @@ The four of us should go out to dinner sometime!
 Oh, okay.
 Treezie and I would love to talk to you more later!
 Um, we went to the store and bought two cakes.
-[laughing]
 Oh, Tree Hugger, I've never known anypony as funny as you!
 That was the most magical thing I've ever seen done with animals!
 Discord, stop!
@@ -2729,7 +2627,6 @@ Do you think maybe you owe somepony an apology?
 Not me!
 They're probably just as nervous as you are.
 Thank goodness.
-[whispering]
 It's not very good.
 You can do it!
 Angel and I searched the forest, but...
@@ -2737,7 +2634,6 @@ Don't worry, Twilight.
 I'm sure she's trying her best.
 I can't tell if my eyes are open or closed.
 With exactly what kind of parties we like.
-[reading]
 Twilight Sparkle likes vanilla ice cream, red balloons, dancing...
 But she's afraid of quesadillas.
 What matters is how hard you tried.
@@ -2833,7 +2729,6 @@ Oh, right.
 The maze.
 Oh, I am!
 I am ready to take on Nightmare Night!
-[shuddering]
 [giggles]
 Just practicing.
 [nervous laugh]
@@ -2863,13 +2758,9 @@ I couldn't possibly predict what might upset me.
 Then I can help you all have fun and I can still be a part of Nightmare Night!
 I think I do!
 And I don't want to get ahead of myself, but I think I have the perfect idea for how I'm gonna do it!
-[spooky voice]
 Meet me at my cottage in an hour.
-[normal voice]
 Oh, I'm excited to see everypony soon!
-[spooky voice]
 Welcome to Fluttershy's tea party!
-[spooky voice]
 Have a seat.
 Don't be scared of what awaits you.
 Go on.
@@ -2878,17 +2769,13 @@ Oh, no!
 There is none!
 You're a terrible host!
 Rarity, put your coat on!
-[spooky voice]
 You need to cover up because no one has complimented your dressssssss!
 Pinkie Pie, look to your left and ask your best friend to pass the cucumber sandwiches!
-[spooky voice]
 That's right.
 Because she didn't care to show uuuuuup.
-[spooky voice]
 A friend who didn't come through.
 That must scare you to the coooore.
 Quick, everypony, look behind you!
-[spooky voice]
 They're unplanned guests.
 Your woooorst nightmare.
 You don't have enough food for them!
@@ -2898,7 +2785,6 @@ But you are over-scheduled right now.
 You don't have time to help!
 I said, You don't have time to help!
 This should appear to scare you!
-[normal voice]
 Why don't you look terrified?
 You showed up to a party and everypony was extremely disappointed in you.
 Can you imagine anything more upsetting?
@@ -2955,7 +2841,6 @@ A hose!
 I guess you had to be there.
 Ooh.
 Um, I've noticed a couple of things.
-[laughing]
 Absolutely.
 Or maybe it's more of a non-adventure.
 Maybe she just wants to tell us how last night's slumber went?
@@ -2984,14 +2869,11 @@ You seem pretty prepared to me.
 Are those for us?
 You said books twice.
 Ooh!
-[struggling]
 I don't know.
 [grunts]
 But I'm sure we'll figure it out.
-[grunting, panting]
 [grunts]
 I'm sure we'll find out when we get there.
-[exhausted]
 We'll know very, very soon.
 Since we're almost there.
 [groans]
@@ -3023,7 +2905,6 @@ The best at what?
 Ooh!
 Maybe somepony just needs to say they're sorry.
 Nothing says let's be friends like a cake that says, Let's be friends!
-[hushed]
 I wrote that in icing on the top.
 Um, if you could just not yell so much or maybe stop saying words altogether...
 Wah!
@@ -3042,7 +2923,6 @@ What's that?
 Uh-huh...
 Twilight!
 They know what happened here!
-[raised voice]
 Before you keep fighting, there is something you should know!
 Long ago, there were two best friends... Grub Hooffield and Piles McColt.
 When they found the valley between the Smokey Mountains, they knew it was something special.
@@ -3063,7 +2943,6 @@ They say they accept your apology.
 Yay!
 I told you we'd figure it out.
 Oof!
-[straining]
 I'm sure we'll find out when we get home...
 All servants of Queen Chrysalis found in these woods must be...
 destroyed!
@@ -3074,7 +2953,6 @@ Why would she ever trust you?
 Is everypony okay?
 But, um, shouldn't we wait for the invitation?
 And the Crystal Heart.
-[hushed]
 That's not very reassuring.
 I can only imagine.
 Um, Rarity, don't they all sort of look the same?
@@ -3082,7 +2960,6 @@ Still, when you think about it, the view is just as good a little further back, 
 inside your house?
 I really don't think it's going to happen.
 [sighs]
-[trembling]
 [faints]
 That's really great.
 I know how long you've been waiting for a spot to open up.
@@ -3131,7 +3008,6 @@ Not again!
 I'm just surprised.
 When you left, you said mane therapy was your calling.
 What went wrong?
-[whispering]
 Um, Mom, Dad, can I talk to you for a second?
 I'm not so sure letting Zephyr move back home is a good idea.
 I know you both want to help, but don't you remember last time?
@@ -3223,18 +3099,14 @@ Nothing to worry about.
 No reason to...
 Ruuuun!
 Aah!
-[gasping]
 [screams]
-[hyperventilating]
 That wasn't funny!
 You really scared me!
 I hope you're happy.
 That's not true.
 Aah!
-[chattering]
 Because I don't think being scared is very fun!
 Did she get you, too?
-[droning]
 Cooooooookies...
 Without thinking about how it might make them feel?
 Well, I hope you learned your lesson.
@@ -3247,10 +3119,8 @@ They have a top secret thing they do whenever we leave Ponyville.
 Although everypony knows about it, so it's not a very good secret.
 I think you'd have fun with them.
 All I'm saying is it's an opportunity to expand your circle of friends.
-[coddling]
 Unless you're afraid they won't like you?
 It never hurts to make new friends.
-[humming]
 [gasps]
 Discord...
 Wow, Rainbow Dash.
@@ -3306,9 +3176,7 @@ It should...
 I don't know what zone Rainbow Dash is talking about, but I'm pretty sure I don't want to be in it.
 Do you?
 There's no way that we can get in the zone, because the zone sounds like a horrible place since we are terrible at buckball and we are going to lose and let everypony down and we don't want to play anymore!
-[muffled]
 Maybe you need to look again!
-[muffled]
 And we're definitely not in here if you're gonna try and make us play against Appleloosa!
 Oh...
 we're sorry to let you down.
@@ -3320,7 +3188,6 @@ We've been playing just awful.
 [grunts]
 Huh!
 Looks like you two really do need practice!
-[giggling]
 If you need more practice, we can keep going.
 But, um, why were we so terrible before?
 But being good doesn't matter if we're too afraid of letting ponies down.
@@ -3338,7 +3205,6 @@ I mean, this place seems a lot more suited to Pinkie Pie or even Rainbow Dash.
 Wow.
 This Gladmane sure seems impressive.
 You know who we are?
-[hushed]
 We do have a friendship problem to find.
 [gasps]
 I've never seen a pink prairie dog before!
@@ -3372,42 +3238,29 @@ Or maybe a pair of ponies?
 But Gladmane is behind so many other friendship problems.
 How can you be sure he isn't the cause of yours?
 Because he's afraid that the two of you together could move in and take over his resort.
-[unintelligible whispering]
-[unintelligible whispering]
 Are all of you sure this is a good idea?
-[unintelligible whispering]
-[unintelligible whispering]
 Whether we were able to fool you or not, you can't just go on keeping ponies from getting along!
-It's just...
-mean!
-[over loudspeaker]
+It's just... mean!
 Did that sound okay?
 I guess the map wasn't on the fritz after all.
 If it weren't for your history with Flim and Flam, you never would've been so determined to find somepony else to help, and we never would have found out what Gladmane was doing.
-[suspiciously]
 What do you mean?
 Oh, um, whatever you think is best.
 It might depend on the animal.
 For instance, this poor little eagle with a sprained wing might be better off up in one of the towers.
 And these adorable little chipmunks might prefer a nook somewhere.
 Maybe if you spend some time getting to know?
-[mechanically]
 They ran away.
-[mechanically]
 Because you didn't ask me to.
-[mechanically]
 All the animals.
 Got it.
-[mechanically]
 I gathered all of the animals like you asked, Starlight Glimmer.
-[tired]
 I was up all night calming the animals down.
 Seems like she feels pretty bad.
 Oh, and I feel awful for disturbing all of those cute little spiders and bats.
 I should check on them.
 I don't think they would've sent the invitation if they didn't want you to come.
 I'm sure they'd be happy to see you.
-[whispering]
 ...Applejack for friendship business.
 [whimpers]
 Please, help!
@@ -3415,11 +3268,9 @@ Please, help!
 Discord!
 I'm stuck!
 But what?
-[sniffs, crying]
 You're right.
 There's no way you should trust me.
 Just go find the others.
-[wailing]
 I understand!
 It's, um, good to see you, too.
 Uh, everypony?
@@ -3437,12 +3288,10 @@ Oh, dear.
 I'm all out of bunny foot braces.
 I think we need to pay a visit to Dr.
 Fauna.
-[straining]
 Oh, I was sure she would be here today.
 Hello?
 [knocks on door]
 Is anypony there?
-[straining]
 I wish I could say the same, but the door's stuck, so I, um...
 can't see you.
 [gasps]
@@ -3669,7 +3518,6 @@ Then I guess it's up to me.
 Okay.
 All right.
 How about...
-[whimpering]
 Oh, no!
 I tipped over that cup!
 That's pretty chaotic, right?
@@ -3693,13 +3541,11 @@ He'd need more!
 Way more!
 Hey there, Fluttershys!
 Any ideas on how to Discord up this tea party?
-[higher-pitched]
 Hi, Fluttershy!
 Thanks for asking!
 First of all, you gotta redecorate this place.
 I mean, this is where Discord lives!
 And you're telling me there aren't any stairs that lead to nowhere?
-[speaking normally]
 On it!
 Better...
 but it still needs something.
@@ -3729,7 +3575,6 @@ But you've opened me up to so many more possibilities and impossibilities.
 So I guess what I'm trying to say is I like you because you're so different from me.
 Of course I do, silly!
 Besides, what's discord without a little chaos?
-[giggling]
 Now, about that tea party...
 You know, your garden really is looking lovely.
 Gesundheit.
@@ -3737,7 +3582,6 @@ I'm happy to be here.
 And I really do like your place.
 Because it's so you.
 Now, how about we try some of those delicious-looking sandwiches?
-[giggling]
 What is it, Twilight?
 Do I need to prepare myself?
 I, uh, wanted to leave room for all of you.
@@ -3751,7 +3595,6 @@ Listen up!
 I am more assertive!
 And yes, it took me a while to get there.
 But can you honestly say that you could learn something one time and completely change who you are?
-[beat]
 I didn't think so.
 [sighs]
 I don't know what I'm gonna do if I have to defend myself one more time!
@@ -3804,7 +3647,6 @@ Are...
 Are you cooking?
 [grunts, gulps, grunts, gulps]
 Um, they're both delicious, but...
-[quickly]
 Zecora-has-Swamp-Fever-and-there's-no-cure-and-it's-all-my-fault-and-the-only-pony-who-can-cure-it-is-the-Mystical-Mask-and-I-need-your-help-to-find-her!
 Hmm.
 Did we check the unabridged versions?
@@ -3820,7 +3662,6 @@ I didn't realize how late it had gotten.
 Oh, no-no-no.
 I meant you should sleep.
 I can't rest until Zecora is healed.
-[not listening]
 Mm-hmm.
 Twilight!
 Sorry, but I figured out who the Mystical Mask is!
@@ -3834,7 +3675,6 @@ She was also a healer, and back then, healers wore masks so they wouldn't get si
 Mm-hmm.
 But if we go to Hayseed Swamp, maybe we can find something she left behind!
 Something that could lead to a cure!
-[grunting]
 We have to try!
 I've got a route all planned out, and on the way, we can check up on Zecora, and then?
 Of course!
@@ -3866,7 +3706,6 @@ Phew.
 Well, if the doorway is sealed up, we'll just have to dig our way in.
 Back up, Twilight!
 I don't want you to get hurt!
-[grunting]
 [laughs nervously]
 It really blends in with the bark.
 Wow.
@@ -3887,15 +3726,12 @@ Not only did we find Mage Meadowbrook's old house ?
 we actually found one of her descendants!
 This is good.
 It'll take us less time to go through everything.
-[blows air, reading]
 Today, my mom made me eat peas.
 Peas are yucky.
 And we can probably skip this one, unless she found a cure when she was a foal.
 Wait!
 Listen to this!
-[reading]
 Today, I tried again to brew an unsniffle elixir...
-[reading]
 It was the greatest feeling I've ever experienced, and I promise to dedicate my life to curing ponies all over Equestria!
 So all we have to do is find those aggressive flash bees and get them to give us their honey!
 Of course, it doesn't say how she did that...
@@ -3914,7 +3750,6 @@ Um, you don't know this about me, but I'm pretty good with animals.
 And besides, Dogtail?
 Um, Zecora is counting on me.
 I have to help her, just like Meadowbrook helped her mother and all those bayou ponies long ago!
-[strained]
 You're not gonna change my mind, Twilight!
 It's too dangerous, Twilight.
 Besides, I've already gotten one friend hurt.
@@ -3922,11 +3757,8 @@ I won't let it happen to another.
 [exhales]
 Okay, Fluttershy, you can do this!
 [coughs]
-[panting]
-[straining]
 Mind over matter!
 [grunts]
-[straining, panting]
 Hello, flash bees!
 I was hoping I could get some of your honey.
 I see.
@@ -3966,7 +3798,6 @@ The male bees aren't aggressive around the queen bee, and this mask has the same
 There's no time to waste!
 [coughs]
 Mind over matter!
-[buzzing]
 Twilight...
 It's working!
 Oh, you're rhyming again!
@@ -4088,127 +3919,84 @@ Oh, I'm afraid I don't know much about fashion to satisfy these customers.
 What am I gonna do?
 Oh, I've never tried to act before, but...
 I suppose it's worth a shot.
-[clears throat, snooty voice]
 Severe but not unapproachable.
 Acceptable business attire.
-[normal voice]
 Oh, does that sound like a shop pony to you?
-[snooty voice]
 So sorry for the wait.
 The shop has some...
 staffing issues today.
 Here at Rarity For You, our merchandise defies typical attempts to quantify its quality, but rest assured, it will make you the envy of all who see it.
 Ta-ta!
-[normal voice, sighs, faints, pants, sighs]
 Smoky Jr.
 I can't believe it worked!
-[snooty voice]
 I suppose clothes really do make the pony after all.
-[snooty voice]
 It's an unique play on the old standard.
 We call it a Rarity cut with a triple-cut stitched hem and a guacamole chevka pattern fabric.
 If I had meant chevron, then that's what I would've said.
-[normal voice]
 Aw, thanks, everyone.
 But I feel I should push the snootiness further.
 If you really wanna help, I suppose serving tea would be nice.
 Oh, if you don't mind.
-[snooty voice]
-I'm afraid bold and shiny won't work with your whole...
-modelle.
-Perhaps...
-pointy.
-Not everypony can pull off a found object, but you...
-nearly get there.
+I'm afraid bold and shiny won't work with your whole... modelle.
+Perhaps... pointy.
+Not everypony can pull off a found object, but you... nearly get there.
 Yes.
 Casual chic prˆt-…-porter is very branch‚ this season.
 Um, one moment, please.
-[normal voice]
 Oh, I think I need a new character.
-[hipster voice]
 Okay, I've got, like, this high-key savage look for you?
 It's a totally live ensemble with a little, like, thingies that sparkle and make the whole squad go, Whoa!
 That pony is 'woke'!
-[hipster voice]
 Can you, like, chill for one sec?
 BRB.
-[goth voice]
 It's not like the futility of shopping can be made better with black leather and metal studs, but they help.
-[snooty voice]
 This tea must always be at a precise temperature!
 See that it doesn't happen again!
-[hipster voice]
 Whoa, that color is, like, almost too lit for you?
-[goth voice]
 The blackness of this vest is a reflection of your soul.
-[snooty voice]
 This hemline is nothing short of an inspiration of craftsponyship.
 Are you sure you deserve it?
 [gasps]
-[snooty voice]
 I don't know what's worse ?
 that you spilled the tea or that it's still cold!
 Either get it right or go back to the forest!
 Oh, it is so hard to find good help these days.
-[snooty voice]
 I wouldn't think it was possible to make something so dowdy even more matronly, but here you are.
-[goth voice]
 It's like a scream in the void, empty and ultimately meaningless.
-[hipster voice]
 I would srsly help you right now, but, like, I don't wanna, you know?
-[snooty voice]
 If you don't mind, I can only improve the taste of one customer at a time.
 You'll have to wait your turn.
 Ugh, honestly!
 These small town ponies come to the big city and think they can behave any way they please!
-[goth voice, to Neigh Sayer]
 Let's get out of this aura of positivity before it consumes us.
-[hipster voice]
 They should have, like, stayed there?
 The shop is, like, a no-rodent zone now.
-[snooty voice]
-[sarcastically]
 Goodness!
 You are so right.
 Please, step this way so that we may discuss your concerns.
-[snooty voice]
 Indeed.
-[goth voice]
 Your melancholy is way too shallow for a look with this much unfeeling depth.
-[hipster voice]
 Ugh!
 Your style isn't even on the same page?
 Turn away.
 Don't even look at it, okay?
-[snooty voice]
 I think not, dear!
 This is all far too fashion forward for the likes of you!
-[snooty voice]
 Rarity!
 I'm so glad you're here!
-[kissing noises]
 Finally, a pony who understands that the couture in this shop is far too brilliant to even consider selling!
-[hipster voice]
 You, like, totally get how lame customers are?
 Ugh!
-[goth voice]
 Watching them leave filled me with a sweet sadness.
-[snooty voice]
 And you'll be pleased to hear that I've taken care of your rodent situation.
-[snooty voice]
 Well!
 Good luck replacing me!
 Humph!
-[goth voice]
 I always thought she was too controlling.
-[goth voice]
 Whatever.
-[hipster voice]
 I know, right?
 I mean, uh, ugh?
-[hipster voice]
 Like, okay.
-[normal voice]
 I guess I owe everypony an apology.
 I got so caught up trying to please all of your customers that?
 I might have taken my salespony characters a little too far.
@@ -4218,12 +4006,10 @@ I guess acting like the ponies of Saddle Row gave me the confidence to interact 
 Well, I'd definitely rather be myself anyway, even if I don't exactly have what it takes to be a shop pony.
 Oh, it's lovely, Rarity!
 I'm just sorry you had to leave the Canterlot Royal Fashion Show early.
-[snooty voice]
 Have you considered the possibility that the Royal Fashion Show is trying to undercut Rarity's by continuing on in Canterlot and not moving the whole affair here?
 Hmm?
 Have you?
 Hmmm?
-[snooty voice]
 Hmph!
 Just as I thought!
 Hmmm!
@@ -4249,9 +4035,7 @@ While you watch me playing you?
 Oh, no.
 Oh, no.
 I think my stage fright is coming back.
-[hyperventilating]
 It's time for a new day in Equestria!
-[trembling]
 I just feel bad you never got a chance to actually be in it.
 Oh, my!
 I don't know how I keep winning.
@@ -4283,18 +4067,10 @@ I think I may be walking in circles.
 Oh, my!
 Where did you learn that kind of language?
 Um, excuse me?
-[whimpering]
-[crying]
-[crying]
 Everycreature is mad at me!
-[crying, sniffling]
-[crying, sniffling]
 Can't we all just get along?
-[crying]
-[crying]
 Friends?
 You left me alone in the woods!
-[crying]
 If everypony likes me again.
 It must be a really important one.
 Should we send our students home?
@@ -4318,12 +4094,9 @@ Well, until now.
 [sighs, to Angel Bunny]
 It's okay.
 She's gone.
-[snoring]
 [snores, gasps]
 So very tired.
-[yawning]
 It practically took me all night to get the nursery back to sleep.
-[resumes snoring]
 Wow.
 She took that so much better than I thought.
 [slurps]
@@ -4401,8 +4174,6 @@ Um, what are they doing?
 [grunts]
 Maybe they got worried because we were arguing with each other.
 W-Where are they taking us?
-[grunting]
-[whimpering]
 She talks?
 Well, thank you for that...
 um, wall of fire.
@@ -4447,7 +4218,6 @@ Um, excuse me, puppy?
 You're a very good guard dog.
 Yes, you are.
 But, um, we were wondering if we could get by to check on Tirek.
-[giggling]
 Can't you just tell us your pen pal's name?
 I mean, since we're stuck here anyway?
 Um, are you sure there's magic in Cerberus?
@@ -4474,7 +4244,6 @@ What do we do?
 Or Angel...
 or anypony forced to do that monster's bidding!
 I've been known to get my hooves dirty!
-[sobbing]
 I've never been so sad in my whole life!
 [gasps]
 For our friends!
@@ -4504,11 +4273,9 @@ Well, I guess the opposite of what I'm good at is...
 It's almost too easy.
 Uh, Pinkie?
 We're not actually going into space, right?
-[hushed]
 We'll have to glide to the throne.
 No flapping.
 [gasps]
-[hyperventilating]
 Oh, no!
 Once, I got trapped in the Castle of the Two Sisters, and Angel Bunny and I were separated!
 Now whenever I'm in a tiny room, it's all I can think about!
@@ -4529,7 +4296,6 @@ And if we lose or forfeit one game, we'll be out of the tournament.
 Oh, why?
 And even though at first she thought you were the most annoying fanpony she ever met, you two eventually became friends.
 Um...
-[flatly]
 Oh, no.
 Quibble's wide open, and I'll never get there in time to block.
 [gasps]
@@ -4605,7 +4371,6 @@ Auntie Fluttershy's here.
 And the Dragon Lord and I are gonna do everything we can to welcome you into this world.
 Um...
 I have no idea.
-[reading]
 nd then they all lived happily ever after.
 Time to come out, little ones.
 [baby talk]
@@ -4628,7 +4393,6 @@ I was hoping you could help.
 If you're not too busy cheering up Smolder's brother.
 [gasps]
 Excuse me, but that's not a very nice game!
-[echoing]
 ENOUGH!
 [clears throat]
 I mean, leave my friend alone please.
@@ -4666,7 +4430,6 @@ That's real strength!
 Not like some dragons I know.
 Spike, look!
 I'll take them all!
-[giggling]
 Oh, dear.
 Tortoise-Snap said he was hungry.
 But he promised me he would only take a few small bites.
@@ -4684,7 +4447,6 @@ Oh, um, if it's not too much trouble, I mean.
 Um...
 a cupcake?
 And Cheese Sandwich just left his own factory?
-[hyperventilating]
 [gasps]
 It's just...
 Two weeks doesn't feel like a whole lot of time to train a whole team.
@@ -4732,7 +4494,6 @@ Muriel, does it bother you when Antoine tries to eat you?
 Just because you're on opposite ends of the food chain doesn't mean you can't work?
 Huh?
 It doesn't mean you can't...
-[clears throat, strained]
 It doesn't mean you can't work togeth?
 [sighs]
 I'm sorry, but the more you distract everyone, the longer this will take.
@@ -4837,9 +4598,6 @@ I guess I have to.
 [gulping, belches]
 I wonder what it's gonna doooo?
 [high-pitched scream]
-[panting]
-[panting, squeals]
-[panting]
 Oh, my goodness!
 I'm back!
 I'm a pony again!
@@ -4927,9 +4685,7 @@ I can get it.
 I want to do it!
 For all of you, my new friends.
 And to protect a historical treasure!
-[screaming]
 Whoa!
-[yelping]
 Aah!
 Thanks, everypony.
 Wait!
@@ -5024,9 +4780,7 @@ Who was that?
 Oh, I'm really sorry.
 I-I just found it, and-and I thought I should give it to her.
 I didn't know you had dropped it.
-[hushed]
-It...
-doesn't really belong to you, either.
+It... doesn't really belong to you, either.
 N-n-nothing...
 I can't believe you did that!
 Well, it's just that nobody ever stands up to Sunset Shimmer.
@@ -5170,7 +4924,6 @@ Does he talk?
 Congratulations on winning, by the way.
 Though, it didn't seem like anyone on your team was very excited about it.
 That sounds awful.
-[beat]
 Here.
 Hold this.
 Holding a bunny always makes me feel better.
@@ -5373,7 +5126,6 @@ Um...
 Adorable tiny turtles?
 Tank led the babies!
 Well done, Tank!
-[giggling]
 They think Tank's their mommy.
 Thanks for helping with the Crab Adopt-a-Thon, everyone.
 They're hot, poor things.
@@ -5440,7 +5192,6 @@ Whee.
 Like this?
 Hmm?
 Ooh.
-[giggling]
 Yippee!
 Did I do it right?
 Sure is, Applejack.
@@ -5475,7 +5226,6 @@ Um, isn't Rarity in this class?
 I only signed up for drama to be with Rarity, but she wasn't there.
 Which was very dramatic, but for all the wrong reasons.
 Um, has anyone seen Sunset?
-[giggling]
 If you're missing your friends, try Flora/Fauna.
 [giggles]
 Fish Eye!
@@ -5515,10 +5265,7 @@ boom goes a header ball?
 a-a head ball.
 Uh...
 Oh, no.
-[whimpering]
-[sighs, over loudspeaker]
-Number twenty-two is pushing to the...
-limit.
+Number twenty-two is pushing to the... limit.
 The ball, it's tucked away by number thirty-four, who passes back to Dash.
 She holds it, makes her move.
 She's coming, hears the crowd, she's wide open!
@@ -5548,9 +5295,7 @@ Oh, dear.
 I got mud on my boots.
 Oh, no-no-no.
 Don't think about that.
-Think about...
-this.
-[whispering]
+Think about... this.
 Be as cute as you can possibly be.
 It's why I love nature so much more than big cities.
 Aah!
@@ -5564,7 +5309,6 @@ What do you mean you failed?
 We could use my car.
 Sunset, over here!
 In you go, Miss Kitty.
-[rhythmically]
 It's the driving safety rhyme.
 Start your trip with seat belt time.
 Nine and three is where you'll be.
@@ -5576,11 +5320,9 @@ Funny you should ask.
 I actually have a rhyme for that, too.
 Thinking of calling in sick?
 The mine is closed.
-[breathes deeply]
 [whimpers]
 The mine is closed!
 The mine is closed!
-[gasps, whispering]
 This isn't in the script!
 It is?
 The mine is closed!
@@ -5613,8 +5355,6 @@ boom goes a header ball?
 a-a head ball.
 Uh...
 Oh, no.
-[whimpering]
-[sighs, over loudspeaker]
 Number twenty-two is pushing to the...
 limit.
 The ball, it's tucked away by number thirty-four, who passes back to Dash.
@@ -5648,7 +5388,6 @@ Oh, no-no-no.
 Don't think about that.
 Think about...
 this.
-[whispering]
 Be as cute as you can possibly be.
 It's why I love nature so much more than big cities.
 Aah!
@@ -5662,7 +5401,6 @@ What do you mean you failed?
 We could use my car.
 Sunset, over here!
 In you go, Miss Kitty.
-[rhythmically]
 It's the driving safety rhyme.
 Start your trip with seat belt time.
 Nine and three is where you'll be.
@@ -5678,7 +5416,6 @@ The mine is closed.
 [whimpers]
 The mine is closed!
 The mine is closed!
-[gasps, whispering]
 This isn't in the script!
 It is?
 The mine is closed!
@@ -5705,20 +5442,15 @@ It's a little...
 [gasps]
 ...daunting, isn't it?
 [shudders]
-[shudders, yelling]
 What?
-[yelling]
 I can't hear you over all the screaming!
-[normally]
 I wish I'd gone with Sunset and Twilight.
 Or Pinkie Pie.
 Or anyone else in the entire park.
 Can't I conquer something a little smaller first?
 Mm-mm.
-[screaming, hyperventilating]
 Oh, these kids are so brave.
-That was actually kind of...
-fun.
+That was actually kind of... fun.
 [giggles]
 You were very brave.
 [giggles]
@@ -5729,7 +5461,6 @@ Uh, maybe I, um...
 shouldn't do it.
 At all.
 You did?
-[echoing]
 Um, excuse me?
 Vignette?
 Where am I?
@@ -5757,7 +5488,6 @@ Um...
 eat carrots?
 She also scared the animals in the petting zoo.
 Now they don't want pets.
-[whispered]
 It's just a zoo.
 Oh, of course.
 I don't think that's a thing.
@@ -5888,10 +5618,8 @@ kick!
 [pained noise]
 But Flim and Flam have a point.
 We can't tell ponies what to buy.
-[overacted]
 But, Applejack, your granny, your brother, and your sister, they are all so different.
 How can the same doll be the right gift for all of them?
-[overacted]
 Just because it's must-have for one pony doesn't mean it's must-have for everypony, does it?
 Ooh.
 But we never got gifts for Spike or Rainbow Dash, and it's already Hearth's Warming Eve.
@@ -5910,21 +5638,17 @@ I'm so sorry.
 If you calm down, I'm sure you could join us.
 [giggles]
 We're really sorry about your gifts.
-[giggling]
 Oh, he's a big sweetheart.
 And he ended up being really helpful.
 It was actually kind of nice to be the pony who saved the day for once.
-[giggling]
 Did Pinkie Pie say what her Hearth's Warming Eve surprise was going to be?
 What kind of something?
-[straining]
 [cries]
 I'm gonna ask them politely!
 I've been trying to teach my students how to feed a hedgehog?
 But that keeps happening.
 Two...
-S-So...
-c-c-c-c-c-cold...
+S-So... c-c-c-c-c-cold...
 I don't know.
 Not even I speak sound effect.
 Oh, um...

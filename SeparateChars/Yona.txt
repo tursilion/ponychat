@@ -23,7 +23,6 @@ Yak plan better.
 Yona not scared!
 Yona have friends!
 Not bad!
-[quickly]
 For pony.
 Yak pass if yak say!
 Hmph!
@@ -287,11 +286,8 @@ How to do all the pony things, even if Yona has to wear dress.
 Mm-hmm!
 Yona be best pony pal for Sandbar!
 [chomps]
-[muffled]
 How kind of you to ask me to tea.
-[muffled]
 May I offer you a glass of punch?
-[muffled]
 The weather is quite agreeable today.
 [chews, gulps, belches loudly]
 Yona like Brussels sprouts!
@@ -324,52 +320,36 @@ Yah!
 Blue, red, green...
 whoa!
 Blue...
-[muffled]
 How kind of you to ask me to tea.
 [chomp]
-[less muffled]
 How kind of you to ask me to tea.
-[rhythmically]
 Blue, red, step ahead.
-[elocuting]
 How kind of you...
-[rhythmically]
 Green, black, Yona step back.
-[elocuting]
 ...to ask Yona to tea.
-[rhythmically]
 Black, green, red, and blue.
 Red, black hold one and two.
 Red, blue, red once more.
 Green, black, blue, red, three and four!
-[elocuting]
 May Yona?
 um...
 May I offer you a cup of punch?
-[elocuting]
 How kind of you to ask me to this soiree, Sandbar.
-[elocuting]
 Quite.
 Oh, I do hope I make a good pony pal for you.
-[elocuting]
 I am not talking funny.
 I'm fitting in.
-[elocuting]
 Precisely like ponies prepare!
 Yona know this one!
-[elocuting]
 Indeed!
 Green, black, then step back.
 Shall we?
-[elocuting]
 I had good teachers.
 Whoa!
 Yona never practice dance with dress on.
 Uh...
-[elocuting]
 I mean, [chuckles]
 may I offer you a cup of punch?
-[elocuting]
 I do so love the Pony Prance!
 [yelps]
 [yelps]
@@ -411,9 +391,7 @@ Yak dance?
 Is easy!
 Yona teach...
 if everycreature want to learn?
-[laughing, chanting Yak!
-Yak!
-Yak!
+[laughing, chanting] Yak! Yak! Yak!
 [laughs]
 Yona want to cheer and make pony pyramid!
 Cheer squad can do that!
