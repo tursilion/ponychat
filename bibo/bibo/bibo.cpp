@@ -615,6 +615,8 @@ void populateNameList() {
     nameList.emplace_back("Sunny Skies");
     nameList.emplace_back("Pear Butter");
     nameList.emplace_back("Star Swirl");
+    nameList.emplace_back("Pumkpin Cake");
+    nameList.emplace_back("Pound Cake");
 
     // debug
 //    for (string x : nameList) {
