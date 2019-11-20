@@ -930,7 +930,7 @@ void runscene(const char* who1, const char* who2) {
         w = randomfile();
     }
 #ifdef GFX_TEST
-    w = 80; // preferred reference is Cheerilee (check for changes)
+    w = 81; // preferred reference is Cheerilee (check for changes)
 #endif
     printf("<!-- %d -->\n", w);
 
