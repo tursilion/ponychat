@@ -50,7 +50,6 @@ I like to brag to all my friends about my letters from Spike the Brave and Glori
 Oh, that was amazing!
 [gasps]
 This place is everything I've ever dreamed of!
-[hushed]
 But I can't keep pretending to be a Crystal Pony forever, can I?
 Oh, she's so beautiful!
 There's so much l-love around her...
@@ -143,9 +142,7 @@ I can feel the love inside me slipping away...
 I can't hold onto it much longer...
 It's a bit overwhelming.
 But we're adjusting.
-[stiltedly]
 I want to have honeysuckle nectar for lunch.
-[stiltedly]
 Starlight, how do you feel about honeysuckle and peanut butter sandwiches?
 We could throw you a changeling Gorbfest!
 Uh, it's more fun than it sounds.
@@ -175,7 +172,6 @@ I'm a real tosser and turner.
 Uh, aren't you coming?
 Oh, Spike!
 I'm so glad you're here!
-[quietly]
 This castle visit is getting weird.
 Twilight really likes chairs.
 Oh, what happened to the ice cream?
@@ -360,12 +356,10 @@ I told you, stay in your own form.
 It's the polite thing to do.
 Sorry, she's shy.
 A changeling.
-[despondently]
 It's fine.
 We know not every pony sees us the way you do.
 We're used to it.
-C-Can...
-Can we just focus on finding our lost students?
+C-Can... Can we just focus on finding our lost students?
 The Changeling Empire can't afford an international incident.
 If any creature blames the changelings for this?
 B-But we're friends!

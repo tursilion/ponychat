@@ -16,7 +16,6 @@ Big McIntosh, Apple Bloom and Granny Smith.
 Up'n'attem, Granny Smith, we got guests.
 Why, I'd say you're already part of the family!
 Are you all right, sugarcube?
-[muffled]
 Whoa there, Nelly...
 Ergh...
 Simmer down, Sally.
@@ -317,9 +316,7 @@ No, I don't.
 Look, I did it.
 I harvested the entire Sweet Apple Acres without your help.
 How d'ya like them apples?
-[mumbling]
 Where'd all the apple...
-[mumbling]
 [sighs]
 Huh?
 Okay, Twilight.
@@ -366,13 +363,10 @@ Safety in numbers and all.
 I'll need this if I'm going to take her around the mountain another way.
 Don't worry, Twi.
 We'll be there lickety-split.
-[panting]
 Made.
-[panting]
 You could just leap on over.
 That's it.
 Oh my!
-[stops coughing]
 Everypony okay?
 Aw, no big whoop, sugarcube.
 Wha!
@@ -434,7 +428,6 @@ Blahch.
 What in the world is this for?
 Puffiness-schmuffiness!
 That's good eatin'!
-[chews loudly]
 Of course not, 'n you wouldn't either, I reckon?
 You betcha.
 [spit]
@@ -564,7 +557,6 @@ Who knows what kind of nasty curse Zecora could have just put on you?
 Just you wait, Twilight.
 You're gonna learn that some pony tales really are true.
 Just you wait, Twilight; some pony tales really are true.
-[high pitched voice]
 I hate to say I told ya so, Twilight, but I told ya so!
 It's a curse, I tells ya!
 Good gravy, girl!
@@ -597,7 +589,6 @@ What in the hay does that mean?
 Will somepony please talk normal?
 Little jokes?
 Very funny.
-[normal voice]
 I'm right here, little sis.
 I ain't tiny no more!
 Here's all those apples you wanted, Fluttershy, but I still can't figure why y'need so many.
@@ -702,7 +693,6 @@ I know I can.
 Oh, for Pete's sake!
 All right, all right.
 You got another throw there, pony girl.
-[sarcastically]
 Wow, Rainbow, heh.
 You couldn't hit a barn door with that kind of a throw!
 [grunt]
@@ -749,10 +739,8 @@ Wah!
 Be a good sport, Applejack.
 [grunt]
 [gasp]
-[mumbling]
 That's not fair.
 You can't use your wings to help you win.
-[mumbling]
 You're cheatin'!
 [spits]
 I said...
@@ -959,7 +947,6 @@ Now I'm used to pickin' myself up and dustin' myself off, but Rarity won't even 
 We gotta save her.
 Don't mean we can't dig 'em out.
 Come on!
-[grunting]
 [gasp]
 Hoho there, lover boy.
 Hold on there, little fella.
@@ -1179,7 +1166,6 @@ Nothing.
 Come on, uh, we best be going.
 I didn't notice anythin' strange about Pinkie.
 Grrr...
-[laughing]
 Chocolate milk.
 Well, looky there.
 Rainbow Dash is flying away.
@@ -1318,7 +1304,6 @@ Have you, Big Mac?
 Why, Apple Bloom, I think you're ready to hit the rodeo circuit right now!
 Night!
 Oh my, little Apple Bloom has finally blossomed, hasn't she, Big Mac?
-[grunting]
 What in tarnation is that?
 Apple Bloom, what is all that awful...
 tapping?
@@ -1436,7 +1421,6 @@ I didn't know unicorns could do that.
 Don't blame me.
 Rainbow Dash should've flown up there and shut it.
 After all, she's got wings.
-[snoring]
 [grunts]
 There's the zap apple leaves, right on schedule!
 I'm sorry, Apple Bloom.
@@ -1618,7 +1602,6 @@ Go on, y'all.
 It's okay.
 They're gone.
 Dear Princess Celestia,
-[muffled]
 Is she gonna be okay?
 I bet the chow in here is hoof-lickin' good.
 Is she serious?
@@ -1631,15 +1614,11 @@ There's no reason to go around causin' a ruckus?
 ...causin' a fracas just because you like to read.
 What kind of disaster?
 The perimeter's clear.
-[hushed]
 Me neither.
-[hushed]
 You'll be toast alright, when the dragons see you parading around in that getup.
-[hushed]
 What do ya think of that 'move', Rainbow Dash?
 Still think they're lame?
 But why would you want to, Spike?
-[voice vibrating]
 You said it, ooh...
 She's not mean, Twilight, she's a hoot!
 Applejack Asleep on the Job!
@@ -1665,7 +1644,6 @@ Congratulations, Twilight!
 That's great news!
 As one of your P.
 s...
-[beat]
 Pony Friends Forever...
 ...I wanna tell you that I think your brother sounds like a real good guy.
 Why the long face, sugarcube?
@@ -1721,10 +1699,8 @@ Think we're ready to get this faire up and runnin'.
 Come on in, y'all.
 Got food and drinks thataway, games and crafts are thataway, Crystal Heart to the back near the Princess.
 [whinnies in surprise]
-[whispering]
 Uh, Rainbow Dash?
 We're supposed to be actin' like nothing's wrong.
-[hushed]
 What I mean is, maybe you should let me keep the Crystal Ponies away from the fake Heart, while you show off your joustin' skills.
 How are y'all feelin'?
 Havin' a good time?
@@ -1738,10 +1714,8 @@ Bet you'd like to cool off with a little Crystal Empire nectar!
 Uh, you tried the Crystal Empire fritters yet?
 Made from a traditional Crystal Empire recipe!
 You're gonna love 'em!
-[loudly]
 Uh, I hear there's a joustin' match about to start!
 You don't wanna miss that!
-[hushed]
 Come on, Twilight...
 These Crystal Ponies are more curious than a cat!
 We gotta do everything we can to keep this thing goin'.
@@ -1753,7 +1727,6 @@ On its way!
 Oops.
 Now, don't y'all worry your pretty, little Crystal heads!
 The real Crystal Heart will be here any second!
-[hushed]
 Don't know if I believe me...
 But...
 good things are better when they're a rarity.
@@ -1811,7 +1784,6 @@ Yea...
 That's enough, Trixie!
 Forget it, Trixie!
 I ain't doing nothin' 'til you let Twilight come home!
-[laughs uncontrollably]
 Okay, I'll do it!
 Just make it stop!
 Hoo!
@@ -1994,7 +1966,6 @@ Which is why I decided to change things up a bit, and try somethin' just a wee b
 So let's get this show on the road!
 Giddy-up!
 Uh-oh.
-[crying]
 Ruined.
 Everythin' is ruined.
 Oh, Granny.
@@ -2117,7 +2088,6 @@ I'll ask Spike to help me dislodge it, and he will, and I'll be able to get away
 Havin' saved me from certain doom, Spike will then consider us even.
 Everybody get it?
 Yes?
-[beat]
 What d'you mean?
 Uh...
 Oh, well, aheh, how's this?
@@ -2128,7 +2098,6 @@ Uh...
 over here, Spike!
 Oh, yes, I, I was just hopin' you could maybe, uh, sweep up all those leaves for a compost pile, and?
 I can't believe you counted every single one of 'em...
-[unconvincingly]
 Oh no!
 I seem to have got my hoof caught in between two rocks!
 I cannot run away!
@@ -2137,10 +2106,8 @@ Help me, Spike!
 No, no, don't wait a minute.
 Save me from the terrifyin' timberwolf!
 Whooooah!
-[grunting]
 I can't!
 I'm really stuck!
-[grunting]
 Come on...
 Forget it, Spike!
 You gotta get out of here!
@@ -2201,10 +2168,8 @@ Princess Cadance was right.
 These ponies do look pretty darn excited.
 Whew!
 The Princess wouldn't have had it any other way.
-[hushed]
 Where the heck is she anyway?
 Wasn't she supposed to be here by now?
-[hushed]
 Easy, Pinkie, let's play this safe!
 We got her in a good mood, so let's not do anything to ruin that.
 [sighs]
@@ -2239,7 +2204,6 @@ Right, Pinkie Pie?
 Come on, y'all!
 Put your backs into it!
 [grunts]
-[straining]
 Dagnabbit, we ain't never seen this kind of trouble with weeds before.
 Now that I think about it, I've never seen these kinds of weeds at all!
 Have y'all?
@@ -2280,7 +2244,6 @@ Princess Celestia and Princess Luna are gone.
 If something happened to you, I-I just don't think Equestria can risk losing another princess.
 Maybe it's right down there.
 So let's save it already!
-[grunting]
 And I suppose you've got a better idea?
 That's what I thought.
 We all agreed it was the best thing, Rainbow Dash!
@@ -2306,7 +2269,6 @@ When I was just a filly, Granny Smith told me of an ancient legend.
 When Nightmare Moon was banished, not every last bit of her dark magic went with her.
 Granny used to say, when night falls on the castle, that magic takes the form of...
 the Pony of Shadows!
-[spookily]
 Nopony knows!
 You might wanna rethink your position on that.
 You saw that, right?
@@ -2336,13 +2298,10 @@ Huh?
 Whoa-oa!
 [screams]
 [screams]
-[echoing]
 Rainbow?
 Hello?
 I guess if I don't find you, I win by default, right?
 [yells]
-[screaming]
-[grunting]
 Yaaaaah!
 Shadows everywhere!
 Twilight?
@@ -2598,7 +2557,6 @@ Got the idea from them, but...
 This'll cure everythin' that ails ya!
 Don't forget your bettys!
 Uh, what were you gonna do with them before?
-[chewing]
 And I packed you a basket of nice fresh apples in case you get hungry.
 What could you be nervous about, Twilight?
 Cadance just loves you to pieces!
@@ -2610,7 +2568,6 @@ What in tarnation are you doin' here?
 And why the jumpin' June bugs are you blue?
 What are you, sick or somethin'?
 How do you know about her trip?
-[hushed]
 That joker's up to something, and whatever it is, we're gonna keep it as far away from Twilight and Princess Cadance as possible.
 Maybe.
 They're plenty close.
@@ -2622,7 +2579,6 @@ You sure did come on the right day.
 Well, they don't call him the super duper party planner for nothin'.
 Huh.
 Best I've ever seen.
-[whispering]
 What's a goof off?
 Of course she is.
 Ponyville Days celebrates the founding of Ponyville, and she was right there.
@@ -2632,7 +2588,6 @@ Probably more than a touch!
 I'll say.
 And I can get Sweet Apple Acres all ready for the cider tastin'.
 Uh, who's Trenderhoof?
-[panting]
 Uh, gee, thanks.
 Granny Smith always said, Pick an apple a day and keep trouble away.
 Uh, on the farm or in all of Equestria?
@@ -2665,7 +2620,6 @@ And I don't know anypony who's that interested in farmin'.
 Not even me!
 Shouldn't you be workin' on the festival instead of comin' up with new ways to impress Trend?
 I'm too scared to guess.
-[laughing]
 Rarity, that is the silliest getup I have ever seen!
 Because you would never dress like that.
 You like fashion and high society and fancy things.
@@ -2687,7 +2641,6 @@ My mane needs to be perfectly coiffed at all times.
 My hooves are so polished, you can see your reflection in them.
 I'm so fashion-forward.
 I smell like rosebuds.
-[normal voice]
 There's the Rarity I know!
 I kinda know how you feel.
 Thanks!
@@ -2710,7 +2663,6 @@ Probably hidin'.
 You know how much that pony hates the spotlight.
 And you sounded better than ever, big brother!
 Big Mac, you got some 'splainin' to do!
-[beat]
 Turkey call?
 Trash your voice?
 Zecora remedy?
@@ -2737,7 +2689,6 @@ Uh...
 what did he say?
 Okay, well, I'm sure you know what you're doin'.
 No one knows rare magical creatures like you do.
-[high-pitched]
 You okay, Fluttershy?
 Now, hey there, filly.
 I know you're excited, but bein' the only pony here to take care of the day's chores is a big responsibility.
@@ -2754,7 +2705,6 @@ Right.
 Okay then.
 Good luck, little sis?
 whoa!
-[teeth chattering]
 [grunts]
 Eheheh...
 Sorry, Big Mac.
@@ -2802,7 +2752,6 @@ A snack?
 A hoof massage?
 Maybe a snack while havin' a hoof massage?
 O-kay, well you can count on me bein' close by if'n you need anythin'!
-[muffled]
 Everythin' okay in there, sugarcube?
 Huh.
 I guess you must've been so tuckered out, you sent your friends home and went to bed.
@@ -2816,9 +2765,7 @@ How 'bout now?
 Need another blanket?
 Did I hear a cough?
 Want a glass of water?
-[yawning]
-Just...
-checkin' in on you again.
+Just... checkin' in on you again.
 [sighs]
 Look at you, dozin' so peaceful-like.
 Here I am, checkin' up on you every five seconds, and you're totally fine.
@@ -2826,8 +2773,7 @@ Maybe you don't need me frettin' over you all the time.
 Huh?
 Scootaloo?
 Sweetie Belle?
-But...
-where's Apple Bloom?
+But... where's Apple Bloom?
 She's not here!
 She could be anywhere!
 She could be lost, cold, hungry, itchy, stuffed up, needin' to go to the bathroom!
@@ -2841,7 +2787,6 @@ A lion tamer's chair?
 A snake charmin' flute?
 A hunk of ricotta?
 [gasps]
-[teeth chattering]
 Okay, maybe there's still time to catch her before she gets there.
 When did she leave?
 Oh, no!
@@ -2850,7 +2795,6 @@ I'm a-comin'!
 [plays snake charming flute]
 Howdy!
 Let's go!
-[panting]
 Are you okay?
 I told you you need your big sister lookin' after you!
 I'm just glad this wasn't a whole lot worse.
@@ -2901,7 +2845,6 @@ I mean, nah.
 I'm sure there's plenty apples in it already.
 Sure, why not?
 What do you think, Maud?
-[nervously]
 We're practically twins, heh.
 [sighs]
 The truth is, we've all been tryin' real hard to get closer to Maud, but, well...
@@ -3091,26 +3034,18 @@ And the sooner we figure out why, the sooner we can go home.
 Uh-huh...
 I got an idea.
 But you gotta eat all of them muffins, Pinkie.
-[hushed]
 You got a stronger stomach than any of us, and that filly in there might be our best chance at findin' out what the hay is goin' on round here.
-[stilted]
 I can't believe you ate all our muffins, Pinkie Pie!
 We'd best go inside and get some more!
 [grunts]
-This door's shut tighter than a...
-summer of...
-...uh, piglets in...
-shoot!
+This door's shut tighter than a... summer of... uh, piglets in... shoot!
 I can't even make countryisms no more!
 Well, it looks like you'll have plenty of time to try to think about it.
 But they're never gonna believe we switched over in just one night.
 Y'all don't understand, do ya?
 You can't force nopony to be friends!
 It don't work like that!
-[hushed]
-So what are we gonna do while Fluttershy's out there lookin' for our [whispering]
-cutie marks?
-[grunting]
+So what are we gonna do while Fluttershy's out there lookin' for our cutie marks?
 Then let's get moving, y'all!
 Yee-haw!
 Finally, I can buck like a five-bit snake herder in an Appleloosa ranch house again!
@@ -3130,12 +3065,8 @@ Is there somethin' you wanna tell us?
 We'll make this place feel cozier than hot cider on a rainy day.
 Come on, y'all!
 We've got work to do!
-[unconvincingly]
 Wow, girls!
-We did a...
-great job...
-together...
-[laughs nervously]
+We did a... great job... together...
 Nope, just old!
 Unlike your sparkly window doohickeys which are...
 why, they're just swell!
@@ -3172,7 +3103,6 @@ I couldn't either.
 Your kitchen might have some rustic farm decor, Twilight.
 [sighs]
 One of Pinkie Pie's confetti cannons.
-[simultaneously]
 Oh, Pinkie...
 I'm sure there are, but you don't need to?
 Well, that's just ridicu?
@@ -3183,7 +3113,6 @@ Of course, I'm sure.
 Now get some sleep.
 You'll see.
 Everything will be better in the mornin'.
-[muffled]
 Breakfast!
 See, now what did I tell you?
 A good night's sleep'll fix just about an?
@@ -3196,7 +3125,6 @@ Only a pest pony can do that!
 Now come on!
 We gotta skedaddle!
 Are you crazy?
-[muffled]
 Breakfast!
 See, now what did I tell you?
 A good night's sleep'll fix just about?
@@ -3207,7 +3135,6 @@ More like what?
 I expect you want to run off to the clubhouse and tell your friends all about your new cutie mark.
 But before you go, make sure you do all your...
 chores...
-[muffled]
 Breakfast!
 See, now what did I tell you?
 A good night's sleep'll fix?
@@ -3216,7 +3143,6 @@ Right...
 Nothin' at all...
 Right, Big Mac?
 Eeyup.
-[in Big McIntosh's voice]
 And we don't have room for non-apples.
 Eeyup!
 Well, sure looks like somepony's feelin' better.
@@ -3225,9 +3151,7 @@ A good night's sleep cures just about everythin'.
 What in the name of Celestia's goin' on up there?
 Buck up, Sugarcube.
 You just ain't yourself these days.
-[awkwardly]
-Uh...
-it's okay.
+Uh... it's okay.
 Tank'll come back in a few months.
 Alright, alright.
 There, there.
@@ -3236,7 +3160,6 @@ Nice going, Fluttershy.
 How do we get her to stop?
 Nope, I'm good.
 It's true.
-[hushed]
 You think she's done or just getting a third wind?
 The fun's come early!
 Yee-haw!
@@ -3263,7 +3186,6 @@ Good job, y'all.
 I know they need lots of mud for the rodeo tomorrow, but I wish they would've warned us about this rainstorm.
 Braeburn?
 Where are the girls?
-[echoing]
 What?
 Sheriff Silverstar!
 You gotta help!
@@ -3355,7 +3277,6 @@ That Sassy totally stepped on your hooves, Rarity.
 [under her breath]
 Is she sure she doesn't wanna do it herself?
 Uh...
-[panting]
 Whew!
 Got here as fast I?
 Where do you think?
@@ -3448,9 +3369,7 @@ Heh-heh.
 But all the same, I'd sure like to head back to Ponyville on the next train.
 I want to check in with Apple Bloom and find out how the Sisterhooves Social turned out.
 [sighs]
-[laughing]
 Woo-hoo!
-[more laughing]
 You trickster!
 Hey there, Big Mac!
 Did you want somethin'?
@@ -3526,7 +3445,6 @@ This place looks amazin'!
 And you must be?
 [hushed, to Apple Bloom]
 Guess Pinkie Pie always did the talkin' for her.
-[hushed]
 So far, so good, cousin!
 Well, that's a mighty tall order, but it wouldn't surprise me in the least.
 What about hot rolls and mulled cider and double-baked pot pie?
@@ -3536,7 +3454,6 @@ Right, everypony?
 [laughs nervously]
 O' course, I'm just being a rusty fiddle.
 Tune me up and let's get back to dinner.
-[slurping]
 [gag, coughs]
 Now that's somethin' I know all about!
 Are you sayin' that rock is a Hearth's Warmin' doll?
@@ -3563,7 +3480,6 @@ You're only allowed to eat rock soup for dinner, then the pony who finds this ro
 Well, how 'bout you picture this?
 Both our families, openin' presents, raisin' the flag...
 Goodnight, Pinkie Pie!
-[hushed]
 We've gotta do somethin', y'all!
 Pinkie Pie's family never had a real Hearth's Warmin'!
 Well, I-I'm sure it's what she meant.
@@ -3578,7 +3494,6 @@ I didn't mean to cause a fuss...
 Why don't we just open presents around the flag pole?
 It'll be fun, you'll see!
 Oh, boy.
-[sniffling]
 I really cracked the corn this time.
 Pinkie Pie?
 What are you doin' here?
@@ -3594,13 +3509,10 @@ You too.
 Aw, crickets!
 That is important!
 I got so caught up in the things they were doin', I never asked why they did 'em!
-[reading]
 To Applejack, from Pinkie Pie.
 Cousins forever.
-[laughing]
 Only Pinkie Pie could hide a present on a movin' train.
 ...What a great tradition.
-[beat]
 Stop the train!
 Need a little help?
 I wasn't tryin' to take your traditions away, I was tryin' to share ours.
@@ -3656,7 +3568,6 @@ I don't suppose that means we're gonna need to get a new tablecloth, does it?
 I wonder why she asked us here so bright and early.
 A what now?
 What kind of fertilizer have you had your nose in, Twilight?
-[hushed]
 So much for that whole spell theory.
 Sure you can, Twilight, and none of us begrudge you for it.
 Wait a minute.
@@ -3937,16 +3848,13 @@ I'm sorry, but I just couldn't let those spa ponies go another minute puttin' up
 Somehow they just got used to a huge bottleneck of ponies standin' around waitin'.
 An' I took one good look at that spa jam, and I knew I had to do somethin'!
 Sometimes the simplest things can just derail a whole operation.
-[babbles]
 Whether it's a leaky pipe or doin' too much laundry.
 You can't just stick to the same old way of doin' things and expect them to get better.
-[clucking]
 I mean, thinkin' you can is just plumb ridiculous.
 Right?
 [short laugh]
 It's funny when you realize the extra work they were doin' was actually makin' things worse!
 I mean, I guess it's possible to get stuck in a routine where you're doin' all this extra stuff and not realize it, but I can't for the life of me think of how!
-[beat]
 Why are y'all starin' at me like that?
 What?
 Of course!
@@ -4056,7 +3964,6 @@ That's ridiculous!
 Filly Guide cookies haven't changed for years!
 It's not like there's a new ingredient that's turnin' the whole town into cookie-cravin' zombies.
 What did you do?
-[droning]
 Looks like your prank up and backfiiiirrrrreeeeed...
 [chuckles]
 Yeah.
@@ -4098,7 +4005,6 @@ And all the unicorns have to do is float these here baskets around the outside o
 You two get the idea?
 Okay, just try your best, Pinkie.
 I have been doin' this a lot longer than you.
-[dazzled]
 Nice kick.
 Great save, Fluttershy!
 Where did Pinkie Pie learn to buck like that?
@@ -4184,7 +4090,6 @@ Gladmane?
 I have to admit you're not the type of pony I expected to find in Las Pegasus.
 Lead the way, Mr Gladmane!
 Howdy!
-[hushed]
 Doesn't look like there's any friendship problems here.
 [clears throat]
 Fluttershy?
@@ -4242,53 +4147,36 @@ guess.
 While y'all figure that out, I'm gonna start layin' out the pictures for scrapbookin'.
 We got a whole lot of time to cover.
 We've got at least eighty moons worth of memories to go through.
-[mechanically]
 However you want me to organize them, Starlight.
-[mechanically]
 Sweet Apple Acres, twenty moons ago.
 Granny Smith was lookin' for her favorite pie tin.
 She looked in the kitchen, but it wasn't there.
 She looked in the barn, but it wasn't there.
-[mechanically]
 Huh.
 Turns out Granny Smith didn't know how to make a pig do the backstroke.
-[mechanically]
 Sure thing, Starlight Glimmer.
-[mechanically]
 Granny Smith knew she was gonna need a bigger boat, so Goldie Delicious says, If you can't say anythin' nice about anypony, come sit by me!
 Big Mac knew if he just covered himself in mud, the creature wouldn't be able to see him!
-[mechanically]
 She was just a pony standin' in front of another pony askin' him to love her.
-[mechanically]
 They can take our farm, but they can't take our freedom!
-[mechanically, muffled]
 It was the best of apples, it was the worst of apples...
-[mechanically]
 Big Mac told me, With a whole lot of power comes a heck of a lot of responsibility.
-[groaning]
 I don't know what kind of whammy Starlight put on us, but I feel like I got shoved through the Super Speedy Cider Squeezy 6000.
 Well, ain't that the understatement of the day.
 Hey, Starlight!
 Most of the Apple family photos are still layin' around in the wreckage.
 I think I'll come along and hunt 'em down.
-[sea dog accent]
 The sea air carries a portent for trouble this day.
 'Tis a treacherous and perilous journey that lies ahead of us!
 We sail to adventure...
 or our very doom.
-[sea dog accent]
 Arrr!
 Get those off me ship!
-[sea dog accent]
 Yar-har-har-har, hardy-har-har-har!
-[laughs in sea dog accent]
 I'll be chartin' a course to the very heart of that maelstrom!
-[sea dog accent]
 This be the only way to Plunder Cove!
-[sea dog accent]
 Yah!
 There'll be no mutiny aboard me ship!
-[sea dog accent]
 Is that all you've got?
 [laughs]
 Ahoy, mateys!
@@ -4318,7 +4206,6 @@ And Pinkie Pie was just about as helpful as a weasel in a hen house.
 Hold on, everypony!
 Yup!
 And maybe if they ever apologized, I'll consider talkin' to them again.
-[panting]
 Winona brought me your note about a friendship emergency!
 H-How can I help?
 Oh, there's no emergency!
@@ -4334,7 +4221,6 @@ Wait a minute.
 You brought all those games and things for us?
 And I just wanted to give you two a high seas adventure, since that'd be somethin' new and different for y'all.
 Well, not half as much trouble as you did makin' all that fancy food, and bringin' all those games!
-[simultaneously]
 Agreed!
 All right, you big softie!
 Bring it in!
@@ -4393,7 +4279,6 @@ Well, she's the boss.
 [sighs]
 And Wrangler sure made a fool outta me, too.
 I'm sorry, Fluttershy.
-[simultaneously]
 You show 'em, filly!
 What?
 What?
@@ -4442,9 +4327,7 @@ This is...
 She looks like a disco ball!
 Hah!
 D-Did they have to roll her down the runway?
-[laughing]
 I can't believe anypony would actually wear this!
-[laughing]
 Am I right?
 Oh, gosh.
 I didn't mean to make her faint.
@@ -4486,7 +4369,6 @@ Who cares if it's stitched perfectly?
 You don't need feathers on your head!
 My little sister tried to add some flair to her hat, and guess what it got her ?
 an extra hour of work pickin' apples off the ground!
-[chuckling]
 What?
 Oh, no.
 Uh, it's just, I mean...
@@ -4513,10 +4395,8 @@ Why?
 They're crunchy, they're sweet, they're delicious.
 You're right!
 Apples are better than strawberries!
-[stammering]
 You'd better apologize!
 What?
-[growling]
 Well, that's fine if she doesn't like 'em!
 But if she knew how hard we worked to make our apples perfect, maybe she wouldn't be so mean about?
 ...Ohhhhhhh...
@@ -4531,7 +4411,6 @@ I'm a real rotten apple.
 Yup.
 But you're not goin' back to Canterlot yet.
 Hey!
-[panting]
 Whew...
 Listen, y'all.
 I thought I was just bein' honest when I said all those things.
@@ -4545,11 +4424,8 @@ I also know this contest is important to Rarity.
 So what do you say?
 Anything.
 Show's back on, fellers!
-[grunting]
 Ahhh...
-[grunting]
 Aah!
-[laughing]
 I don't think that word means what you think it means.
 But I did bust my tail because I know how much this means to you.
 [sucks air through teeth]
@@ -4651,7 +4527,6 @@ Looks like you got a little aggressive with your friendship lessons, Rainbow Das
 That's amazin'!
 A perfect copy!
 W-We always said we wanted to.
-[panting]
 I need a hundred blankets, and I need 'em now!
 Sorry, Twilight.
 I don't need nothin' fancy.
@@ -4667,11 +4542,8 @@ Let me help!
 I didn't know where else to go!
 I've got so much cookin' and cleanin' and family-in' to do...
 I ain't got time for anythin' else!
-[snoring]
 It makes everythin' we've been through worth it.
 Reckon we still have to deal with them, don't we?
-[straining]
-[muffled]
 Hey, kid, get over here!
 Tents are lookin' good.
 And we made good time today.
@@ -4758,7 +4630,6 @@ Your style speaks for itself.
 Pinkie Pie?
 Pinkie Pie!
 Whooooaaaa!
-[grunting]
 Party-planning cave.
 Right.
 You okay?
@@ -4892,8 +4763,6 @@ Aw, quit frettin'.
 It's only a couple o' pals gettin' together to put on a ones-versary play.
 What could go wrong?
 Uh, honestly?
-[muffled]
-[whispering]
 Yeah.
 Our lead actress is a disaster!
 Ya need to tell Celestia the truth, Twilight.
@@ -4974,7 +4843,6 @@ H-Hold up, Twilight.
 Don't count Rainbow Dash for the award just yet.
 You shoulda seen her fire up those students to build a shed.
 Does that mean you'll give us another chance at the Teacher of the?
-[muffled]
 Right as rain and twice as fresh!
 See?
 We're agreein' already.
@@ -5004,18 +4872,12 @@ Only as right as you are!
 I'm goin' with your idea!
 Vines!
 No buts about it!
-[muffled]
 Why use a branch when you can use a vine?
-[grunting]
 Whoa!
-[grunting]
-[muffled]
 Come on now...
-[grunting]
 These here vines are just the thing, Rainbow Dash!
 [screams]
 Let me try.
-[grunting]
 Mm-hmm.
 And they look mighty hungry.
 I hate to admit it, but?
@@ -5038,14 +4900,12 @@ What in tarnation?
 Apple Bloom!
 You know better than to leave our good tools out like that!
 And aren't you supposed to be on harvest duty right now?
-[stammering]
 What's gotten into you?
 Those chores are your responsibility!
 Farm work is family work!
 Ahhh.
 So that's what this is all about.
 Well, if it's learnin' you want, I'd be happy to give you a private lesson right now...
-[angrily]
 Startin' with cleanin' up all this equipment!
 They're honorary diplomas, makin' y'all official graduates of this here school.
 Normally I wouldn't lug so much gear, but did y'all know this is Starlight's first time campin'?
@@ -5169,7 +5029,6 @@ Why?
 Well, maybe there's a little somethin' to be scared of.
 Yah!
 [groans]
-[panting]
 Those must be the Peaks of Peril.
 Whew.
 Tough goin', huh, Fluttershy?
@@ -5199,11 +5058,9 @@ Quiet bunch, ain't they?
 We're from Equestria, and we're plumb tickled to meet y'all.
 S-So, uh...
 what are your names?
-[stressing]
 Ap-ple-jack!
 Flut-ter-shy!
 Remember?
-[stressing]
 You.
 Un-der-stand.
 Ponish?
@@ -5265,7 +5122,6 @@ There's no cure left?
 [sighs]
 Well, this wouldn't be a friendship quest if it was easy.
 I'm gonna start by gettin' your friends to welcome you back!
-[panting]
 Fluttershy!
 Guess what!
 Bet that's a problem the Kirin never have.
@@ -5387,7 +5243,6 @@ And a one, and a two, and a...
 I know that one's a crowd favorite.
 What say we play it one more time?
 And a one, and a two, and a?
-[quietly]
 A distraction's a distraction.
 I'm strong, Twilight, but not even I can buck through solid rock.
 Welcome to Sweet Apple Acres, Yona.
@@ -5534,7 +5389,6 @@ And I got so excited, I could barely sleep.
 So I?
 Don't you worry, sugarcube.
 I won't let him get away.
-[snoring]
 Huh?
 W-What is it?
 Well, let's go check it out!
@@ -5543,10 +5397,8 @@ Don't scare him off.
 We got to lead him into one of the traps.
 Apple Bloom!
 Wait!
-[panting]
 Huh?
 Huh?
-[panting]
 He's been harvestin' in his sleep this whole time!
 Y-You okay, Big Mac?
 ...And thanks to all of Big Mac's late-night work, we brought in the whole harvest with time to spare.
@@ -5562,7 +5414,6 @@ You know what this means?
 Look out, Great Seedlin'!
 Here we come!
 And why there's a giant turtle eatin' my family's entire summer crop!
-[grunting]
 Y'all think they're gonna be doin' this a lot?
 And then they carried Granny Smith across the street.
 There wasn't even any traffic!
@@ -5608,7 +5459,6 @@ I guess.
 There's gotta be a reason.
 Something got 'em all sick.
 Maybe the food?
-[grunting]
 I told y'all this was a bad idea!
 But nopony ever listens to me!
 Everythin' was goin' fine.
@@ -5619,7 +5469,6 @@ And how's that?
 [gasps]
 Rarity, Spike's been followin' you closely since he got to Ponyville.
 And in case you hadn't noticed...
-[echoing]
 I AIN'T SPIKE!
 I wish I could, sugarcube.
 But Big Mac's not feelin' well today.
@@ -5698,11 +5547,8 @@ You're the new girl who gave Sunset Shimmer the what for today.
 [spits]
 I'd think twice about that.
 Oh, sure, she'll probably approach you all friendly like...
-[fakes Sunset Shimmer's voice]
 I sure am lookin' forward to some friendly competition.
-[fakes Twilight's voice]
 That's so good to hear.
-[normal]
 But then, here comes the backstabbin'.
 About the only girl in this school you can trust less than Sunset Shimmer is Rainbow Dash.
 She's also the captain of sayin' she's gonna do somethin' for ya, and then turnin' around and not even botherin' to show up.
@@ -6109,7 +5955,6 @@ Quick!
 Try this!
 The food!
 [grunts]
-[grunting]
 [sighs]
 Summer.
 Ya know, there's nothin' like kickin' back and enjoyin' the?
@@ -6133,8 +5978,6 @@ Why on Earth would you try to hack it out there without knowin' how?
 You could've got hurt!
 I'm the substitute lifeguard today, and I'm ready to dive in headfirst.
 What's the plan?
-[grunting]
-[continues grunting]
 That's not my way.
 Gotta be prepared.
 Just doin' ma job, ma'am.
@@ -6145,7 +5988,6 @@ See, this is what hard work can do.
 I gotcha!
 Why are you crying?
 We're savin' you!
-[grunting]
 Yeah.
 With my elbow grease and Timber's know-how, we actually make a pretty good team.
 Let's do this together?
@@ -6183,10 +6025,8 @@ Rarity!
 Wake up!
 Step seventy-three ?
 the big reveal!
-[whispering]
 Yeah.
 G'night, you two.
-[shivering]
 Uh, d-d-d-don't you think it's a...
 pinch chilly for this getup?
 C-c-c-c-c-c-c-c-cold...
@@ -6214,7 +6054,6 @@ And now for the victory lap!
 Here comes our participation winners!
 Next up, our third place partners: Micro Chips and JVJ-24601.
 Uh...
-[quietly]
 Hey, Fluttershy, does a robot count as a pet?
 Uh, I mean, over to you, Fluttershy!
 Our second place team sure knows how to put a game face on durin' a tough competition!
@@ -6272,7 +6111,6 @@ Everyone does it.
 And I mean everyone.
 Told ya.
 Picture everyone in the audience as a bunch of chickens...
-[clucking]
 Heh.
 Chicken trick worked, huh?
 Heh.
@@ -6298,7 +6136,6 @@ Absolutely!
 Construction's the quick part.
 Like I always say: Measure twice, cut once.
 But only after you measure three more times.
-[resumes hammering]
 What?
 What?
 Waaah!
@@ -6332,7 +6169,6 @@ And over here!
 I'll be honest.
 I think you drummed up one heck of a set, Pinkie Pie.
 So what we got here is a basic disco layout with a light-up dance floor and recessed cans to backlight the performance.
-[muffled]
 But how am I supposed to tell ya what to do?
 Soooooooooooooo...
 what do I do?
@@ -6400,7 +6236,6 @@ Everyone does it.
 And I mean everyone.
 Told ya.
 Picture everyone in the audience as a bunch of chickens...
-[clucking]
 Heh.
 Chicken trick worked, huh?
 Heh.
@@ -6426,7 +6261,6 @@ Absolutely!
 Construction's the quick part.
 Like I always say: Measure twice, cut once.
 But only after you measure three more times.
-[resumes hammering]
 What?
 What?
 Waaah!
@@ -6460,7 +6294,6 @@ And over here!
 I'll be honest.
 I think you drummed up one heck of a set, Pinkie Pie.
 So what we got here is a basic disco layout with a light-up dance floor and recessed cans to backlight the performance.
-[muffled]
 But how am I supposed to tell ya what to do?
 Soooooooooooooo...
 what do I do?
@@ -6511,7 +6344,6 @@ Foot-powered.
 Eat bananas for potassium.
 You're right.
 I can admit when I'm beat.
-[softly]
 Ain't she a quiet one?
 [groans]
 Now ya gone and done it!
@@ -6559,13 +6391,9 @@ You're takin' the job, and that's final.
 Heh-heh.
 All right.
 I probably shouldn'ta quit my old job this mornin', huh?
-[grunting]
 Rarity!
-[insincere]
 Fantastic!
-[grunting]
-I could not be happier...
-makin' foot-stompin' applesauce the old-fashioned way with my family.
+I could not be happier... makin' foot-stompin' applesauce the old-fashioned way with my family.
 And I'm happy for you and your new job, too.
 I'm sure you won't slip up.
 Whoa!
@@ -6595,8 +6423,7 @@ You know Vignette Valencia?
 [growls]
 [clears throat irritably]
 Hmph.
-She sure is...
-somethin'.
+She sure is... somethin'.
 I got a question, too.
 When you said she's your best friend at the park, did you mean best friend, comma, at the park?
 [sighs]
@@ -6725,7 +6552,6 @@ Hey, maybe the parade ain't ruined after all!
 I think I may have forgotten to pack my sea legs.
 [gags]
 We couldn't even spend the day at Equestria World without creatin' a calamity.
-[gagging]
 Hmmmph.
 Mmmph!
 Mmmmmph!
@@ -6743,7 +6569,6 @@ Oh, no.
 It heard me.
 Blegh!
 Hmmph.
-[gagging]
 Oof.
 I'll fix the engine while you're gone.
 We'll be ready to go before that storm hits us.
@@ -6847,10 +6672,8 @@ Ya think, maybe it's time we talk to Twilight?
 And we got no way to defeat those monsters.
 Now don't get too excited.
 He's just talkin' about us.
-[quietly]
 Pinkie, quit lookin' so happy!
 Ya ain't foolin' nopony!
-[grunting]
 Uh-oh.
 Whoa!
 Yee-haw!
@@ -6860,7 +6683,6 @@ Hey, y'all!
 What's everypony?
 Ohhh.
 Traditional holiday meltdown?
-[calmly and quietly]
 Hey, Twilight.
 How's your day?
 Stop!
@@ -6911,11 +6733,8 @@ But maybe we can show 'em!
 Same as everypony else.
 I want a Hearth's Warmer.
 In fact, I want three!
-[overacted]
 After I saw my friend here with hers, I knew I had to buy some for my granny, my brother, and my little sister!
-[overacted]
 But, Fluttershy, this is the must-have gift of the season.
-[overacted]
 That's true!
 I guess I need to put more thought into getting the right gift for each pony.
 Can I return these?
@@ -6939,7 +6758,6 @@ I win, fair and square.
 I missed you so much, Tallulah!
 Triple Pony Dare ya, Rainbow Dash!
 Fly slower than apple molasses!
-[straining]
 Whoa...
 [screams, groans]
 You gotta dig five holes before sunset ?
@@ -6951,7 +6769,6 @@ No way!
 Sorry.
 Can't see a darn thing.
 The way I see it, we gallop backwards, whistle carols, then lick 'em.
-[high-pitched]
 Sorry for the inconvenience!
 Oh, hey!
 What do you think?
@@ -6960,25 +6777,16 @@ With all the bad news, I thought I'd give 'em some flavor.
 [chuckles]
 Sure were.
 Want to hear another?
-[non-accented]
 This land shall be known as Unicornia.
-[normally]
 ...proclaimed Princess Platinum.
-[gruffly]
 PEGASOPOLIS!
-[normally]
 ...demanded Commander Hurricane.
-[high-pitched]
 Dirtville!
-[normally]
 ...suggested Chancellor Puddinghead.
 And still the windigos raged outside.
-[spooky noises]
-That...
-is the fifth strangest thing I've ever seen.
+That... is the fifth strangest thing I've ever seen.
 Uh-oh!
 Whoooaaa!
-[screaming]
 Hey, Fluttershy!
 Congrats on bein' Teacher of the Month.
 Again.
@@ -7003,7 +6811,6 @@ They'll keep 'til we get back.
 Ugh.
 You're gonna be like this the whole trip, ain't ya?
 [sighs]
-[reading]
 nd try our famous rainbow trout catch-and-release activity.
 Huh.
 Now that sounds right up my river.
@@ -7107,7 +6914,6 @@ Well, I sure don't need any o' that silly stuff you're luggin' around.
 [chuckles]
 Just look in a mirror.
 Guess I should've told you that before, huh?
-[chuckling]
 Now, wait a second.
 Weren't you just?
 [gulps]
@@ -7171,7 +6977,6 @@ But right now, we-we only ask for your understandin' during this difficult time.
 W-W-What was I supposed to do?
 You heard Rich.
 If I told him the truth, he was gonna stop doin' business with us altogether.
-[hushed]
 Well, it worked, didn't it?
 Uh, excuse me one second!
 Oh, I'm sorry, Granny.
@@ -7195,9 +7000,7 @@ Uh, say, Granny, when did you first fight the apple blight again?
 Uh, Big Mac didn't wanna be rude, but you just can't see Granny right now, because she's...
 got apple blight!
 Yeah, that's usually the case.
-[beat]
 The doctors think it's from workin' in the orchards for so many years.
-[beat]
 Y'see, we had to take Granny to Ponyville General.
 We just got back right before you showed up.
 Um, I'm sure you'll be fine, but you should leave...
@@ -7244,7 +7047,6 @@ I would, but if I let you do the talkin', you'd just ramble on and on until we a
 Just lay down, keep still, and promise me you won't say anythin' for once in your life!
 Granny!
 [squeaks]
-[hushed]
 Granny!
 Uh, Granny, they need you to wait here!
 I'll come get ya!
@@ -7254,7 +7056,6 @@ I mean, she was right here!
 Oh, no.
 We gotta go!
 You two, don't lose that gurney!
-[hushed]
 Granny, what are you doin'?
 You were supposed to stay there!
 Uh...

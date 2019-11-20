@@ -59,7 +59,6 @@ Eeyup.
 [sniffs]
 [licks lips]
 [gulps]
-[whistles innocently]
 Eeyup.
 Eeyup.
 [chomp]
@@ -86,7 +85,6 @@ Eeyup.
 [through gritted teeth]
 Eeyup.
 Eeyu- hey!
-[sadly]
 Eeyup.
 I was the pony who?
 Eeyup!
@@ -95,21 +93,14 @@ Eeyup!
 Eeyup.
 I'm goin' to do- [voice drowned out]
 Eeyup.
-[wheezing and snorting]
 [gulps]
-[croaking]
 Nope.
 [gulps]
-[croaking]
 Eeyup.
-[croaking]
 Well...
 [inhales]
-[croaking]
 Ahhhh.
-[croaking]
 Ahhh?
-[croaking]
 [inhales]
 [chuckles]
 Eeyup.
@@ -135,7 +126,6 @@ Eeyup.
 Uh, no.
 Eeyup!
 Truth is, Apple Bloom, it's your cutie mark.
-[echoing]
 Well, I can tell you what it ain't.
 It ain't no apple.
 [in Applejack's voice]
@@ -144,7 +134,6 @@ Oh, and you're gonna have to change your name.
 I think just 'Bloom' has a nice ring to it, don't you, Applejack?
 Eeyup.
 Wheeeeee!
-[giggling]
 Eeyup!
 Eeyup.
 Eeyup.
@@ -160,7 +149,6 @@ Eeyup!
 [as Orchard Blossom, falsetto]
 Well, I do declare!
 It's hotter today than the business end of a corncob pipe!
-[giggling]
 Oh, my!
 I'm so delighted to meet your little friends, Apple Bloom.
 Would these be your dear and beloved Cutie Mark Crusaders?
@@ -189,7 +177,6 @@ They've approved us as a pair!
 Hurry along now, precious!
 Here we are!
 This one, please.
-[hushed]
 Did it now?
 Just a frog in my throat, dear.
 Probably just need to get a sip of water.
@@ -213,13 +200,11 @@ Oh, dear.
 [snorts]
 [yelp]
 [belches]
-[chewing]
 [belches]
 Pick up those hooves, Apple Bloom!
 Why, you're barely movin' at a mosey!
 Come on, junebug, it's...
 like you've never carried an egg before!
-[anxious jittering]
 Woo-hoo!
 [coughs]
 I mean, [clears throat]
@@ -263,7 +248,6 @@ Eeyup.
 Nnnope.
 [grunts]
 [spits]
-[annoyed]
 Nnnope.
 Eeyup!
 Nnope.
@@ -279,7 +263,6 @@ Annie Apple awoke and accidentally ate an auburn azalea!
 [screams]
 Make it stop!
 [unintelligible whispering]
-[hushed]
 Yup.
 Eeyup!
 Yup.
@@ -289,10 +272,8 @@ Oh, yeah!
 [stifled laughter]
 Nnope!
 Eeyup.
-[chuckling]
 Parsnips.
 [laughs]
-[laughing]
 Whoaa!
 Nope!
 Nope!
@@ -315,15 +296,12 @@ Eeyup!
 Eeyup!
 Oh, yeah!
 Nnnope.
-[laughing]
-[laughing]
 Eeyup!
 Eeyup.
 Eeyup.
 Eeyup.
 [laughs nervously]
 Eeyup.
-[whistling]
 Pfft!
 [whinnying laugh]
 Eeyup.
@@ -333,7 +311,6 @@ Oh, I...
 Eeyup.
 Mm-hmm.
 Eeyup.
-[angrily]
 Nnope!
 Uh-uh.
 O-Oh...
@@ -355,7 +332,6 @@ Mm-hmm.
 Eeyup.
 Oh, yup!
 Oh, nope.
-[gulps, nervous sounds, puckering]
 [nickers]
 S-Say what now?
 Eeyup.
@@ -389,47 +365,32 @@ Eeyup.
 Nnnope.
 [groans]
 Eeyup.
-[whispering]
 Eee...
 wait!
 [embarrassed giggling]
-[clears throat irritably]
 Eeyup!
 Eeyup.
-[chuckling]
 [groans]
-[singing]
-...ffle, cookin' a souffle...
 Whoa!
 [gasps]
 Eeyup!
 [panicked noises]
 Hush!
 [gasps]
-[wailing loudly, gulping]
-[continues wailing, gulping]
 She takes pie-bakin' seriously!
 Why'd I even try?
 I bet she thought I...
 I was makin' fun of her!
-[continues wailing]
 [blows nose]
 [sighs]
-You...
-said...
-her...
-[wailing]
-naaaaaaame!
+You... said... her... naaaaaaame!
 She used to do this thing where her-her nose would wrinkle when she laughed.
 Right there, in that hole where your nose used to be.
 I never told her how much I loved wrinkle-nose cutie-face...
-[wailing]
 and now I never will!
-[crying]
 Eeyup.
 Hup!
 She broke my heart.
-[angrily]
 Eeyup!
 Sugar Belle...
 we need to talk.
@@ -483,8 +444,6 @@ Or the invitation?
 Well, in that case...
 allow me to escort you to a Hearts and Hooves Day surprise!
 Eeyup.
-[snoring]
-[pained yelling]
 Eeyup.
 [laughs]
 [yawns]
@@ -502,8 +461,6 @@ eeyup?
 [sighs]
 [wheezes]
 Eeyup.
-[snoring]
-[mumbling]
 Aah!
 Nnnope.
 Eeyup.
@@ -591,10 +548,8 @@ You were supposed to tell Rich the simple truth!
 But instead, you made things worse with a giant lie!
 Yeah, but that's only because I...
 I forgot to ask if we had any oat crumbles for this delicious-lookin' salad, Granny.
-[hushed]
 That was only because you made promises you couldn't keep!
 But there's gotta be a better way out of this mess than by makin' up some story about Granny bein' sick!
-[sarcastic]
 Look, sis.
 Our good friend, Mr Rich and his fiance...
 are here.
@@ -617,7 +572,6 @@ Now I know you thought sellin' cider in Filthy's store was a good idea, but it a
 Why can't you be Granny?
 You're her size, and this is all your fault in the first place.
 [groans]
-[unconvinced]
 Eeeeyup.
 Nnnope.
 That's...

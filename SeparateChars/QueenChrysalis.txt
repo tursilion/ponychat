@@ -283,7 +283,6 @@ No matter.
 Getting into the castle won't be a problem.
 Those are new.
 But even so...
-[affected voice]
 Transfer.
 Have to head inside.
 Open up.
@@ -292,7 +291,6 @@ Of course.
 [laughs nervously]
 Uh, do yours get glitchy too?
 More medallions, more problems, am I right?
-[normal voice]
 They've increased security into the castle.
 This is going to be more challenging than I thought.
 Oh, no.
@@ -339,7 +337,6 @@ Oh, way ahead of you, Grogar.
 [spits]
 Without magic, he's no threat.
 Besides, we have plans.
-[in Discord's voice]
 Let the fool go.
 Without magic, he's no threat.
 Besides, we have plans.
