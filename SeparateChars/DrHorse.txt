@@ -18,7 +18,6 @@ Mm-hmm.
 We're looking for any color other than red.
 Oh, it's just as I thought.
 I'm afraid you have a very rare disease called...
-[echoing]
 Swamp Fever!
 Unfortunately, very little is known about the disease.
 Except, of course, its symptoms ?
@@ -27,6 +26,5 @@ A cure has yet to be discovered.
 I'm sorry, Zecora.
 It's a lot to take in.
 I'll leave you two to discuss.
-[coughing]
 Please tell me you found the cure!
 [sneezes, sneezes]

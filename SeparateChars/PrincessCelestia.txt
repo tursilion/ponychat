@@ -244,10 +244,8 @@ Then go.
 There is no time to lose.
 The Crystal Empire has returned.
 It must be you and you alone.
-[echoing]
 If the Empire is filled with hope and love, those things are reflected across all of Equestria.
 If hatred and fear take hold...
-[echoes out]
 What are you doing here?
 And now you must go.
 Doesn't matter to me.
@@ -275,7 +273,6 @@ Congratulations on your success, ponies.
 I definitely sense a big change in Discord.
 I'll leave the Elements of Harmony with you, Twilight.
 Just in case.
-[echoing]
 Congratulations, Twilight.
 I knew you could do it.
 You did something today that's never been done before.
@@ -345,10 +342,8 @@ Your time will come.
 I've just had the most terrible dream.
 Then we haven't much time.
 The stronger he becomes, the more we are all in danger.
-[narrating]
 Tirek and his brother Scorpan came here from a distant land, intent on stealing Equestrian magic.
 But Scorpan soon came to appreciate the ways of Equestria, even befriending a young unicorn wizard.
-[narrating]
 Scorpan returned to his own land, and Tirek was sent to Tartarus for his crimes.
 But it appears he has found a way to escape.
 His time in Tartarus left him very weak.
@@ -452,7 +447,6 @@ An appropriate one, of course, for even I don't know the answer.
 This is a momentous decision.
 You must consider all the possibilities.
 [laughs heartily]
-[continues laughing]
 Oh, Twilight, I'm not.
 I'm laughing because I had the exact same fears you're having.
 Let me tell you a story.
@@ -588,7 +582,6 @@ In that case, they are terrible!
 [sighs]
 But it means a lot that you tried.
 I love you, sister.
-[laughing]
 It's all real.
 It was the right call going with your gut.
 It was just what we needed.
@@ -727,7 +720,6 @@ Commanding.
 Confident.
 Feel the rising sun's warmth.
 Equestria needs you.
-[whispering]
 Spike!
 Improvise!
 We play charades.
@@ -857,18 +849,14 @@ Now, every time we have tea, we can remember this magical day!
 Is it another zip line?
 It is indeed.
 You didn't need a stamp if you were just going to give this to me.
-[echoing]
 Did you know that nopony has ever explored the bottom of these caverns?
-[chewing, gulps]
 Well, I hope you're enjoying yourself on your super-relaxing picnic, sister.
 Well, they hurt less than that horrible howling you dragged us to.
 Oh, just face it, Luna.
 You are never happy!
 You think I like that kind of pressure?
 Being responsible for every little thing in Equestria and you?
-What I'd like is a [booming]
-sister I can depend on!
-[booming]
+What I'd like is a sister I can depend on!
 Calm down, Luna!
 Fine!
 I just remembered something I forgot I always wanted to do.
@@ -901,7 +889,6 @@ Now, where have I seen that before?
 You think maybe Twilight's having trouble with the amulet?
 I realize the game of buckball traditionally requires an Earth pony, a Pegasus, and a unicorn, but I appreciate you allowing my students to compete.
 Indeed, though not as well as your team.
-[echoing]
 COME ON, SCHOOL OF MAGIC!
 I'm glad to see such good sportsponyship on display.
 Your cheer squad was an inspiration, Rainbow Dash.
@@ -1025,12 +1012,9 @@ Yes.
 You just need to let the head of the Fall Formal planning committee know you'd like to be on the ballot.
 Was there anything else?
 Well, if you do need anything else, my door is always open.
-[on P.
-system]
 Good morning, students, and happy Thursday.
 Just a reminder to pick up your ballots for the Princess of the Fall Formal today.
 They are due at the time the dance starts tomorrow night, so don't forget to turn them in and make your voice heard.
-[clapping]
 All right, everyone!
 Fall Formal is back on for this evening.
 So you'd better get out of here and start getting ready.
@@ -1065,7 +1049,6 @@ I believe I speak for everyone when I say it is by far the greatest thing we hav
 We are so glad our three newest students encouraged us to turn this event into something exciting!
 Please do not drop the microphones.
 The next band to take the stage will be Trixie and the Illusions.
-[laughing]
 Fantastic!
 Next up, the Rainbooms.
 The band that will be joining the Dazzlings in tonight's finals...
