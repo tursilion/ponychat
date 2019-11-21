@@ -420,8 +420,15 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
         if (NULL == p) {
             p = strsearch(buf, w.c_str());
             if (NULL == p) {
-                output += "then I lost my place! ";
-                goto finish;
+                // the only case this SHOULD be caused by is first word in the file,
+                // so try that directly
+                w = w.substr(1);
+                if (0 == memcmp(buf, w.c_str(), w.length())) {
+                    p = buf;
+                } else {
+                    output += "then I lost my place! ";
+                    goto finish;
+                }
             }
         }
 
