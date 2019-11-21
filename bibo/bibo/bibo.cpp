@@ -1113,9 +1113,9 @@ int main(int argc, char* argv[]) {
             printf("Missing name of both quoters\n");
             return 99;
         }
-        for (;;) 
+//        for (;;) 
         {
-            printf("<!-- Seed: %d -->\n", seed); srand(seed++);
+//            printf("<!-- Seed: %d -->\n", seed); srand(seed++);
             runscene(argv[2], argv[3]);
         }
     } else if (0 == strcmp(argv[1], "addchat")) {
