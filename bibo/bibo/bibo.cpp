@@ -620,6 +620,7 @@ void populateNameList() {
     nameList.emplace_back("Scoot");
     nameList.emplace_back("Pink Pony");
     nameList.emplace_back("Big Mac");
+    nameList.emplace_back("Big McIntosh");
     nameList.emplace_back("Sunny Skies");
     nameList.emplace_back("Pear Butter");
     nameList.emplace_back("Star Swirl");
