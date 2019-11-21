@@ -580,14 +580,12 @@ string parseToName(const string &fn) {
     string un1;
     for (unsigned int idx = 0; idx < fn.length(); ++idx) {
         if (fn[idx] == '.') break;
-        // >1 covers AK yearling and gives room to test for Mc
+        // >1 covers AK Yearling and gives room to test for Mc
         if ((idx > 1) && (fn[idx] >= 'A') && (fn[idx] <= 'Z') 
             // special case for Hoo'Far
             && (fn[idx-1] != '\'')
-            // special case for McColt
+            // special case for McColt and McIntosh
             && ((fn[idx-2] != 'M')||(fn[idx-1] != 'c'))
-            // special case for MacIntosh
-            && ((idx>2) && ((fn[idx-3] != 'M')||(fn[idx-2] != 'a')||(fn[idx-1] != 'c')))
             ) 
         {
             un1 += ' ';
@@ -620,7 +618,7 @@ void populateNameList() {
     nameList.emplace_back("Scoot");
     nameList.emplace_back("Pink Pony");
     nameList.emplace_back("Big Mac");
-    nameList.emplace_back("Big McIntosh");
+    nameList.emplace_back("Big MacIntosh");
     nameList.emplace_back("Sunny Skies");
     nameList.emplace_back("Pear Butter");
     nameList.emplace_back("Star Swirl");
