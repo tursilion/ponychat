@@ -375,8 +375,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
     }
 
     int pos = rand() % len1;  // force the new string to start in the char's voice
-    if (pos == 0) pos = 1;
-    if (pos > 1) {
+    if (pos > 0) {
         // seek to the beginning of a line
         while (pos < len) {
             if (buf[pos - 1] == '\n') break;
@@ -423,7 +422,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
                 // the only case this SHOULD be caused by is first word in the file,
                 // so try that directly
                 w = w.substr(1);
-                if (0 == memcmp(buf, w.c_str(), w.length())) {
+                if (buf == strsearch(buf, w.c_str())) {     // we use strsearch to get the extra char matching, but it's much slower
                     p = buf;
                 } else {
                     output += "then I lost my place! ";
@@ -585,8 +584,10 @@ string parseToName(const string &fn) {
         if ((idx > 1) && (fn[idx] >= 'A') && (fn[idx] <= 'Z') 
             // special case for Hoo'Far
             && (fn[idx-1] != '\'')
-            // special case for McIntosh and McColt
+            // special case for McColt
             && ((fn[idx-2] != 'M')||(fn[idx-1] != 'c'))
+            // special case for MacIntosh
+            && ((idx>2) && ((fn[idx-3] != 'M')||(fn[idx-2] != 'a')||(fn[idx-1] != 'c')))
             ) 
         {
             un1 += ' ';
@@ -624,6 +625,7 @@ void populateNameList() {
     nameList.emplace_back("Star Swirl");
     nameList.emplace_back("Pumkpin Cake");
     nameList.emplace_back("Pound Cake");
+    nameList.emplace_back("Fern Flare");
 
     // debug
 //    for (string x : nameList) {
@@ -642,7 +644,7 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
         size_t op = on.find(' ');
         if (op != string::npos) {
             // choose a word
-            if (rand()%100 > 35) {
+            if (rand()%100 > 65) {
                 // second word is less respectful
                 on = on.substr(op+1);
             } else {
@@ -657,8 +659,9 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
     else if (on == "Mrs") on = "Ma'am";
     else if (on == "Ms") on = "Ma'am";
     else if (on == "Dr") on = "Doctor";
-
-    printf("<!-- replace '%s' with '%s' (first:%d) -->\n", tstname.c_str(), on.c_str(), isFirst);
+    else if (on == "Big") on = n;       // just "Big" doesn't make sense (Big MacIntosh, Big Daddy McColt)
+    else if (on == "Grand") on = n;     // just "Grand" doesn't make sense (Grand Pear)
+    else if (on == "Iron") on = n;      // just "Iron" doesn't make sense (Iron Will)
 
     // and do the replace
     if (isFirst) {
@@ -670,6 +673,8 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
             first = str.substr(0,p);
         }
         str = first + on + str.substr(p+tstname.length());
+    
+        printf("<!-- replace '%s' with '%s' (first:%d) -->\n", tstname.c_str(), on.c_str(), isFirst);
     } else {
         // last word plus punctuation
         // might be an elipsis
@@ -683,6 +688,8 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
         str = str.substr(0, pp);
 
         str = str.substr(0, p) + on + last;
+
+        printf("<!-- replace '%s' with '%s' (first:%d) -->\n", tstname.c_str(), on.c_str(), isFirst);
     }
 
     return true;
@@ -705,132 +712,104 @@ void nameSubstitution(string &str, const string &n, const string &us) {
 
     // go through the name list, and replace only first or last words in the sentence,
     // with separating punctuation
-    for (string x : nameList) {
-	if (x == us) continue;  // don't replace self references
+    // First pass we search ONLY complete names, second pass we split it up. This
+    // helps prevent ordering issues (for instance "Diamond" will match for "Diamond Tiara"
+    // before "Double Diamond", even if "Double Diamond" is what was in the text)
+    for (int pass = 0; pass < 2; ++pass) {
+        for (string x : nameList) {
+	        if (x == us) continue;  // don't replace self references
 
-        size_t p = str.find(x);
-        size_t l = 0;
-        string tstname;
+            size_t p = string::npos;
+            size_t l = 0;
+            string tstname;
 
-        if (p == string::npos) {
-            // try some variations
-            if (string::npos != x.find(' ')) {
-                // (note there may be more than two names!)
-                string n1,n2;
-                n1 = x.substr(0, x.find(' '));
-                // special case 'Big' and 'Dragon'
-                if (n1 == "Big") {
-                    n1 = x.substr(0, x.find(' ', 4));
+            if (pass == 0) {
+                p = str.find(x);
+                if (p != string::npos) {
+                    tstname = x;
+                    l = x.length();
                 }
-                if (n1 == "Dragon") {
-                    n1 = x.substr(0, x.find(' ', 7));
-                }
-                n2 = x.substr(x.find(' ',n1.length())+1);
-                // extra special case for 'The'
-                if (n1.substr(0,4) == "The ") n1=n1.substr(4);
+            } else {
+                // try some variations
+                if (string::npos != x.find(' ')) {
+                    // (note there may be more than two names!)
+                    string n1,n2;
+                    n1 = x.substr(0, x.find(' '));
+                    // special case 'Big' and 'Dragon'
+                    if (n1 == "Big") {
+                        n1 = x.substr(0, x.find(' ', 4));
+                    }
+                    if (n1 == "Dragon") {
+                        n1 = x.substr(0, x.find(' ', 7));
+                    }
+                    n2 = x.substr(x.find(' ',n1.length())+1);
+                    // extra special case for 'The'
+                    if (n1.substr(0,4) == "The ") n1=n1.substr(4);
 
-                if (n1.length() != x.length()) {
-                    // replace "Princess" with "Principal" (Celestia and Luna)
-                    if (n1 == "Princess") {
-                        tstname = "Principal " + n2;
-                        p = str.find(tstname);
-                        l = tstname.length();
-                    }
+                    if (n1.length() != x.length()) {
+                        // replace "Princess" with "Principal" (Celestia and Luna)
+                        if (n1 == "Princess") {
+                            tstname = "Principal " + n2;
+                            p = str.find(tstname);
+                            l = tstname.length();
+                        }
 
-                    // try Ms/Mrs/Mr lastname
-                    if (p == string::npos) {
-                        tstname = "Ms " + n2;
-                        p = str.find(tstname);
-                        l = tstname.length();
-                    }
-                    if (p == string::npos) {
-                        tstname = "Mrs " + n2;
-                        p = str.find(tstname);
-                        l = tstname.length();
-                    }
-                    if (p == string::npos) {
-                        tstname = "Miss " + n2;
-                        p = str.find(tstname);
-                        l = tstname.length();
-                    }
-                    if (p == string::npos) {
-                        tstname = "Mr " + n2;
-                        p = str.find(tstname);
-                        l = tstname.length();
-                    }
+                        // try Ms/Mrs/Mr lastname
+                        if (p == string::npos) {
+                            tstname = "Ms " + n2;
+                            p = str.find(tstname);
+                            l = tstname.length();
+                        }
+                        if (p == string::npos) {
+                            tstname = "Mrs " + n2;
+                            p = str.find(tstname);
+                            l = tstname.length();
+                        }
+                        if (p == string::npos) {
+                            tstname = "Miss " + n2;
+                            p = str.find(tstname);
+                            l = tstname.length();
+                        }
+                        if (p == string::npos) {
+                            tstname = "Mr " + n2;
+                            p = str.find(tstname);
+                            l = tstname.length();
+                        }
 
-                    // first name
-                    if (p == string::npos) {
-                        tstname = n1;
-                        p = str.find(n1);
-                        l = n1.length();
-                    }
+                        // first name
+                        if (p == string::npos) {
+                            tstname = n1;
+                            p = str.find(n1);
+                            l = n1.length();
+                        }
 
-                    // last name 
-                    if (p == string::npos) {
-                        tstname = n2;
-                        p = str.find(n2);
-                        l = n2.length();
+                        // last name 
+                        if (p == string::npos) {
+                            tstname = n2;
+                            p = str.find(n2);
+                            l = n2.length();
+                        }
                     }
                 }
             }
-        } else {
-            tstname = x;
-            l = x.length();
-        }
-        // if still nothing, search on
-        if (p == string::npos) continue;
 
-        // there is a match, check start or end, and full name! (Cause 'Ma' is short)
-        if (strchr("!?,. ", str[p+tstname.length()])) {
-            if ((p > 1) && (str[p-1]==' ') && (str[p-2] == ',')) {
-                // end
-                replaceName(tstname, str, n, p, false);
-                break;
-            } else if ((strchr("!?,.", str[p+l])) && ((p==0)||(str[p-1]==' '))) {
-                // beginning
-                replaceName(tstname, str, n, p, true);
-                break;
+            // if still nothing, search on
+            if (p == string::npos) continue;
+
+            // there is a match, check start or end, and full name! (Cause 'Ma' is short)
+            if (strchr("!?,. ", str[p+tstname.length()])) {
+                if ((p > 1) && (str[p-1]==' ') && (str[p-2] == ',')) {
+                    // end
+                    replaceName(tstname, str, n, p, false);
+                    return;
+                } else if ((strchr("!?,.", str[p+l])) && ((p==0)||(str[p-1]==' '))) {
+                    // beginning
+                    replaceName(tstname, str, n, p, true);
+                    return;
+                }
             }
         }
     }
-
-#if 0
-    // search away
-    size_t p = str.find_first_of(",!? ");   // see if the first is punctuation or a space
-    if (string::npos == p) {
-        // that seems impossible, but okay (this covers start and end)
-        return;
-    }
-    if (str[p] != ' ') {
-        // try the first word
-        tstname = str.substr(0, p);
-        if (replaceName(tstname, str, n, p, true)) {
-            return;
-        }
-    }
-
-    // wasn't the first word, check the end
-    p = str.find_last_of(' ');
-    if (string::npos == p) {
-        // this really should be impossible...
-        return;
-    }
-    if (p == 0) {
-        // so does this...
-        return;
-    }
-    --p;
-    tstname.erase();
-    if (str[p] == ',') {
-        // this is the case I wanted, BobbySmith
-        p+=2;
-        tstname = str.substr(p);
-        while ((tstname.length()) && (!isalpha(tstname[tstname.length()-1]))) tstname = tstname.substr(0, tstname.length()-1);
-    }
-    // don't care now on success or failure
-    replaceName(tstname, str, n, p, false);
-#endif
 }
 
 // list (no arg)
@@ -855,16 +834,16 @@ void runlist() {
 }
 
 // fix blank lines in database
-void fixbuf(char *buf, int &len1) {
+void fixbuf(char *buf, int &len) {
     // initial blank lines
-    while (buf1[0] == '\n') {
-        memmove(&buf1[0], &buf1[1], len1--);
+    while (buf[0] == '\n') {
+        memmove(&buf[0], &buf[1], len--);
     }
     // internal blank lines
     char *p;
-    while ((p = strstr(buf1, "\n\n")) != NULL) {
-        memmove(p, p+1, len1-(p-buf1));
-        --len1;
+    while ((p = strstr(buf, "\n\n")) != NULL) {
+        memmove(p, p+1, len-(p-buf));
+        --len;
     }
 }
 
@@ -939,7 +918,7 @@ void runscene(const char* who1, const char* who2) {
 #ifdef GFX_TEST
     w = 81; // preferred reference is Cheerilee (check for changes)
 #endif
-    printf("<!-- %d -->\n", w);
+    //printf("<!-- %d -->\n", w);
 
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
@@ -987,7 +966,7 @@ void runscene(const char* who1, const char* who2) {
 #ifdef GFX_TEST
     w = GFX_TEST;
 #endif
-    printf("<!-- %d -->\n", w);
+    //printf("<!-- %d -->\n", w);
 
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
@@ -1132,7 +1111,11 @@ int main(int argc, char* argv[]) {
             printf("Missing name of both quoters\n");
             return 99;
         }
-        runscene(argv[2], argv[3]);
+        for (;;) 
+        {
+            printf("<!-- Seed: %d -->\n", seed); srand(seed++);
+            runscene(argv[2], argv[3]);
+        }
     } else if (0 == strcmp(argv[1], "addchat")) {
         runaddchat(argc, argv);
     } else {
