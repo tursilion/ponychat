@@ -165,7 +165,7 @@ const char* strtest(const char* a, const std::string &w) {
 // reverse version - needs the base to know where to stop
 const char* strrsearch(const char *base, const char* a, const char* b) {
     if ((a == NULL) || (b == NULL) || (base == NULL)) return NULL;
-    while (a > base) {
+    while (a >= base) {
         const char* p1 = a;
         const char* p2 = b;
         for (;;) {
@@ -446,11 +446,11 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
         // fixes "She won't admit it, but she won't admit it, but she won't admit it, but she doesn't like it"
         pos = rand() % len;
         w = ' ' + w + ' ';
-        const char* p = strrsearch(&buf[pos], w.c_str());
+        const char* p = strrsearch(buf, &buf[pos], w.c_str());
         if (NULL == p) {
             // try from the end
             int end = strlen(buf);
-            p = strsearch(&buf[pos], &buf[end], w.c_str());
+            p = strrsearch(&buf[pos], &buf[end], w.c_str());
             if (NULL == p) {
                 // the only case this SHOULD be caused by is first word in the file,
                 // so try that directly
