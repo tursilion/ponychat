@@ -139,10 +139,11 @@ string makefilename(string fn) {
 
 #endif
 
-// case insensitive and whitespace agnostic substring search
-const char* strsearch(const char* a, const char* b) {
-    if ((a == NULL) || (b == NULL)) return NULL;
-    int len = (int)strlen(b);
+// case insensitive and whitespace agnostic string compare
+const char* strtest(const char* a, const std::string &w) {
+    if (a == NULL) return NULL;
+    const char *b = w.c_str();
+    int cnt = w.length() + 1;
     while (*a) {
         const char* p1 = a;
         const char* p2 = b;
@@ -156,6 +157,27 @@ const char* strsearch(const char* a, const char* b) {
             return a;
         }
         ++a;
+        --cnt;
+        if (cnt == 0) break;
+    }
+    return NULL;
+}
+// reverse version - needs the base to know where to stop
+const char* strrsearch(const char *base, const char* a, const char* b) {
+    if ((a == NULL) || (b == NULL) || (base == NULL)) return NULL;
+    while (a > base) {
+        const char* p1 = a;
+        const char* p2 = b;
+        for (;;) {
+            if ((*p1 == 0) || (*p2 == 0)) break;
+            if ((*p2 <= '!') && (*p1 <= '!')) { ++p1; ++p2; continue; }
+            if (toupper(*p1) == toupper(*p2)) { ++p1; ++p2; continue; }
+            break;
+        }
+        if (*p2 == '\0') {
+            return a;
+        }
+        --a;
     }
     return NULL;
 }
@@ -409,20 +431,31 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
 
         // if we have no word, then exit
         if (w.empty()) break;
-        // if we have punctuation (except comma), then we ended on an end word
-        if ((w[w.length() - 1] < 'A') && (w[w.length() - 1] != ',')) break;
+        // if we have punctuation (except comma or apostrophe), then we ended on an end word
+        //if ((w[w.length() - 1] < 'A') && (w[w.length() - 1] != ',') && (w[w.length() - 1] != '\'')) break;
+        // instead, explicitly check for . (not ...), !, ?
+        char c = '\0';
+        if (w.length() > 1) c=w[w.length()-1];
+        if ((c == '.') && (w[w.length()-2] != '.')) break;
+        if (c == '?') break;
+        if (c == '!') break;
 
         // find a new instance of this same word
+        // by searching backwards, we reduce repetition in sentences that contain it
+        // more than once by finding the LAST instance first.
+        // fixes "She won't admit it, but she won't admit it, but she won't admit it, but she doesn't like it"
         pos = rand() % len;
         w = ' ' + w + ' ';
-        const char* p = strsearch(&buf[pos], w.c_str());
+        const char* p = strrsearch(&buf[pos], w.c_str());
         if (NULL == p) {
-            p = strsearch(buf, w.c_str());
+            // try from the end
+            int end = strlen(buf);
+            p = strsearch(&buf[pos], &buf[end], w.c_str());
             if (NULL == p) {
                 // the only case this SHOULD be caused by is first word in the file,
                 // so try that directly
                 w = w.substr(1);
-                if (buf == strsearch(buf, w.c_str())) {     // we use strsearch to get the extra char matching, but it's much slower
+                if (buf == strtest(buf, w)) {
                     p = buf;
                 } else {
                     output += "then I lost my place! ";
