@@ -662,6 +662,7 @@ void populateNameList() {
     nameList.emplace_back("Fern Flare");
     nameList.emplace_back("Rare");
     nameList.emplace_back("Rara");
+    nameList.emplace_back("Bon Bon");
 
     // debug
 //    for (string x : nameList) {
