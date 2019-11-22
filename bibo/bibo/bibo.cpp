@@ -660,6 +660,8 @@ void populateNameList() {
     nameList.emplace_back("Rain Shine");
     nameList.emplace_back("Ms Powerful");
     nameList.emplace_back("Fern Flare");
+    nameList.emplace_back("Rare");
+    nameList.emplace_back("Rara");
 
     // debug
 //    for (string x : nameList) {
