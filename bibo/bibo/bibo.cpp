@@ -665,6 +665,10 @@ void populateNameList() {
     nameList.emplace_back("Bon Bon");
     nameList.emplace_back("Rainbooms");
     nameList.emplace_back("Lofty");
+    nameList.emplace_back("Twily");
+    nameList.emplace_back("Ripley");
+    nameList.emplace_back("Doodle");
+    nameList.emplace_back("Gar-Gar");
 
     // debug
 //    for (string x : nameList) {
