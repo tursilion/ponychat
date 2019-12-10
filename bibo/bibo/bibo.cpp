@@ -41,6 +41,7 @@ vector<string> nameList;    // only populated if we need it
 
 #ifdef _WIN32
 #include <windows.h>
+#define HONORMENS "D:\\work\\ponychat\\honorablementions.txt"
 #define SRCPATH "D:\\work\\ponychat\\SeparateChars\\*.txt"
 #define IMGPATH "D:\\work\\ponychat\\images\\*.png"
 HANDLE hSrch;
@@ -88,6 +89,7 @@ string makefilename(string fn) {
 DIR* dir;
 struct dirent* d_ent;
 string dirext;
+#define HONORMENS "/home/ponychat/honorablementions.txt"
 #define SRCPATH "/home/ponychat/SeparateChars"
 #define IMGPATH "/home/ponychat/ponyimages/"
 
@@ -643,38 +645,22 @@ void populateNameList() {
 
     klosedir();
 
-// a couple of honorable mentions... this is MLP specific
-    nameList.emplace_back("Sonata Blaze");
-    nameList.emplace_back("Gummy");
-    nameList.emplace_back("Impossibly Rich");
-    nameList.emplace_back("Princess Twilight");
-    nameList.emplace_back("Scoot");
-    nameList.emplace_back("Pink Pony");
-    nameList.emplace_back("Big Mac");
-    nameList.emplace_back("Big MacIntosh");
-    nameList.emplace_back("Sunny Skies");
-    nameList.emplace_back("Pear Butter");
-    nameList.emplace_back("Star Swirl");
-    nameList.emplace_back("Pumkpin Cake");
-    nameList.emplace_back("Pound Cake");
-    nameList.emplace_back("Rain Shine");
-    nameList.emplace_back("Ms Powerful");
-    nameList.emplace_back("Fern Flare");
-    nameList.emplace_back("Rare");
-    nameList.emplace_back("Rara");
-    nameList.emplace_back("Bon Bon");
-    nameList.emplace_back("Rainbooms");
-    nameList.emplace_back("Lofty");
-    nameList.emplace_back("Twily");
-    nameList.emplace_back("Ripley");
-    nameList.emplace_back("Doodle");
-    nameList.emplace_back("Gar-Gar");
-    nameList.emplace_back("Uncle Scar");
+    // a couple of honorable mentions... read in from file
+    FILE *fp = filopen(HONORMENS, "r");
+    if (NULL != fp) {
+      while (!feof(fp)) {
+        char buf[256];
+        if (NULL == fgets(buf, sizeof(buf), fp)) break;
+        while ((buf[0] != '\0') && (buf[strlen(buf)-1] < ' ')) buf[strlen(buf)-1]='\0';
+        if (strlen(buf) > 1) nameList.emplace_back(buf);
+      }
+      fclose(fp);
+    }
 
     // debug
-//    for (string x : nameList) {
-//        printf("<!-- '%s' -->\n", x.c_str());
-//    }
+    for (string x : nameList) {
+        printf("<!-- '%s' -->\n", x.c_str());
+    }
 }
 
 // replace a potential name tstname in str with on at p
