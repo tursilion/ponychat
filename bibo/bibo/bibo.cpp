@@ -658,9 +658,9 @@ void populateNameList() {
     }
 
     // debug
-    for (string x : nameList) {
-        printf("<!-- '%s' -->\n", x.c_str());
-    }
+//    for (string x : nameList) {
+//        printf("<!-- '%s' -->\n", x.c_str());
+//    }
 }
 
 // replace a potential name tstname in str with on at p
