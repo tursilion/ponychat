@@ -61,13 +61,10 @@ Eeyup.
 [gulps]
 Eeyup.
 Eeyup.
-[chomp]
 Nope.
 Eeyup.
-[chomp]
 Nope.
 Eeyup.
-[chomp]
 ...Nope.
 Nope.
 Eeyup.
@@ -82,7 +79,6 @@ Eeyup.
 Eeyup!
 Eeyup.
 Eeyup.
-[through gritted teeth]
 Eeyup.
 Eeyu- hey!
 Eeyup.
@@ -98,10 +94,8 @@ Nope.
 [gulps]
 Eeyup.
 Well...
-[inhales]
 Ahhhh.
 Ahhh?
-[inhales]
 [chuckles]
 Eeyup.
 Hmm.
@@ -242,7 +236,6 @@ Eeyup.
 Eeyup.
 Nnnope.
 [grunts]
-[spits]
 Nnnope.
 Eeyup!
 Nnope.
@@ -309,7 +302,6 @@ Nnope!
 Uh-uh.
 O-Oh... eh... ehhhh... Eeeyou think so?
 Okay!
-[deep breath]
 [sad snort]
 Home!
 That!
@@ -422,7 +414,6 @@ Eeyup...
 [sighs]
 Eeyup.
 [snores, yells]
-[yells]
 Nope.
 Nnnope.
 Eeyup.
@@ -519,7 +510,6 @@ But to me, it's just how I got my cutie mark!
 Tellin' Filthy Rich that Granny's in the hospital just made everythin' a hundred times worse!
 What are we supposed to do now?
 You are, apparently.
-[inhales]
 [chokes]
 Hrk!
 This is spinnin' way out of control, Applejack!

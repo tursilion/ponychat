@@ -47,8 +47,6 @@ But what?
 Puh-lease!
 I don't need your help!
 Watch!
-[straining]
-[panting]
 How can you do this to me?
 Did you all know?
 Oh, great.
@@ -57,10 +55,8 @@ Was this your plan the whole time?
 To embarrass me?
 I guess not, since it took me this long to find out you're a terrible wingpony!
 I can't believe I was ever your friend!
-[straining]
 Well, apparently, I need a lot of practice.
 Guess I'm not the natural I thought I was.
-[sarcastic]
 Thanks.
 Good pep talk.
 So you're saying I can be the...

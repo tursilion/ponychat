@@ -8,44 +8,28 @@
 [thumps on ground]
 [blows whistle]
 [blows whistle]
-[angry squeaking]
 [screams]
 [Wilhelm scream]
 [chitters dizzily]
-[worried chittering]
 [blows raspberry]
-[distressed squeaking]
 [blows raspberry]
-[thumping]
 [blows raspberry]
 [laughs]
 [laughs]
 [blows raspberry]
 [blows raspberry]
-[crying]
-[crying]
-[munching]
 [giggles]
-[squeaking]
 [whimpers]
 [grunts]
 [growls]
 [thumping on table]
 [growls mischievously]
-[giggling]
-[rattle, whimper, crying]
-[whimpering]
-[whimpering]
 [blows raspberry]
-[angry chittering]
 [growls]
 [squeaks]
 [whimpers]
 [growls]
-[munching]
 [chitters angrily]
-[angry chittering]
-[coughing]
 [blows raspberry]
 [chitters]
 [chitters]
@@ -110,7 +94,6 @@ A hundred percent!
 See how shy I am?
 Hmm?
 I talk to animals, I want to marry Discord?
-[sarcastically]
 Oh, yeah.
 There's my good old list of chores that I will absolutely not rush through because I definitely do not have better things to do.
 Well, well, well.
@@ -189,5 +172,3 @@ You're sorry?
 I'm sorry, too!
 Come here, you little bunny who's a pony who's a bunny!
 Ooh!
-[chittering]
-[chittering]
