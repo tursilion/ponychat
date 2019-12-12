@@ -20,11 +20,13 @@
 #include <ctype.h>
 #include <time.h>
 #include <vector>
+#include <set>
 using namespace std;
 // up to three buffers - char 1, char 2, reply 1, reply 2
 char* buf1, *buf2, *buf3, *buf4;
 int len1, len2, len3, len4;
-vector<string> nameList;    // only populated if we need it
+vector<string> nameList;    // always populated now
+int trueNameListSize=0;     // number of entries from disk, no honorable mentions
 
 // enable this to make the text go left/right instead of all stacked on the left
 // it was hard to make that work right so I want to save the code ;)
@@ -37,7 +39,7 @@ vector<string> nameList;    // only populated if we need it
 //#define GFX_TEST 1
 
 // where is the cgi?
-#define CHAT_URL "http://harmlesslion.com/ponychat/ponychat.cgi"
+#define CHAT_URL "http://harmlesslion.com/cgi-bin/ponychat.cgi"
 
 #ifdef _WIN32
 #include <windows.h>
@@ -83,9 +85,11 @@ string makefilename(string fn) {
 
 // linux
 #include <sys/types.h>
+#include <sys/stat.h>
 #include <string.h>
 #include <stdlib.h>
 #include <dirent.h>
+#include <unistd.h>
 DIR* dir;
 struct dirent* d_ent;
 string dirext;
@@ -131,7 +135,19 @@ void klosedir() {
     closedir(dir);
 }
 
-#define filopen fopen
+FILE *filopen(const char *path, const char *mode) {
+    struct stat buf;
+    if (stat(path, &buf)) {
+        printf("<!-- no file -->\n");
+        return NULL;
+    }
+    if (S_ISDIR(buf.st_mode)) {
+        printf("<!-- dir -->\n");
+        return NULL;
+    }
+
+    return fopen(path, mode);
+}
 
 string makefilename(string fn) {
     fn += '/';
@@ -503,26 +519,13 @@ finish:
             output += ' ';
         }
     }
+    
     return output;
 }
 
 // return a valid random filename
 int randomfile() {
-    if (!opendirect(SRCPATH, ".txt")) {
-        printf("no dir\n");
-        return 0;
-    }
-
-    int cnt = 0;
-    for (;;) {
-        ++cnt;
-        if (!nextdir()) {
-            klosedir();
-            return rand() % cnt + 1;
-        }
-    }
-
-    return 0;
+    return rand() % trueNameListSize;    
 }
 
 // single string replace
@@ -631,8 +634,10 @@ string parseToName(const string &fn) {
 }
 
 // fills in nameList if needed
+// note there must be at least one, or this won't work right
 void populateNameList() {
     if (nameList.size() > 0) return;    // already loaded
+    trueNameListSize = 0;
 
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir for namelist\n");
@@ -640,9 +645,12 @@ void populateNameList() {
     }
 
     do {
-        nameList.emplace_back(parseToName(getfilename()));
+        string tmp = parseToName(getfilename());
+        if (!tmp.empty()) {
+            nameList.emplace_back(tmp);
+            ++trueNameListSize;
+        }
     } while (nextdir());
-
     klosedir();
 
     // a couple of honorable mentions... read in from file
@@ -732,9 +740,6 @@ void nameSubstitution(string &str, const string &n, const string &us) {
     // first or the name. Punctuation is used to verify. (If it's
     // in the middle, it's more likely a third party).
     string tstname;
-
-    // get the names from the disk
-    populateNameList();
 
     // make sure beginning and end have no spaces
     while ((str.length())&&(str[0] == ' ')) str = str.substr(1);
@@ -842,8 +847,23 @@ void nameSubstitution(string &str, const string &n, const string &us) {
     }
 }
 
+// a class for runList to sort the chars with
+class Foo {
+public:
+    Foo(const string &s, int i) : str(s), idx(i) {};
+    bool operator<(const Foo &foo) const { return str < foo.str; }
+    const string str;
+    int idx;
+};
+
 // list (no arg)
 void runlist() {
+    set<Foo> s;
+    // walk the list manually cause we need to skip the honorable mentions
+    for (int idx = 0; idx<trueNameListSize; ++idx) {
+        s.insert(Foo(nameList[idx], idx+1));
+    }
+    
     if (!opendirect(SRCPATH, ".txt")) {
         printf("no dir\n");
         return;
@@ -852,15 +872,11 @@ void runlist() {
     printf("<html><body>");
     addstyle();
 
-    int cnt = 1;
-    for (;;) {
-        printf("\n<a href=\"%s?%d\">%s</a>   \n", CHAT_URL, cnt++, getfilename().c_str());
-        if (!nextdir()) {
-            klosedir();
-            printf("</body></html>");
-            return;
-        }
+    for (Foo x : s) {
+        printf("\n<li><a href=\"%s?%d\">%s</a></li>   \n", CHAT_URL, x.idx, x.str.c_str());
     }
+    
+    printf("</body></html>");
 }
 
 // fix blank lines in database
@@ -878,9 +894,9 @@ void fixbuf(char *buf, int &len) {
 }
 
 // quote <char number>
-void runquote(const char* who) {
-    int w = atoi(who);
-    if (w == 0) {
+void runquote(int who, int count) {
+    int w = who;
+    if ((w == 0) || (w > trueNameListSize)) {
         w = randomfile();
     }
     if (!opendirect(SRCPATH, ".txt")) {
@@ -890,7 +906,7 @@ void runquote(const char* who) {
     addstyle();
 
     while (--w > 0) {
-        nextdir();
+        if (!nextdir()) break;
     }
 
     // print out the name of the character, from the filename
@@ -912,9 +928,20 @@ void runquote(const char* who) {
         return;
     }
     fseek(fp, 0, SEEK_END);
-    len1 = ftell(fp) + 1;
+    len1 = ftell(fp);
+    if ((len1 < 1) || (len1 > 512*1024)) {
+        printf("<!-- invalid filesize -->\n");
+        fclose(fp);
+        return;
+    }
+    ++len1;
     fseek(fp, 0, SEEK_SET);
     buf1 = (char*)malloc(len1 + 2);
+    if (NULL == buf1) {
+        printf("<!-- no mem -->\n");
+        fclose(fp);
+        return;
+    }
     buf1[0] = '\n';
     len1 = (int)fread(buf1 + 1, 1, len1, fp);
     fclose(fp);
@@ -925,7 +952,10 @@ void runquote(const char* who) {
     fixbuf(buf1, len1);
 
     // now start babbling
-    int cnt = rand() % 5 + 2;
+    int cnt = count;
+    if ((count < 0) || (count > 10)) {
+        cnt = rand() % 5 + 2;
+    }
     for (int idx = 0; idx < cnt; ++idx) {
         string s = generateLine(buf1, len1, NULL, 0);
         printf("%s", s.c_str());
@@ -940,9 +970,13 @@ void runquote(const char* who) {
 }
 
 // scene <char1> <char2>
-void runscene(const char* who1, const char* who2) {
-    int w = atoi(who1);
-    if (w == 0) {
+// who1, who2 - indexes of characters to chat
+// count - number of lines to generate
+// count2 - maximum number of lines per character line
+// any may be zero for random
+void runscene(int who1, int who2, int count, int count2) {
+    int w = who1;
+    if ((w == 0) || (w > trueNameListSize)) {
         w = randomfile();
     }
 #ifdef GFX_TEST
@@ -956,12 +990,16 @@ void runscene(const char* who1, const char* who2) {
 
     int wold = w;
     while (--w > 0) {
-        nextdir();
+        if (!nextdir()) break;
     }
 
     // work out the name of the character, from the filename
     std::string fn = getfilename();
     string un1 = parseToName(fn);
+    if (un1.empty()) {
+        printf("Character parse failed, sorry.\n");
+        return;
+    }
 
     // suck the file into memory
     fn = makefilename(SRCPATH);
@@ -973,9 +1011,20 @@ void runscene(const char* who1, const char* who2) {
         return;
     }
     fseek(fp, 0, SEEK_END);
-    len1 = ftell(fp) + 1;
+    len1 = ftell(fp);
+    if ((len1 < 1) || (len1 > 512*1024)) {
+        printf("<!-- invalid filesize2 -->\n");
+        fclose(fp);
+        return;
+    }
+    ++len1;
     fseek(fp, 0, SEEK_SET);
     buf1 = (char*)malloc(len1 + 2);
+    if (NULL == buf1) {
+        printf("<!-- no mem2 -->\n");
+        fclose(fp);
+        return;
+    }
     buf1[0] = '\n';
     len1 = (int)fread(buf1 + 1, 1, len1, fp);
     fclose(fp);
@@ -986,8 +1035,8 @@ void runscene(const char* who1, const char* who2) {
     fixbuf(buf1, len1);
 
     // now babbler 2
-    w = atoi(who2);
-    if (w == 0) {
+    w = who2;
+    if ((w == 0) || (w > trueNameListSize)) {
         w = wold;
         while (wold == w) {
             w = randomfile();
@@ -1003,7 +1052,7 @@ void runscene(const char* who1, const char* who2) {
     }
 
     while (--w > 0) {
-        nextdir();
+        if (!nextdir()) break;
     }
 
     // save the name
@@ -1012,6 +1061,10 @@ void runscene(const char* who1, const char* who2) {
     // work out the name of the character, from the filename
     fn = getfilename();
     string un2 = parseToName(fn);
+    if (un2.empty()) {
+        printf("Character parse2 failed, sorry.\n");
+        return;
+    }
 
     // suck the file into memory
     fn = makefilename(SRCPATH);
@@ -1023,9 +1076,20 @@ void runscene(const char* who1, const char* who2) {
         return;
     }
     fseek(fp, 0, SEEK_END);
-    len2 = ftell(fp) + 1;
+    len2 = ftell(fp);
+    if ((len2 < 1) || (len2 > 512*1024)) {
+        printf("<!-- invalid filesize3 -->\n");
+        fclose(fp);
+        return;
+    }
+    ++len2;
     fseek(fp, 0, SEEK_SET);
     buf2 = (char*)malloc(len2 + 2);
+    if (NULL == buf2) {
+        printf("<!-- no mem3 -->\n");
+        fclose(fp);
+        return;
+    }
     buf2[0] = '\n';
     len2 = (int)fread(buf2 + 1, 1, len2, fp);
     fclose(fp);
@@ -1041,9 +1105,17 @@ void runscene(const char* who1, const char* who2) {
     // now start babbling
     len3 = 0;
     len4 = 0;
-    int lps = rand() % 4 + 2;
+    int lps = count;
+    if ((lps < 1) || (lps > 10)) {
+        lps = rand() % 4 + 2;
+    }
     for (int lp = 0; lp < lps; ++lp) {
-        int cnt = rand() % 1 + 1;
+        int cnt;
+        if ((count2 < 1) || (count2 > 10)) {
+            cnt = rand() % 1 + 1;
+        } else {
+            cnt = rand() % count2 + 1;
+        }
         if (lp & 1) {
 #ifdef TALK_LEFTRIGHT
             printf("<p class=\"talkpad\">&nbsp</p>");
@@ -1058,7 +1130,7 @@ void runscene(const char* who1, const char* who2) {
                     continue;
                 }
                 nameSubstitution(s, un1, un2);
-                printf("%s", s.c_str());
+                printf("%s ", s.c_str());
                 s += '\n';
                 // add the string to the chat
                 fixpronouns(s);
@@ -1083,7 +1155,7 @@ void runscene(const char* who1, const char* who2) {
                     continue;
                 }
                 nameSubstitution(s, un2, un1);
-                printf("%s", s.c_str());
+                printf("%s ", s.c_str());
                 s += '\n';
                 // add the string to the chat
                 fixpronouns(s);
@@ -1115,18 +1187,52 @@ void runaddchat(int cnt, char* str[]) {
 }
 
 // entry point
+// args: scene c1 c2 cnt seed
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         printf("Command must be passed. then list, quote or scene.\n");
         return 99;
     }
 
-    int seed = (int)time(NULL);
+    // get the names from the disk
+    populateNameList();
+
+    // get char1
+    int c1 = 0;
+    if (argc > 2) {
+        int c = atoi(argv[2]);
+        if (c > 0) c1 = c;
+    }
+
+    // get char2
+    int c2 = 0;
+    if (argc > 3) {
+        int c = atoi(argv[3]);
+        if (c > 0) c2 = c;
+    }
+
+    // get count
+    int cnt = 0;
     if (argc > 4) {
-        seed = atoi(argv[4]);
+        int c = atoi(argv[4]);
+        if (c > 0) cnt = c;
+    }
+
+    // get count2
+    int cnt2 = 0;
+    if (argc > 5) {
+        int c = atoi(argv[5]);
+        if (c > 0) cnt2 = c;
+    }
+
+    // set up a seed
+    int seed = (int)time(NULL);
+    if (argc > 6) {
+        int s = atoi(argv[6]);
+        if (s > 0) seed=s;
     }
     srand(seed);
-    printf("<!-- Seed: %d -->\n", seed);
+    printf("<!-- Trigger String: %d.%d.%d.%d.%d -->\n", c1,c2, cnt,cnt2, seed);
 
     if (0 == strcmp(argv[1], "list")) {
         runlist();
@@ -1135,17 +1241,13 @@ int main(int argc, char* argv[]) {
             printf("Missing name of quoter\n");
             return 99;
         }
-        runquote(argv[2]);
+        runquote(c1, cnt);
     } else if (0 == strcmp(argv[1], "scene")) {
         if (argc < 4) {
             printf("Missing name of both quoters\n");
             return 99;
         }
-//        for (;;) 
-        {
-//            printf("<!-- Seed: %d -->\n", seed); srand(seed++);
-            runscene(argv[2], argv[3]);
-        }
+        runscene(c1, c2, cnt, cnt2);
     } else if (0 == strcmp(argv[1], "addchat")) {
         runaddchat(argc, argv);
     } else {
