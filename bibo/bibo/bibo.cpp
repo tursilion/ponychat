@@ -671,9 +671,9 @@ void populateNameList() {
 //    }
 }
 
-// replace a potential name tstname in str with on at p
+// replace a potential name tstname in str with n at p
 // return true if we did it
-bool replaceName(const string &tstname, string &str, const string &n, size_t p, bool isFirst) {
+bool replaceName(const string &tstname, string &str, const string &n, size_t p) {
     // If we get here, then it's a match! Replace with the other character
     // First, we need to choose a word from the name
     string on = n;
@@ -702,36 +702,42 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p, 
     else if (on == "Iron") on = n;      // just "Iron" doesn't make sense (Iron Will)
 
     // and do the replace
-    if (isFirst) {
-        // first word, but there may be some before
-        string first;
-        if (p > 0) {
-            // if we are in the middle, we MUST be followed by a comma
-            if (str[p+tstname.length()] != ',') return false;
-            first = str.substr(0,p);
-        }
-        str = first + on + str.substr(p+tstname.length());
-    
-        printf("<!-- replace '%s' with '%s' (first:%d) -->\n", tstname.c_str(), on.c_str(), isFirst);
-    } else {
-        // last word plus punctuation
-        // might be an elipsis
-        string last;
-        size_t pp = str.length()-1;
-        while (!isalpha(str[pp])) {
-            --pp;
-        }
-        if (pp < str.length()) ++pp;
-        last = str.substr(pp);
-        str = str.substr(0, pp);
-
-        str = str.substr(0, p) + on + last;
-
-        printf("<!-- replace '%s' with '%s' (first:%d) -->\n", tstname.c_str(), on.c_str(), isFirst);
+    string first;
+    if ((p > 0)&&(p+tstname.length() < str.length())) {
+        first = str.substr(0,p);
     }
+    str = first + on + str.substr(p+tstname.length());
+    printf("<!-- replace '%s' with '%s' -->\n", tstname.c_str(), on.c_str());
 
     return true;
 }
+
+// find x in str, and ensure it is either first word or
+// after a comma, and has punctuation right after it
+// (so that it's likely calling the other party, rather
+// than referring to a third person).
+size_t namefind(string &str, string &x) {
+    size_t p = string::npos;
+
+    // first, any match at all?
+    p = str.find(x);
+    if (string::npos == p) return p;
+
+    // now, is it a desired match?
+
+    // post-punctuation?
+    if (NULL == strchr("!?,.", str[p+x.length()])) return string::npos;
+
+    // start of line is okay
+    if (p == 0) return p;
+
+    // after punctuation is okay
+    if ((p > 1) && (str[p-1] == ' ') && (strchr("?!,.", str[p-2]))) return p;
+
+    // else it's probably a third party reference
+    return string::npos;
+}
+
 
 // perform name substitution in the string str, us is our name
 // n is the name of the other character, if we decide to use it
@@ -750,19 +756,25 @@ void nameSubstitution(string &str, const string &n, const string &us) {
     // First pass we search ONLY complete names, second pass we split it up. This
     // helps prevent ordering issues (for instance "Diamond" will match for "Diamond Tiara"
     // before "Double Diamond", even if "Double Diamond" is what was in the text)
+    // We also prefer the earliest match in case there are multiple.
+    size_t finalp = string::npos;
+    size_t finall = 0;
+    string finaltstname;
+
     for (int pass = 0; pass < 2; ++pass) {
         for (string x : nameList) {
-	        if (x == us) continue;  // don't replace self references
+	    if (x == us) continue;  // don't replace self references
 
             size_t p = string::npos;
             size_t l = 0;
             string tstname;
 
             if (pass == 0) {
-                p = str.find(x);
-                if (p != string::npos) {
-                    tstname = x;
-                    l = x.length();
+                p = namefind(str,x);
+                if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                    finaltstname = x;
+                    finall = x.length();
+                    finalp = p;
                 }
             } else {
                 // try some variations
@@ -785,66 +797,95 @@ void nameSubstitution(string &str, const string &n, const string &us) {
                         // replace "Princess" with "Principal" (Celestia and Luna)
                         if (n1 == "Princess") {
                             tstname = "Principal " + n2;
-                            p = str.find(tstname);
+                            p = namefind(str,tstname);
                             l = tstname.length();
+                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                finalp = p;
+                                finall = l;
+                                finaltstname = tstname;
+                            }
                         }
 
                         // try Ms/Mrs/Mr lastname
                         if (p == string::npos) {
                             tstname = "Ms " + n2;
-                            p = str.find(tstname);
+                            p = namefind(str,tstname);
                             l = tstname.length();
+                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                finalp = p;
+                                finall = l;
+                                finaltstname = tstname;
+                            }
                         }
                         if (p == string::npos) {
                             tstname = "Mrs " + n2;
-                            p = str.find(tstname);
+                            p = namefind(str,tstname);
                             l = tstname.length();
+                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                finalp = p;
+                                finall = l;
+                                finaltstname = tstname;
+                            }
                         }
                         if (p == string::npos) {
                             tstname = "Miss " + n2;
-                            p = str.find(tstname);
+                            p = namefind(str,tstname);
                             l = tstname.length();
+                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                finalp = p;
+                                finall = l;
+                                finaltstname = tstname;
+                            }
                         }
                         if (p == string::npos) {
                             tstname = "Mr " + n2;
-                            p = str.find(tstname);
+                            p = namefind(str,tstname);
                             l = tstname.length();
+                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                finalp = p;
+                                finall = l;
+                                finaltstname = tstname;
+                            }
                         }
 
                         // first name
                         if (p == string::npos) {
                             tstname = n1;
-                            p = str.find(n1);
+                            p = namefind(str,n1);
                             l = n1.length();
+                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                finalp = p;
+                                finall = l;
+                                finaltstname = tstname;
+                            }
                         }
 
                         // last name 
                         if (p == string::npos) {
                             tstname = n2;
-                            p = str.find(n2);
+                            p = namefind(str,n2);
                             l = n2.length();
+                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                finalp = p;
+                                finall = l;
+                                finaltstname = tstname;
+                            }
                         }
                     }
                 }
             }
-
-            // if still nothing, search on
-            if (p == string::npos) continue;
-
-            // there is a match, check start or end, and full name! (Cause 'Ma' is short)
-            if (strchr("!?,. ", str[p+tstname.length()])) {
-                if ((p > 1) && (str[p-1]==' ') && (str[p-2] == ',')) {
-                    // end
-                    replaceName(tstname, str, n, p, false);
-                    return;
-                } else if ((strchr("!?,.", str[p+l])) && ((p==0)||(str[p-1]==' '))) {
-                    // beginning
-                    replaceName(tstname, str, n, p, true);
-                    return;
-                }
-            }
         }
+        // don't do the second pass if the first pass was successful
+        if (finalp != string::npos) break;
     }
+
+    // if no match in the end, return
+    if (finalp == string::npos) return;
+
+    // there is a match, check start or end, and full name! (Cause 'Ma' is short)
+    // must be followed by punctuation, and must be either the start of the
+    // line, or preceded by a comma.
+    replaceName(finaltstname, str, n, finalp);
 }
 
 // a class for runList to sort the chars with
