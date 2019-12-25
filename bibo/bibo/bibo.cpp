@@ -236,11 +236,31 @@ string findNoun(const string& str) {
     do {
       p = findnocase(str, x, p);
       if (p != string::npos) {
-        // make sure it's not the end of another word
-        if ((p > 0) && (str[p-1] != ' ')) {
-          // no space, ignore match
-          ++p;
-          continue;
+        // make sure it's not the end of another word, unless it's "'s"
+        if (x == "'s ") {
+          // if it is 's, just make sure we didn't match "that's/he's/she's/it's", that's not possessive
+          if ((p > 1) && (toupper(str[p-1]) == 'T') && (toupper(str[p-2]) == 'I')) {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
+          // one test is good enough for he and she
+          if ((p > 1) && (toupper(str[p-1]) == 'E') && (toupper(str[p-2]) == 'H')) {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
+          if ((p > 3) && (toupper(str[p-1]) == 'T') && (toupper(str[p-2]) == 'A') && (toupper(str[p-3]) == 'H') && (toupper(str[p-4]) == 'T')) {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
+        } else {
+          if ((p > 0) && (str[p-1] != ' ')) {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
         }
         // special case: deny "the other" and "each other"
         if (x == "other ") {
