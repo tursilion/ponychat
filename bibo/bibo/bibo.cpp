@@ -27,6 +27,7 @@ char* buf1, *buf2, *buf3, *buf4;
 int len1, len2, len3, len4;
 vector<string> nameList;    // always populated now
 int trueNameListSize=0;     // number of entries from disk, no honorable mentions
+vector<string> adjectives;  // adjective exceptions from the database
 
 // enable this to make the text go left/right instead of all stacked on the left
 // it was hard to make that work right so I want to save the code ;)
@@ -44,6 +45,7 @@ int trueNameListSize=0;     // number of entries from disk, no honorable mention
 #ifdef _WIN32
 #include <windows.h>
 #define HONORMENS "D:\\work\\ponychat\\honorablementions.txt"
+#define ADJECTIVES "D:\\work\\ponychat\\adjectives.txt"
 #define SRCPATH "D:\\work\\ponychat\\SeparateChars\\*.txt"
 #define IMGPATH "D:\\work\\ponychat\\images\\*.png"
 HANDLE hSrch;
@@ -94,6 +96,7 @@ DIR* dir;
 struct dirent* d_ent;
 string dirext;
 #define HONORMENS "/home/ponychat/honorablementions.txt"
+#define ADJECTIVES "/home/ponychat/adjectives.txt"
 #define SRCPATH "/home/ponychat/SeparateChars"
 #define IMGPATH "/home/ponychat/ponyimages/"
 
@@ -157,6 +160,29 @@ string makefilename(string fn) {
 
 #endif
 
+// string to string case insensitive only search
+// replaces str.find
+size_t findnocase(const string &str, const string &x, size_t start) {
+  if (str.empty()) return string::npos;
+  if (x.empty()) return string::npos;
+  if (x.length() > str.length()) return string::npos;
+  size_t match = string::npos;
+  for (unsigned outer=start; outer<str.length()-x.length(); ++outer) {
+    for (unsigned inner=0; inner<x.length(); ++inner) {
+      if (toupper(str[outer+inner]) != toupper(x[inner])) {
+        match = string::npos;
+        break;
+      }
+      match=outer;
+    }
+    if (match != string::npos) {
+//      printf("<!-- match '%s' in '%s' at %d ('%s') -->\n", x.c_str(), str.c_str(), match, str.substr(match).c_str());
+      return match;
+    }
+  }
+  return match; // empty
+}
+
 // case insensitive and whitespace agnostic string compare
 const char* strtest(const char* a, const std::string &w) {
     if (a == NULL) return NULL;
@@ -198,6 +224,59 @@ const char* strrsearch(const char *base, const char* a, const char* b) {
         --a;
     }
     return NULL;
+}
+
+// attempt to guess a subject in the passed in string, return it if found
+string findNoun(const string& str) {
+  // we do a very simple and dumb pattern search to guess
+  // we know the word before us always has a space after it, so that helps
+  string outstr;
+  for (string &x: adjectives) {
+    size_t p = 0;
+    do {
+      p = findnocase(str, x, p);
+      if (p != string::npos) {
+        // make sure it's not the end of another word
+        if ((p > 0) && (str[p-1] != ' ')) {
+          // no space, ignore match
+          ++p;
+          continue;
+        }
+        // build up the output word
+        p += x.length();
+        size_t p2 = str.find_first_of(" ,.?!", p);
+        if (p2 == string::npos) {
+          // no end of string?
+          outstr = str.substr(p);
+        } else {
+          outstr = str.substr(p, p2-p);
+        }
+        return outstr;
+      }
+    } while (p != string::npos);
+  }
+  // last chance, a word ending in 'ness' is probably a noun...
+  size_t p = findnocase(str, "ness", 0);
+  if (p == string::npos) {
+    return outstr; // empty
+  }
+  if (NULL == strchr(".,!? ", str[p+4])) {
+    return outstr; // empty
+  }
+  // there MUST be a space before it
+  p = str.rfind(' ', p);
+  if (p == string::npos) {
+    return outstr; // empty
+  }
+  // else, this is it...
+  size_t p2 = str.find_first_of(" ,.?!", p);
+  if (p2 == string::npos) {
+    // no end of string?
+    outstr = str.substr(p);
+  } else {
+    outstr = str.substr(p, p2-p);
+  }
+  return outstr;
 }
 
 // add the style tags needed for the pic
@@ -449,6 +528,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
 
         // if we have no word, then exit
         if (w.empty()) break;
+
         // if we have punctuation (except comma or apostrophe), then we ended on an end word
         //if ((w[w.length() - 1] < 'A') && (w[w.length() - 1] != ',') && (w[w.length() - 1] != '\'')) break;
         // instead, explicitly check for . (not ...), !, ?
@@ -464,6 +544,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
         // fixes "She won't admit it, but she won't admit it, but she won't admit it, but she doesn't like it"
         pos = rand() % len;
         w = ' ' + w + ' ';
+
         const char* p = strrsearch(buf, &buf[pos], w.c_str());
         if (NULL == p) {
             // try from the end
@@ -663,6 +744,23 @@ void populateNameList() {
         if (strlen(buf) > 1) nameList.emplace_back(buf);
       }
       fclose(fp);
+    }
+
+    // special-case adjectives for noun search... read in from file
+    // this ends up also having the other special case words in them
+    fp = filopen(ADJECTIVES, "r");
+    if (NULL != fp) {
+      while (!feof(fp)) {
+        char buf[256];
+        if (NULL == fgets(buf, sizeof(buf), fp)) break;
+        while ((buf[0] != '\0') && (buf[strlen(buf)-1] < ' ')) buf[strlen(buf)-1]='\0';
+        if (strlen(buf) >= 1) adjectives.emplace_back(buf);
+      }
+      fclose(fp);
+    }
+    // now post process and put a space after all of them
+    for (string& x: adjectives) {
+      x += ' ';
     }
 
     // debug
@@ -1170,6 +1268,10 @@ void runscene(int who1, int who2, int count, int count2) {
                     --idx;
                     continue;
                 }
+                // noun testing...
+                string noun = findNoun(s);
+                printf("<!-- subject guess: '%s' -->\n", noun.c_str());
+                ////
                 nameSubstitution(s, un1, un2);
                 printf("%s ", s.c_str());
                 s += '\n';
@@ -1195,6 +1297,10 @@ void runscene(int who1, int who2, int count, int count2) {
                     --idx;
                     continue;
                 }
+                // noun testing
+                string noun = findNoun(s);
+                printf("<!-- subject guess: '%s' -->\n", noun.c_str());
+                ////
                 nameSubstitution(s, un2, un1);
                 printf("%s ", s.c_str());
                 s += '\n';
