@@ -242,6 +242,37 @@ string findNoun(const string& str) {
           ++p;
           continue;
         }
+        // special case: deny "the other" and "each other"
+        if (x == "other ") {
+          if ((p > 3) && (str.substr(p-4,4) == "the ")) {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
+          if ((p > 4) && (str.substr(p-5,5) == "each ")) {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
+        }
+        // special case: deny "this is", "this was", "this for"
+        if (x == "this ") {
+          if (str.substr(p+4,4) == " is ") {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
+          if (str.substr(p+4,5) == " was ") {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
+          if (str.substr(p+4,5) == " for ") {
+            // no space, ignore match
+            ++p;
+            continue;
+          }
+        }
         // build up the output word
         p += x.length();
         size_t p2 = str.find_first_of(" ,.?!", p);
