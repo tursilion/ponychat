@@ -849,6 +849,7 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
     else if (on == "Big") on = n;       // just "Big" doesn't make sense (Big MacIntosh, Big Daddy McColt)
     else if (on == "Grand") on = n;     // just "Grand" doesn't make sense (Grand Pear)
     else if (on == "Iron") on = n;      // just "Iron" doesn't make sense (Iron Will)
+    else if (on == "On") on = n;        // just "On" doesn't make sense (On Stage)
 
     // and do the replace
     string first;
@@ -876,6 +877,9 @@ size_t namefind(string &str, string &x) {
 
     // post-punctuation?
     if (NULL == strchr("!?,.", str[p+x.length()])) return string::npos;
+
+    // if no punctuation, it has to be a space after, otherwise we are part of another word
+    if (' ' != str[p+x.length()]) return string::npos;
 
     // start of line is okay
     if (p == 0) return p;
