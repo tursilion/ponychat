@@ -1009,7 +1009,6 @@ Okay, let's start there.
 Hello?
 Wake up little friends, wherever you are.
 Spring is coming.
-[bell rings]
 I wonder which cute little furry creatures I've awoken.
 Waaa!
 Snakes!
@@ -1453,7 +1452,6 @@ We're getting close.
 I can feel it.
 And just what do you think you're doing?
 Eh... fine.
-[neighs]
 Excuse me?
 I can't wait to write to Princess Celestia to tell her what you taught me today.
 Just because somepony is ladylike doesn't make her weak.
@@ -1960,7 +1958,6 @@ Discord's turned our dirt roads into soap!
 Ugh.
 I can't picture anything.
 It's too dark.
-[splash]
 Ponyville, the chaos capital of the world?
 Not if I have anything to say about it.
 [groan]
@@ -1975,7 +1972,6 @@ Fine!
 Oh, for the love of... Don't ask.
 I need you to help me find something.
 Fluttershy, I've had just about enough?
-[splash]
 Ugh.
 No time to explain.
 We've got to find the reference guide to the Elements of Harmony before somepony does something she'll regret!

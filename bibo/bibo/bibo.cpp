@@ -874,8 +874,8 @@ size_t namefind(string &str, string &x) {
 
     // now, is it a desired match?
 
-    // post-punctuation?
-    if (NULL == strchr("!?,.", str[p+x.length()])) return string::npos;
+    // post-punctuation makes it okay (end of phrase)
+    if (NULL != strchr("!?,.", str[p+x.length()])) return p;
 
     // start of line is okay
     if (p == 0) return p;
