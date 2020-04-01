@@ -870,6 +870,10 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
 size_t namefind(string &str, string &x) {
     size_t p = string::npos;
 
+    // little hacky, but disallow some bad names
+    if (x == "Mark Crusaders") return p;
+    if (x == "Pony") return p;
+
     // first, any match at all?
     p = str.find(x);
     if (string::npos == p) return p;
@@ -1035,6 +1039,11 @@ void nameSubstitution(string &str, const string &n, const string &us) {
 
     // if no match in the end, return
     if (finalp == string::npos) return;
+
+    // Disallow certain parts of names that don't work on their own
+    if (finaltstname == "Cutie") return;  // Cutie Mark Crusaders
+    if (finaltstname == "Mark") return;  // Cutie Mark Crusaders
+
 
     // there is a match, check start or end, and full name! (Cause 'Ma' is short)
     // must be followed by punctuation, and must be either the start of the
