@@ -1175,7 +1175,7 @@ void runscene(int who1, int who2, int count, int count2) {
         w = randomfile();
     }
 #ifdef GFX_TEST
-    w = 81; // preferred reference is Cheerilee (check for changes)
+    w = 89; // preferred reference is Cheerilee (check for changes)
 #endif
     //printf("<!-- %d -->\n", w);
 
