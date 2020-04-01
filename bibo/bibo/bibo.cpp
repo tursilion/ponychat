@@ -850,6 +850,7 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
     else if (on == "Grand") on = n;     // just "Grand" doesn't make sense (Grand Pear)
     else if (on == "Iron") on = n;      // just "Iron" doesn't make sense (Iron Will)
     else if (on == "On") on = n;        // just "On" doesn't make sense (On Stage)
+    else if (on == "Old") on = n;       // just "Old" doesn't make sense (Old Man Mcgucket)
 
     // and do the replace
     string first;
