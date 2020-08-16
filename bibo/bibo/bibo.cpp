@@ -874,9 +874,6 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
 size_t namefind(string &str, string &x) {
     size_t p = string::npos;
 
-int s=0;
-if (strstr(x.c_str(), "Dipper")) {printf("<!-- search Dipper -->\n"); s=1; }
-
     // little hacky, but disallow some bad names
     if (x == "Mark Crusaders") return p;
     if (x == "Pony") return p;
@@ -884,25 +881,20 @@ if (strstr(x.c_str(), "Dipper")) {printf("<!-- search Dipper -->\n"); s=1; }
     // first, any match at all?
     p = str.find(x);
     if (string::npos == p) return p;
-if (s) printf("<!-- match... -->\n");
 
    // now, is it a desired match?
 
     // post-punctuation makes it okay (end of phrase)
     if (NULL != strchr("!?,.", str[p+x.length()])) return p;
-if (s) printf("<!-- no punct -->\n");
 
     // if no punctuation, it has to be a space after, otherwise we are part of another word
     if (' ' != str[p+x.length()]) return string::npos;
-if (s) printf("<!-- no space -->\n");
 
     // start of line is okay
     if (p == 0) return p;
-if (s) printf("<!-- not start -->\n");
 
     // after punctuation is okay
     if ((p > 1) && (str[p-1] == ' ') && (strchr("?!,.", str[p-2]))) return p;
-if (s) printf("<!-- not after punct (%s) -->\n", str.c_str());
 
     // else it's probably a third party reference
     return string::npos;
