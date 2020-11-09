@@ -838,6 +838,12 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
             if (rand()%100 > 65) {
                 // second word is less respectful
                 on = on.substr(op+1);
+		do {
+			// check for extra spaces
+			op = on.find(' ');
+			if (op == string::npos) break;
+			on = on.substr(op+1);
+		} while (1);
             } else {
                 on = on.substr(0, op);
             }

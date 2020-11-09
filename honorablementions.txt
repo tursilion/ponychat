@@ -36,6 +36,7 @@ Norman
 Li'l Gideon
 Stanford
 Stanley
+Grunkle Stan
 Trembley
 Featherweight
 Toby Determined
@@ -56,6 +57,10 @@ Mermando
 Chubby Z
 Greggy C
 Deep Chris
-Grunkle Stan
+Father
 Pine Tree
+Gabe
+Dundee
+Daddy
+Mewmew
 
