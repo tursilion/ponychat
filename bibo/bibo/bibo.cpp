@@ -838,12 +838,12 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
             if (rand()%100 > 65) {
                 // second word is less respectful
                 on = on.substr(op+1);
-		do {
-			// check for extra spaces
-			op = on.find(' ');
-			if (op == string::npos) break;
-			on = on.substr(op+1);
-		} while (1);
+                do {
+                    // check for extra spaces
+                    op = on.find(' ');
+                    if (op == string::npos) break;
+                    on = on.substr(op+1);
+                } while (1);
             } else {
                 on = on.substr(0, op);
             }
@@ -888,13 +888,14 @@ size_t namefind(string &str, string &x) {
     p = str.find(x);
     if (string::npos == p) return p;
 
-   // now, is it a desired match?
+    // now, is it a desired match?
 
     // post-punctuation makes it okay (end of phrase)
     if (NULL != strchr("!?,.", str[p+x.length()])) return p;
 
-    // if no punctuation, it has to be a space after, otherwise we are part of another word
-    if (' ' != str[p+x.length()]) return string::npos;
+    // if no punctuation, it has to be a space or apostrophe after, otherwise we are part of another word
+    // (apostrophe for possessive (name's thing))
+    if (NULL == strchr(" '", str[p+x.length()])) return string::npos;
 
     // start of line is okay
     if (p == 0) return p;
@@ -931,7 +932,7 @@ void nameSubstitution(string &str, const string &n, const string &us) {
 
     for (int pass = 0; pass < 2; ++pass) {
         for (string x : nameList) {
-	    if (x == us) continue;  // don't replace self references
+            if (x == us) continue;  // don't replace self references
 
             size_t p = string::npos;
             size_t l = 0;
