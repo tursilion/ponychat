@@ -161,7 +161,7 @@ string makefilename(string fn) {
 
 #endif
 
-// string to string case insensitive only search
+// string to string case insensitive punctuation-ignoring only search
 // replaces str.find
 size_t findnocase(const string &str, const string &x, size_t start) {
   if (str.empty()) return string::npos;
@@ -170,7 +170,9 @@ size_t findnocase(const string &str, const string &x, size_t start) {
   size_t match = string::npos;
   for (unsigned outer=start; outer<str.length()-x.length(); ++outer) {
     for (unsigned inner=0; inner<x.length(); ++inner) {
-      if (toupper(str[outer+inner]) != toupper(x[inner])) {
+      char out = str[outer+inner];
+      if (NULL != strchr("!?,.", out)) out = ' ';
+      if (toupper(out) != toupper(x[inner])) {
         match = string::npos;
         break;
       }
@@ -194,8 +196,9 @@ const char* strtest(const char* a, const std::string &w) {
         const char* p2 = b;
         for (;;) {
             if ((*p1 == 0) || (*p2 == 0)) break;
-            if ((*p2 <= '!') && (*p1 <= '!')) { ++p1; ++p2; continue; }
-            if (toupper(*p1) == toupper(*p2)) { ++p1; ++p2; continue; }
+            char out = *p1;
+            if (NULL != strchr("!?,.", out)) out = ' ';
+            if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
             break;
         }
         if (*p2 == '\0') {
@@ -655,7 +658,7 @@ finish:
             output += ' ';
         }
     }
-    
+
     return output;
 }
 
@@ -664,10 +667,10 @@ int randomfile() {
     return rand() % trueNameListSize;    
 }
 
-// single string replace
+// string replace - note that 'space' matches various punctuation
 void strreplace(string& s, string src, string rep) {
     for (;;) {
-        size_t p = s.find(src);
+        size_t p = findnocase(s, src, 0);
         if (string::npos == p) break;
         s.replace(p, src.length(), rep);
     }
@@ -679,14 +682,15 @@ void strreplace(string& s, string src, string rep) {
 // We go a little further and split the sentence at a single
 // and or but, which helps in those cases.
 void strreplaceyou(string& s, string src, string rep1, string rep2) {
-    size_t conjunct = s.find(" and ");
-    if (conjunct == string::npos) conjunct = s.find(" but ");
-    if (conjunct == string::npos) conjunct = s.find(" if ");
-    if (conjunct == string::npos) conjunct = s.find(" with ");
-    if (conjunct == string::npos) conjunct = s.find(" how ");
+    // don't want punctuation on these hits, we are looking for mid-sentence
+    size_t conjunct = findnocase(s, " and ", 0);
+    if (conjunct == string::npos) conjunct = findnocase(s, " but ", 0);
+    if (conjunct == string::npos) conjunct = findnocase(s, " if ", 0);
+    if (conjunct == string::npos) conjunct = findnocase(s, " with ", 0);
+    if (conjunct == string::npos) conjunct = findnocase(s, " how ", 0);
 
     for (;;) {
-        size_t p = s.find(src);
+        size_t p = findnocase(s, src, 0);
         if (string::npos == p) break;
         string replace = rep1;
         if (conjunct == string::npos) {
@@ -877,18 +881,33 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
 // after a comma, and has punctuation right after it
 // (so that it's likely calling the other party, rather
 // than referring to a third person).
-size_t namefind(string &str, string &x) {
+// Nosplit returns true if a name match is prefixed with
+// 'a' or 'the' and so rejected, so that the caller
+// doesn't try splitting the name
+// namefind SHOULD be case-sensitive!!
+size_t namefind(string &str, string &x, bool &nosplit) {
     size_t p = string::npos;
+    nosplit = false;
 
     // little hacky, but disallow some bad names
     if (x == "Mark Crusaders") return p;
     if (x == "Pony") return p;
 
     // first, any match at all?
-    p = str.find(x);
+    p = str.find(x, 0);
     if (string::npos == p) return p;
 
     // now, is it a desired match?
+    // make sure we start clean - either a space or start of line before
+    if ((p != 0)&&(str[p-1] != ' ')) return string::npos;  // explicitly space
+
+    // make sure it was not "a name", such as "a princess"
+    if ((p >= 3)&&(tolower(str[p-2]) == 'a')&&(str[p-3]==' ')) { nosplit=true; return string::npos; }
+    // also 'the'
+    if ((p >= 5)&&(tolower(str[p-2]) == 'e')&&(tolower(str[p-3])=='h')&&(tolower(str[p-4])=='t')&&(str[p-5]==' ')) {
+        nosplit = true;
+        return string::npos;
+    }
 
     // post-punctuation makes it okay (end of phrase)
     if (NULL != strchr("!?,.", str[p+x.length()])) return p;
@@ -929,8 +948,9 @@ void nameSubstitution(string &str, const string &n, const string &us) {
     size_t finalp = string::npos;
     size_t finall = 0;
     string finaltstname;
+    int maxpass = 2;
 
-    for (int pass = 0; pass < 2; ++pass) {
+    for (int pass = 0; pass < maxpass; ++pass) {
         for (string x : nameList) {
             if (x == us) continue;  // don't replace self references
 
@@ -939,13 +959,17 @@ void nameSubstitution(string &str, const string &n, const string &us) {
             string tstname;
 
             if (pass == 0) {
-                p = namefind(str,x);
+                bool nosplit = false;
+                p = namefind(str,x,nosplit);
+                if (nosplit) maxpass = 1; // even though this will affect all names, it's okay
+
                 if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
                     finaltstname = x;
                     finall = x.length();
                     finalp = p;
                 }
             } else {
+                bool xx = false;  // dummy value on this pass
                 // try some variations
                 if (string::npos != x.find(' ')) {
                     // (note there may be more than two names!)
@@ -966,7 +990,7 @@ void nameSubstitution(string &str, const string &n, const string &us) {
                         // replace "Princess" with "Principal" (Celestia and Luna)
                         if (n1 == "Princess") {
                             tstname = "Principal " + n2;
-                            p = namefind(str,tstname);
+                            p = namefind(str,tstname,xx);
                             l = tstname.length();
                             if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
                                 finalp = p;
@@ -978,7 +1002,7 @@ void nameSubstitution(string &str, const string &n, const string &us) {
                         // try Ms/Mrs/Mr lastname
                         if (p == string::npos) {
                             tstname = "Ms " + n2;
-                            p = namefind(str,tstname);
+                            p = namefind(str,tstname,xx);
                             l = tstname.length();
                             if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
                                 finalp = p;
@@ -988,7 +1012,7 @@ void nameSubstitution(string &str, const string &n, const string &us) {
                         }
                         if (p == string::npos) {
                             tstname = "Mrs " + n2;
-                            p = namefind(str,tstname);
+                            p = namefind(str,tstname,xx);
                             l = tstname.length();
                             if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
                                 finalp = p;
@@ -998,7 +1022,7 @@ void nameSubstitution(string &str, const string &n, const string &us) {
                         }
                         if (p == string::npos) {
                             tstname = "Miss " + n2;
-                            p = namefind(str,tstname);
+                            p = namefind(str,tstname,xx);
                             l = tstname.length();
                             if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
                                 finalp = p;
@@ -1008,7 +1032,7 @@ void nameSubstitution(string &str, const string &n, const string &us) {
                         }
                         if (p == string::npos) {
                             tstname = "Mr " + n2;
-                            p = namefind(str,tstname);
+                            p = namefind(str,tstname,xx);
                             l = tstname.length();
                             if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
                                 finalp = p;
@@ -1019,25 +1043,102 @@ void nameSubstitution(string &str, const string &n, const string &us) {
 
                         // first name
                         if (p == string::npos) {
-                            tstname = n1;
-                            p = namefind(str,n1);
-                            l = n1.length();
-                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
-                                finalp = p;
-                                finall = l;
-                                finaltstname = tstname;
+                            // skip some first names that are more likely to be nouns
+                            // needs to be in a file list... or tag the names somehow
+                            for (;;) {
+                                if (n1 == "Trouble") break;
+                                if (n1 == "Apple") break;
+                                if (n1 == "Big") break;
+                                if (n1 == "Clear") break;
+                                if (n1 == "Cozy") break;
+                                if (n1 == "Iron") break;
+                                if (n1 == "Lightning") break;
+                                if (n1 == "Night") break;
+                                if (n1 == "Photo") break;
+                                if (n1 == "Sour") break;
+                                if (n1 == "Spoiled") break;
+                                if (n1 == "Tree") break;
+                                if (n1 == "Wind") break;
+                                if (n1 == "Windy") break;
+                                if (n1 == "On") break;
+
+                                tstname = n1;
+                                p = namefind(str,n1,xx);
+                                l = n1.length();
+                                if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                    finalp = p;
+                                    finall = l;
+                                    finaltstname = tstname;
+                                }
+                                break;
                             }
                         }
 
                         // last name 
                         if (p == string::npos) {
-                            tstname = n2;
-                            p = namefind(str,n2);
-                            l = n2.length();
-                            if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
-                                finalp = p;
-                                finall = l;
-                                finaltstname = tstname;
+                            // skip some last names that are more likely to be nouns
+                            // needs to be in a file list...
+                            for (;;) {
+                                if (n2 == "King") break;
+                                if (n2 == "Shoes") break;
+                                if (n2 == "Dazzle") break;
+                                if (n2 == "Bunny") break;
+                                if (n2 == "Bloom") break;
+                                if (n2 == "Rose") break;
+                                if (n2 == "Blaze") break;
+                                if (n2 == "Seed") break;
+                                if (n2 == "Sandwich") break;
+                                if (n2 == "Sky") break;
+                                if (n2 == "Glow") break;
+                                if (n2 == "Donkey") break;
+                                if (n2 == "Do") break;
+                                if (n2 == "Horse") break;
+                                if (n2 == "Pages") break;
+                                if (n2 == "Sentry") break;
+                                if (n2 == "Heart") break;
+                                if (n2 == "Daisy") break;
+                                if (n2 == "Delicious") break;
+                                if (n2 == "Gruff") break;
+                                if (n2 == "Pear") break;
+                                if (n2 == "Will") break;
+                                if (n2 == "Montage") break;
+                                if (n2 == "Dust") break;
+                                if (n2 == "Pie") break;
+                                if (n2 == "Mare") break;
+                                if (n2 == "Skies") break;
+                                if (n2 == "Dancer") break;
+                                if (n2 == "Cake") break;
+                                if (n2 == "Light") break;
+                                if (n2 == "Moon") break;
+                                if (n2 == "Favor") break;
+                                if (n2 == "Petals") break;
+                                if (n2 == "Finish") break;
+                                if (n2 == "Shadows") break;
+                                if (n2 == "Pants") break;
+                                if (n2 == "Saddles") break;
+                                if (n2 == "Armor") break;
+                                if (n2 == "Sweet") break;
+                                if (n2 == "Magnet") break;
+                                if (n2 == "Shadow") break;
+                                if (n2 == "Taps") break;
+                                if (n2 == "Spruce") break;
+                                if (n2 == "Trail") break;
+                                if (n2 == "Blush") break;
+                                if (n2 == "Sprint") break;
+                                if (n1 == "Whistles") break;
+                                if (n1 == "Breeze") break;
+                                if (n1 == "Gourmand") break;
+                                if (n1 == "Stage") break;
+
+                                tstname = n2;
+                                p = namefind(str,n2,xx);
+                                l = n2.length();
+                                if ((p != string::npos) && ((finalp == string::npos)||(p < finalp))) {
+                                    finalp = p;
+                                    finall = l;
+                                    finaltstname = tstname;
+                                }
+                                break;
                             }
                         }
                     }
@@ -1054,7 +1155,6 @@ void nameSubstitution(string &str, const string &n, const string &us) {
     // Disallow certain parts of names that don't work on their own
     if (finaltstname == "Cutie") return;  // Cutie Mark Crusaders
     if (finaltstname == "Mark") return;  // Cutie Mark Crusaders
-
 
     // there is a match, check start or end, and full name! (Cause 'Ma' is short)
     // must be followed by punctuation, and must be either the start of the
