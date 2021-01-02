@@ -945,14 +945,18 @@ void nameSubstitution(string &str, const string &n, const string &us) {
     // helps prevent ordering issues (for instance "Diamond" will match for "Diamond Tiara"
     // before "Double Diamond", even if "Double Diamond" is what was in the text)
     // We also prefer the earliest match in case there are multiple.
+    // this also lets us NOT split the honorable mention names, they must fully match
     size_t finalp = string::npos;
     size_t finall = 0;
     string finaltstname;
     int maxpass = 2;
 
     for (int pass = 0; pass < maxpass; ++pass) {
+        int nameIdx = 0;
         for (string x : nameList) {
             if (x == us) continue;  // don't replace self references
+            if ((pass > 0) && (nameIdx >= trueNameListSize)) break; // don't split up honorable mentions
+            ++nameIdx;
 
             size_t p = string::npos;
             size_t l = 0;
@@ -1060,6 +1064,7 @@ void nameSubstitution(string &str, const string &n, const string &us) {
                                 if (n1 == "Tree") break;
                                 if (n1 == "Wind") break;
                                 if (n1 == "Windy") break;
+                                if (n1 == "Tree") break;
                                 if (n1 == "On") break;
 
                                 tstname = n1;
@@ -1178,7 +1183,7 @@ void runlist() {
     for (int idx = 0; idx<trueNameListSize; ++idx) {
         s.insert(Foo(nameList[idx], idx+1));
     }
-    
+
     if (!opendirect(SRCPATH, ".txt")) {
         printf("no dir\n");
         return;
@@ -1190,7 +1195,7 @@ void runlist() {
     for (Foo x : s) {
         printf("\n<li><a href=\"%s?%d\">%s</a></li>   \n", CHAT_URL, x.idx, x.str.c_str());
     }
-    
+
     printf("</body></html>");
 }
 
