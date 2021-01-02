@@ -916,8 +916,8 @@ size_t namefind(string &str, string &x, bool &nosplit) {
     // (apostrophe for possessive (name's thing))
     if (NULL == strchr(" '", str[p+x.length()])) return string::npos;
 
-    // start of line is okay
-    if (p == 0) return p;
+    // start of line is okay (edit: no, only if it has post-punctuation)
+    //if (p == 0) return p;
 
     // after punctuation is okay
     if ((p > 1) && (str[p-1] == ' ') && (strchr("?!,.", str[p-2]))) return p;
@@ -931,7 +931,7 @@ size_t namefind(string &str, string &x, bool &nosplit) {
 // n is the name of the other character, if we decide to use it
 void nameSubstitution(string &str, const string &n, const string &us) {
     // Rules: It might be a name to substitute only if it's the
-    // first or the name. Punctuation is used to verify. (If it's
+    // first or the last. Punctuation is used to verify. (If it's
     // in the middle, it's more likely a third party).
     string tstname;
 
