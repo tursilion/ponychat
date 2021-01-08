@@ -41,7 +41,7 @@ vector<string> adjectives;  // adjective exceptions from the database
 //#define GFX_TEST 1
 
 // where is the cgi?
-#define CHAT_URL "http://harmlesslion.com/cgi-bin/ponychat.cgi"
+#define CHAT_URL "000CHAT_URL000"
 
 #ifdef _WIN32
 #include <windows.h>
@@ -1189,14 +1189,10 @@ void runlist() {
         return;
     }
 
-    printf("<html><body>");
-    addstyle();
-
     for (Foo x : s) {
         printf("\n<li><a href=\"%s?%d\">%s</a></li>   \n", CHAT_URL, x.idx, x.str.c_str());
     }
 
-    printf("</body></html>");
 }
 
 // fix blank lines in database
@@ -1231,12 +1227,9 @@ void runquote(int who, int count) {
 
     // print out the name of the character, from the filename
     std::string fn = getfilename();
-    for (unsigned int idx = 0; idx < fn.length(); ++idx) {
-        if (fn[idx] == '.') break;
-        if ((idx > 0) && (fn[idx] >= 'A') && (fn[idx] <= 'Z')) printf(" ");
-        printf("%c", fn[idx]);
-    }
-    printf(": ");
+    std::string un2 = parseToName(fn);
+    printf("<p class=\"talk2\">\n");
+    printf("<b>%s: </b>", un2.c_str());
 
     // suck the file into memory
     fn = makefilename(SRCPATH);
@@ -1273,7 +1266,7 @@ void runquote(int who, int count) {
 
     // now start babbling
     int cnt = count;
-    if ((count < 0) || (count > 10)) {
+    if ((count <= 0) || (count > 10)) {
         cnt = rand() % 5 + 2;
     }
     for (int idx = 0; idx < cnt; ++idx) {
@@ -1281,6 +1274,7 @@ void runquote(int who, int count) {
         printf("%s", s.c_str());
         if (s.empty()) --idx;   // if there's a blank line in the database, then we get an empty output. Ignore it.
     }
+    printf("</p>\n<br><br>\n");
 
     // and finally, generate the bottom image
     makepic(fn, "");
