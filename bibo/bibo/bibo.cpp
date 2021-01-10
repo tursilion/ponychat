@@ -1161,6 +1161,12 @@ void nameSubstitution(string &str, const string &n, const string &us) {
     if (finaltstname == "Cutie") return;  // Cutie Mark Crusaders
     if (finaltstname == "Mark") return;  // Cutie Mark Crusaders
 
+    // Finally, if we are referring to ourselves, don't replace it
+    if (string::npos != findnocase(us, finaltstname, 0)) {
+        printf("<!-- Don't replace '%s' because it's us -->\n", finaltstname.c_str());
+        return;
+    }
+
     // there is a match, check start or end, and full name! (Cause 'Ma' is short)
     // must be followed by punctuation, and must be either the start of the
     // line, or preceded by a comma.
