@@ -1,3 +1,5 @@
+Dogo
+Madoa
 Jamal
 Bloomberg
 Sonata Blaze
@@ -64,6 +66,7 @@ Pine Tree
 Gabe
 Dundee
 Daddy
+Dad
 Mewmew
 King Grover
 Makuu
