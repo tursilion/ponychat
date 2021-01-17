@@ -33,7 +33,6 @@ I have one.
 But I'm warning you, you might as well hug a friend now.
 That's how scary it is!
 It's time I told you about the legend of Gaea Everfree.
-[narrating]
 Many years ago, my great-grandparents came to this forest.
 Seeing its beauty, they decided that it would be the perfect place for a camp.
 But once they started building, strange things started to happen.
@@ -162,9 +161,7 @@ I'll handle this!
 See?
 This is the kind of lifesaving instinct I developed at Everfree.
 I've got you!
-[grunting]
 We're not fighting.
-[grunting]
 You're right.
 We're kind of fighting.
 But we're also saving you.

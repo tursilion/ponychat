@@ -1087,7 +1087,6 @@ Whoa!
 I can't see a darn thing in this swamp.
 [yelps]
 Well, now at least I can see.
-[nervous whimpering]
 It don't look so safe to me.
 Well, unfortunately, I gotta get these pies to a town on the other side of the swamp, so, uh...
 You don't say.
@@ -2045,7 +2044,6 @@ Just like us!
 [laughs nervously]
 eeeeeeeeee!
 This is my favorite part!
-[fangirl squealing]
 I love that story, no matter how many times I hear it.
 I dunno.
 I've seen the way you two get when you miss breakfast.

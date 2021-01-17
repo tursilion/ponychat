@@ -30,9 +30,7 @@ Are you getting another one of your headaches?
 Feeling better?
 Let her go.
 Maybe we should just ignore her.
-[starts crying]
 Why are you doing this to me?
-[crying]
 You will be.
 I hope I'm not interrupting anything important.
 Uh-huh.
@@ -40,19 +38,14 @@ Are you disagreeing with me?
 You will be.
 The caves beneath Canterlot, once home to greedy unicorns who wanted to claim the gems that could be found inside.
 And now, your prison.
-[laughing]
 It's no use.
 No one can hear you.
 And no one will ever think to look for you, either.
 Most ponies have forgotten that these caves even exist, which is why they are the ideal place to keep the ones who try to interfere with my plans.
-[laughing]
 The plans I have for your brother, of course.
 Only way to stop me is to catch me!
-[laughing]
 Over here!
-[laughing]
 Nope, over here!
-[laughing]
 Wait!
 Ugh!
 Please!
@@ -142,7 +135,6 @@ Help!
 Let go of my sister-in-law!
 Don't thank me yet!
 And for good measure...
-[panting]
 Yes.
 Better than okay actually.
 You didn't put a damper on our visit at all.
@@ -233,7 +225,6 @@ Shining Armor, I thought you were taking care of the baby!
 [gasps]
 What about this?
 Trotter's Tome of Reliquary?
-[reading]
 Spell of Relic Reconstitution!
 I can't believe we found it!
 Do you think you can remember the spell?
@@ -317,7 +308,6 @@ Once I had Flurry Heart, the line was easier for me to see.
 You will always have obligations as a princess, but you also have an obligation to yourself.
 That's very thoughtful.
 But right now, the family and I have something scheduled for you.
-[giggling]
 Flurry Heart and I loved it!
 I'm so glad we decided to come.
 You two have a real chemistry.

@@ -3181,7 +3181,6 @@ You have to listen to me!
 I'm fine.
 I've got something to say!
 She's evil!
-She's been horrible to my friends, she's obviously done something to her bridesmaids, and if that wasn't enough, I saw her put a spell on my brother that made his eyes go all [bells jangling]
 Because you're evil!
 Evil!
 And if I don't stop you, you're gonna ruin my brother's life!
@@ -3198,7 +3197,6 @@ Cadance is only the most amazing pony ever!
 Cadance, it's me!
 Twilight!
 She's evil!
-I saw her put a spell on my brother that made his eyes go all [bells jangling]
 I just lost a brother.
 I'm sorry!
 Hello?
@@ -11887,8 +11885,6 @@ I wish!
 But don't worry.
 You're looking at somepony who knows this place like the back of her hoof.
 Where are you going, Princess Celestia?
-There's a, a reh, a reh, a reh, [hyperventilating]
-[prolonged gasp]
 Oh-my-gosh-oh-my-gosh-oh-my-gosh-oh-my-gosh-oh-my-gosh!
 So many books all unread!
 Ancient historical artifacts!

@@ -899,7 +899,9 @@ size_t namefind(string &str, string &x, bool &nosplit) {
 
     // now, is it a desired match?
     // make sure we start clean - either a space or start of line before
-    if ((p != 0)&&(str[p-1] != ' ')) return string::npos;  // explicitly space
+    if ((p != 0)&&(str[p-1] != ' ')) {
+        return string::npos;  // explicitly space
+    }
 
     // make sure it was not "a name", such as "a princess"
     if ((p >= 3)&&(tolower(str[p-2]) == 'a')&&(str[p-3]==' ')) { nosplit=true; return string::npos; }
@@ -909,18 +911,19 @@ size_t namefind(string &str, string &x, bool &nosplit) {
         return string::npos;
     }
 
-    // post-punctuation makes it okay (end of phrase) (actually, not without punctuation...)
-//    if (NULL != strchr("!?,.", str[p+x.length()])) return p;
+    // post-comma makes it okay (end of phrase)
+    if (NULL != strchr(",", str[p+x.length()])) return p;
 
     // if no punctuation, it has to be a space or apostrophe after, otherwise we are part of another word
     // (apostrophe for possessive (name's thing))
-    if (NULL == strchr(" '", str[p+x.length()])) return string::npos;
+    if (NULL == strchr(" '!?.", str[p+x.length()])) return string::npos;
 
-    // start of line is okay (edit: no, only if it has post-punctuation)
-    //if (p == 0) return p;
+    // start of line is okay if that's all there is (like 'Rainbow Dash!')
+    if ((p == 0)&&(strchr("!?.", str[p+x.length()]))) return p;
 
-    // after punctuation is okay
-    if ((p > 1) && (str[p-1] == ' ') && (strchr("?!,.", str[p-2]))) return p;
+    // after comma is okay
+    // is it? "If I'm not there, Tree Hugger is responsible for you" is not a good replacement
+    //if ((p > 1) && (str[p-1] == ' ') && (strchr(",", str[p-2]))) return p;
 
     // else it's probably a third party reference
     return string::npos;
