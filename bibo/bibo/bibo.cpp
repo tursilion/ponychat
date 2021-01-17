@@ -1474,7 +1474,7 @@ void runscene(int who1, int who2, int count, int count2) {
     // now start babbling
     len3 = 0;
     len4 = 0;
-    string globalnoun;
+    string globalnoun1,globalnoun2;
     int lps = count;
     if ((lps < 1) || (lps > 10)) {
         lps = rand() % 4 + 2;
@@ -1493,7 +1493,7 @@ void runscene(int who1, int who2, int count, int count2) {
             printf("<p class=\"talk2\">\n");
             printf("<b>%s: </b>", un2.c_str());
             for (int idx = 0; idx < cnt; ++idx) {
-                string s = generateLine(buf2, len2, buf4, len4, globalnoun);
+                string s = generateLine(buf2, len2, buf4, len4, globalnoun1);
                 if (s.empty()) {
                     // if there's a blank line in the database, then we get an empty output. Ignore it.
                     --idx;
@@ -1502,7 +1502,7 @@ void runscene(int who1, int who2, int count, int count2) {
                 // noun testing...
                 string noun = findNoun(s);
                 printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
-                if (noun.length() > 0) globalnoun = noun;
+                if (!noun.empty()) globalnoun2 = noun;
                 ////
                 nameSubstitution(s, un1, un2);
                 printf("%s ", s.c_str());
@@ -1519,11 +1519,12 @@ void runscene(int who1, int who2, int count, int count2) {
                 len3 += (int)s.length();
             }
             printf("</p><br>\n");
+            //globalnoun1 = "";
         } else {
             printf("<p class=\"talk1\">\n");
             printf("<b>%s: </b>", un1.c_str());
             for (int idx = 0; idx < cnt; ++idx) {
-                string s = generateLine(buf1, len1, buf3, len3, globalnoun);
+                string s = generateLine(buf1, len1, buf3, len3, globalnoun2);
                 if (s.empty()) {
                     // if there's a blank line in the database, then we get an empty output. Ignore it.
                     --idx;
@@ -1532,7 +1533,7 @@ void runscene(int who1, int who2, int count, int count2) {
                 // noun testing
                 string noun = findNoun(s);
                 printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
-                if (noun.length() > 0) globalnoun = noun;
+                if (!noun.empty()) globalnoun1 = noun;
                 ////
                 nameSubstitution(s, un2, un1);
                 printf("%s ", s.c_str());
@@ -1549,6 +1550,7 @@ void runscene(int who1, int who2, int count, int count2) {
                 len4 += (int)s.length();
             }
             printf("</p><br>\n");
+            //globalnoun2 = "";
         }
     }
 

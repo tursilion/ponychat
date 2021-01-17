@@ -92,7 +92,6 @@ I, Photo Finish, will kepture za magicks!
 I go!
 Shtop!
 Hold that pose!
-[snaps fingers]
 You are shtarving!
 Now take a bite!
 Do not bite it!
@@ -101,7 +100,6 @@ Yes!
 Enough!
 I go!
 Shports!
-[snaps fingers]
 Jump!
 Jump!
 Like a beautiful gresshopper!
@@ -141,7 +139,6 @@ Say, za cheese!
 No, no, nein!
 Ze fashion is there, but ze style, it's not!
 Vee need more silliness!
-[snaps]
 Hold it!
 Zat's it!
 I like it!
@@ -163,7 +160,6 @@ B-b-buh!
 Mouth closed please.
 Vit' your heart, Applejek!
 Open it and let Photo Finish feel where ze light needs to be, und zen ze set vill be built vere ze lights are not!
-[snaps fingers]
 You're already doing it.
 Yes!
 Can't you feel it?
@@ -175,13 +171,11 @@ Look vit' your heart!
 Behold!
 Zat look!
 Zat is vhy I do zis!
-[snaps]
 I go!
 B-b-buh!
 Mouth closed please.
 Vit' your heart, Applejek!
 Open it and let Photo Finish feel where ze light needs to be, und zen ze set vill be built vere ze lights are not!
-[snaps fingers]
 You're already doing it.
 Yes!
 Can't you feel it?
@@ -193,5 +187,4 @@ Look vit' your heart!
 Behold!
 Zat look!
 Zat is vhy I do zis!
-[snaps]
 I go!
