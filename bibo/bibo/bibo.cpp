@@ -909,8 +909,8 @@ size_t namefind(string &str, string &x, bool &nosplit) {
         return string::npos;
     }
 
-    // post-punctuation makes it okay (end of phrase)
-    if (NULL != strchr("!?,.", str[p+x.length()])) return p;
+    // post-punctuation makes it okay (end of phrase) (actually, not without punctuation...)
+//    if (NULL != strchr("!?,.", str[p+x.length()])) return p;
 
     // if no punctuation, it has to be a space or apostrophe after, otherwise we are part of another word
     // (apostrophe for possessive (name's thing))
@@ -942,7 +942,7 @@ void nameSubstitution(string &str, const string &n, const string &us) {
     // go through the name list, and replace only first or last words in the sentence,
     // with separating punctuation
     // First pass we search ONLY complete names, second pass we split it up. This
-    // helps prevent ordering issues (for instance "Diamond" will match for "Diamond Tiara"
+    // helps prevent ordering issues (for instance "Diamond" might match for "Diamond Tiara"
     // before "Double Diamond", even if "Double Diamond" is what was in the text)
     // We also prefer the earliest match in case there are multiple.
     // this also lets us NOT split the honorable mention names, they must fully match
