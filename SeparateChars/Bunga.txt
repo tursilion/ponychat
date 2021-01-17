@@ -49,7 +49,7 @@ A triple somersault into the water, from upside down.
 Get out of here, Reirei.
 One more step and you'll regret it.
 Get outta here, kids.
-(SHOUTING) Run!
+[SHOUTING] Run!
 Teke, kids.
 Take!
 Yes!
@@ -111,7 +111,7 @@ I know his own strength!
 It's almost as un-Bunga-lievable as Beshte's!
 You gotta use the roar!
 That's okay, we'll get'cha outta here, Big B!
-(STRAINING) It might take a while.
+[STRAINING] It might take a while.
 See you!
 You and your dad did all that?
 Maybe Basi should be on the Lion Guard too, Kion.
@@ -119,7 +119,7 @@ What's the big deal?
 The flood plains will dry up soon.
 There's not a cloud in the sky.
 And I can help!
-(GRUNTING) It's really stuck in there.
+[GRUNTING] It's really stuck in there.
 We heard.
 So they've got nowhere to eat?
 That's horrible!
@@ -184,7 +184,7 @@ Then yeah, sure!
 The Zimwi's nothing!
 Speaking of enough, you'd think four legs is enough, but not for the Zimwi!
 He's got eight!
-(SCOFFS) Yeah.
+[SCOFFS] Yeah.
 For all we know it could be some other eight-legged, super tall, sharp-toothed thing stalking through the Pride Lands tonight.
 Good idea!
 The Lion Guard's on duty!
@@ -207,8 +207,8 @@ Said it again!
 At least he's not afraid of the Zimwi.
 Is it, Kion?
 Or is it the Zimwi laughing right before it eats some unsuspecting animal?
-(SIGHS) Still no sign of the Zimwi.
-(GROANS)
+[SIGHS] Still no sign of the Zimwi.
+[GROANS]
 By the Zimwi?
 Ooh, how many eyes does the Zimwi have?
 We got you, Zimwi!
@@ -230,7 +230,7 @@ What about their ginormous Zimwi body?
 Mmm!
 Termites!
 Excuse me.
-(MOUTH FULL) See?
+[MOUTH FULL] See?
 I was right.
 It did have two heads!
 Mmm.
@@ -269,12 +269,12 @@ I climb on top of you and then you jump as high as you can.
 Then, when you're mid-air, I jump off of you and right out of the hole!
 Ready?
 Well, yeah, not if you keep moving around like that.
-(SIGHS DEEPLY) Okay.
+[SIGHS DEEPLY] Okay.
 Fine.
 I'll just climb up there myself.
 Just need a running start.
 Zuka Zama!
-(GASPS) Wow!
+[GASPS] Wow!
 It was really dark under there!
 I'm okay.
 'Cause I'm such a good climber!
@@ -288,7 +288,7 @@ Just look at all these bugs!
 Mmm.
 Hey, look at that!
 A hole!
-(GASPS) And there's a tunnel!
+[GASPS] And there's a tunnel!
 Simba!
 This is it!
 Our way out!
@@ -308,12 +308,12 @@ Or maybe I don't.
 Fine, fine.
 You decide.
 Which way do we go?
-(SCOFFS) Nah!
+[SCOFFS] Nah!
 We should go down this tunnel!
 Duh.
 Uh, no, no.
 I was just, uh, singing!
-(SCOFFS) I know who you are.
+[SCOFFS] I know who you are.
 You're Simba!
 You're my best friend's dad.
 No going back now.
@@ -330,12 +330,12 @@ How about you go down your tunnel, and I'll go down mine.
 Then you won't have to put up with me and my crazy ideas anymore.
 See?
 I knew this tunnel would be easy going.
-(GRUNTS) Starting to get a little cramped.
+[GRUNTS] Starting to get a little cramped.
 But I think we can fit, Your Highness.
 Oh, yeah.
 It's just me now.
 Fine.
-(GRUNTING) If Simba had just listened to me, I bet we'd be outta here by now.
+[GRUNTING] If Simba had just listened to me, I bet we'd be outta here by now.
 That you Simba?
 Change your mind?
 Huh.
@@ -352,7 +352,7 @@ Just like they raised me.
 That kind of makes us, Brothers?
 Sort of?
 I'm, uh, sorry I yelled at you, bro.
-(SCOFFS) You know them.
+[SCOFFS] You know them.
 Hakuna matata?
 They're always happy!
 Matata.
@@ -437,13 +437,13 @@ I like it!
 Oh, hi, guys.
 Don't stop.
 I advise you to come along with us.
-(GASPS) Me?
+[GASPS] Me?
 Bad advice?
 You see, Kion?
 Everyone loves my advice.
 They wouldn't know what to do without it.
 Am I right?
-(SIGHS)
+[SIGHS]
 But, I'm a member of the Lion Guard.
 I can't let my friends down.
 Hey guys!
@@ -456,7 +456,7 @@ Don't look back!
 Uh, I don't know.
 Kion's the one who always knows what to do with this kinda stuff.
 Right, Kion?
-(MUMBLING A TUNE) That spot with the flowers, it looks like the perfect place to bask in the sun.
+[MUMBLING A TUNE] That spot with the flowers, it looks like the perfect place to bask in the sun.
 Pfft.
 Come on, Rafiki.
 I can tell the best spots to bask.
@@ -470,7 +470,7 @@ Yeah!
 It's un-Bunga-lievable!
 And there he goes?
 Your Majesty.
-(MUFFLED) It's my pleasure, Your Majesty.
+[MUFFLED] It's my pleasure, Your Majesty.
 Your wish is my command!
 Bees make great snacks.
 By your command, my queen.
@@ -482,12 +482,12 @@ Bees taste even better when they're mad!
 Yeah, totally delicious.
 I admit it, Your Majesty!
 Zuka zama.
-(PANTS) Whoo!
+[PANTS] Whoo!
 What happened?
 Did we win?
 Hey!
 I never said I was the fastest!
-(PANTS) Just try, to keep up with me!
+[PANTS] Just try, to keep up with me!
 Zuka, Zama...
 Hey, it all worked out!
 We still saved all the animals and chased the bad guys away, right?
@@ -511,7 +511,7 @@ Come on, Rafiki, there's all kinds of burn marks around here.
 Was that you, Big B?
 That's the loudest water I've ever heard.
 Okay, but first, Zuka Zama!
-(GRUNTS) Huh?
+[GRUNTS] Huh?
 Where'd the water go?
 Woah, Let's get 'em, Beshte.
 Zuka Zama!
@@ -533,11 +533,11 @@ Incoming!
 You were the keenest of sight.
 Try painting him in action.
 Like this!
-(GROWLS) Now you try it.
+[GROWLS] Now you try it.
 No, no, no.
 You need to look more like a lion.
 Like this.
-(GRUNTS) Ah.
+[GRUNTS] Ah.
 See?
 Now put your chin out, like you mean it.
 Hmm, Kion, you're not looking very lion-y.
@@ -546,9 +546,9 @@ Hmm.
 Wait a minute.
 I know.
 Paint me in action.
-(GRUNTING)But don't paint me like this.
+[GRUNTING]But don't paint me like this.
 Not again!
-(GIGGLING)
+[GIGGLING]
 Let's do that again!
 What are you waiting for, Kion?
 Use the Roar!
@@ -558,7 +558,7 @@ Then blast this wall.
 Hey, ya, Ono!
 Oh, I don't know.
 All I see are rocks.
-(LAUGHS)
+[LAUGHS]
 And I got this one!
 Well, maybe next time you can try to fly enough higher!
 There.
@@ -590,9 +590,9 @@ Zuka Zama!
 Gotcha!
 Eh, I got tired of that!
 Running right at ya's more my style.
-(GROANS)
-(GROANS) I'm okay too.
-(LAUGHS) Whoo!
+[GROANS]
+[GROANS] I'm okay too.
+[LAUGHS] Whoo!
 I can't believe I beat her!
 Well, Or his little elephant buddy.
 Better late than never, right, Big B?
@@ -653,7 +653,7 @@ Good point.
 Come on!
 Let's go, buffalo!
 Whoa!
-(SCREAMS) Yowch!
+[SCREAMS] Yowch!
 Something bit me.
 And it was him.
 He already did.
@@ -664,10 +664,10 @@ Poison?
 That's not good.
 That's bad.
 That means, That means I'm a goner!
-(MOANING)
+[MOANING]
 Okay, if you think it'll help!
-(MOANS) It's so.
-(GROANS) You gotta help me.
+[MOANS] It's so.
+[GROANS] You gotta help me.
 I can't have much time left.
 I think this is the end.
 Goodbye, everyone.
@@ -687,7 +687,7 @@ The slime helps them go down smooth!
 Right here!
 Check it out!
 Open wide!
-(GRUNTS) Look at me!
+[GRUNTS] Look at me!
 I'm immune!
 Whoo!
 What ya doing, Fuli?
@@ -695,7 +695,7 @@ But you heard Rafiki.
 I'm immune.
 I can't be hurt.
 I could've stayed in that croc's mouth all day.
-(GROANS)
+[GROANS]
 Are they poisonous?
 Where's the fun in that?
 But I gotta tell you, being immune?
@@ -717,12 +717,12 @@ Zuka Zama, I'm immune
 Move it, Janja!
 See that volcano up there?
 I'm gonna go play in it!
-(CHUCKLING) You couldn't eat me if you tried.
+[CHUCKLING] You couldn't eat me if you tried.
 You know why?
 'Cause I'm immune!
 That's right!
 Immune!
-(ECHOING) Immune!
+[ECHOING] Immune!
 Immune.
 Again?
 You always jump in just when things are getting fun.
@@ -731,7 +731,7 @@ This is even more fun.
 Whoa!
 Hey, Timon was right.
 You really are soft.
-(SNIFFS) Do you smell something burning?
+[SNIFFS] Do you smell something burning?
 That lava's hot.
 And it hurts!
 But, But, This means I'm not immune!
@@ -742,18 +742,18 @@ Or fire!
 Yeah, I know.
 You're just so soft.
 Whoa!
-(GRUNTS) On the outside, at least.
+[GRUNTS] On the outside, at least.
 Hey, anyone else want to cool off at the watering hole?
 Told you.
 You got it, Kion!
 Oh, gotta go around!
 Big mudslide up ahead.
 It's a mess!
-(LAUGHING) Heads-up.
+[LAUGHING] Heads-up.
  Good one.
 You're a giraffe.
 Your head couldn't get more up!
-(LAUGHING)
+[LAUGHING]
 Ooh!
 Wait till Beshte hears that one.
 Whoa, whoa, whoa!
@@ -765,7 +765,7 @@ Would you believe a zebra?
 Hey, Big B!
 Wait till you hear what the giraffe said when we told her about the mudslide!
 She said, Thanks for sticking your neck out!
- (LAUGHS) No, wait.
+ [LAUGHS] No, wait.
 That's not right.
 She said, Was that it?
 I gotcha.
@@ -782,7 +782,7 @@ So has Binga.
 Janja?
 I'll stop him.
 Zuka Zama!
-(pounces Janja)
+[pounces Janja]
 Oh, yeah, I forgot.
 But you roared those lions all the way out of the Outlands.
 We will.
@@ -792,22 +792,22 @@ Hmm.
 Yeah, I don't think you're gonna fit through there, Big B.
 Just wait.
 It's Un-Bunga-liveable!
-(LAUGHS) Gotta love the Roar.
-(CHUCKLES) That's deep and wide.
+[LAUGHS] Gotta love the Roar.
+[CHUCKLES] That's deep and wide.
 Deep and wide!
-(ECHOES)
+[ECHOES]
 Ooh!
 , ooh!
 Me first!
 Me first!
-(LAUGHS) Yeah!
+[LAUGHS] Yeah!
 That's what I'm talking about!
 See, that wasn't so bad, was it?
 Un-Bunga-lievable!
 Fuli sure seems happy to see that Azaad guy again.
 Oh, yeah!
 Kion's new Roarsmake him a one-lion lion guard.
-(LAUGHS) Kion roared up a river!
+[LAUGHS] Kion roared up a river!
 Zuka Zama!
 This is un-Bunga-lievable!
 Isn't this great?
@@ -858,13 +858,13 @@ See?
 I didn't even get my feet wet!
 A-ha!
 Now I gotcha!
-(GRUNTS) Oh, yeah?
+[GRUNTS] Oh, yeah?
 Zuka Zama!
 Nuh-uh!
 Ha-ha!
 Winner, winner!
 Zebra dinner!
-(YELLS) Hyena in the Pride Lands?
+[YELLS] Hyena in the Pride Lands?
 All right, hyena!
 You picked the wrong day to come into the Pride Lands!
 That's right!
@@ -918,7 +918,7 @@ I know Kion said he'd be fine.
 Doesn't matter, Zira!
 Go ahead, Kion.
 Use the Roar!
-(RAZZES) That's not why he lost it!
+[RAZZES] That's not why he lost it!
 It was 'cause he used it for evil!
 Remember Rafiki's paintings?
 Ooh, yeah!
@@ -949,13 +949,13 @@ Stink contest.
 Thanks Anga!
 Tell Ono I'll see him later.
 When he sees me!
-(COUGHS) Is that all you got?
-(COUGHING) Okay.
+[COUGHS] Is that all you got?
+[COUGHING] Okay.
 Okay, Binga.
-(GASPING) I never thought I'd say this, but you're stinkier than me.
+[GASPING] I never thought I'd say this, but you're stinkier than me.
 Not so fast!
 I challenge you to the ultimate honey badger contest.
-(LAUGHING)
+[LAUGHING]
 Mama Binturong?
 Zuka Zama!
 I thought I was un-Bunga-lievable.
@@ -967,12 +967,12 @@ We've got something I know will get rid of her!
 Come on, Binga!
 Zuka Zama!
 Awwww, look how cute their stripes are.
-(Feliks bites Bunga on the arm) And how sharp their teeth are.
+[Feliks bites Bunga on the arm] And how sharp their teeth are.
 Did somebody say, cubs?
 We got cubs.
 Yeah.
 We got everything under control.
-(the cubs tackle Bunga, giggling) Ow!
+[the cubs tackle Bunga, giggling] Ow!
 Okay?
 You kidding?
 These cubs are great.
@@ -984,8 +984,8 @@ You okay?
 I'll help you find them.
 Hakuna Matata!
 You know in the Pride Lands, they call me Babysitter Bunga...
-(MUFFLED) I found them.
-(GRUNTS) Anything else I can help ya with?
+[MUFFLED] I found them.
+[GRUNTS] Anything else I can help ya with?
 The Queen?
 I'll take you to Rani.
 She'll know what to do.
@@ -996,11 +996,11 @@ Wait up.
 Hey, Rani.
 Makini.
 Sorry the cubs got ahead of me.
-(EFFORT GRUNTS) You cubs sure are heavy.
-(EFFORT GRUNTS)
+[EFFORT GRUNTS] You cubs sure are heavy.
+[EFFORT GRUNTS]
 Hear that?
 Time to say goodbye.
-(SIGHS IN RELIEF) Cubs are a lotta work.
+[SIGHS IN RELIEF] Cubs are a lotta work.
 Hakuna Matata!
 Happy to help, your Majesty.
 Well, you better.
@@ -1035,7 +1035,7 @@ Hey, you!
 We see you there.
 Are you the guy who knows who took our staff?
 Mama been there what?
-(GRUNTS EXCITEDLY) Oh, that feels good.
+[GRUNTS EXCITEDLY] Oh, that feels good.
 Oh, yeah, that's the spot.
 Uh-huh.
 Of course, I can do it.
@@ -1053,7 +1053,7 @@ Woah!
 A-ha.
 Tuliza.
 That's gotta be Mama's hideout.
-(SIGHS) That's a long way down.
+[SIGHS] That's a long way down.
 This is gonna be fun!
 Zuka Zama!
 Prefect Landing.
@@ -1078,21 +1078,21 @@ So we can do this the easy way, or we can do it the hard way.
 What is it?
 Hah!
 You except me to be scared of this, Mama.
-(CHUCKLES) That tickles.
+[CHUCKLES] That tickles.
 Zuka Zama.
-(LAUGHS)
+[LAUGHS]
 Zuka Zama!
 You're gonna need more than porcupines to beat me!
 Now, hand over that staff!
 All right, you asked for it.
 Whoo!
-(PANTS) Just give me a second.
-(YELLS) Oh, no, you don't!
-I'm here to get my friend's staff, (GRUNTS) and I'm not, (GRUNTS) leaving, (GRUNTS) without it.
+[PANTS] Just give me a second.
+[YELLS] Oh, no, you don't!
+I'm here to get my friend's staff, [GRUNTS] and I'm not, [GRUNTS] leaving, [GRUNTS] without it.
 Now, give me that staff!
 Okay, fine.
 If you're not gonna give me that staff, I'm gonna eat all your Tuliza.
-(SWALLOWS) Ugh, this is gross.
+[SWALLOWS] Ugh, this is gross.
 I don't know how Kion does it.
 Silly Binturong, missing something?
 Pfft!
@@ -1109,8 +1109,8 @@ Yeah!
 Kion's chased those hyenas back into the Outlands!
 Kion!
 Hang on, Kion, we're coming!
-(COUGHING) Whoa!
-(PANTING) Thanks, Big B.
+[COUGHING] Whoa!
+[PANTING] Thanks, Big B.
 Yeah, yeah, yeah!
 I know exactly where that is!
 Follow me!
@@ -1191,10 +1191,10 @@ You can tell me.
 Say what?
 Kion!
 It's not like you did that on purpose.
-(SHOUTING) Never use the Roar again?
+[SHOUTING] Never use the Roar again?
 Tell me you're joking.
 Never use the Roar again?
-(CHUCKLES NERVOUSLY) You're joking, right?
+[CHUCKLES NERVOUSLY] You're joking, right?
 Kion, you're the leader of the Lion Guard.
 You're the Pride Lands' fiercest!
 You gotta use the Roar!
@@ -1215,8 +1215,8 @@ I'll be with you in a minute.
 Careful, Ono!
 That's a Bunga original!
 Get out, or we'll throw you out.
-(GRUNTS) Zuka Zama!
-(GRUNTS) Take that!
+[GRUNTS] Zuka Zama!
+[GRUNTS] Take that!
 I kinda did.
 That's right!
 You heard Kion and Queen Nala!
@@ -1244,7 +1244,7 @@ Sure we can!
 Just point me to the tallest tree.
 I got this.
 Zuka Zama!
-(GRUNTING) Whoo!
+[GRUNTING] Whoo!
 A-ha!
 Whoa!
 You guys should come up.
@@ -1265,7 +1265,7 @@ Go, Ono!
 Way to go, Ono!
 Would ya look at that?
 Ono's gonna be a mom!
-(CHUCKLES) Oh, yeah.
+[CHUCKLES] Oh, yeah.
 Ono's gonna be a dad!
 I'll do it!
 I'm great at babysitting!
@@ -1290,8 +1290,8 @@ Whoa!
 This place is un-Bunga-lievable!
 I bet even Beshte could fit in here!
 What a nest!
-(GASPS) And it's got grubs!
-(CRUNCHING) I could get used to this place.
+[GASPS] And it's got grubs!
+[CRUNCHING] I could get used to this place.
 Coming!
 Snack for the road.
 Yep!
@@ -1308,8 +1308,8 @@ Two Onos?
 Won't that be confusing?
 Un-Bunga-lievable!
 It's raining baboons!
-Hey, you know, we could just catch the baboons, (GRUNTS) Or, Or maybe not.
-(STRAINED) I kinda do!
+Hey, you know, we could just catch the baboons, [GRUNTS] Or, Or maybe not.
+[STRAINED] I kinda do!
 And I thought your pointy end was the dangerous one.
 Hey!
 Look out!
@@ -1425,7 +1425,7 @@ At least the zebras are safe and we can head home.
 There aren't any trees in the lair.
 So, how are we gonna protect Kion now?
 Everywhere you look, trees, trees, trees.
-(GASPS) A tree branch.
+[GASPS] A tree branch.
 He could trip.
 Look out!
 Sorry.
@@ -1467,14 +1467,14 @@ No, Binga.
 You're the smelliest honey badger.
 No, you.
 No, you.
-(chuckles) Poa.
+[chuckles] Poa.
 Bunga must really like Binga if he thinks she's smellier.
-(yawns and wakes up) Uh, uh, morning?
+[yawns and wakes up] Uh, uh, morning?
 I slept great.
 Well, if Kion's off with Nirmala, I think I'll, uh, go find some grubs.
 Will do.
 Goodbye.
-(CHUCKLES) Poa The Destroyer.
+[CHUCKLES] Poa The Destroyer.
 Great nickname, Big B.
 Yeah, everyone always likes Beshte.
 'Course, I'm right.
@@ -1515,16 +1515,16 @@ See me?
 I'm over here!
 On three ante-lanty-lopes.
 One, two.
-(WEAKLY) Three.
+[WEAKLY] Three.
 Yeah!
 You can stop running!
 Wait till you see how many I can eat.
-(SLURPS) Oh!
+[SLURPS] Oh!
 I can burp too!
 That was un-bunga-lieveable!
 Let's do it again!
 Yep!
-See ya, wouldn't wanta be, (BURPS) ya.
+See ya, wouldn't wanta be, [BURPS] ya.
 Yeah.
 I'll miss 'em though.
 Not everyone in the Pride Lands can burp their name.
@@ -1542,7 +1542,7 @@ Pfft!
 They're no match for the Lion Guard.
 Say what?
 Zuka Zama!
-(CHUCKLES) That was fun.
+[CHUCKLES] That was fun.
 Easy.
 Roar into the vent and blow the lava away.
 Ooh.
@@ -1591,7 +1591,7 @@ Ono, call it!
 Gotta be braver than that, Shabaha.
 Zuka Zama!
 Mmm, she is brave.
-(LAUGHS) Whoa!
+[LAUGHS] Whoa!
 Ooh.
 I still win.
 Oh, yeah!
@@ -1615,7 +1615,7 @@ Zuka Zama!
 That's two!
 I got it!
 I got it!
-(GRUNTS) I don't got it.
+[GRUNTS] I don't got it.
 How'd the hyenas even find the elephants' melon patch?
 We gotta guard fruit?
 Kion, how much longer are we going to stick around here?
@@ -1631,7 +1631,7 @@ I know it!
 I'll give you something to smell!
 Yeah, that's right, you lizard!
 Run!
-(SNIFFS DEEPLY) Smells like victory.
+[SNIFFS DEEPLY] Smells like victory.
 Don't worry.
 I'll stay here and protect you in case that lizard comes back.
 Who's the fastest now, Fuli?
@@ -1662,11 +1662,11 @@ No, no, really.
 Tell me about it.
 Speak up!
 I got this, Ono!
-(GASPS) Ono!
+[GASPS] Ono!
 Leave him alone!
 You want another stink bomb?
 Whoa!
-(GRUNTS) You bit me!
+[GRUNTS] You bit me!
 I can't believe that lizard bit us!
 Just my feet.
 And my legs, Hey!
@@ -1692,7 +1692,7 @@ Just wanted to let you know your bite's not workin' anymore.
 See?
 It hasn't stopped me!
 Guess that bite of yours ain't so bad after all!
-(COUGHS) Phew!
+[COUGHS] Phew!
 But your breath, now that's bad!
 Gotta tell you, for someone who says they're a big, scary lizard, you're not that scary or that big.
 Which part?
@@ -1700,17 +1700,17 @@ The part where you're not scary, or the part where you're not big?
 You don't like being called a little lizard.
 Saying what?
 Little lizard?
-(MOCKINGLY) Little lizard.
+[MOCKINGLY] Little lizard.
 Oh, little lizard.
 Eh, I've seen bigger.
 Lots bigger!
-(CHUCKLING)
+[CHUCKLING]
 How ya gonna bite me if you can't even catch me?
 What's the matter, little lizard?
 Can't tell a hyena from a honey badger?
 See?
 I knew you couldn't catch me, Huh?
-(STRUGGLING) Don't make me use my stink on you, Janja!
+[STRUGGLING] Don't make me use my stink on you, Janja!
 Now, Kion!
 Now!
 And stay out!
@@ -1741,10 +1741,10 @@ Wow!
 I really sounded heroic.
 Hey, wait for me!
 That's great, but couldn't you imitate me just one more time?
-I really do have a great voice (GASP) Hey, wait for me!
+I really do have a great voice [GASP] Hey, wait for me!
 Yep I say we go show Scar what's that.
 Hmm are you coming?
-(LAUGHS)
+[LAUGHS]
 Now we're talking!
 Zuka, Like I was saying, Zuka Zama!
 Don't worry.
@@ -1759,15 +1759,15 @@ BESHTE!
 I got this.
 I've got loads of experience with caves.
 Or, maybe it just looks like a dead end.
-(GRUNTING) I bet it's another secret passage.
-(GRUNTS) Like before!
+[GRUNTING] I bet it's another secret passage.
+[GRUNTS] Like before!
 I don't think so.
-(SCREAMING AND GRUNTS) Okay...
+[SCREAMING AND GRUNTS] Okay...
 It could be a wall.
 Nah.
 This one's definitely a secret passage.
 Zuka Zama!
-(GRUNTS and GROANS) Why does that keep happening?
+[GRUNTS and GROANS] Why does that keep happening?
 I still think I could have found the secret passageway.
 Worthy?
 Of course, we're worthy!
@@ -1803,7 +1803,7 @@ Aw, I thought maybe I was the keenest of flight.
 I don't know, Kion.
 I don't think even Beshte can move a rock this big.
 Maybe it's just a rock.
-(RUMBLING) Did you skip breakfast today, Big B?
+[RUMBLING] Did you skip breakfast today, Big B?
 That was un-Bunga-lievable!
 So, Kion, we've had tests for the strongest, the keenest of sight, the bravest, the fastest, even the Mjuzi-est.
 What do you think your test is gonna be?
@@ -1813,7 +1813,7 @@ Look out!
 Hey, was that another lion?
 Yeah, but where's the secret?
 Good, after all these tests, I'm itching to fight great evil.
-(EXCLAIMS) Or maybe I'm just itchy.
+[EXCLAIMS] Or maybe I'm just itchy.
 That's us, we're the worthiest.
 Are you kidding me?
 Cave of secrets, here we come.
@@ -1862,7 +1862,7 @@ Uh, because he'sthe all- knowing legend keeper?
 Duh.
 Right.
 I knew that.
-(LAUGHS) Yeah!
+[LAUGHS] Yeah!
 Yeah!
 Specially the part where I defeat the ghost!
 What do you think Kion?
@@ -1872,7 +1872,7 @@ All right!
 Bye.
 I'll see you soon!
 I'll miss you, too!
-(BLOWING KISSIES) Come on, loyal followers, we've got a ghost to catch.
+[BLOWING KISSIES] Come on, loyal followers, we've got a ghost to catch.
 I'm just sayin'.
 If it's true that I'm the Chosen One, which it obviously is, then it's also true that the Ghost of the Mountain is really a ghost.
 What was what?
@@ -1884,7 +1884,7 @@ Woah!
 Yeah, Big B.
 It was the Ghost's!
 So, what are we lookinfor?
-(GASPS) You can see ghosts?
+[GASPS] You can see ghosts?
 Even if we know what it is we still can't see it!
 Yeah!
 Ghost prints and ghost scents, here we come!
@@ -1893,7 +1893,7 @@ Got 'em!
 Zuka Zama!
 A-ha!
 So you admit there's a ghost!
-(SNIFFS) I've still got it!
+[SNIFFS] I've still got it!
 Got it where?
 Where'd it go?
 Woah!
@@ -1902,7 +1902,7 @@ We see you now, Ghost!
 Yeah!
 Haven't you ever head of the Circle of life?
 Chosen One!
-(GRUNTING) Oh, yeah!
+[GRUNTING] Oh, yeah!
 Chosen One's got you now!
 I'm fine.
 But she ruined my Chosen One paint job!
@@ -2001,7 +2001,7 @@ What did she say?
 She said I'm a ball of fur?
 Woo-hoo.
 That was Un-Bunga-lievable.
-(COUGHS)
+[COUGHS]
 Makini's on our side.
 Remember?
 A what-a-thon?
@@ -2018,7 +2018,7 @@ Okay I'm ready bring it on.
 I'm right here.
 I've never felt better.
 I've been working on one of Rafiki's movements.
-See I was facing off with Cheezi and then I did this crazy cool I saw Rafiki do.
+See, I was facing off with Cheezi and then I did this crazy cool thing I saw Rafiki do.
 Hee-ya well I almost did it.
 Sure I am.
 I'm fine I'll just walk it off in no time.
@@ -2044,7 +2044,7 @@ Hiya Croccidy- crocs.
 Great!
 Turns out the stick was holding me back.
 Watch the Cranky Crocodile Kick!
-(Yelps) Oh!
+[Yelps] Oh!
 Guess I need to keep practicing.
 Yeah!
 Besides, it's fun!
@@ -2052,9 +2052,9 @@ Somehow he found me right away.
 Oh, yeah?
 Well, I'm the fastest hider!
 How come everybody always finds me first?
-(SNIFFS) It is unmistakable, isn't it?
+[SNIFFS] It is unmistakable, isn't it?
 Right behind ya, Fuli!
-(GRUNTS) What you got, Fuli?
+[GRUNTS] What you got, Fuli?
 Unless he's got one foot bigger than the others.
 Leopard tracks?
 You sure?
@@ -2111,12 +2111,12 @@ We did, but now we really believe you.
 Let's make it three!
 What's the matter?
 Honey badger got your tail?
-(LAUGHS)
+[LAUGHS]
 Good idea!
 Whoa!
 And don't come back!
 Guess I told him.
-(CHUCKLES)
+[CHUCKLES]
 I sure am!
 Oh, yeah?
 Why's that?
@@ -2146,7 +2146,7 @@ It's the perfect spot!
 He's so cute!
 Yeah.
 Whoa!
-(IN SING-SONG) Weird.
+[IN SING-SONG] Weird.
 These are aardvarks' dens!
 You can't stay here!
 Yeah!
@@ -2161,7 +2161,7 @@ What?
 But Kion's great at taking the lead.
 Is it Mama Binturong?
 Back already?
-(SIGHS)
+[SIGHS]
 Yeah.
 We get that a lot.
 We've already heard this.
@@ -2172,7 +2172,7 @@ Wait, Anga, how do you know?
 We met you after Kion got the Roar.
 The first one there's a rotton egg.
 Zuka Zama!
-(CHUCKLES) Look at me.
+[CHUCKLES] Look at me.
 I'm the rotton egg!
 That's okay.
 I still smell like one.
@@ -2192,7 +2192,7 @@ Zuka Zama!
 Sorry, Zazu.
 Can't understand ya with your beak in that beehive.
 Gotcha covered, Zazu!
-(CHOMPING)
+[CHOMPING]
 Maybe next time try flying under the beehive, not through it!
 Those're the biggest baboons I've ever seen!
 Kion here just happens to be his son.
@@ -2209,7 +2209,7 @@ A ka-what-eon?
 Sounds like they're this way.
 Now you do!
 Hogging in on his territory!
-(LAUGHS) Get it?
+[LAUGHS] Get it?
 Forest hog, Hogging?
 That's a lot of words for silly.
 Me neither.
@@ -2225,11 +2225,11 @@ It really wasn't my idea.
 Ah, c'mon Fuli.
 This place isn't so bad.
 And the snails are great.
-(CRUNGHING)
+[CRUNGHING]
 Mmm, extra crunchy.
 I love mud!
 Zuka Zama!
-(LAUGHS) See?
+[LAUGHS] See?
 It's not so bad.
 Uh, which it?
 There's a bunch of them.
@@ -2238,7 +2238,7 @@ Pick on someone your own size!
 Gotta admit, these guys got spirit!
 Ooh!
 Maybe too much!
-(GRUNTING) Whew!
+[GRUNTING] Whew!
 Trying not to fight is even more work than fighting!
 Ha- ha!
 Nice one, Big B.
@@ -2246,10 +2246,10 @@ Nah!
 He's fine!
 They're unstoppable!
 Un-Bunga-lievable.
-(CRUNCHING) Beats me.
+[CRUNCHING] Beats me.
 Ono!
 Makini!
-(CRUNCHING) MMM!
+[CRUNCHING] MMM!
 What?
 Food helps me think!
 And I have a great veiw from up here.
@@ -2263,10 +2263,10 @@ So what am I suppose to do with 'em?
 Tag.
 You're it!
 Makini?
-(CRUNCHING)Ono!
+[CRUNCHING]Ono!
 Makini!
 Makini's tracks!
-(LAUGHS) That's right!
+[LAUGHS] That's right!
 I win!
 Told ya I could see great up here!
 Where's my prize?
@@ -2279,19 +2279,19 @@ Hmm.
 I wonder if, Nah, there probably aren't any snails down there.
 But I bet there are some under there.
 Yes!
-(LAUGHS) Mmm.
-(CRUNCHING) Mmm.
-(CRUNCHING) (MUFFLED) You mean these snails?
+[LAUGHS] Mmm.
+[CRUNCHING] Mmm.
+[CRUNCHING] [MUFFLED] You mean these snails?
 I almost fell in a hole, too.
 Hey!
 What's that?
 Look at that light.
 Let's check it out.
 Hey!
-(GRUNTING) Woah!
+[GRUNTING] Woah!
 You really can see better from up here.
-(GASPS) Are those snails?
-(GRUNTS) Hey, come on,let me go.
+[GASPS] Are those snails?
+[GRUNTS] Hey, come on,let me go.
 Please, I'll share them.
 You seein' okay, Ono?
 Look.
@@ -2340,7 +2340,7 @@ I've still got the stripe marks to prove it.
 Hakuna matata.
 Come on.
 We have to get to higher ground.
-(CLEARS THROAT) So, um, Kion, what now?
+[CLEARS THROAT] So, um, Kion, what now?
 Kion?
 Sure he is!
 He's Kion!
@@ -2358,7 +2358,7 @@ Like a baby baby?
 Like a baby, baby, baby?
 Why didn't you tell me?
 Yes!
-(YELLING) YOU'RE HAVING A BABY!
+[YELLING] YOU'RE HAVING A BABY!
 Uh, no problems.
 See you later!
 Really?
@@ -2391,7 +2391,7 @@ Not to mention, it'll look great.
 Maybe I'll start wearing a branch.
 You got it, Kion.
 Zuka Zama!
-(GASPS) A talking tree?
+[GASPS] A talking tree?
 Just a Bird.
 Bupu, I think he means you.
 Or maybe he's not talking about you!
@@ -2445,7 +2445,7 @@ C'mon!
 Show me what you got!
 Woah!
 Well, now we know what it takes.
-(Sighs)
+[Sighs]
 See?
 He's fine.
 Thirsty?
@@ -2453,9 +2453,9 @@ Water!
 Water!
 I'm so thirsty!
 It's like there's a whole desert inside my mouth.
-(Pulls out his tongue) See?
+[Pulls out his tongue] See?
 Dry as a sand dune.
-(still with a tongue) Kion.
+[still with a tongue] Kion.
 Kion.
 Wanna see?
 Whoa-whoa-whoa-whoa-whoa!
@@ -2574,10 +2574,10 @@ C'mon, Kion.
 You could take this guy.
 But why?
 You're not really gonna give up, are you, Kion?
-(SNIFFS) Okay.
+[SNIFFS] Okay.
 Mmm, spicy!
 Ooh, my tongue is tingly!
-(BURPS) Excuse me!
+[BURPS] Excuse me!
 Good point, Kiara!
 What are we going to do about that, Kion?
 Yeah!
@@ -2602,7 +2602,7 @@ Yaaaahhhh!
 Guess we showed them!
 C'mon, Fuli!
 This is kinda fun!
-(WHOOPING) Whoa!
+[WHOOPING] Whoa!
 There ya go.
 Hey!
 I can't rescue you if you won't stay rescued!
@@ -2635,7 +2635,7 @@ Yeah!
 Come on, Kiara.
 Let's go!
 Uh-oh.
-(EXCLAIMS)
+[EXCLAIMS]
 Whoo-hoo!
 Just doin' our job.
 You kinda made that giant volcano erupt.
@@ -2661,7 +2661,7 @@ And don't come back.
 Does this mean Kion's all better?
 Grab that baobab fruit, Fuli!
 I got it!
-(LAUGHS) That was fun!
+[LAUGHS] That was fun!
 Pfft!
 One dry hillside's no reason to stop playing.
 Now, where is that baobab fruit?
@@ -2677,7 +2677,7 @@ So you can hear stuff from all over the Pride Lands?
 Like what?
 Yeah, yeah.
 What else?
-(SHUSHING) I'm trying to hear what Mtoto hears.
+[SHUSHING] I'm trying to hear what Mtoto hears.
 Don't worry, Kion!
 This guy's not going anywhere.
 You know, that'd be easier to do if he was here.
@@ -2685,7 +2685,7 @@ Oh, yeah!
 Simba would be pretty upset if his summit ended with Makuu eating Bupu for lunch.
 It couldn't have been good!
 Everyone knows crocs and giraffes don't mix!
-(GASPS) I'll bet Makuu's going to attack Twiga!
+[GASPS] I'll bet Makuu's going to attack Twiga!
 Don't worry, Twiga, I'll protect ya'.
 From Makuu!
 But Mtoto heard him!
@@ -2695,8 +2695,8 @@ I wish I could hear like you, Mtoto.
 It'd be un-Bunga-lievable!
 Hey!
 I'm getting the hang of this!
-(GASPS) Did Makuu eat him?
-(LAUGHING) Bottom!
+[GASPS] Did Makuu eat him?
+[LAUGHING] Bottom!
 I get it.
 You are a baboon.
 What's Simba so upset about?
@@ -2712,14 +2712,14 @@ Come on, it's Makuu's big plot!
 Whatever it is, it's happening tonight!
 Relax, Makuu.
 We're here to protect you!
-(SCOFFS) You call this a trap?
+[SCOFFS] You call this a trap?
 Not a very good one.
 Whoa!
 I'm okay.
-(GULPS) Mmm!
+[GULPS] Mmm!
 It's not that rotten.
 I'm tellin' ya, it's not that rotten.
-(SIGHS) For the last time, it wasn't that rotten!
+[SIGHS] For the last time, it wasn't that rotten!
 Makuu, You're okay!
 Oh, yeah.
 Ya know, I'm glad I can't hear like Mtoto.
@@ -2740,7 +2740,7 @@ And the break's over.
 All right, Gally-ally-goes.
 Off 'a the kitty!
 Yeah, you're good.
-(GASPS) Zuka zama!
+[GASPS] Zuka zama!
 Lookit!
 The water's reached the trees at Mapema Rock!
 It means it's the peak of the rainy season!
@@ -2771,7 +2771,7 @@ They're just heading home.
 And we can follow 'em!
 I know!
 I'm un-dunga-lievable!
-(LAUGHS) Come on!
+[LAUGHS] Come on!
 Here we go!
 We're really picking
 Well, utamu brought me together with my Uncle Timon and Uncle Pumbaa.
@@ -2783,13 +2783,13 @@ And then I saw them.
 Right as they walked past Mapema Rock.
 They seemed friendly.
 Funny.
-(SNIFFING)
+[SNIFFING]
 Then Timon asked me to find the rarest, most delicious grubs in the Pride Lands.
 Utamu!
 So now, at the peak of every rainy season, we celebrate.
 Say what?
 Hmm.
-(GASPS) I see the tree!
+[GASPS] I see the tree!
 Zuka Zama!
 C'mon!
 Sure is!
@@ -2829,7 +2829,7 @@ Relax, Ono!
 I know Simba pretty well.
 And you've got nothing to worry about.
 Let me tell ya what he's like.
-Oh, (CHUCKLES) Hey there, Simba.
+Oh, [CHUCKLES] Hey there, Simba.
 Um, uh, Your Highness.
 The way you walk?
 Your smile?
@@ -2841,7 +2841,7 @@ It'll be fun.
 And it sounds like he really wants us to follow him.
 Good thinking, Big B!
 Now the log's not gonna roll over the eggs.
-(GASPS) Grab the eggs!
+[GASPS] Grab the eggs!
 Nah!
 Simba knows what he's doing.
 It'll be fine.
@@ -2854,20 +2854,20 @@ There's one more thing Kion would do.
 Right?
 Don't worry, Your Highness.
 We'll have you out of there in no time.
-(SOFTLY) Careful, Big B.
+[SOFTLY] Careful, Big B.
 If you let the boulder roll the wrong way it'll squish him.
 Uh, sure, I knew that.
 Did you know that?
 All clear!
 Uh-oh.
 Let's get out of here!
-(GRUNTS) You won't hear me complainin'!
+[GRUNTS] You won't hear me complainin'!
 Whoa!
 That was one big elephant but they're in one big hurry.
 Maybe it's time for the sausage fruit to fall!
 You ever tasted these things?
-(SMOOCHES) Delicious!
-(WHIMPERS) I like 'em better on my inside than my outside.
+[SMOOCHES] Delicious!
+[WHIMPERS] I like 'em better on my inside than my outside.
 You heard the cheetah!
 Leave her alone!
 Whoa!
@@ -2927,10 +2927,10 @@ That can't be right!
 It can't be true!
 Well, where's all the food?
 Even I couldn't have eaten it all this fast!
-(GASPS) I feel so betrayed.
+[GASPS] I feel so betrayed.
 I can jump, too, you know!
 Zuka Zama!
-(GRUNTS) Whoops.
+[GRUNTS] Whoops.
 Sorry, Kion.
 Come on, ante-lanty-lopes!
 Let us through!
@@ -2941,8 +2941,8 @@ Too bad those baboonies turned out to be thieves!
 Still, you gotta admit, they were funny!
 Funny?
 That was hilarious!
-(LAUGHS) Now I can't even remember why I was mad at them!
-(LAUGHS) Oh, right.
+[LAUGHS] Now I can't even remember why I was mad at them!
+[LAUGHS] Oh, right.
 Wait, wait!
 Don't tell me!
 Was it a fish?
@@ -3017,7 +3017,7 @@ You haven't seen Kion anywhere, have you?
 Well, just between us you're queenliness.
 I'm suspicious.
 Oh, you know, Different things.
-(SIGHS) Like, Where'd he go?
+[SIGHS] Like, Where'd he go?
 And why does he say he's not ready to use the Roar yet?
 Nirmala said that Kion was healed.
 Still working on it?
@@ -3034,7 +3034,7 @@ That's Kion and he's using the Roar.
 And it's a big one.
 Wait for me!
 Un-Bunga-lievable.
-(CHEERING)Oh, the Roar is back!
+[CHEERING]Oh, the Roar is back!
 Ooh!
 Ooh!
 I know,I know, I knoq.
@@ -3056,7 +3056,7 @@ And here's something else you won't forget.
 That was great.
 Let's do it again.
 So, where'd you send 'em, Kion?
-(CHUCKLING) Oh, you're gonna love this one!
+[CHUCKLING] Oh, you're gonna love this one!
 I call it the splash-less triple spin-a-rama dive.
 Zuka Zama!
 What can I say?
@@ -3076,9 +3076,9 @@ Whoa.
 ey, Shingo.
 Your tongue's kind of bumpy.
 Hey, easy there!
-(GROANING) I can't free your tongue if you keep moving it.
+[GROANING] I can't free your tongue if you keep moving it.
 Aw, look who it is.
-(GRUNTS) Hey, gally-ally-go!
+[GRUNTS] Hey, gally-ally-go!
 Yep.
 That'd be my Uncle Pumbaa.
 Baboons?
@@ -3086,13 +3086,13 @@ There we go.
 Now, anyone else think that watering hole sounded good?
 So, this is, This is all good, right?
 We can go?
-(SIGHS)
+[SIGHS]
 You mess with him, you mess with us.
 Or don't.
 But then, we'll have trouble.
 Yeah.
 They sure were cute though.
-(SIGHS) I can almost hear them now.
+[SIGHS] I can almost hear them now.
 Badili?
 No way.
 It can't be him.
@@ -3101,9 +3101,9 @@ Sure!
 We'll take care of him for you.
 Let's go!
 I'll teach you to be brave!
-(GASPS) You could teach him how to fly!
+[GASPS] You could teach him how to fly!
 Or not.
-(LAUGHS)
+[LAUGHS]
 And if he tells you to go away?
 We're gonna stay and watch, right?
 I'm totally gonna use that line.
@@ -3128,7 +3128,7 @@ I know!
 We can go on a hunt!
 Oh, yeah.
 I got this!
-(ROARS)
+[ROARS]
 Kion, it's me, Bunga.
 I must be really good at this.
 Don't tell me, don't tell me.
@@ -3152,10 +3152,10 @@ You know, since we all look like lions.
 Back it up, Big B.
 There you go.
 Well, most of 'em.
-(CHOMPING) Just doing my part to make sure every elephant is safe.
+[CHOMPING] Just doing my part to make sure every elephant is safe.
 I got this.
 Zuka Zama!
-(MUNCHING) It's okay, Mtoto's mom.
+[MUNCHING] It's okay, Mtoto's mom.
 No more bees.
 Well, almost no more.
 It's okay.
@@ -3163,7 +3163,7 @@ You're the bravest, remember?
 And we bravest can do anything.
 We bravest can even find peace when things are most frightening.
 Hey, at least I remembered it.
-(SHOUTING) It's all good.
+[SHOUTING] It's all good.
 She's okay.
 Let's take the back way down.
 Paint or no paint, I still get to say my lines, right?
@@ -3205,7 +3205,7 @@ Zuka Zama!
 That can't be comfortable.
 How about I get you unstuck?
 Not for long.
-(STRUGGLES) We're coming, Too.
+[STRUGGLES] We're coming, Too.
 Come on.
 Um, looks like a wall to me.
 Ah-ha.
@@ -3221,10 +3221,10 @@ If that's the way you want it.
 Scoot over.
 If you can't get us out, we'll just move in here.
 We'll be den-mates.
-(SNORING)
+[SNORING]
 Shh.
 After I'm done sleeping.
-(SNORING)
+[SNORING]
 I don't know.
 Should we?
 I can be really annoying when I put my mind to it.
@@ -3266,7 +3266,7 @@ It's got leaping lions, bouncing berries, falling fruit, all sorts of stuff.
 Okay.
 See ya, Uncle Pumbaa.
 Bye, Uncle Timon.
-(SIGHS)
+[SIGHS]
 Yeah, I just wish I could make Dandy Claws appear and have Uncle Timon's Christmas dream come true.
 Ooh, yeah, we do, don't we?
 Yes!
@@ -3281,8 +3281,8 @@ Sure!
 This is gonna be the most un-Bunga-lievable Christmas ever!
 Ooh, but don't let Timon and Pumbaa see you!
 I really want it to be a surprise!
-(SIGHS) Yeah.
-(GASPS) That sounds like Pumbaa!
+[SIGHS] Yeah.
+[GASPS] That sounds like Pumbaa!
 Gotta hide the bugs.
 Gotta hide the bugs.
 Hi, Uncle Pumbaa.
@@ -3295,7 +3295,7 @@ Talk to ya later.
 Hey!
 I thought we were saving 'em for the song!
 But I didn't say you could swallow 'em.
-(SIGHS) Guess we gotta start all over.
+[SIGHS] Guess we gotta start all over.
 Okay, everybody, you gotta pay attention, 'cause we've only got till sunrise to get this right.
 Shh!
 Not so loud!
@@ -3359,7 +3359,7 @@ Besides, haven't you noticed?
 There are termites everywhere!
 Mmm, termites on a stick!
 Thanks, Kion!
-(SLURPS) Mmm!
+[SLURPS] Mmm!
 You're afraid of bats?
 One second!
 Lion Guard defend!
@@ -3372,7 +3372,7 @@ Wake up!
 Wake up!
 Wake up!
 Wake up!
-(GASPS) Somebody call me?
+[GASPS] Somebody call me?
 Hey!
 Just because there are a lot of termites, it doesn't mean there's too many.
 Okay.
@@ -3388,7 +3388,7 @@ Pfft!
 All this tracking's taking too long.
 I'm goin' up and over.
 Zuka Zama!
-(GRUNTS) Oh, hello!
+[GRUNTS] Oh, hello!
 I found 'em!
 They're goin' that way!
 Yeah, we noticed.
@@ -3411,7 +3411,7 @@ He's not going anywhere.
 And stay in there!
 I'm fine.
 I guess, I'm trying to be brave about it.
-But I gotta admit, (SNIFFLING) I do miss 'em.
+But I gotta admit, [SNIFFLING] I do miss 'em.
 I don't think there's anything that could do that.
 They saved me some!
 Un-Bunga-lievable!

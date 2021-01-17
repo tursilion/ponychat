@@ -516,7 +516,8 @@ string pullword(char* buf, int len, int& pos) {
 }
 
 // create one random sentence from the filename
-string generateLine(char *buf1, int len1, char *buf2, int len2) {
+// noun will cause a search for that word as a starting point, then clear it
+string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
     string output;
     static char* buf = NULL;
     static int buflen = 0;
@@ -534,7 +535,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
     } else {
         // we want to kind of balance out the chat log with the source text...
         // 50:50 was cute but repetitive, 75:25 a bit sparse, try 65:35
-        int l2cnt = (len1 * 35 / 100) / len2;
+        int l2cnt = (len1 * 35 / 100) / len2; // how many times to copy buf2
         if (l2cnt == 0) l2cnt = 1;
         if (len1 + len2*l2cnt > buflen) {
             buf = (char*)realloc(buf, len1 + len2*l2cnt + 1);
@@ -552,8 +553,24 @@ string generateLine(char *buf1, int len1, char *buf2, int len2) {
     }
 
     int pos = rand() % len1;  // force the new string to start in the char's voice
-    if (pos > 0) {
-        // seek to the beginning of a line
+    if (noun.length() > 0) {
+        // try to find a noun match in buf1 only
+        int x = findnocase(buf,noun,pos);
+        if ((x > -1)&&(x < len1)) {
+            if (x > 0) {
+                // seek to start of line
+                while (--x > 0) {
+                  if (buf1[x] == '\n') { ++x; break; }
+                }
+            }
+            // save it off and clear the noun
+            printf("<!-- Found match for subject '%s' -->\n", noun.c_str());
+            noun = "";
+            pos = x;
+        }
+    }
+    if ((pos > 0)&&(buf[pos-1] != '\n')) {
+        // seek to the beginning of next line
         while (pos < len) {
             if (buf[pos - 1] == '\n') break;
             ++pos;
@@ -888,42 +905,70 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
 size_t namefind(string &str, string &x, bool &nosplit) {
     size_t p = string::npos;
     nosplit = false;
+    const int debug = 0;
 
     // little hacky, but disallow some bad names
-    if (x == "Mark Crusaders") return p;
-    if (x == "Pony") return p;
+    if (x == "Mark Crusaders") { return p; }
+    if (x == "Pony") { return p; }
+    if (x == "Lord") { return p; }
 
     // first, any match at all?
     p = str.find(x, 0);
-    if (string::npos == p) return p;
+    if (string::npos == p) { return p; }
+
+    if (debug) printf("<!-- matched '%s' in '%s' -->\n", x.c_str(), str.c_str());
 
     // now, is it a desired match?
     // make sure we start clean - either a space or start of line before
     if ((p != 0)&&(str[p-1] != ' ')) {
+        if (debug) printf("<!-- not start of line or preceded by space -->\n");
         return string::npos;  // explicitly space
     }
 
     // make sure it was not "a name", such as "a princess"
-    if ((p >= 3)&&(tolower(str[p-2]) == 'a')&&(str[p-3]==' ')) { nosplit=true; return string::npos; }
+    if ((p >= 3)&&(tolower(str[p-2]) == 'a')&&(str[p-3]==' ')) { 
+      if (debug) printf("<!-- reject 'a' name -->\n"); 
+      nosplit=true; 
+      return string::npos; 
+    }
     // also 'the'
     if ((p >= 5)&&(tolower(str[p-2]) == 'e')&&(tolower(str[p-3])=='h')&&(tolower(str[p-4])=='t')&&(str[p-5]==' ')) {
+      if (debug) printf("<!-- reject 'the' name -->\n"); 
         nosplit = true;
         return string::npos;
     }
 
     // post-comma makes it okay (end of phrase)
-    if (NULL != strchr(",", str[p+x.length()])) return p;
+    if (NULL != strchr(",", str[p+x.length()])) {
+        if (debug) printf("<!-- ACCEPT: followed by comma -->\n");
+        return p;
+    }
 
     // if no punctuation, it has to be a space or apostrophe after, otherwise we are part of another word
     // (apostrophe for possessive (name's thing))
-    if (NULL == strchr(" '!?.", str[p+x.length()])) return string::npos;
+    if (NULL == strchr(" '!?.", str[p+x.length()])) {
+      if (debug) printf("<!-- reject: not followed by space or puncutation -->\n");
+      return string::npos;
+    }
 
     // start of line is okay if that's all there is (like 'Rainbow Dash!')
-    if ((p == 0)&&(strchr("!?.", str[p+x.length()]))) return p;
+    if ((p == 0)&&(strchr("!?.", str[p+x.length()]))) {
+        if (debug) printf("<!-- ACCEPT: name is entire line -->\n");
+        return p;
+    }
 
-    // after comma is okay
-    // is it? "If I'm not there, Tree Hugger is responsible for you" is not a good replacement
-    //if ((p > 1) && (str[p-1] == ' ') && (strchr(",", str[p-2]))) return p;
+    // after comma is okay, if entire phrase. (] is also treated as comma)
+    // "If I'm not there, Tree Hugger is responsible for you" is not a good replacement
+    // but "Hold on, Simba!" is.
+    if ((p > 1) && (str[p-1] == ' ') && (strchr("],", str[p-2]))) {
+        // first part is okay
+        if (NULL != strchr("!?.", str[p+x.length()])) {
+            if (debug) printf("<!-- ACCEPT: name is entire phrase -->\n");
+            return p;
+        }
+    }
+
+    if (debug) printf("<!-- Reject: no accept cases found. -->\n");
 
     // else it's probably a third party reference
     return string::npos;
@@ -1279,7 +1324,8 @@ void runquote(int who, int count) {
         cnt = rand() % 5 + 2;
     }
     for (int idx = 0; idx < cnt; ++idx) {
-        string s = generateLine(buf1, len1, NULL, 0);
+        string dummy;
+        string s = generateLine(buf1, len1, NULL, 0, dummy);
         printf("%s", s.c_str());
         if (s.empty()) --idx;   // if there's a blank line in the database, then we get an empty output. Ignore it.
     }
@@ -1428,6 +1474,7 @@ void runscene(int who1, int who2, int count, int count2) {
     // now start babbling
     len3 = 0;
     len4 = 0;
+    string globalnoun;
     int lps = count;
     if ((lps < 1) || (lps > 10)) {
         lps = rand() % 4 + 2;
@@ -1446,7 +1493,7 @@ void runscene(int who1, int who2, int count, int count2) {
             printf("<p class=\"talk2\">\n");
             printf("<b>%s: </b>", un2.c_str());
             for (int idx = 0; idx < cnt; ++idx) {
-                string s = generateLine(buf2, len2, buf4, len4);
+                string s = generateLine(buf2, len2, buf4, len4, globalnoun);
                 if (s.empty()) {
                     // if there's a blank line in the database, then we get an empty output. Ignore it.
                     --idx;
@@ -1454,7 +1501,8 @@ void runscene(int who1, int who2, int count, int count2) {
                 }
                 // noun testing...
                 string noun = findNoun(s);
-                printf("<!-- subject guess: '%s' -->\n", noun.c_str());
+                printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
+                if (noun.length() > 0) globalnoun = noun;
                 ////
                 nameSubstitution(s, un1, un2);
                 printf("%s ", s.c_str());
@@ -1475,7 +1523,7 @@ void runscene(int who1, int who2, int count, int count2) {
             printf("<p class=\"talk1\">\n");
             printf("<b>%s: </b>", un1.c_str());
             for (int idx = 0; idx < cnt; ++idx) {
-                string s = generateLine(buf1, len1, buf3, len3);
+                string s = generateLine(buf1, len1, buf3, len3, globalnoun);
                 if (s.empty()) {
                     // if there's a blank line in the database, then we get an empty output. Ignore it.
                     --idx;
@@ -1483,7 +1531,8 @@ void runscene(int who1, int who2, int count, int count2) {
                 }
                 // noun testing
                 string noun = findNoun(s);
-                printf("<!-- subject guess: '%s' -->\n", noun.c_str());
+                printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
+                if (noun.length() > 0) globalnoun = noun;
                 ////
                 nameSubstitution(s, un2, un1);
                 printf("%s ", s.c_str());
