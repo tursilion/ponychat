@@ -380,7 +380,7 @@ Sure seems like you're the right bird for the job.
 Really?
 Poa!
 Hi, little guy.
-Uh... Did you want to ask me something?
+Uh, Did you want to ask me something?
 Oh, well, I'm not really.
 It's the whole team.
 Not just me.
@@ -395,7 +395,7 @@ And Fuli's just so fast!
 Bunga's not afraid of anything.
 And Ono...
 Well, I guess I am the biggest...
-Uh, well... Thanks.
+Uh, well, Thanks.
 I don't know what to say.
 Hey, look!
 There's Kion and the others!
@@ -410,7 +410,7 @@ You got it, Kion.
 Sneaking up on someone isn't so easy for us hippos.
 Unless we're in the water.
 I don't know about that, but we'll give it our very best try!
-Walk softly... Easy does it... I don't think Kion heard.
+Walk softly, Easy does it, I don't think Kion heard.
 Let's keep moving.
 (WHISPERING) You're really good at this, Mtoto.
 I can't even hear you.
@@ -478,7 +478,8 @@ It's the perfect place for a break.
 Oh it looks like break's over.
 So Makini are there any friendly animals at the Tree of Life?
 Oh I can't wait to meet them because there's nothing I like more than making new friends.
-Oh no it fell off from it's nest we gotta save it.
+Oh no, it fell off from it's nest! 
+We gotta save it.
 I got you I got ya.
 Got ya.
 Are you alright little guy?
@@ -498,7 +499,7 @@ No Kion would never do that.
 That guy look up there.
 Hey there my name's Beshte who are you?
 Say where did you learn to hang like that?
-Hey Kion I'd like you to meet our new friend Yun Mibu.
+Hey, Kion, I'd like you to meet our new friend Yun Mibu.
 Kion why did you scare him away like that?
 I was just being nice that's all.
 Stop being nice?
@@ -691,7 +692,7 @@ Just looks smooth, like a hippo's backside.
 You've got to come.
 You're the keenest of sight.
 At least the giraffes are all waiting patiently.
-Hmm... Maybe...
+Hmm, Maybe...
 You got it, Kion.
 Twende kiboko!
 Thanks, Kion.
@@ -856,7 +857,7 @@ Amazing animals here I come.
 Poa it's what you gotta do.
 Hey there.
 Yeah, I'm fine.
-Just trying to... Stand up...
+Just trying to, Stand up...
 (GRUNTS) Where did you come from?
 I didn't see you anywhere.
 Oh, thanks.
@@ -1027,7 +1028,7 @@ Kion, your roar blew them all the way back to the Outlands!
 They sure did, Makini.
 Hello?
 Makuu?
-Anyway... he's gone now.
+Anyway, he's gone now.
 Did we see any crocodile tracks?
 Sounds like Janja!
 Yeah!
@@ -1041,7 +1042,7 @@ But why would Tamaa fool the impalas into going to the Outlands?
 Poa there sure are lots of paintings about the old Lion Guard avengers.
 What is it Kion?
 You got it Kion.
-Twende kibo... (GRUNTS)... Whew!
+Twende kibo, (GRUNTS), Whew!
 It's really wedged in there.
 But I'll get it.
 You said it, Kion.
@@ -1050,7 +1051,7 @@ Who knows what could happen to her?
 Uh-oh.
 Twende Kiboko!
 Yeah!
-Oh... Guys!
+Oh, Guys!
 Land on me.
 (GRUNTING) Everybody okay?
 Any idea what it means?
@@ -1249,7 +1250,7 @@ Thanks.
 Now you stay here.
 I'll be right back!
 Hey, everybody, I've got someone I want you to meet.
-Kion, Fuli, Bunga, Ono... This is my new friend Ajabu.
+Kion, Fuli, Bunga, Ono, This is my new friend Ajabu.
 Ajabu, meet the Lion Guard.
 You're not planning on going back home, are you?
 That leopard will be waiting for you.
@@ -1284,7 +1285,7 @@ Poor little fella.
 Must've gone for a walk and gotten lost.
 Go back to your hill.
 This den belongs to someone else, too.
-Uh... Bunga?
+Uh, Bunga?
 Easy, everybody.
 Easy!
 We'll take care of this.
@@ -1393,7 +1394,7 @@ Yeah, it was just Bunga being Bunga.
 Yeah, Little B.
 I heard her.
 Poa!
-Look at all that... Poa!
+Look at all that, Poa!
 This feels great.
 I sure do.
 Twende Kiboko!
@@ -1498,7 +1499,7 @@ Come on, everyone.
 It was just an accident.
 You okay, Kion?
 Who's going to do what right after sunset?
-(GROANING) Kion... he's slipping.
+(GROANING) Kion, he's slipping.
 Twende Kiboko!
 Hmm.
 Why do you suppose they wandered so far from their regular grazing ground?
@@ -1510,7 +1511,7 @@ Poa, Fuli!
 Nice save!
 Poa!
 You're right, Bunga!
-That means... Uh... What does that mean?
+That means, Uh, What does that mean?
 I think Kion's trying to say that everybody needs to rest sometimes.
 See you later, Fuli!
 Sorry, Little B.
@@ -1596,7 +1597,7 @@ Those sound like nice places.
 I'm sure Kion would tell us if he was in trouble Little B.
 Why didn't Ulluwarn us?
 But how did they all find their way here?
-(STRAINING) Twende... Kiboko!
+(STRAINING) Twende, Kiboko!
 Anga! You're back.
 Oh, thanks.
 (CHUCKLES) Poa.
@@ -1644,7 +1645,7 @@ That's Tiifu and Zuri
 We were so worried when we didn't see you guys.
 Are you okay?
 Twende Kiboko!
-Oh no that's where the hyraxes live.
+Oh no, that's where the hyraxes live.
 And I got you.
 There you go little guy.
 Twende Kiboko!

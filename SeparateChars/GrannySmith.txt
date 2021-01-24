@@ -22,7 +22,7 @@ So y'all head on up to the finish line, y'hear?
 The start line!
 That's what I said.
 And may the best sisters win!
-On your marks... get set... Gooooo!
+On your marks, get set, Gooooo!
 Why, the way you were a-hoopin' and a-hoppin' and kickin' and spinnin' reminded me of when I was a spry young filly.
 Guh, charley horse, charley horse!
 Ooh, that's better.
@@ -48,7 +48,7 @@ There's a whole mess o' steps in this process and you gots to get each one of th
 Take this.
 That there's a broom.
 Now get sweepin', pipsqueak!
-Now while you sweep, I'll get to, uh... something there... umm... Oh, ponyfeathers.
+Now while you sweep, I'll get to, uh, something there, umm, Oh, ponyfeathers.
 Bet I'd forget my mane if it wasn't attached to my head.
 A, B, C, D, E, F, G, H, I, J, K, L-M-N-O-P...
 Well, howdy-doo there, Filthy Rich!
@@ -117,7 +117,7 @@ Me and my family were pilgrim pony folk, back when I was a little filly.
 Oh, we ventured far and wide, collecting new seeds and sellin' the old.
 But my pa was the finest seed collector in all of Equestria.
 Then, one day, the Smith family found themselves in the most brilliant, most grand, most magnificent of all cities.
-A place called... Canterlot.
+A place called, Canterlot.
 Well, I bet your hooves to hindquarters I had never seen anything like it before nor since.
 And as if the beauty of that city wasn't enough, suddenly, she appeared.
 Princess Celestia, the most regal of all ponies.
@@ -163,7 +163,7 @@ You betcha.
 Apple Bloom is one humdinger of a zap apple jammer!
 Aw, don't fret.
 I forget things all the time.
-Now, I'll getcha... er... somethin'.
+Now, I'll getcha, er, somethin'.
 I want you to show all them highfalutin rodeo ponies what a real rodeo pony's like!
 And she loves Sweet Apple Acres!
 Thank you, girls!
@@ -184,7 +184,7 @@ Good 'un!
 Bad 'un...
 Egh...
 [sniffs]
-Good 'un... Ugh, bad 'un...
+Good 'un, Ugh, bad 'un...
 Good 'un, bad 'un, bad 'un, good 'un...
 [yelps]
 Get back, you!
@@ -259,20 +259,20 @@ Why, we haven't tended those fields since all the trees went and got filled up w
 [gulps]
 Oh, it's alright, child.
 Applejack, you had us so caught up in all the doin', we haven't had a second to enjoy the company of the folks we've been doin' it with!
-Oh, hey now... everypony's still here, ain't they?
+Oh, hey now, everypony's still here, ain't they?
 Still plenty of time to make good memories!
 You've just got to give everypony a chance to actually make 'em.
-Applejack... Oh, you did it, Applejack!
+Applejack, Oh, you did it, Applejack!
 You put on a reunion that everypony will remember!
 Yeah, just a couple.
 Ohohoh, that's a good one.
 Uh, Spike, little feller, could you get us some more eggs?
 Now, what about Twilight?
 Doesn't she need your help and such?
-Mm-hm... A word about what now?
+Mm-hm, A word about what now?
 A Ponyville snail can hibernate for up to forty-eight moons!
 Well, ain't that just the sweetest thing!
-Ehhhh... Cousin Goldie Delicious!
+Ehhhh, Cousin Goldie Delicious!
 Her cabin's practically an Apple family history museum!
 If anypony has the records to back up Pinkie's theory, it's her!
 Has anypony seen my travelin' bonnet?
@@ -300,7 +300,7 @@ Ah, don't worry, child!
 The scariest cave in Equestria was down that other way!
 Oh, it's a fright all right!
 Filled with creatures that'll eat ya soon as look at ya!
-Ponies go in... but they never come out!
+Ponies go in, but they never come out!
 Now, Applejack, I taught you better than to question your elder ponies!
 Alrighty then.
 Now everypony just sit on back an' leave the steerin' to your old Granny Smith.
@@ -329,7 +329,7 @@ I should probably do it?
 Hey!
 Where in the haystack do you think you're goin' with that there pen?
 We'll find out if you stop your gabbin' and get on with the gobblin'!
-So, we here have decided... that you're old enough to stay home alone and take care of the chores yourself for the afternoon!
+So, we here have decided, that you're old enough to stay home alone and take care of the chores yourself for the afternoon!
 Well, if'n I'm gonna make my train, I best to be off.
 When Great Aunt Pine Apple says a pony's gots to ride by a certain time, you better be there!
 You be sure and take care now, Apple Bloom.
@@ -339,7 +339,7 @@ you're each headed to a mighty hard-to-reach town.
 Who done that?
 Uh, sorry, dear.
 I just can't bring myself anywhere near that there swimmin' hole.
-Well, I wasn't always this way... Time was, I was an aquapony all-star!
+Well, I wasn't always this way, Time was, I was an aquapony all-star!
 In fact, I was the only Apple to ever come close to breaking the Equestria high-diving record!
 Falling six stories into a deep dish pie pan takes a toll on the hindquarters.
 Oh, I was so sore, took years before I could even look at the water again!
@@ -374,7 +374,7 @@ I've been takin' it easy for too long!
 And now, thanks to that Flim Flam Tonic, I don't have to!
 Of course you can, sapling.
 There's nothin' to it but to do it!
-Mm, ee, uh, I don't know... Bein' back in the water is one thing, but a competition is a pony of a different color.
+Mm, ee, uh, I don't know, Bein' back in the water is one thing, but a competition is a pony of a different color.
 Well, I'll be a tart turnover, you are right!
 All we need now is more tonic!
 We'll take the whole case!
@@ -416,7 +416,7 @@ My, how Apple Bloom used to love watching you make that thing fly.
 It's like she thought you was magic.
 Ah, right, enough reminiscin'.
 Gotta find that ribbon!
-If you would just help me... pull... this... box, then maybe I can...
+If you would just help me, pull, this, box, then maybe I can...
 Uh, Big Mac?
 Found her!
 Breakfast, come and get it!
@@ -452,10 +452,10 @@ Prob'ly best if we head back to Sweet Apple Acres.
 Maybe in time we'll be friends again, but for the now it's best if we give them a little space.
 Eh, has anypony seen Applejack?
 You want to know why Holder's Boulder's so danged important?
-Well, now their great-great-great-great-great-great-grandfather Holder Cobblestone... he found that boulder in a dragon's nest, older than time itself!
+Well, now their great-great-great-great-great-great-grandfather Holder Cobblestone, he found that boulder in a dragon's nest, older than time itself!
 He built the family farm around it, even though it was just an ordinary rock.
 It always brought them good luck.
-Eh, lemme see here, uh... 'If thou ask-eth me, uh, thou two art, eh, okay-eth in my book'.
+Eh, lemme see here, uh, 'If thou ask-eth me, uh, thou two art, eh, okay-eth in my book'.
 Fluttershy?
 What're you doin' out and about?
 It's Nightmare Night, remember?
@@ -472,7 +472,7 @@ Huh.
 I wonder what got stuck in her craw.
 Are those peeled grapes or eyeballs starin' at ya from beyond the grave?
 [groans]
-Cooooooookiiiiiiieeeeeeees... Cookies... Cookie!
+Cooooooookiiiiiiieeeeeeees, Cookies, Cookie!
 Cookie!
 [blows whistle]
 Oh-ho, sugarcube.
@@ -554,7 +554,7 @@ Ooh, I have had a hankerin' for these all day!
 You ruined my teacakes!
 You're the worst!
 Hiyaaa!
-And you don't always... have to bring up my dark past!
+And you don't always, have to bring up my dark past!
 [grunts]
 Yeah, I was gonna get my dentures cleaned before y'all showed up.
 Ask me what?
@@ -573,8 +573,8 @@ What are you talking about, married?
 You two can't be married!
 Now where'd you all get to?
 I ain't seen hide or hair of ya's all day.
-Guh... Y-You have?
-So... you're back, huh?
+Guh, Y-You have?
+So, you're back, huh?
 I'm sorry.
 I should've told you all about 'em sooner.
 Applejack's right.
@@ -617,7 +617,7 @@ The most exclusive club in Las Pegasus.
 And she's with us.
 Sugar, you probably want to hold on 'bout now.
 Rainbow Dash?
-The gals and I have been talkin', and, well... We think you're a hoot after all!
+The gals and I have been talkin', and, well, We think you're a hoot after all!
 We'd like to invite you to become a permanent member of the Gold Horseshoe Gals!
 [hoots]
 [coughs]
@@ -648,7 +648,7 @@ Your sister was plumb loco about catchin' the Great Seedlin' when she was your a
 Same as you are now.
 Worse, even.
 Well, it must've been the last Conflu-inky, I reckon.
-I was supposed to keep an eye on your sister, but... she was slipperier than an apple seed.
+I was supposed to keep an eye on your sister, but, she was slipperier than an apple seed.
 Applejack!
 Get your flank back here!
 You're supposed to be sortin' in the barn!
@@ -669,8 +669,8 @@ A pony like me needs her beauty rest.
 But you young'uns have a good time.
 Okay, settle down, everypony.
 I'm fixin' to pick these here teams.
-All righty, hold on to your horseshoes, 'cause the next pair of players is... Maud and Mudbriar!
-And our final pair of contestants for this week's Trivia Trot is... Twilight and Pinkie Pie!
+All righty, hold on to your horseshoes, 'cause the next pair of players is, Maud and Mudbriar!
+And our final pair of contestants for this week's Trivia Trot is, Twilight and Pinkie Pie!
 Now, the first order of business is we need somepony to keep score.
 [scoffs]
 Apple mash.
@@ -690,7 +690,7 @@ Finally!
 Yes, Fluttershy, it is.
 At least somepony here knows her apples.
 Hope you're all in your seats 'cause the break is over, and it is time for more questions.
-Let me see, uh... How do you say reward in Olde Ponish?
+Let me see, uh, How do you say reward in Olde Ponish?
 Correct!
 Oh, looky here.
 That's an actual rule.
@@ -698,20 +698,20 @@ Cranky is disqualified.
 I'm sorry, Sunburst.
 Without your teammate, you can't play neither.
 Nice try.
-The next category is... Cupcakes!
+The next category is, Cupcakes!
 What flavor cupcakes did Princess Celestia order for Princess Luna's surprise birthday party last year?
 Correct!
 The category is Sticks and Stones.
 What kind of stone can be used to start a fire?
 You can't go and ask another player about rocks when that's the category.
 It's in the rulebook.
-Where's... Sorry, Pinkie, but you're disqualified.
+Where's, Sorry, Pinkie, but you're disqualified.
 The next category is Ancient Legends.
 Who traveled to Equestria from a distant land seeking to steal the magic from its pony inhabitants?
 How many holes are there in Daring Do's hat?
 Correct!
 What is the name of the Ponyville Day Spa's most popular candle?
-Uh... It's comin'!
+Uh, It's comin'!
 Save yourselves!
 Aah!
 Who goes there?
@@ -721,7 +721,7 @@ It was about Grand Pear.
 Only it wasn't.
 We were in outer space on some kinda mission to explore a strange new world.
 And Mudbriar was there, bein' as logical as ever, but his ears was all pointy-like.
-And then Discord showed up and... well, you know, he was pretty much the same.
+And then Discord showed up and, well, you know, he was pretty much the same.
 It's comin'!
 Save yourselves!
 It was all green, and then Grand Pear looked at me all dramatical and says, Where nopony has gone before!
@@ -730,7 +730,7 @@ Away we flew!
 Earth ponies been pourin' in lookin' for somewhere safe.
 Just remember, the most important thing about sugar butter cocoa cookies is to fold your batter.
 Too much arm turnin'll make your cookies tougher than a lump of coal.
-Uh... I sold it to the owners of that new pawn shop.
+Uh, I sold it to the owners of that new pawn shop.
 Uh, Flibbity Flabbity, somethin' like that.
 Since when do you play the bass?
 Eh, itty-bitty cafeteria crisis.
@@ -757,6 +757,6 @@ Now, the first thing you ought to know is?
 ...be prepared.
 For anything.
 Less chatter, more splatter!
-Seven... Eight... Nine... No, that's a button.
+Seven, Eight, Nine, No, that's a button.
 I wonder what that goes to.
 Uh, lemme check.

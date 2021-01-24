@@ -33,7 +33,6 @@ I have one.
 But I'm warning you, you might as well hug a friend now.
 That's how scary it is!
 It's time I told you about the legend of Gaea Everfree.
-[narrating]
 Many years ago, my great-grandparents came to this forest.
 Seeing its beauty, they decided that it would be the perfect place for a camp.
 But once they started building, strange things started to happen.
@@ -44,7 +43,7 @@ Her mouth had jagged rock teeth and her eyes were pools of black tar.
 But her aura shimmered like diamonds.
 Anywhere she went, she left a trail of gem dust in her wake.
 Trembling, my great-grandparents asked who she was and what she wanted.
-In a deep and hollow voice, she told them that her name was Gaea Everfree... an ancient spirit who held domain over the forest, and that my great-grandparents were trespassing on her land.
+In a deep and hollow voice, she told them that her name was Gaea Everfree, an ancient spirit who held domain over the forest, and that my great-grandparents were trespassing on her land.
 They begged her to let them stay and build their camp, to share this wonderful place with others.
 Gaea Everfree finally agreed but warned them that they would not be able to keep it forever.
 Someday, she will return and reclaim the forest as her own.
@@ -162,9 +161,7 @@ I'll handle this!
 See?
 This is the kind of lifesaving instinct I developed at Everfree.
 I've got you!
-[grunting]
 We're not fighting.
-[grunting]
 You're right.
 We're kind of fighting.
 But we're also saving you.
