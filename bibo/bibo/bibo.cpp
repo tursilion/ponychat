@@ -15,6 +15,10 @@
 // scene <n1> <n2> - generate a random scene with two characters
 // addchat <str> - add <str> to the active chat for this IP address
 
+// define this to use a system closer to markov chains, under for the old
+// randomly string search method...
+#define NEWCHAINS
+
 #include <string>
 #include <stdio.h>
 #include <ctype.h>
@@ -209,6 +213,39 @@ const char* strtest(const char* a, const std::string &w) {
         ++a;
         --cnt;
         if (cnt == 0) break;
+    }
+    return NULL;
+}
+// forward search version - needs the length to know where to stop
+// Warning: strsearch and strrsearch have different criteria
+// first is true at the top of the buffer, makes us ignore the first space in b
+const char* strsearch(const char* a, int len, const char* b, bool bFirst) {
+    if ((a == NULL) || (b == NULL)) return NULL;
+    int blen = strlen(b);
+    const char *buf=a;
+
+    while (a < buf+len-blen) {
+        const char* p1 = a;
+        const char* p2 = b;
+        // special case for first character of the haystack only
+        if (bFirst) {
+            bFirst = false;
+            if (*p2 == ' ') ++p2;
+        }
+        {
+            for (;;) {
+                if ((*p1 == 0) || (*p2 == 0)) break;
+                char out = *p1;
+                if (NULL != strchr("!?.[]", out)) out = ' '; // no comma, I want to search on them
+                if (out < ' ') out = ' ';
+                if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
+                break;
+            }
+            if (*p2 == '\0') {
+                return a;
+            }
+        }
+        ++a;
     }
     return NULL;
 }
@@ -500,7 +537,7 @@ void makepic(const string &fn1, const string &fn2) {
 
 // pull the current word and return it, update pos
 string pullword(char* buf, int len, int& pos) {
-    while ((pos < len) && (buf[pos] == ' ')) ++pos;
+    while ((pos < len) && (NULL != strchr(" .", buf[pos]))) ++pos; // spaces and ...
     if (pos >= len) {
         // end of file
         return string("");
@@ -516,6 +553,66 @@ string pullword(char* buf, int len, int& pos) {
     }
     return x;
 }
+
+// return a pointer inside buf to /the end/ of to an instance of 'w'
+// as far as we know, this string must exist at least once!
+// NULL return is an unexpected failure and caller should quit
+const char *findNewPos(const char *buf, int len, std::string &w) {
+#ifndef NEWCHAINS
+    // old version works - but introduces bias when the words are
+    // not evenly distributed. But it's fast!
+	int pos = rand() % len;
+	const char* p = strrsearch(buf, &buf[pos], w.c_str());
+	if (NULL == p) {
+		// try from the end
+		int end = strlen(buf);
+		p = strrsearch(&buf[pos], &buf[end], w.c_str());
+		if (NULL == p) {
+			// the only case this SHOULD be caused by is first word in the file,
+			// so try that directly
+			w = w.substr(1);
+			if (buf == strtest(buf, w)) {
+				p = buf;
+			} else {
+			    // we lost our place
+			    return NULL;
+			}
+		}
+	}
+        return p + w.length();
+#else
+    // new version tries to be more fair by finding all matches, then picking one
+    // doesn't matter if it's fast, it's MODERN! ;)
+
+    // as a hacky way of eliminating loops caused by phrases like "Stop, stop, stop!" growing
+    // infinitely, we'll add a weight towards later hits after every 5 words. Still random,
+    // but with growing influence.
+    static int hunts = 0;
+    std::vector<const char*> list;
+    const char *p = buf;
+    int worklen = len;
+    while (p) {
+        p = strsearch(p, worklen, w.c_str(), (p==buf));
+        if (p) {
+            p+=w.length();
+            list.push_back(p); // save the post-incremented pointer
+            if (w.length() > 2) p-=2; // assume 2 spaces of padding for next search, it's okay if it's not padding
+            worklen = len-(p-buf);
+        }
+    }
+    printf("<!-- found %d matches for '%s' -->\n", list.size(), w.c_str());
+    if (list.size() < 1) {
+        // should not be possible
+        return NULL;
+    }
+    ++hunts;
+    int target = rand()%list.size() + hunts/5;
+    if (target >= list.size()) target = list.size()-1;
+
+    return list[target];
+#endif
+}
+
 
 // create one random sentence from the filename
 // noun will cause a search for that word as a starting point, then clear it
@@ -583,7 +680,11 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
     // pull 'x' words, ending if we reach end of line.
     string w;
     for (;;) {
+#ifdef NEWCHAINS
+        int cnt = 1;
+#else
         int cnt = rand() % 5 + 1;
+#endif
         for (int idx = 0; idx < cnt; ++idx) {
             w = pullword(buf, len, pos);
             if (w.empty()) break;
@@ -619,29 +720,18 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         // by searching backwards, we reduce repetition in sentences that contain it
         // more than once by finding the LAST instance first.
         // fixes "She won't admit it, but she won't admit it, but she won't admit it, but she doesn't like it"
-        pos = rand() % len;
+        if ((w.length()>0) && (NULL != strchr("!?,.[", w[0]))) w=w.substr(1);
+        while ((w.length()>0) && (NULL != strchr("!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
         w = ' ' + w + ' ';
 
-        const char* p = strrsearch(buf, &buf[pos], w.c_str());
+        const char *p = findNewPos(buf, len, w);
         if (NULL == p) {
-            // try from the end
-            int end = strlen(buf);
-            p = strrsearch(&buf[pos], &buf[end], w.c_str());
-            if (NULL == p) {
-                // the only case this SHOULD be caused by is first word in the file,
-                // so try that directly
-                w = w.substr(1);
-                if (buf == strtest(buf, w)) {
-                    p = buf;
-                } else {
-                    output += "then I lost my place! ";
-                    goto finish;
-                }
-            }
+            output += "then I lost my place! ";
+            goto finish;
         }
 
         // skip to the end of the word, then loop
-        pos = (int)(p - buf) + (int)w.length();
+        pos = (int)(p - buf);
     }
 
 finish:
@@ -683,7 +773,7 @@ finish:
 
 // return a valid random filename
 int randomfile() {
-    return rand() % trueNameListSize;    
+    return rand() % trueNameListSize;
 }
 
 // string replace - note that 'space' matches various punctuation
@@ -756,6 +846,7 @@ void fixpronouns(string& s) {
 
     // look for broken replacements
     strreplace(s, " `me am ", " I am ");
+    strreplace(s, " `me want ", " I want ");
     strreplace(s, "here am ", "here are "); // not necessarily a replacement, but that's okay
 
     // fix up first pass

@@ -2016,7 +2016,6 @@ Formation, now!
 Rainbow Dash, get over here.
 All right, let's get this over with.
 What's going on?
-[growl]
 Who are you talking to?
 FINE!
 Leave!
@@ -2192,7 +2191,6 @@ It's just terrible.
 Simply awful.
 It's the most horrific trouble I've ever been in and I really really really need your help!
 My letter to Princess Celestia is almost overdue, and I haven't learned anything about friendship!
-[strangled noises]
 Something awful has happened!
 If I don't turn in the letter on time, I'll be tardy!
 TARDY!
@@ -2200,15 +2198,12 @@ This is not nothing.
 This is everything.
 I need you guys to help me find somepony with a problem I can fix before sundown!
 My whole life depends on it!
-[annoyed groans]
 Clock is ticking, Twilight.
 Clock.
 Ticking.
 Keep it together.
 If I can't find a friendship problem, I'll make a friendship problem!
-[insane giggles]
 Hi, girls!
-[twitch, twitch]
 Gr-eat.
 Just great.
 You three look like you're doing great too!
@@ -2223,7 +2218,6 @@ I gotta think of something!
 Thinkthinkthinkthinkthink Twilight, think!
 [gasp]
 That's it!
-[aloud]
 Ooh, you're going to like Smarty Pants.
 And you're going to like her more than anything.
 The 'want it, need it' spell.
@@ -2232,7 +2226,6 @@ Okay, okay, let's break it up.
 I think we can all see that there is an important lesson to be learned here about-- Ugh!
 C'mon, girls, we're all friends here, right?
 Don't you think you ought to share?
-[annoyed groan]
 Big McIntosh!
 Thank goodness!
 You've gotta help me get that doll away from those girls!
@@ -2265,12 +2258,10 @@ Great costumes.
 Happy Nightmare Night, Granny Smith.
 Since you moved here from Trottingham?
 Pinkie Pie, aren't you a little old for this?
-[bell jingles]
 Do you like it?
 A clown?
 Look at the borders on these robes.
 These are hoof-stitched!
-[growls]
 Star Swirl the Bearded is only the most important conjurer of the pre-classical era.
 He created more than two hundred spells!
 He even has a shelf in the Canterlot library of magic named after him.
@@ -2283,8 +2274,6 @@ Rainbow Dash, that wasn't very nice.
 Look what you did to Spike!
 Happy Nightmare Night, Applejack!
 She means me, Spike.
-[annoyed grunt]
-[awestruck]
 Princess Luna!
 I'm gonna go talk to her.
 No, she's not.
@@ -2305,7 +2294,6 @@ Lower the volume?
 Don't worry, Princess.
 Fluttershy can give you some great pointers.
 She's delicate and demure with the sweetest little voice.
-[knocks]
 Fluttershy, it's me, Twilight!
 [nervous laughter]
 Wait right here.
@@ -2321,7 +2309,6 @@ Time for plan B.
 My friend Applejack is one of the most likable ponies around.
 I'm sure she'll have some ideas.
 Uh, Applejack, the princess is looking for a little advice on how to fit in around here.
-[annoyed grunt]
 Fire away, princess!
 Princess, remember!
 Watch the screaming!
@@ -2432,7 +2419,6 @@ That's Classics.
 The Art of the To-Do List, actually, I kinda wanna read that again.
 Spike!
 What are you laughing at?
-[growls]
 Uhh, if you guys don't mind?
 Start with this one.
 Wow, Spike, that's one of the kindest, most generous things you've ever done.
@@ -3157,7 +3143,6 @@ Rude!
 Pinkie Pie, you had to have noticed how Cadance treated?
 Never mind.
 Rainbow Dash, you're with me, right?
-[growls]
 And I'm sure it's the result of being an awful pony who doesn't deserve to even know Shining Armor, let alone marry him!
 I am not being possessive, and I am not taking it out on Cadance!
 You're all just too caught up in your wedding planning to notice that maybe there shouldn't even [thumps table]
@@ -4679,8 +4664,6 @@ Spike.
 Never, ever, ever, ever take another book out of the library at the castle without asking!
 Princess Cadance and Princess Luna have much better things to do than help me clean up Ponyville!
 Do you have any idea how hard it was to reverse that much dark magic?
-[growls]
-[growls]
 Spike!
 Are you all right?
 Last time you were here, you got the Crystal Heart to Princess Cadance in time to save this entire empire from destruction!
@@ -4832,12 +4815,9 @@ I need you all to stay here and encourage everypony to remain inside.
 I can do this.
 See!
 Perfectly controlled teleportation?
-[growls]
 [gasps]
 Tirek!
-[screams]
 [gasps]
-[screams]
 [gasps]
 I will give you my magic, in exchange for my friends.
 All of my friends.
@@ -6435,7 +6415,6 @@ pranking whoever you feel like?
 I hope Shining Armor and Princess Cadance don't think it's too soon for me to come back to the Crystal Empire for a visit.
 But I just know Flurry Heart's grown so much already.
 I wonder if I'll even recognize her.
-[annoyed grunt]
 Starlight, your work in Ponyville isn't going anywhere.
 Besides, I think we all know you can learn about friendship anywhere.
 Right, Spike?
@@ -6922,13 +6901,9 @@ Oh, you want to pretend we're the bears.
 I suppose we have time for a quick game.
 Hey!
 All right!
-[growls like a bear]
 I'm gonna get ya!
 Got it!
-[growls like a bear]
 I'm catching up!
-[growls like a bear]
-[roars like a bear]
 Uh-oh.
 Sorry, bug.
 Did that scare you?
@@ -9310,7 +9285,6 @@ What was it?
 You mean you weren't fired?
 You left the library because you wanted to?
 You're sure you don't want to return it and get that perfect record back?
-[strangled scream]
 But it'll have a stain!
 Actually, uh, no, I guess I didn't.
 Perfection.
