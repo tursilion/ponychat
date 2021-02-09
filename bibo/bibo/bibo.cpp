@@ -29,6 +29,8 @@ int len1, len2, len3, len4;
 vector<string> nameList;    // always populated now
 int trueNameListSize=0;     // number of entries from disk, no honorable mentions
 vector<string> adjectives;  // adjective exceptions from the database
+int replacedNamePos;        // global for the replaced name position
+std::string replacedName;   // global for the replaced name
 
 // enable this to make the text go left/right instead of all stacked on the left
 // it was hard to make that work right so I want to save the code ;)
@@ -752,6 +754,10 @@ void fixpronouns(string& s) {
     strreplace(s, " we ", " you ");
     strreplace(s, " I ", " you ");
 
+    // look for broken replacements
+    strreplace(s, " `me am ", " I am ");
+    strreplace(s, "here am ", "here are "); // not necessarily a replacement, but that's okay
+
     // fix up first pass
     strreplace(s, " `are ", " are ");
     strreplace(s, " `were ", " were ");
@@ -890,6 +896,9 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
     }
     str = first + on + str.substr(p+tstname.length());
     printf("<!-- replace '%s' with '%s' -->\n", tstname.c_str(), on.c_str());
+
+    replacedName = on;
+    replacedNamePos = p;
 
     return true;
 }
@@ -1504,9 +1513,14 @@ void runscene(int who1, int who2, int count, int count2) {
                 printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
                 if (!noun.empty()) globalnoun2 = noun;
                 ////
+                replacedNamePos = -1;
                 nameSubstitution(s, un1, un2);
                 printf("%s ", s.c_str());
                 s += '\n';
+                // if there was a replaced name, change it to us in case they reply with it
+                if (replacedNamePos > -1) {
+                    replaceName(replacedName, s, un2, replacedNamePos);
+                }
                 // add the string to the chat
                 fixpronouns(s);
                 buf3 = (char*)realloc(buf3, len3 + 1 + s.length());
@@ -1535,9 +1549,14 @@ void runscene(int who1, int who2, int count, int count2) {
                 printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
                 if (!noun.empty()) globalnoun1 = noun;
                 ////
+                replacedNamePos = -1;
                 nameSubstitution(s, un2, un1);
                 printf("%s ", s.c_str());
                 s += '\n';
+                // if there was a replaced name, change it to us in case they reply with it
+                if (replacedNamePos > -1) {
+                    replaceName(replacedName, s, un1, replacedNamePos);
+                }
                 // add the string to the chat
                 fixpronouns(s);
                 buf4 = (char*)realloc(buf4, len4 + 1 + s.length());
