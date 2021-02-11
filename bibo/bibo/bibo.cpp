@@ -848,6 +848,8 @@ void fixpronouns(string& s) {
     strreplace(s, " `me am ", " I am ");
     strreplace(s, " `me want ", " I want ");
     strreplace(s, "here am ", "here are "); // not necessarily a replacement, but that's okay
+    strreplace(s, " with I ", " with me "); // not necessarily a replacement, but that's okay
+    strreplace(s, " am me ", " I am "); // not necessarily a replacement, but that's okay
 
     // fix up first pass
     strreplace(s, " `are ", " are ");
