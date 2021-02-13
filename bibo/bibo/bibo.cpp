@@ -218,8 +218,7 @@ const char* strtest(const char* a, const std::string &w) {
 }
 // forward search version - needs the length to know where to stop
 // Warning: strsearch and strrsearch have different criteria
-// first is true at the top of the buffer, makes us ignore the first space in b
-const char* strsearch(const char* a, int len, const char* b, bool bFirst) {
+const char* strsearch(const char* a, int len, const char* b) {
     if ((a == NULL) || (b == NULL)) return NULL;
     int blen = strlen(b);
     const char *buf=a;
@@ -227,11 +226,6 @@ const char* strsearch(const char* a, int len, const char* b, bool bFirst) {
     while (a < buf+len-blen) {
         const char* p1 = a;
         const char* p2 = b;
-        // special case for first character of the haystack only
-        if (bFirst) {
-            bFirst = false;
-            if (*p2 == ' ') ++p2;
-        }
         {
             for (;;) {
                 if ((*p1 == 0) || (*p2 == 0)) break;
@@ -592,7 +586,7 @@ const char *findNewPos(const char *buf, int len, std::string &w) {
     const char *p = buf;
     int worklen = len;
     while (p) {
-        p = strsearch(p, worklen, w.c_str(), (p==buf));
+        p = strsearch(p, worklen, w.c_str());
         if (p) {
             p+=w.length();
             list.push_back(p); // save the post-incremented pointer
@@ -1405,14 +1399,14 @@ void runquote(int who, int count) {
     }
     ++len1;
     fseek(fp, 0, SEEK_SET);
-    buf1 = (char*)malloc(len1 + 2);
+    buf1 = (char*)malloc(len1 + 3); // leading \n, trailing \n, nul
     if (NULL == buf1) {
         printf("<!-- no mem -->\n");
         fclose(fp);
         return;
     }
     buf1[0] = '\n';
-    len1 = (int)fread(buf1 + 1, 1, len1, fp);
+    len1 = (int)fread(buf1 + 1, 1, len1, fp) + 1;
     fclose(fp);
     buf1[len1] = '\n';
     buf1[len1 + 1] = '\0';
@@ -1490,14 +1484,14 @@ void runscene(int who1, int who2, int count, int count2) {
     }
     ++len1;
     fseek(fp, 0, SEEK_SET);
-    buf1 = (char*)malloc(len1 + 2);
+    buf1 = (char*)malloc(len1 + 3); // leading \n, training \n, nul
     if (NULL == buf1) {
         printf("<!-- no mem2 -->\n");
         fclose(fp);
         return;
     }
     buf1[0] = '\n';
-    len1 = (int)fread(buf1 + 1, 1, len1, fp);
+    len1 = (int)fread(buf1 + 1, 1, len1, fp) + 1;
     fclose(fp);
     buf1[len1] = '\n';
     buf1[len1 + 1] = '\0';
@@ -1555,14 +1549,14 @@ void runscene(int who1, int who2, int count, int count2) {
     }
     ++len2;
     fseek(fp, 0, SEEK_SET);
-    buf2 = (char*)malloc(len2 + 2);
+    buf2 = (char*)malloc(len2 + 3); // leading \n, trailing \n, nul
     if (NULL == buf2) {
         printf("<!-- no mem3 -->\n");
         fclose(fp);
         return;
     }
     buf2[0] = '\n';
-    len2 = (int)fread(buf2 + 1, 1, len2, fp);
+    len2 = (int)fread(buf2 + 1, 1, len2, fp) + 1;
     fclose(fp);
     buf2[len2] = '\n';
     buf2[len2 + 1] = '\0';
