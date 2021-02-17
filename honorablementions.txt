@@ -33,6 +33,7 @@ Spikey-Wikey
 Sonata Blaze
 Sonata
 Sky
+Skeedaddle
 Shujaa
 Sheriff Blubs
 Scoot
@@ -91,6 +92,8 @@ Madoa
 Lofty
 little Spike
 Little B
+Lily
+Lickety Split
 Li'l Gideon
 Lenore
 Laini
@@ -100,6 +103,7 @@ King Grover
 Kifaru
 Kiburi
 Kahn Jr
+Junebug
 Joseph
 John Redcorn
 Jimmy Witchard
@@ -121,7 +125,9 @@ Ghost-Eyes
 GH
 General Seaspray
 Gar-Gar
+Gaea Everfree
 Gabe
+Gabby Gums
 Furaha
 Fidel
 Fiddleford
@@ -150,12 +156,14 @@ Chuluun
 Chubby Z
 Castle
 Carl
+Captain Wuzz
 Bupu
 Buckley's Angel
 Buckley
 Boy Scout
 Bon Bon
 Bloomberg
+Binga
 Big MacIntosh
 Big Mac
 Big B
