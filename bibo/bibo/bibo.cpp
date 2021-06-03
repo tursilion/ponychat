@@ -35,6 +35,7 @@ int trueNameListSize=0;     // number of entries from disk, no honorable mention
 vector<string> adjectives;  // adjective exceptions from the database
 int replacedNamePos;        // global for the replaced name position
 std::string replacedName;   // global for the replaced name
+int hunts;
 
 // enable this to make the text go left/right instead of all stacked on the left
 // it was hard to make that work right so I want to save the code ;)
@@ -48,6 +49,13 @@ std::string replacedName;   // global for the replaced name
 
 // where is the cgi?
 #define CHAT_URL "000CHAT_URL000"
+
+#define MAXLINES 99
+#define MAXWORDS 99
+#define DEFAULTLINES 10
+#define DEFAULTWORDS 10
+
+
 
 #ifdef _WIN32
 #include <windows.h>
@@ -579,9 +587,8 @@ const char *findNewPos(const char *buf, int len, std::string &w) {
     // doesn't matter if it's fast, it's MODERN! ;)
 
     // as a hacky way of eliminating loops caused by phrases like "Stop, stop, stop!" growing
-    // infinitely, we'll add a weight towards later hits after every 5 words. Still random,
-    // but with growing influence.
-    static int hunts = 0;
+    // infinitely, we'll add a weight towards later hits. Still random,
+    // but with growing influence. This is 'hunts', now reset per string.
     std::vector<const char*> list;
     const char *p = buf;
     int worklen = len;
@@ -600,7 +607,7 @@ const char *findNewPos(const char *buf, int len, std::string &w) {
         return NULL;
     }
     ++hunts;
-    int target = rand()%list.size() + hunts/5;
+    int target = rand()%list.size() + hunts/10;
     if (target >= list.size()) target = list.size()-1;
 
     return list[target];
@@ -645,6 +652,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         len = len1 + len2 * l2cnt;
     }
 
+    hunts = 0;                // reset the bias
     int pos = rand() % len1;  // force the new string to start in the char's voice
     if (noun.length() > 0) {
         // try to find a noun match in buf1 only
@@ -841,9 +849,6 @@ void fixpronouns(string& s) {
     // look for broken replacements
     strreplace(s, " `me am ", " I am ");
     strreplace(s, " `me want ", " I want ");
-    strreplace(s, "here am ", "here are "); // not necessarily a replacement, but that's okay
-    strreplace(s, " with I ", " with me "); // not necessarily a replacement, but that's okay
-    strreplace(s, " am me ", " I am "); // not necessarily a replacement, but that's okay
 
     // fix up first pass
     strreplace(s, " `are ", " are ");
@@ -857,7 +862,10 @@ void fixpronouns(string& s) {
 
     // special peephole optimizations...
     strreplace(s, " you want I ", " you want me ");
-    strreplace(s, " Well, ", " Wait, ");
+    strreplace(s, "here am ", "here are "); // not necessarily a replacement, but that's okay
+    strreplace(s, " with I ", " with me "); // not necessarily a replacement, but that's okay
+    strreplace(s, " am me ", " I am "); // not necessarily a replacement, but that's okay
+    strreplace(s, " me can ", " I can "); // not necessarily a replacement, but that's okay
 
     s = s.substr(1, s.length() - 2);
     s[0] = toupper(s[0]);
@@ -1345,13 +1353,9 @@ void runlist() {
 
 }
 
-// fix blank lines in database
+// fix blank lines in database - except the first one!!
 void fixbuf(char *buf, int &len) {
-    // initial blank lines
-    while (buf[0] == '\n') {
-        memmove(&buf[0], &buf[1], len--);
-    }
-    // internal blank lines
+    // we enforce a single blank line at the start, so ignore buf[0]
     char *p;
     while ((p = strstr(buf, "\n\n")) != NULL) {
         memmove(p, p+1, len-(p-buf));
@@ -1416,7 +1420,8 @@ void runquote(int who, int count) {
 
     // now start babbling
     int cnt = count;
-    if ((count <= 0) || (count > 10)) {
+    if (count > MAXLINES) count = 0;
+    if (count <= 0) {
         cnt = rand() % 5 + 2;
     }
     for (int idx = 0; idx < cnt; ++idx) {
@@ -1572,12 +1577,14 @@ void runscene(int who1, int who2, int count, int count2) {
     len4 = 0;
     string globalnoun1,globalnoun2;
     int lps = count;
-    if ((lps < 1) || (lps > 10)) {
+    if (lps > MAXLINES) lps = 0;
+    if (lps < 1) {
         lps = rand() % 4 + 2;
     }
     for (int lp = 0; lp < lps; ++lp) {
         int cnt;
-        if ((count2 < 1) || (count2 > 10)) {
+        if (count2 > MAXWORDS) count2 = 0;
+        if (count2 < 1) {
             cnt = rand() % 1 + 1;
         } else {
             cnt = rand() % count2 + 1;
@@ -1699,14 +1706,14 @@ int main(int argc, char* argv[]) {
         if (c > 0) c2 = c;
     }
 
-    // get count
+    // get count (number of sentences)
     int cnt = 0;
     if (argc > 4) {
         int c = atoi(argv[4]);
         if (c > 0) cnt = c;
     }
 
-    // get count2
+    // get count2 (length of sentences)
     int cnt2 = 0;
     if (argc > 5) {
         int c = atoi(argv[5]);
