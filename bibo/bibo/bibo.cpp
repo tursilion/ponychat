@@ -605,11 +605,17 @@ loopsearch:
     }
     // remove any hits we already had
     for (const char *x : used) {
-        // this has a small bug in that it shares the entry for all buffers, and should be per buffer
-        for (auto it=list.begin(); it!=list.end(); ++it) {
-          if (*it == x) {
-            list.erase(it);
-          }
+        bool repeat = true;
+        while (repeat) {
+            repeat = false;
+            // this has a small bug in that it shares the entry for all buffers, and should be per buffer
+            for (auto it=list.begin(); it!=list.end(); ++it) {
+              if (*it == x) {
+                list.erase(it);
+                repeat = true;  // broke the iterator, start again
+                break;
+              }
+            }
         }
     }
     // if we lost them all, delete the used list so we get SOMETHING
@@ -1755,6 +1761,7 @@ int main(int argc, char* argv[]) {
         if (s > 0) seed=s;
     }
     srand(seed);
+
     printf("<!-- Trigger String: %d.%d.%d.%d.%d -->\n", c1,c2, cnt,cnt2, seed);
 
     if (0 == strcmp(argv[1], "list")) {
