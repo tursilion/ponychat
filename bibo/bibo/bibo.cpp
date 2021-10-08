@@ -35,7 +35,7 @@ int trueNameListSize=0;     // number of entries from disk, no honorable mention
 vector<string> adjectives;  // adjective exceptions from the database
 int replacedNamePos;        // global for the replaced name position
 std::string replacedName;   // global for the replaced name
-int hunts;
+std::vector<const char*> used; // used start addresses to avoid loops
 
 // enable this to make the text go left/right instead of all stacked on the left
 // it was hard to make that work right so I want to save the code ;)
@@ -585,10 +585,7 @@ const char *findNewPos(const char *buf, int len, std::string &w) {
 #else
     // new version tries to be more fair by finding all matches, then picking one
     // doesn't matter if it's fast, it's MODERN! ;)
-
-    // as a hacky way of eliminating loops caused by phrases like "Stop, stop, stop!" growing
-    // infinitely, we'll add a weight towards later hits. Still random,
-    // but with growing influence. This is 'hunts', now reset per string.
+loopsearch:
     std::vector<const char*> list;
     const char *p = buf;
     int worklen = len;
@@ -602,13 +599,31 @@ const char *findNewPos(const char *buf, int len, std::string &w) {
         }
     }
     printf("<!-- found %d matches for '%s' -->\n", list.size(), w.c_str());
-    if (list.size() < 1) {
+    if (list.empty()) {
         // should not be possible
         return NULL;
     }
-    ++hunts;
-    int target = rand()%list.size() + hunts/10;
-    if (target >= list.size()) target = list.size()-1;
+    // remove any hits we already had
+    for (const char *x : used) {
+        // this has a small bug in that it shares the entry for all buffers, and should be per buffer
+        for (auto it=list.begin(); it!=list.end(); ++it) {
+          if (*it == x) {
+            list.erase(it);
+          }
+        }
+    }
+    // if we lost them all, delete the used list so we get SOMETHING
+    if ((list.empty())&&(!used.empty())) {
+        used.clear();
+        goto loopsearch;
+    }
+    if (list.empty()) {
+        // should not be possible
+        return NULL;
+    }
+
+    int target = rand()%list.size();
+    used.push_back(list[target]);
 
     return list[target];
 #endif
@@ -652,7 +667,6 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         len = len1 + len2 * l2cnt;
     }
 
-    hunts = 0;                // reset the bias
     int pos = rand() % len1;  // force the new string to start in the char's voice
     if (noun.length() > 0) {
         // try to find a noun match in buf1 only
