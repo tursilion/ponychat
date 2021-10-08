@@ -15,6 +15,10 @@
 // scene <n1> <n2> - generate a random scene with two characters
 // addchat <str> - add <str> to the active chat for this IP address
 
+// define this to use a system closer to markov chains, under for the old
+// randomly string search method...
+#define NEWCHAINS
+
 #include <string>
 #include <stdio.h>
 #include <ctype.h>
@@ -29,6 +33,9 @@ int len1, len2, len3, len4;
 vector<string> nameList;    // always populated now
 int trueNameListSize=0;     // number of entries from disk, no honorable mentions
 vector<string> adjectives;  // adjective exceptions from the database
+int replacedNamePos;        // global for the replaced name position
+std::string replacedName;   // global for the replaced name
+std::vector<const char*> used; // used start addresses to avoid loops
 
 // enable this to make the text go left/right instead of all stacked on the left
 // it was hard to make that work right so I want to save the code ;)
@@ -42,6 +49,13 @@ vector<string> adjectives;  // adjective exceptions from the database
 
 // where is the cgi?
 #define CHAT_URL "000CHAT_URL000"
+
+#define MAXLINES 99
+#define MAXWORDS 99
+#define DEFAULTLINES 10
+#define DEFAULTWORDS 10
+
+
 
 #ifdef _WIN32
 #include <windows.h>
@@ -171,7 +185,7 @@ size_t findnocase(const string &str, const string &x, size_t start) {
   for (unsigned outer=start; outer<str.length()-x.length(); ++outer) {
     for (unsigned inner=0; inner<x.length(); ++inner) {
       char out = str[outer+inner];
-      if (NULL != strchr("!?,.", out)) out = ' ';
+      if (NULL != strchr("!?`,.", out)) out = ' ';
       if (toupper(out) != toupper(x[inner])) {
         match = string::npos;
         break;
@@ -197,7 +211,7 @@ const char* strtest(const char* a, const std::string &w) {
         for (;;) {
             if ((*p1 == 0) || (*p2 == 0)) break;
             char out = *p1;
-            if (NULL != strchr("!?,.", out)) out = ' ';
+            if (NULL != strchr("!?`,.", out)) out = ' ';
             if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
             break;
         }
@@ -207,6 +221,33 @@ const char* strtest(const char* a, const std::string &w) {
         ++a;
         --cnt;
         if (cnt == 0) break;
+    }
+    return NULL;
+}
+// forward search version - needs the length to know where to stop
+// Warning: strsearch and strrsearch have different criteria
+const char* strsearch(const char* a, int len, const char* b) {
+    if ((a == NULL) || (b == NULL)) return NULL;
+    int blen = strlen(b);
+    const char *buf=a;
+
+    while (a < buf+len-blen) {
+        const char* p1 = a;
+        const char* p2 = b;
+        {
+            for (;;) {
+                if ((*p1 == 0) || (*p2 == 0)) break;
+                char out = *p1;
+                if (NULL != strchr("!?.[]", out)) out = ' '; // no comma, I want to search on them
+                if (out < ' ') out = ' ';
+                if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
+                break;
+            }
+            if (*p2 == '\0') {
+                return a;
+            }
+        }
+        ++a;
     }
     return NULL;
 }
@@ -302,7 +343,7 @@ string findNoun(const string& str) {
         }
         // build up the output word
         p += x.length();
-        size_t p2 = str.find_first_of(" ,.?!", p);
+        size_t p2 = str.find_first_of(" `,.?!", p);
         if (p2 == string::npos) {
           // no end of string?
           outstr = str.substr(p);
@@ -327,7 +368,7 @@ string findNoun(const string& str) {
     return outstr; // empty
   }
   // else, this is it...
-  size_t p2 = str.find_first_of(" ,.?!", p);
+  size_t p2 = str.find_first_of(" `,.?!", p);
   if (p2 == string::npos) {
     // no end of string?
     outstr = str.substr(p);
@@ -498,7 +539,7 @@ void makepic(const string &fn1, const string &fn2) {
 
 // pull the current word and return it, update pos
 string pullword(char* buf, int len, int& pos) {
-    while ((pos < len) && (buf[pos] == ' ')) ++pos;
+    while ((pos < len) && (NULL != strchr(" .", buf[pos]))) ++pos; // spaces and ...
     if (pos >= len) {
         // end of file
         return string("");
@@ -514,6 +555,80 @@ string pullword(char* buf, int len, int& pos) {
     }
     return x;
 }
+
+// return a pointer inside buf to /the end/ of to an instance of 'w'
+// as far as we know, this string must exist at least once!
+// NULL return is an unexpected failure and caller should quit
+const char *findNewPos(const char *buf, int len, std::string &w) {
+#ifndef NEWCHAINS
+    // old version works - but introduces bias when the words are
+    // not evenly distributed. But it's fast!
+	int pos = rand() % len;
+	const char* p = strrsearch(buf, &buf[pos], w.c_str());
+	if (NULL == p) {
+		// try from the end
+		int end = strlen(buf);
+		p = strrsearch(&buf[pos], &buf[end], w.c_str());
+		if (NULL == p) {
+			// the only case this SHOULD be caused by is first word in the file,
+			// so try that directly
+			w = w.substr(1);
+			if (buf == strtest(buf, w)) {
+				p = buf;
+			} else {
+			    // we lost our place
+			    return NULL;
+			}
+		}
+	}
+        return p + w.length();
+#else
+    // new version tries to be more fair by finding all matches, then picking one
+    // doesn't matter if it's fast, it's MODERN! ;)
+loopsearch:
+    std::vector<const char*> list;
+    const char *p = buf;
+    int worklen = len;
+    while (p) {
+        p = strsearch(p, worklen, w.c_str());
+        if (p) {
+            p+=w.length();
+            list.push_back(p); // save the post-incremented pointer
+            if (w.length() > 2) p-=2; // assume 2 spaces of padding for next search, it's okay if it's not padding
+            worklen = len-(p-buf);
+        }
+    }
+    printf("<!-- found %d matches for '%s' -->\n", list.size(), w.c_str());
+    if (list.empty()) {
+        // should not be possible
+        return NULL;
+    }
+    // remove any hits we already had
+    for (const char *x : used) {
+        // this has a small bug in that it shares the entry for all buffers, and should be per buffer
+        for (auto it=list.begin(); it!=list.end(); ++it) {
+          if (*it == x) {
+            list.erase(it);
+          }
+        }
+    }
+    // if we lost them all, delete the used list so we get SOMETHING
+    if ((list.empty())&&(!used.empty())) {
+        used.clear();
+        goto loopsearch;
+    }
+    if (list.empty()) {
+        // should not be possible
+        return NULL;
+    }
+
+    int target = rand()%list.size();
+    used.push_back(list[target]);
+
+    return list[target];
+#endif
+}
+
 
 // create one random sentence from the filename
 // noun will cause a search for that word as a starting point, then clear it
@@ -581,7 +696,11 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
     // pull 'x' words, ending if we reach end of line.
     string w;
     for (;;) {
+#ifdef NEWCHAINS
+        int cnt = 1;
+#else
         int cnt = rand() % 5 + 1;
+#endif
         for (int idx = 0; idx < cnt; ++idx) {
             w = pullword(buf, len, pos);
             if (w.empty()) break;
@@ -617,29 +736,18 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         // by searching backwards, we reduce repetition in sentences that contain it
         // more than once by finding the LAST instance first.
         // fixes "She won't admit it, but she won't admit it, but she won't admit it, but she doesn't like it"
-        pos = rand() % len;
+        if ((w.length()>0) && (NULL != strchr("!?`,.[", w[0]))) w=w.substr(1);
+        while ((w.length()>0) && (NULL != strchr("!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
         w = ' ' + w + ' ';
 
-        const char* p = strrsearch(buf, &buf[pos], w.c_str());
+        const char *p = findNewPos(buf, len, w);
         if (NULL == p) {
-            // try from the end
-            int end = strlen(buf);
-            p = strrsearch(&buf[pos], &buf[end], w.c_str());
-            if (NULL == p) {
-                // the only case this SHOULD be caused by is first word in the file,
-                // so try that directly
-                w = w.substr(1);
-                if (buf == strtest(buf, w)) {
-                    p = buf;
-                } else {
-                    output += "then I lost my place! ";
-                    goto finish;
-                }
-            }
+            output += "then I lost my place! ";
+            goto finish;
         }
 
         // skip to the end of the word, then loop
-        pos = (int)(p - buf) + (int)w.length();
+        pos = (int)(p - buf);
     }
 
 finish:
@@ -676,12 +784,21 @@ finish:
         }
     }
 
+    // finally, translate ` back to ... for output...
+    size_t i=0;
+    for (;;) {
+        i = output.find('`', i);
+        if (string::npos == i) break;
+        output.replace(i,1,"...");
+        i+=3;
+    }
+
     return output;
 }
 
 // return a valid random filename
 int randomfile() {
-    return rand() % trueNameListSize;    
+    return rand() % trueNameListSize;
 }
 
 // string replace - note that 'space' matches various punctuation
@@ -752,6 +869,10 @@ void fixpronouns(string& s) {
     strreplace(s, " we ", " you ");
     strreplace(s, " I ", " you ");
 
+    // look for broken replacements
+    strreplace(s, " `me am ", " I am ");
+    strreplace(s, " `me want ", " I want ");
+
     // fix up first pass
     strreplace(s, " `are ", " are ");
     strreplace(s, " `were ", " were ");
@@ -764,7 +885,10 @@ void fixpronouns(string& s) {
 
     // special peephole optimizations...
     strreplace(s, " you want I ", " you want me ");
-    strreplace(s, " Well, ", " Wait, ");
+    strreplace(s, "here am ", "here are "); // not necessarily a replacement, but that's okay
+    strreplace(s, " with I ", " with me "); // not necessarily a replacement, but that's okay
+    strreplace(s, " am me ", " I am "); // not necessarily a replacement, but that's okay
+    strreplace(s, " me can ", " I can "); // not necessarily a replacement, but that's okay
 
     s = s.substr(1, s.length() - 2);
     s[0] = toupper(s[0]);
@@ -890,6 +1014,9 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
     }
     str = first + on + str.substr(p+tstname.length());
     printf("<!-- replace '%s' with '%s' -->\n", tstname.c_str(), on.c_str());
+
+    replacedName = on;
+    replacedNamePos = p;
 
     return true;
 }
@@ -1249,17 +1376,18 @@ void runlist() {
 
 }
 
-// fix blank lines in database
+// fix blank lines in database - except the first one!!
 void fixbuf(char *buf, int &len) {
-    // initial blank lines
-    while (buf[0] == '\n') {
-        memmove(&buf[0], &buf[1], len--);
-    }
-    // internal blank lines
+    // we enforce a single blank line at the start, so ignore buf[0]
     char *p;
     while ((p = strstr(buf, "\n\n")) != NULL) {
         memmove(p, p+1, len-(p-buf));
         --len;
+    }
+    // also replace ... with `, so we can treat it as a single punctuation character
+    while ((p = strstr(buf, "...")) != NULL) {
+        *(p++) = '`';
+        memmove(p, p+2, len-(p-buf-1));
     }
 }
 
@@ -1303,14 +1431,14 @@ void runquote(int who, int count) {
     }
     ++len1;
     fseek(fp, 0, SEEK_SET);
-    buf1 = (char*)malloc(len1 + 2);
+    buf1 = (char*)malloc(len1 + 3); // leading \n, trailing \n, nul
     if (NULL == buf1) {
         printf("<!-- no mem -->\n");
         fclose(fp);
         return;
     }
     buf1[0] = '\n';
-    len1 = (int)fread(buf1 + 1, 1, len1, fp);
+    len1 = (int)fread(buf1 + 1, 1, len1, fp) + 1;
     fclose(fp);
     buf1[len1] = '\n';
     buf1[len1 + 1] = '\0';
@@ -1320,7 +1448,8 @@ void runquote(int who, int count) {
 
     // now start babbling
     int cnt = count;
-    if ((count <= 0) || (count > 10)) {
+    if (count > MAXLINES) count = 0;
+    if (count <= 0) {
         cnt = rand() % 5 + 2;
     }
     for (int idx = 0; idx < cnt; ++idx) {
@@ -1388,14 +1517,14 @@ void runscene(int who1, int who2, int count, int count2) {
     }
     ++len1;
     fseek(fp, 0, SEEK_SET);
-    buf1 = (char*)malloc(len1 + 2);
+    buf1 = (char*)malloc(len1 + 3); // leading \n, training \n, nul
     if (NULL == buf1) {
         printf("<!-- no mem2 -->\n");
         fclose(fp);
         return;
     }
     buf1[0] = '\n';
-    len1 = (int)fread(buf1 + 1, 1, len1, fp);
+    len1 = (int)fread(buf1 + 1, 1, len1, fp) + 1;
     fclose(fp);
     buf1[len1] = '\n';
     buf1[len1 + 1] = '\0';
@@ -1453,14 +1582,14 @@ void runscene(int who1, int who2, int count, int count2) {
     }
     ++len2;
     fseek(fp, 0, SEEK_SET);
-    buf2 = (char*)malloc(len2 + 2);
+    buf2 = (char*)malloc(len2 + 3); // leading \n, trailing \n, nul
     if (NULL == buf2) {
         printf("<!-- no mem3 -->\n");
         fclose(fp);
         return;
     }
     buf2[0] = '\n';
-    len2 = (int)fread(buf2 + 1, 1, len2, fp);
+    len2 = (int)fread(buf2 + 1, 1, len2, fp) + 1;
     fclose(fp);
     buf2[len2] = '\n';
     buf2[len2 + 1] = '\0';
@@ -1476,12 +1605,14 @@ void runscene(int who1, int who2, int count, int count2) {
     len4 = 0;
     string globalnoun1,globalnoun2;
     int lps = count;
-    if ((lps < 1) || (lps > 10)) {
+    if (lps > MAXLINES) lps = 0;
+    if (lps < 1) {
         lps = rand() % 4 + 2;
     }
     for (int lp = 0; lp < lps; ++lp) {
         int cnt;
-        if ((count2 < 1) || (count2 > 10)) {
+        if (count2 > MAXWORDS) count2 = 0;
+        if (count2 < 1) {
             cnt = rand() % 1 + 1;
         } else {
             cnt = rand() % count2 + 1;
@@ -1504,9 +1635,14 @@ void runscene(int who1, int who2, int count, int count2) {
                 printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
                 if (!noun.empty()) globalnoun2 = noun;
                 ////
+                replacedNamePos = -1;
                 nameSubstitution(s, un1, un2);
                 printf("%s ", s.c_str());
                 s += '\n';
+                // if there was a replaced name, change it to us in case they reply with it
+                if (replacedNamePos > -1) {
+                    replaceName(replacedName, s, un2, replacedNamePos);
+                }
                 // add the string to the chat
                 fixpronouns(s);
                 buf3 = (char*)realloc(buf3, len3 + 1 + s.length());
@@ -1535,9 +1671,14 @@ void runscene(int who1, int who2, int count, int count2) {
                 printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
                 if (!noun.empty()) globalnoun1 = noun;
                 ////
+                replacedNamePos = -1;
                 nameSubstitution(s, un2, un1);
                 printf("%s ", s.c_str());
                 s += '\n';
+                // if there was a replaced name, change it to us in case they reply with it
+                if (replacedNamePos > -1) {
+                    replaceName(replacedName, s, un1, replacedNamePos);
+                }
                 // add the string to the chat
                 fixpronouns(s);
                 buf4 = (char*)realloc(buf4, len4 + 1 + s.length());
@@ -1593,14 +1734,14 @@ int main(int argc, char* argv[]) {
         if (c > 0) c2 = c;
     }
 
-    // get count
+    // get count (number of sentences)
     int cnt = 0;
     if (argc > 4) {
         int c = atoi(argv[4]);
         if (c > 0) cnt = c;
     }
 
-    // get count2
+    // get count2 (length of sentences)
     int cnt2 = 0;
     if (argc > 5) {
         int c = atoi(argv[5]);

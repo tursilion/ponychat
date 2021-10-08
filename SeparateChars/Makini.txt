@@ -26,11 +26,11 @@ Some water, Queen Janna?
 It's okay, Rani.
 This is the duty of your Royal Mjuzi.
 My duty.
-(Inhales) Shwari.
+[Inhales] Shwari.
 Animals of the Tree of Life, Queen Janna has completed her journey in the Circle of Life.
 As it's tradition, we will gather at the Willows to say goodbye to Queen Janna.
 The coronation ceremony, to make Rani the new queen of the Tree of Life, will happen at around sunset.
-(SOFTLY HUMMING)
+[SOFTLY HUMMING]
 Rani.
 I'm so glad you're here.
 I have something to show you.
@@ -63,7 +63,7 @@ Have some Tuliza, Kion.
 We don't have much, but you can have a little.
 Better?
 No, I don't think so.
-I, (GASP) My staff...
+I, [GASP] My staff...
 Thanks, Fuli.
 I was sure I put it on this log.
 Where could it be?
@@ -75,20 +75,20 @@ And, nobody here will help us find Tuliza!
 But, what if you need some more?
 And, my staff makes the moja kwa moja stone paintings come to life, too!
 But, I think the only place I can find a new bakora staff is in the Pride Lands.
-(GASPS) We'll never find the Tree of Life now!
+[GASPS] We'll never find the Tree of Life now!
 Oh, yeah.
 Thanks, Beshte.
-(SIGHS) Shwari.
+[SIGHS] Shwari.
 A mouse?
 Her?
  Her, who?
 And why they took my staff!
 There was still Tuliza in the gourd.
 Good luck,Bunga!
-(GASPS) You got it!
+[GASPS] You got it!
 Yay!
 And you filled it with Tuliza.
-(SNIFFS) Ew!
+[SNIFFS] Ew!
 The history of the Pride Lands!
 I know!
 And I really want to do a good job!
@@ -116,14 +116,14 @@ For inspiration!
 But now that that's over I can really, really focus on painting!
 Uh-huh.
 Uh-huh!
-(SHRIEKS)
+[SHRIEKS]
 Oh, that's so sad.
 I guess it is.
 I never really thought about it that way before.
 I mean, I've thought about it, but I haven't thought about it.
 So, what do you think?
 Uh, do we need to smell the painting too?
-(GASPS) Oh, no!
+[GASPS] Oh, no!
 Help!
 Help!
 Someone's coming!
@@ -134,10 +134,10 @@ Chama, Furaha and Mzaha saved us!
 The ceremony!
 I hope I'm ready!
 I think so.
-(SIGHS)
+[SIGHS]
 Shwari!
 I did it, Rafiki!
-(GIGGLES) Animals of the Tree of Life, friends from near and far, it is my honor to present King Kion!
+[GIGGLES] Animals of the Tree of Life, friends from near and far, it is my honor to present King Kion!
 I don't remember having to climb a mountain that last time I went to the, Tree of Life.
 Maybe they need a shortcut.
 Oh, hi, Ono!
@@ -161,7 +161,7 @@ I remember Rafiki telling me something that can help heal.
 I think it was Ghanda root!
 Or the kioo stone.
 Or maybe kupona sap?
-(GASPS) Oh, oh, I know!
+[GASPS] Oh, oh, I know!
 Ponya flowers!
 I'm almost totally sure that's what Rafiki said can help!
 But I don't have any Ponya flowers.
@@ -186,10 +186,10 @@ I really hope it'll work.
 We need to hurry, Bunga!
 They're almost to the Outlands!
 Right.
-(INHALES DEEPLY) Shwari.
+[INHALES DEEPLY] Shwari.
 I can do this.
 Uh, get away, lizard!
-(GRUNTS) (GRUNTS) (SIGHS) There goes another staff.
+[GRUNTS] [GRUNTS] [SIGHS] There goes another staff.
 Bunga, hurry!
 Your legs are working again!
 The flowers helped!
@@ -212,7 +212,7 @@ Wait!
 This painting's a warning.
 The caves are dangerous.
 That's okay, I've got all these amazing new paintings to look at.
-Or if they're not new they're old, but, the're new to me and they're all amazing!
+Or if they're not new they're old, but they're new to me and they're all amazing!
 Then Askari and his Lion Guard led the animals to Mizimu Grove.
 I'm kinda far away from the entrance.
 I better go back.
@@ -220,9 +220,9 @@ The first painting said this cavern's dangerous.
 Except, all these paintings must have been painted by a Royal Mjuzi.
 And I'm a Royal Mjuzi in training.
 So it should be safe enough for me to look at just one more painting, or two.
-(GIGGLING) Oh.
+[GIGGLING] Oh.
 What wonderful wisdom do you have for me, new painting?
-(GASPS) (GASPS) It's a warning.
+[GASPS] [GASPS] It's a warning.
 Oh, no.
 Kion!
 Fuli!
@@ -261,7 +261,7 @@ So, the good lions of the Pride Lands created a powerful, unstoppable force that
 And it worked!
 But only the worthiest in the Pride Lands would be allowed to find this force and use it.
 I think, It's right, Over there.
-(BREATHING DEEPLY) Okay.
+[BREATHING DEEPLY] Okay.
 Of course!
 It's all right here in the paintings.
 That's the secret they created to defeat great evil.
@@ -285,15 +285,15 @@ Oh, oh.
 I remember this.
 Oh good I only have a few blossoms left.
 Oh Bunga you look so pretty.
-(GASPS)How didyouknow we're the Lion Guard?
+[GASPS]How didyouknow we're the Lion Guard?
 But they're so cute.
-(GASPS)
+[GASPS]
 My staff!
 But the tuliza!
 Oh, thank you, Fuli!
 Thank you, thank you, thank you!
 No prints here.
-(GRUNTING)
+[GRUNTING]
 Don't worry, Bunga.
 We'll stop that snow leopard!
 Oh, the next moja kwa moja stone, it was here the whole time.
@@ -310,7 +310,7 @@ Ono, come on, let's go!
 I'm keeping you safe.
 You'll be fine up here.
 What is it?
-(COUGH)
+[COUGH]
 Hi, Beshte!
 Thanks for keeping us from blowing away!
 What are we gonna do?
@@ -364,7 +364,7 @@ That's weird.
 The light.
 It's moving away from us.
 But we're so close!
-Let me, (GASPS) Oh, no!
+Let me, [GASPS] Oh, no!
 Where did it go?
 Oh, I see some more over there.
 I'll catch one and showyou.
@@ -374,7 +374,7 @@ There!
 I think that's where the first one was.
 That'll lead us back to the Guard, come on.
 Oh, not again!
-(SIGHS) Yeah.
+[SIGHS] Yeah.
 I don't understand.
 The lights were right there.
 Then they vanished.
@@ -395,7 +395,7 @@ But don't worry.
 I'll get us out of here and find the Guard.
 And everything will be okay.
 Hmm.
-(STRAINS) Woah!
+[STRAINS] Woah!
 Okay.
 Ono, you can fly out and go get help.
 Why not?
@@ -404,7 +404,7 @@ Right, of course.
 Don't worry.
 I'll think of something else.
 I'll get us out of here, Ono.
-(GRUNTS) Got it!
+[GRUNTS] Got it!
 Now I can just use this root to climb out of here, and, Ahhh!
 Oops.
 Oh, no!
@@ -414,10 +414,10 @@ Sitting and listening.
 Not touching.
 Nothing!
 Really!
-(GASPS) There's a tunnel!
+[GASPS] There's a tunnel!
 Are you sure?
 It's awfully dark and creepy down there.
-(GULPS) On a second thought, that tunnel does look nice and dry.
+[GULPS] On a second thought, that tunnel does look nice and dry.
 Sharwi.
 Okay.
 Here we go.
@@ -429,7 +429,7 @@ I, I hear it, too!
 What do you think it is?
 Sharwi, Ono!
 They're just bats!
-(LAUGHS) I think that they were kind of cute!
+[LAUGHS] I think that they were kind of cute!
 It's okay, Ono.
 They're gone now.
 Which tunnel, Ono?
@@ -456,7 +456,7 @@ Oh, right!
 Yes!
 I remember!
 I'll be quiet this time.
-Listening,not talking.
+Listening, not talking.
 Starting, Now!
 I don't hear anything.
 What?
@@ -476,23 +476,21 @@ And loud enough to echo?
 Oh, yes.
 That sounds amazing.
 What should I shout?
-(SCREAMS) Anything!
-Anything(ECHOES LOUDLY)
-(SCREAMS) Anything!
-(ECHO CONTINUES)
+[SCREAMS] Anything!
+[SCREAMS] Anything!
 Oh, that one sounds different.
 It seems further away each time it echoed.
-(GIGGLES) Hey!
+[GIGGLES] Hey!
 We make a pretty good team.
-(SQUEALS) Look, I see light.
+[SQUEALS] Look, I see light.
 Nope.
 Regular old light from the sky.
 Hey, Kion.
 Oh, hello.
 Who are you?
-(GRUNTS)
+[GRUNTS]
 I got you, Ono.
-(GRUNTS) Come on!
+[GRUNTS] Come on!
 It sure is.
 First I followed some lights, then we fell in a hole, Yeah.
 Turns out, we make a great team.
@@ -502,7 +500,7 @@ That's how we got lost.
 Here, let me help you.
 Tuliza, coming up.
 I really need to do a better job keeping track of our Tuliza.
-(GASPS)Oh, wait!
+[GASPS]Oh, wait!
 I just remembered something!
 Rafiki says that really salty water can be very relaxing.
 But, you don't drink it, you soak in it.
@@ -585,7 +583,7 @@ Then you know only the lions in Simba's Pride and the royal Mjuzi can hear the L
 What a frightening thought.
 I never even thought about that!
 I'd have to ask Rafiki if there's a way to hear them.
-(GASPS) The hardest part of listening is finding the quiet to hear.
+[GASPS] The hardest part of listening is finding the quiet to hear.
 Shwari.
 Shh!
 Quiet!
@@ -643,7 +641,7 @@ Even Scar?
 Thank you for telling me, Rafiki.
 Got it!
 I totally understand!
-(GASPS AND GIGGLES)
+[GASPS AND GIGGLES]
 Oh, oh!
 Can I help?
 If the future Queen is going on a mission, I'd like to go too!
@@ -667,7 +665,7 @@ I didn't hear anything.
 But I know that's something I need to work on.
 Being quiet so I can hear things.
 Like the Lions of the Past!
-(CHUCKLES) I know, right?
+[CHUCKLES] I know, right?
 That's what everyone's always trying to tell me!
 Shwari, Makini. Shwari.
 Kiara?
@@ -683,7 +681,7 @@ And they, they've taken off with Kiara!
 This is all my fault.
 I wasn't quiet when Kiara asked me to be.
 The hardest part of listening is finding the quiet to hear.
-(GASPS) Shwari!
+[GASPS] Shwari!
 Everyone!
 Everyone, shh!
 Shwari!
@@ -693,7 +691,7 @@ You remember me?
 Yes!
 This is where Rafiki said I'd be a Royal Mjuzi someday!
 He started my training!
-(GASPS) I'd be honored!
+[GASPS] I'd be honored!
 It's beautiful.
 Really?
 An army of predators?
@@ -703,7 +701,7 @@ Help me.
 Almost there.
 Oh thank you Kion, thank you Fuli.
 Sure thing Kion.
-(gasps) Oh no my staff!
+[gasps] Oh no my staff!
 it must have slipped off when I fell in the water.
 Sorry Kion we don't.
 Oh dear.
@@ -713,7 +711,7 @@ Does that mean we're not going to the Tree of Life now?
 Almost there.
 Bunga shh be quiet queen Rani is resting and she needs her rest.
 If you keep talking, you might wake her up.
-(GASPS)
+[GASPS]
 Oh, I'm sorry your majesty.
 Maybe he's still working on the Roar.
 Queen Janna showed me a painting from a long time ago.
@@ -746,14 +744,14 @@ But which color is the right color to make first?
 Orange?
 Green?
 Yellow?
-Oh, (BREATHES DEEPLY) Shwari.
+Oh, [BREATHES DEEPLY] Shwari.
 If there's no right place to start, then there's no wrong place to start.
 Ooh.
 I know.
 I can paint you to look like lions.
 It will look amazing.
 Just a little paint here...
-(GIGGLES) Oh, right.
+[GIGGLES] Oh, right.
 Because you are a lion.
 So, I'll make the rest of you look amazing!
 Oh, yes, Ma Tembo.
@@ -777,7 +775,7 @@ Ooh, beautiful!
 Yellow, Makini.
 Yellow!
 Shwari...
-(GASPS) Ohhh...
+[GASPS] Ohhh...
 I can crush these and make paint that's even more beautiful than the banana paint I had before!
 'Scuse me, bees.
 I really need these flowers!
@@ -789,7 +787,7 @@ Careful!
 Look out!
 Ma Tembo, I am so, so sorry.
 I never should have used flowers to make the paint.
-(GASPS) Maybe I can find some more yellow fruit and repaint you!
+[GASPS] Maybe I can find some more yellow fruit and repaint you!
 It'll look amazing!
 My favorite is definitely bright pink flamingos.
 Fuli, come quick!

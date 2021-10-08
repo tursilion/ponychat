@@ -76,7 +76,7 @@ Apple Bloom, you shall bring in Granny Smith on Monday.
 Have a great weekend, everypony!
 Granny Smith, it's Miss Cheerilee!
 Apple Bloom said you wanted to speak with me?
-, Hello?
+Hello?
 Granny Smith?
 Hi, uh, Granny Smith, is, ugh, everything okay?
 Oh no, is that so?
@@ -153,9 +153,7 @@ I'll leave you alone now to discuss everypony's assignments.
 Have fun!
 Well, staff, I guess I gave a little too much authority to a first-time editor.
 I'm sorry, Diamond Tiara, I have to strip you of your title.
-[thunk]
-And for the next editor of the Foal Free Press...
-...here's your new editor-in-chief, Featherweight!
+And for the next editor of the Foal Free Press, here's your new editor-in-chief, Featherweight!
 Today, we have two special guests with a very special announcement!
 Everypony, welcome the head of the Equestria Games, Ms Harshwhinny!
 My goodness, girls, it's time!
@@ -224,7 +222,6 @@ Well, wherever it comes from, the students just love it.
 Today, we're gonna learn about the Pegasus Weather Factory.
 Once everypony is in their seats.
 The factory specializes in snow, rain, sunshine, and...
-[clears throat]
 Scootaloo?
 May I help you?
 Why don't we hold off on the lesson until after lunch?
