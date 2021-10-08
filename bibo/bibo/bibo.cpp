@@ -185,7 +185,7 @@ size_t findnocase(const string &str, const string &x, size_t start) {
   for (unsigned outer=start; outer<str.length()-x.length(); ++outer) {
     for (unsigned inner=0; inner<x.length(); ++inner) {
       char out = str[outer+inner];
-      if (NULL != strchr("!?,.", out)) out = ' ';
+      if (NULL != strchr("!?`,.", out)) out = ' ';
       if (toupper(out) != toupper(x[inner])) {
         match = string::npos;
         break;
@@ -211,7 +211,7 @@ const char* strtest(const char* a, const std::string &w) {
         for (;;) {
             if ((*p1 == 0) || (*p2 == 0)) break;
             char out = *p1;
-            if (NULL != strchr("!?,.", out)) out = ' ';
+            if (NULL != strchr("!?`,.", out)) out = ' ';
             if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
             break;
         }
@@ -343,7 +343,7 @@ string findNoun(const string& str) {
         }
         // build up the output word
         p += x.length();
-        size_t p2 = str.find_first_of(" ,.?!", p);
+        size_t p2 = str.find_first_of(" `,.?!", p);
         if (p2 == string::npos) {
           // no end of string?
           outstr = str.substr(p);
@@ -368,7 +368,7 @@ string findNoun(const string& str) {
     return outstr; // empty
   }
   // else, this is it...
-  size_t p2 = str.find_first_of(" ,.?!", p);
+  size_t p2 = str.find_first_of(" `,.?!", p);
   if (p2 == string::npos) {
     // no end of string?
     outstr = str.substr(p);
@@ -722,7 +722,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         // by searching backwards, we reduce repetition in sentences that contain it
         // more than once by finding the LAST instance first.
         // fixes "She won't admit it, but she won't admit it, but she won't admit it, but she doesn't like it"
-        if ((w.length()>0) && (NULL != strchr("!?,.[", w[0]))) w=w.substr(1);
+        if ((w.length()>0) && (NULL != strchr("!?`,.[", w[0]))) w=w.substr(1);
         while ((w.length()>0) && (NULL != strchr("!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
         w = ' ' + w + ' ';
 
@@ -768,6 +768,15 @@ finish:
             output[output.length() - 1] = '.';
             output += ' ';
         }
+    }
+
+    // finally, translate ` back to ... for output...
+    size_t i=0;
+    for (;;) {
+        i = output.find('`', i);
+        if (string::npos == i) break;
+        output.replace(i,1,"...");
+        i+=3;
     }
 
     return output;
@@ -1360,6 +1369,11 @@ void fixbuf(char *buf, int &len) {
     while ((p = strstr(buf, "\n\n")) != NULL) {
         memmove(p, p+1, len-(p-buf));
         --len;
+    }
+    // also replace ... with `, so we can treat it as a single punctuation character
+    while ((p = strstr(buf, "...")) != NULL) {
+        *(p++) = '`';
+        memmove(p, p+2, len-(p-buf-1));
     }
 }
 
