@@ -1,0 +1,22 @@
+Search string:
+
+site:deviantart.com vector mlp <name of character>
+
+Resize all chars to 800 pixels wide
+
+Make sure are png named with charname_by_whatever.png
+
+Extra part of name at end- ~~ww~oo
+ww is the new width percentage (default is 25%)
+oo is the new offset from bottom (default is 5%)
+
+---------------
+
+Backgrounds are 1200x650 (png), try to keep about 30% ground at the bottom with no obstructions.
+
+---------------
+
+Build with fixed test (18 in this case):
+
+( cd ../bibo/bibo ; g++ -g -std=c++14 bibo.cpp -obibo -DGFX_TEST=18 ; cd ../../ponyimages )
+

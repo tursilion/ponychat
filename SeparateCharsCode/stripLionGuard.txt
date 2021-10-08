@@ -1,0 +1,242 @@
+// dummy.cpp : Defines the entry point for the console application.
+//
+
+#include <iostream>
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <atomic>
+#include <iostream>
+#include <atlstr.h>
+
+void emitlines(FILE *fout, char *p) {
+    static int line = 0;
+
+    // now we have one character turn
+    if (strlen(p) > 3) {
+        // process into separate lines
+        while (*p) {
+            char out[8192];
+            while ((*p)&&(*p <= ' ')) ++p;
+            memset(out, 0, sizeof(out));
+            char *pout = out;
+            // if it /starts/ with an elipsis, keep that
+            if ((*p=='.')&&(*(p+1)=='.')&&(*(p+2)=='.')) {
+                strcpy(out,"...");
+                pout+=3;
+                p+=3;
+            }
+            // find the end of the current sentence
+            char *pend = strpbrk(p, "].!?");
+            if (NULL == pend) {
+                pend=strchr(p, '\0');
+            } else if (*(pend+1)==')') ++pend;
+            memcpy(pout, p, pend-p+1);
+            if (*pend == '.') {
+                // check for elipsis
+                while (*(++pend) == '.') strcat(out, ".");
+                --pend;
+            }
+            if (*pend != '\0') ++pend;
+            // make sure there's no line ending in there still...
+            char *x = strchr(out, '\0');
+            --x;
+            while (*x <= ' ') --x;
+            ++x; 
+            *x = '\0';
+            // and strip out quotes, they interfere more often than not
+            for (;;) {
+                x = strchr(out, '\"');
+                if (NULL == x) break;
+                memmove(x, x+1, strlen(x));
+            }
+            // and double spaces
+            for (;;) {
+                x = strstr(out, "  ");
+                if (NULL == x) break;
+                memmove(x, x+1, strlen(x));
+            }
+            if (strlen(out) > 3) {
+                fprintf(fout, "%s\n", out);
+            }
+            // insert space before --
+            p = out;
+            for (;;) {
+                x = (char*)strstr(p, "--");
+                if (NULL == x) break;
+                if ((x>out)&&(*(x-1)!= ' ')) {
+                    memmove(x+1, x, strlen(x)+1);
+                    *x = ' ';
+                }
+                p=x+3;
+            }
+            p=pend;
+        }
+        ++line;
+        if (line%100 == 0) printf("\r%d...", line);
+    }
+}
+
+void fixName(char *buf) {
+    // fix up case, and remove spaces
+    char *p = buf;
+    _strlwr(buf);
+    buf[0]=toupper(buf[0]);
+    while (*buf) {
+        if (*buf == ' ') {
+            // remove space and uppercase the letter
+            memmove(buf, buf+1, strlen(buf));
+            *buf = toupper(*buf);
+        } else if ((*buf < 0) || (!isalnum(*buf))) {
+            // just remove it
+            memmove(buf, buf+1, strlen(buf));
+        } else {
+            ++buf;
+        }
+    }
+}
+
+bool processString(char *buf) {
+    // inplace clean up formatting - remove italics and clean up links
+    char *p = buf;
+    while (*p) {
+    rawchar:
+        char *q = strstr(p, "&#");          // remove html characters
+        if (q) {
+            char *r = strchr(q, ';');
+            if (NULL == r) return false;    // parse error, discard line
+            memmove(q, r+1, strlen(r));
+            goto rawchar;
+        }
+        if (*p == '<') {                    // strip html tags
+            char *q=p+1;
+            while ((*q)&&(*q !='>')) ++q;
+            if (!(*q)) return false;        // parse error
+            memmove(p, q+1, strlen(q));
+            --p;                            // repeat char
+        }
+        // else we don't care
+        ++p;
+    }
+
+    // trim beginning (including pipe)
+    while ((*buf)&&(*buf <= ' ')) memcpy(buf, buf+1, strlen(buf));
+
+    // trim end
+    p=buf+strlen(buf)-1;
+    while ((p>buf)&&(*p <= ' ')) {
+        *(p--) = '\0';
+    }
+}
+
+void parseText(char *fn) {
+    // extra script text for bibo scripts
+    // right now: Lion Guard transcripts
+    // https://transcripts.fandom.com/wiki/The_Lion_Guard
+    FILE *fin = fopen(fn, "r");
+    if (NULL == fin) {
+        printf("can't open '%s'\n", fn);
+        return;
+    }
+    printf("***** Open %s\n", fn);
+
+    char buf[4096];
+
+    // within first 10 lines, find "The Lion Guard Transcripts"], else it's not a transcript file
+    bool ok = false;
+    for (int idx=0; idx<10; ++idx) {
+        if (NULL == fgets(buf, sizeof(buf), fin)) {
+            printf("EOF looking for tag\n");
+            return;
+        }
+        if (NULL != strstr(buf, "\"The Lion Guard Transcripts\"]")) {
+            ok = true;
+            break;
+        }
+    }
+    if (!ok) {
+        printf("Not a TLG transcript\n");
+        return;
+    }
+
+    // find start of transcript
+    while (!feof(fin)) {
+        // find start of transcript box
+        if (NULL == fgets(buf, sizeof(buf), fin)) {
+            printf("EOF looking for start\n");
+            return;
+        }
+        if (NULL != strstr(buf, "class=\"mw-parser-output\">")) break;
+    }
+
+    // now process - buf may already contain a valid line
+search:
+    while (NULL == strstr(buf, "<p>")) {
+        if (NULL == fgets(buf, sizeof(buf), fin)) {
+            printf("EOF looking for new speaker\n");
+            return;
+        }
+        if (0 == strncmp(buf, "<!--", 2)) {
+            printf("End of data\n");
+            return;
+        }
+    }
+    char *p = strstr(buf, "<p>") + 3;
+    if ((*p < 'A') || (*p > 'Z')) goto search;  // must be uppercase letter
+    if (NULL == strchr(p, ':')) goto search;    // must end with a colon
+
+    char name[1024];
+    if (!processString(buf)) goto search;
+    p = strchr(buf, ':');           // find colon, should exist!
+    if (NULL == p) goto search;     // parse error
+    *p = 0;
+    strcpy(name, buf);              // copy name
+    ++p;                            // find end of whitespace
+    while ((*p)&&(*p <= ' ')) ++p;
+    memmove(buf, p, strlen(p)+1);   // delete name
+
+    // Don't bother to capture groups or arbitrary or empty!
+    if (name[0] == '\0') goto search;
+    if (NULL != strstr(name, " AND ")) goto search;
+    if (NULL != strstr(name, "&")) goto search;
+    if (NULL != strstr(name, " IN ")) goto search;
+    if (NULL != strstr(name, " EXCEPT ")) goto search;
+    if (NULL != strstr(name, "UNNAMED ")) goto search;
+    if (NULL != strstr(name, " GUARD")) goto search;
+    if (0 == strcmp(name, "ALL")) goto search;
+
+    // now process the text in the line
+    if (strlen(buf) > 6) {
+        char outname[1024];
+        fixName(name);
+        sprintf(outname, "out\\%s.txt", name);
+        FILE *out = fopen(outname, "a");
+        if (NULL != out) {
+            emitlines(out, buf);
+            fclose(out);
+        } else {
+            printf("Failed to open '%s\n", name);
+            return;
+        }
+    }
+}
+
+
+int main(int argc, char *argv[])
+{
+    WIN32_FIND_DATA data;
+    HANDLE hFind = FindFirstFile("*.html", &data);
+    if (INVALID_HANDLE_VALUE != hFind) {
+        printf("Couldn't find any html!\n");
+        return -1;
+    }
+    while (INVALID_HANDLE_VALUE != hFind) {
+        parseText(data.cFileName);
+        if (!FindNextFile(hFind, &data)) break;
+    }
+
+    return 0;
+}
+

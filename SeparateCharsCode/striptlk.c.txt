@@ -1,0 +1,170 @@
+    {
+        // split the TLK transcript up. Look for names by a line up to the first colon (max of 1 space)
+        // Indented lines attach to the previous one. Blank lines end it.
+
+        // start with: ***** 4.00 .2 - The Quarto
+        // end with: ***** 4.00 .3 - The Credits
+        FILE *fp = fopen(R"(D:\Documents\Text\STORIES\LionKing\TLK.TXT)", "r");
+        int line = 0;
+        // first, find the beginning
+        while (!feof(fp)) {
+            char buf[8192];
+            // read the line
+            if (NULL == fgets(buf, sizeof(buf), fp)) {
+                printf("Failed to find start\n");
+                exit(0);
+            }
+            if (0 == memcmp(buf, "***** 4.00 .2 - The Quarto", strlen("***** 4.00 .2 - The Quarto"))) break;
+        }
+        printf("Found beginning...\n");
+
+loop:
+        char name[64];
+        char fn[256];
+        FILE *fout;
+        std::string xstr;
+        // find start of character text
+        while (!feof(fp)) {
+            char buf[8192];
+            xstr="";
+            name[0]='\0';
+            // read the line
+            if (NULL == fgets(buf, sizeof(buf), fp)) break;
+            // check for the end
+            if (0 == memcmp(buf, "***** 4.00 .3 - The Credits", strlen("***** 4.00 .3 - The Credits"))) break;
+            // find the character name
+            char *p = strchr(buf, ':');
+            if (NULL == p) continue;
+            if (p-buf > 63) continue; // (too long)
+            // pull out the name
+            memset(name, 0, sizeof(name));
+            memcpy(name, buf, p-buf);
+            // skip background text, starts with '[' (also some contain it)
+            if (name[0] == ' ') continue;
+            if (strchr(name, '[')) continue;
+            if (strchr(name, '(')) continue;
+            // skip groups, contain commas or 'and'
+            p = strchr(name, ',');
+            if (NULL != p) continue;
+            p = strstr(name, " and ");
+            if (NULL != p) continue;
+            // and "allbuts"
+            if (0 == strncmp(name, "All ", 4)) continue;
+            // everyone...
+            if (0 == strncmp(name, "Everyone", 8)) continue;
+            if (0 == strncmp(name, "Everypony", 9)) continue;
+
+            // now remove spaces or quotes or periods
+            for (;;) {
+                p = strpbrk(name, " \".'");
+                if (NULL != p) {
+                    memmove(p, p+1, strlen(p));
+                    continue;
+                }
+                break;
+            }
+            // we'll hope for the best for consistent case - makes better display
+            sprintf(fn, R"(D:\Documents\Text\STORIES\LionKing\SeparateChars\%s.txt)", name);
+            fout = fopen(fn, "a");
+            // remove EOL
+            while (p = strrchr(buf, '\n')) *p='\0';
+            while (p = strrchr(buf, '\r')) *p='\0';
+            p = strchr(buf, ':');   // just find it again
+            ++p;
+            // start building a line
+            xstr=p;
+            break;
+        }
+        if (name[0]=='\0') {
+            // all done
+            fclose(fout);
+            fclose(fp);
+            goto done;
+        }
+
+        // process until the end of the input.
+        while (!feof(fp)) {
+            char buf[8192];
+            // read the line
+            if (NULL == fgets(buf, sizeof(buf), fp)) break;
+            char *p;
+            while (p = strrchr(buf, '\n')) *p='\0';
+            while (p = strrchr(buf, '\r')) *p='\0';
+            // check for the end
+            if (0 == memcmp(buf, "***** 4.00 .3 - The Credits", strlen("***** 4.00 .3 - The Credits"))) break;
+            if (0 == memcmp(buf, "    ", 4)) {
+                xstr += &buf[3];    // from 3 gives us a space
+            } else {
+                break;
+            }
+        }
+
+        // now we have one character phrase
+        if (xstr.length() > 3) {
+            const char *p = xstr.c_str();
+            // process into separate lines
+            while (*p) {
+                char out[8192];
+                while ((*p)&&(*p <= ' ')) ++p;
+                memset(out, 0, sizeof(out));
+                char *pout = out;
+                // if it /starts/ with an elipsis, keep that
+                if ((*p=='.')&&(*(p+1)=='.')&&(*(p+2)=='.')) {
+                    strcpy(out,"...");
+                    pout+=3;
+                    p+=3;
+                }
+                // find the end of the current sentence
+                const char *pend = strpbrk(p, "].!?");
+                if (NULL == pend) {
+                    pend=strchr(p, '\0');
+                } else if (*(pend+1)==')') ++pend;
+                memcpy(pout, p, pend-p+1);
+                if (*pend == '.') {
+                    // check for elipsis
+                    while (*(++pend) == '.') strcat(out, ".");
+                    --pend;
+                }
+                if (*pend != '\0') ++pend;
+                // make sure there's no line ending in there still...
+                char *x = strchr(out, '\0');
+                --x;
+                while (*x <= ' ') --x;
+                ++x; 
+                *x = '\0';
+                // and strip out quotes, they interfere more often than not
+                for (;;) {
+                    x = strchr(out, '\"');
+                    if (NULL == x) break;
+                    memmove(x, x+1, strlen(x));
+                }
+                // and double spaces
+                for (;;) {
+                    x = strstr(out, "  ");
+                    if (NULL == x) break;
+                    memmove(x, x+1, strlen(x));
+                }
+                if (strlen(out) > 3) {
+                    fprintf(fout, "%s\n", out);
+                }
+                // insert space before --
+                p = out;
+                for (;;) {
+                    x = (char*)strstr(p, "--");
+                    if (NULL == x) break;
+                    if ((x>out)&&(*(x-1)!= ' ')) {
+                        memmove(x+1, x, strlen(x)+1);
+                        *x = ' ';
+                    }
+                    p=x+3;
+                }
+                p=pend;
+            }
+            ++line;
+            if (line%100 == 0) printf("\r%d...", line);
+        }
+        fclose(fout);
+        goto loop;
+done:
+        printf("Finished %d lines\n", line);
+    }
