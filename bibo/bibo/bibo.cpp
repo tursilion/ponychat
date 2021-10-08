@@ -238,7 +238,7 @@ const char* strsearch(const char* a, int len, const char* b) {
             for (;;) {
                 if ((*p1 == 0) || (*p2 == 0)) break;
                 char out = *p1;
-                if (NULL != strchr("!?.[]", out)) out = ' '; // no comma, I want to search on them
+                if (NULL != strchr("!?.`[]", out)) out = ' '; // no comma, I want to search on them
                 if (out < ' ') out = ' ';
                 if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
                 break;
@@ -359,7 +359,7 @@ string findNoun(const string& str) {
   if (p == string::npos) {
     return outstr; // empty
   }
-  if (NULL == strchr(".,!? ", str[p+4])) {
+  if (NULL == strchr("`.,!? ", str[p+4])) {
     return outstr; // empty
   }
   // there MUST be a space before it
@@ -539,7 +539,7 @@ void makepic(const string &fn1, const string &fn2) {
 
 // pull the current word and return it, update pos
 string pullword(char* buf, int len, int& pos) {
-    while ((pos < len) && (NULL != strchr(" .", buf[pos]))) ++pos; // spaces and ...
+    while ((pos < len) && (NULL != strchr(" .`", buf[pos]))) ++pos; // spaces and ...
     if (pos >= len) {
         // end of file
         return string("");
@@ -731,21 +731,18 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
 
         // if we have punctuation (except comma or apostrophe), then we ended on an end word
         //if ((w[w.length() - 1] < 'A') && (w[w.length() - 1] != ',') && (w[w.length() - 1] != '\'')) break;
-        // instead, explicitly check for . (not ...), !, ?
+        // instead, explicitly check for . (not ..., which is now `), !, ?
         char c = '\0';
         if (w.length() > 1) c=w[w.length()-1];
-        if ((c == '.') && (w[w.length()-2] != '.')) break;
+        if (c == '.') break;
         if (c == '?') break;
         if (c == '!') break;
 
         // find a new instance of this same word
-        // by searching backwards, we reduce repetition in sentences that contain it
-        // more than once by finding the LAST instance first.
-        // fixes "She won't admit it, but she won't admit it, but she won't admit it, but she doesn't like it"
         if ((w.length()>0) && (NULL != strchr("!?`,.[", w[0]))) w=w.substr(1);
-        while ((w.length()>0) && (NULL != strchr("!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
+        while ((w.length()>0) && (NULL != strchr("`!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
         w = ' ' + w + ' ';
-
+        
         const char *p = findNewPos(buf, len, w);
         if (NULL == p) {
             output += "then I lost my place! ";
@@ -784,7 +781,7 @@ finish:
         output[0] = toupper(output[0]);
 
         // if no punctuation at end, add one (space also at end)
-        if (NULL == strchr(".!?]", output[output.length() - 2])) {
+        if (NULL == strchr("`.!?]", output[output.length() - 2])) {
             output[output.length() - 1] = '.';
             output += ' ';
         }
@@ -1079,13 +1076,13 @@ size_t namefind(string &str, string &x, bool &nosplit) {
 
     // if no punctuation, it has to be a space or apostrophe after, otherwise we are part of another word
     // (apostrophe for possessive (name's thing))
-    if (NULL == strchr(" '!?.", str[p+x.length()])) {
+    if (NULL == strchr(" '!?.`", str[p+x.length()])) {
       if (debug) printf("<!-- reject: not followed by space or puncutation -->\n");
       return string::npos;
     }
 
     // start of line is okay if that's all there is (like 'Rainbow Dash!')
-    if ((p == 0)&&(strchr("!?.", str[p+x.length()]))) {
+    if ((p == 0)&&(strchr("!?.`", str[p+x.length()]))) {
         if (debug) printf("<!-- ACCEPT: name is entire line -->\n");
         return p;
     }
@@ -1095,7 +1092,7 @@ size_t namefind(string &str, string &x, bool &nosplit) {
     // but "Hold on, Simba!" is.
     if ((p > 1) && (str[p-1] == ' ') && (strchr("],", str[p-2]))) {
         // first part is okay
-        if (NULL != strchr("!?.", str[p+x.length()])) {
+        if (NULL != strchr("`!?.", str[p+x.length()])) {
             if (debug) printf("<!-- ACCEPT: name is entire phrase -->\n");
             return p;
         }
@@ -1394,6 +1391,28 @@ void fixbuf(char *buf, int &len) {
     while ((p = strstr(buf, "...")) != NULL) {
         *(p++) = '`';
         memmove(p, p+2, len-(p-buf-1));
+        len-=2;
+        --p;
+
+        // these are used pretty inconsistently, make sure there is no space before it,
+        // and IS a space after it
+        if (p>buf) {
+            while (*(p-1) == ' ') {
+                memmove(p-1, p, len-(p-buf)+1);
+                --len;
+                --p;
+            }
+        }
+        if (isalpha((*(p+1))&0x7f)) {
+            memmove(p+2, p+1, len-(p-buf+1));
+            *(p+1)=' ';
+            ++len;
+        }
+    }
+    // and in case of ... ..., clean up doubles
+    while ((p = strstr(buf, "``")) != NULL) {
+        memmove(p, p+1, len-(p-buf));
+        --len;
     }
 }
 
@@ -1437,19 +1456,20 @@ void runquote(int who, int count) {
     }
     ++len1;
     fseek(fp, 0, SEEK_SET);
-    buf1 = (char*)malloc(len1 + 3); // leading \n, trailing \n, nul
+    buf1 = (char*)malloc(len1 + (len1/3)); // leading \n, trailing \n, nul, plus room to grow
     if (NULL == buf1) {
         printf("<!-- no mem -->\n");
         fclose(fp);
         return;
     }
+    memset(buf1, 0, len1+(len1/3));
     buf1[0] = '\n';
     len1 = (int)fread(buf1 + 1, 1, len1, fp) + 1;
     fclose(fp);
     buf1[len1] = '\n';
     buf1[len1 + 1] = '\0';
     ++len1;
-    // special case for databases with a blank lines
+    // special case for databases with a blank lines and other fixups
     fixbuf(buf1, len1);
 
     // now start babbling
@@ -1523,12 +1543,13 @@ void runscene(int who1, int who2, int count, int count2) {
     }
     ++len1;
     fseek(fp, 0, SEEK_SET);
-    buf1 = (char*)malloc(len1 + 3); // leading \n, training \n, nul
+    buf1 = (char*)malloc(len1 + (len1/3)); // leading \n, training \n, nul
     if (NULL == buf1) {
         printf("<!-- no mem2 -->\n");
         fclose(fp);
         return;
     }
+    memset(buf1, 0, len1+(len1/3));
     buf1[0] = '\n';
     len1 = (int)fread(buf1 + 1, 1, len1, fp) + 1;
     fclose(fp);
@@ -1588,12 +1609,13 @@ void runscene(int who1, int who2, int count, int count2) {
     }
     ++len2;
     fseek(fp, 0, SEEK_SET);
-    buf2 = (char*)malloc(len2 + 3); // leading \n, trailing \n, nul
+    buf2 = (char*)malloc(len2 + (len2/3)); // leading \n, trailing \n, nul
     if (NULL == buf2) {
         printf("<!-- no mem3 -->\n");
         fclose(fp);
         return;
     }
+    memset(buf2, 0, len2+(len2/3));
     buf2[0] = '\n';
     len2 = (int)fread(buf2 + 1, 1, len2, fp) + 1;
     fclose(fp);
