@@ -55,6 +55,9 @@ std::vector<const char*> used; // used start addresses to avoid loops
 #define DEFAULTLINES 10
 #define DEFAULTWORDS 10
 
+// preload runs this many lines before outputting chat
+// to see if that helps educate the talkers
+#define CHATPRELOAD 30
 
 
 #ifdef _WIN32
@@ -887,6 +890,8 @@ void fixpronouns(string& s) {
     strreplace(s, " `me ", " me ");
 
     // special peephole optimizations...
+    strreplace(s, " what am ", " what are ");
+    strreplace(s, " What am ", " What are ");
     strreplace(s, " you want I ", " you want me ");
     strreplace(s, "here am ", "here are "); // not necessarily a replacement, but that's okay
     strreplace(s, " with I ", " with me "); // not necessarily a replacement, but that's okay
@@ -1637,6 +1642,7 @@ void runscene(int who1, int who2, int count, int count2) {
     if (lps < 1) {
         lps = rand() % 4 + 2;
     }
+    lps+=CHATPRELOAD;
     for (int lp = 0; lp < lps; ++lp) {
         int cnt;
         if (count2 > MAXWORDS) count2 = 0;
@@ -1647,10 +1653,10 @@ void runscene(int who1, int who2, int count, int count2) {
         }
         if (lp & 1) {
 #ifdef TALK_LEFTRIGHT
-            printf("<p class=\"talkpad\">&nbsp</p>");
+            if (lp>=CHATPRELOAD) printf("<p class=\"talkpad\">&nbsp</p>");
 #endif
-            printf("<p class=\"talk2\">\n");
-            printf("<b>%s: </b>", un2.c_str());
+            if (lp>=CHATPRELOAD) printf("<p class=\"talk2\">\n");
+            if (lp>=CHATPRELOAD) printf("<b>%s: </b>", un2.c_str());
             for (int idx = 0; idx < cnt; ++idx) {
                 string s = generateLine(buf2, len2, buf4, len4, globalnoun1);
                 if (s.empty()) {
@@ -1660,12 +1666,12 @@ void runscene(int who1, int who2, int count, int count2) {
                 }
                 // noun testing...
                 string noun = findNoun(s);
-                printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
+                if (lp>=CHATPRELOAD) printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
                 if (!noun.empty()) globalnoun2 = noun;
                 ////
                 replacedNamePos = -1;
                 nameSubstitution(s, un1, un2);
-                printf("%s ", s.c_str());
+                if (lp>=CHATPRELOAD) printf("%s ", s.c_str());
                 s += '\n';
                 // if there was a replaced name, change it to us in case they reply with it
                 if (replacedNamePos > -1) {
@@ -1682,11 +1688,11 @@ void runscene(int who1, int who2, int count, int count2) {
                 strcat(&buf3[len3], s.c_str());
                 len3 += (int)s.length();
             }
-            printf("</p><br>\n");
+            if (lp>=CHATPRELOAD) printf("</p><br>\n");
             //globalnoun1 = "";
         } else {
-            printf("<p class=\"talk1\">\n");
-            printf("<b>%s: </b>", un1.c_str());
+            if (lp>=CHATPRELOAD) printf("<p class=\"talk1\">\n");
+            if (lp>=CHATPRELOAD) printf("<b>%s: </b>", un1.c_str());
             for (int idx = 0; idx < cnt; ++idx) {
                 string s = generateLine(buf1, len1, buf3, len3, globalnoun2);
                 if (s.empty()) {
@@ -1696,12 +1702,12 @@ void runscene(int who1, int who2, int count, int count2) {
                 }
                 // noun testing
                 string noun = findNoun(s);
-                printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
+                if (lp>=CHATPRELOAD) printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
                 if (!noun.empty()) globalnoun1 = noun;
                 ////
                 replacedNamePos = -1;
                 nameSubstitution(s, un2, un1);
-                printf("%s ", s.c_str());
+                if (lp>=CHATPRELOAD) printf("%s ", s.c_str());
                 s += '\n';
                 // if there was a replaced name, change it to us in case they reply with it
                 if (replacedNamePos > -1) {
@@ -1718,7 +1724,7 @@ void runscene(int who1, int who2, int count, int count2) {
                 strcat(&buf4[len4], s.c_str());
                 len4 += (int)s.length();
             }
-            printf("</p><br>\n");
+            if (lp>=CHATPRELOAD) printf("</p><br>\n");
             //globalnoun2 = "";
         }
     }
