@@ -897,6 +897,7 @@ void fixpronouns(string& s) {
     strreplace(s, " with I ", " with me "); // not necessarily a replacement, but that's okay
     strreplace(s, " am me ", " I am "); // not necessarily a replacement, but that's okay
     strreplace(s, " me can ", " I can "); // not necessarily a replacement, but that's okay
+    strreplace(s, " you am ", " you are "); // not necessarily a replacement, but that's okay
 
     s = s.substr(1, s.length() - 2);
     s[0] = toupper(s[0]);
