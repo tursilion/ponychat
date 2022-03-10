@@ -241,7 +241,13 @@ const char* strsearch(const char* a, int len, const char* b) {
             for (;;) {
                 if ((*p1 == 0) || (*p2 == 0)) break;
                 char out = *p1;
+                if ((out=='.') && ( *(p1+1)=='.') && (*(p1+2)=='.')) {
+                  // special case for elipses
+                  out=' ';
+                  p1+=2;
+                }
                 if (NULL != strchr("!?.`[]", out)) out = ' '; // no comma, I want to search on them
+
                 if (out < ' ') out = ' ';
                 if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
                 break;
@@ -252,6 +258,33 @@ const char* strsearch(const char* a, int len, const char* b) {
         }
         ++a;
     }
+
+    // we failed? Try again without commas
+    while (a < buf+len-blen) {
+        const char* p1 = a;
+        const char* p2 = b;
+        {
+            for (;;) {
+                if ((*p1 == 0) || (*p2 == 0)) break;
+                char out = *p1;
+                if ((out=='.') && ( *(p1+1)=='.') && (*(p1+2)=='.')) {
+                  // special case for elipses
+                  out=' ';
+                  p1+=2;
+                }
+                if (NULL != strchr("!?.`[],", out)) out = ' '; // no comma, I want to search on them
+
+                if (out < ' ') out = ' ';
+                if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
+                break;
+            }
+            if (*p2 == '\0') {
+                return a;
+            }
+        }
+        ++a;
+    }
+
     return NULL;
 }
 // reverse version - needs the base to know where to stop
@@ -608,6 +641,7 @@ loopsearch:
     }
     // remove any hits we already had
     for (const char *x : used) {
+        if (list.size() < 2) break;
         bool repeat = true;
         while (repeat) {
             repeat = false;
@@ -703,14 +737,15 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
     }
 
     // pull 'x' words, ending if we reach end of line.
-    string w;
+    string w, lw, sw;
     for (;;) {
 #ifdef NEWCHAINS
-        int cnt = 1;
+        int cnt = rand() % 2 + 1;  // still SOME randomness
 #else
         int cnt = rand() % 5 + 1;
 #endif
         for (int idx = 0; idx < cnt; ++idx) {
+            lw = w;  // remember last word
             w = pullword(buf, len, pos);
             if (w.empty()) break;
             if ((w[w.length() - 1] == ']') && (w[0] != '[')) {
@@ -745,8 +780,25 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         if ((w.length()>0) && (NULL != strchr("!?`,.[", w[0]))) w=w.substr(1);
         while ((w.length()>0) && (NULL != strchr("`!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
         w = ' ' + w + ' ';
-        
+
+
+#if 0
+        // test last two words - problem may be punctuation...
+        // it kind of works, but it doesn't mix them up much, the databases are too small
+        if ((lw.length()>0) && (NULL != strchr("!?`,.[ ", lw[0]))) lw=lw.substr(1);
+        while ((lw.length()>0) && (NULL != strchr("`!?.] ", lw[lw.length()-1]))) lw=lw.substr(0,lw.length()-1); // keep comma at end
+        if (lw.length() > 0) {
+          sw = ' ' + lw + w;
+        } else {
+          sw = w;
+        }
+        const char *p = findNewPos(buf, len, sw);
+#else
+
         const char *p = findNewPos(buf, len, w);
+#endif
+
+
         if (NULL == p) {
             output += "then I lost my place! ";
             goto finish;
