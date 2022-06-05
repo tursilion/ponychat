@@ -635,10 +635,6 @@ loopsearch:
         }
     }
     printf("<!-- found %d matches for '%s' -->\n", list.size(), w.c_str());
-    if (list.empty()) {
-        // should not be possible
-        return NULL;
-    }
     // remove any hits we already had
     for (const char *x : used) {
         if (list.size() < 2) break;
@@ -738,11 +734,14 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
 
     // pull 'x' words, ending if we reach end of line.
     string w, lw, sw;
+#ifdef NEWCHAINS
+        int cnt = 3;	// 2 words (yes, two) for first pull, then one at a time
+#endif
     for (;;) {
 #ifdef NEWCHAINS
-        int cnt = rand() % 2 + 1;  // still SOME randomness
+        if (cnt > 1) --cnt;	// first pass, 2, after that 1
 #else
-        int cnt = rand() % 5 + 1;
+        int cnt = rand() % 5 + 1;  // random count to try and maintain a sentence
 #endif
         for (int idx = 0; idx < cnt; ++idx) {
             lw = w;  // remember last word
@@ -782,7 +781,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         w = ' ' + w + ' ';
 
 
-#if 0
+#if 1
         // test last two words - problem may be punctuation...
         // it kind of works, but it doesn't mix them up much, the databases are too small
         if ((lw.length()>0) && (NULL != strchr("!?`,.[ ", lw[0]))) lw=lw.substr(1);
@@ -1698,6 +1697,7 @@ void runscene(int who1, int who2, int count, int count2) {
     lps+=CHATPRELOAD;
     for (int lp = 0; lp < lps; ++lp) {
         int cnt;
+	if (lp == CHATPRELOAD) used.clear();  // disregard used lines, reader never saw that
         if (count2 > MAXWORDS) count2 = 0;
         if (count2 < 1) {
             cnt = rand() % 1 + 1;
