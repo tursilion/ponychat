@@ -30,6 +30,7 @@ using namespace std;
 // up to three buffers - char 1, char 2, reply 1, reply 2
 char* buf1, *buf2, *buf3, *buf4;
 int len1, len2, len3, len4;
+int loopRetry;              // to break infinite loops
 vector<string> nameList;    // always populated now
 int trueNameListSize=0;     // number of entries from disk, no honorable mentions
 vector<string> adjectives;  // adjective exceptions from the database
@@ -68,6 +69,10 @@ std::vector<const char*> used; // used start addresses to avoid loops
 #define IMGPATH "D:\\work\\ponychat\\images\\*.png"
 HANDLE hSrch;
 WIN32_FIND_DATA findDat;
+
+void fixline(string &line);
+void fixpronouns(string& s);
+void fixPeepholes(string &s);
 
 bool opendirect(string path, string /*ext*/) {
     hSrch = FindFirstFile(path.c_str(), &findDat);
@@ -246,7 +251,7 @@ const char* strsearch(const char* a, int len, const char* b) {
                   out=' ';
                   p1+=2;
                 }
-                if (NULL != strchr("!?.`[]", out)) out = ' '; // no comma, I want to search on them
+                if (NULL != strchr("!?.[]", out)) out = ' '; // no comma or backtick (...), I want to search on them
 
                 if (out < ' ') out = ' ';
                 if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
@@ -259,7 +264,10 @@ const char* strsearch(const char* a, int len, const char* b) {
         ++a;
     }
 
+#if 0
+    // I WANT COMMAS
     // we failed? Try again without commas
+    a = buf;
     while (a < buf+len-blen) {
         const char* p1 = a;
         const char* p2 = b;
@@ -272,7 +280,7 @@ const char* strsearch(const char* a, int len, const char* b) {
                   out=' ';
                   p1+=2;
                 }
-                if (NULL != strchr("!?.`[],", out)) out = ' '; // no comma, I want to search on them
+                if (NULL != strchr("!?.[],", out)) out = ' '; // no comma or backtick (...), I want to search on them
 
                 if (out < ' ') out = ' ';
                 if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
@@ -284,6 +292,7 @@ const char* strsearch(const char* a, int len, const char* b) {
         }
         ++a;
     }
+#endif
 
     return NULL;
 }
@@ -628,20 +637,26 @@ loopsearch:
     while (p) {
         p = strsearch(p, worklen, w.c_str());
         if (p) {
-            p+=w.length();
-            list.push_back(p); // save the post-incremented pointer
-            if (w.length() > 2) p-=2; // assume 2 spaces of padding for next search, it's okay if it's not padding
+            const char *end = p + w.length();
+            if (p == buf) {
+                --end;  // there's no leading space
+            } else {
+                if ((*(end-1) == '\n')||(*(end-1) == '\0')) {
+                    --end;    // end of line, no trailing space
+                }
+            }
+            list.push_back(end); // save the post-incremented pointer
+            ++p;    // just increment for next search, else repeated words loop forever if there is an odd count
             worklen = len-(p-buf);
         }
     }
     printf("<!-- found %d matches for '%s' -->\n", list.size(), w.c_str());
     // remove any hits we already had
     for (const char *x : used) {
-        if (list.size() < 2) break;
         bool repeat = true;
         while (repeat) {
             repeat = false;
-            // this has a small bug in that it shares the entry for all buffers, and should be per buffer
+            // todo: this has a small bug in that it shares the entry for all buffers, and should be per buffer
             for (auto it=list.begin(); it!=list.end(); ++it) {
               if (*it == x) {
                 list.erase(it);
@@ -651,8 +666,14 @@ loopsearch:
             }
         }
     }
-    // if we lost them all, delete the used list so we get SOMETHING
+    // if we used all the possible hits, count down the max retries.
+    // this lets us out of cases that repeat a set of words excessively,
+    // we can loop forever on those.
     if ((list.empty())&&(!used.empty())) {
+        if (--loopRetry < 1) {
+            printf("<!-- infinite loop break -->\n");
+            return NULL;
+        }
         used.clear();
         goto loopsearch;
     }
@@ -676,6 +697,9 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
     static char* buf = NULL;
     static int buflen = 0;
     int len;
+
+    // allow up to three spins
+    loopRetry = 3;
 
     if ((buf2 == NULL)||(len2==0)) {
         if (len1 > buflen) {
@@ -767,7 +791,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         if (w.empty()) break;
 
         // if we have punctuation (except comma or apostrophe), then we ended on an end word
-        //if ((w[w.length() - 1] < 'A') && (w[w.length() - 1] != ',') && (w[w.length() - 1] != '\'')) break;
+        //if ((w[w.length() - 1] < 'A') && (w[w.length() - 1] != ',') && (w[w.length() - 1] != '`') && (w[w.length() - 1] != '\'')) break;
         // instead, explicitly check for . (not ..., which is now `), !, ?
         char c = '\0';
         if (w.length() > 1) c=w[w.length()-1];
@@ -777,7 +801,7 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
 
         // find a new instance of this same word
         if ((w.length()>0) && (NULL != strchr("!?`,.[", w[0]))) w=w.substr(1);
-        while ((w.length()>0) && (NULL != strchr("`!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
+        while ((w.length()>0) && (NULL != strchr("!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
         w = ' ' + w + ' ';
 
 
@@ -785,9 +809,11 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         // test last two words - problem may be punctuation...
         // it kind of works, but it doesn't mix them up much, the databases are too small
         if ((lw.length()>0) && (NULL != strchr("!?`,.[ ", lw[0]))) lw=lw.substr(1);
-        while ((lw.length()>0) && (NULL != strchr("`!?.] ", lw[lw.length()-1]))) lw=lw.substr(0,lw.length()-1); // keep comma at end
+        while ((lw.length()>0) && (NULL != strchr("!?.] ", lw[lw.length()-1]))) lw=lw.substr(0,lw.length()-1); // keep comma at end
         if (lw.length() > 0) {
           sw = ' ' + lw + w;
+          fixPeepholes(sw);
+          fixline(sw);
         } else {
           sw = w;
         }
@@ -800,6 +826,13 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
 
         if (NULL == p) {
             output += "then I lost my place! ";
+#ifdef _DEBUG
+            // dump the database
+            FILE *fp=fopen("dummy.txt","w");
+            fprintf(fp, "Looking for '%s'\n", sw.c_str());
+            fwrite(buf, 1, len, fp);
+            fclose(fp);
+#endif
             goto finish;
         }
 
@@ -850,6 +883,7 @@ finish:
         i+=3;
     }
 
+    fixline(output);
     return output;
 }
 
@@ -898,6 +932,18 @@ void strreplaceyou(string& s, string src, string rep1, string rep2) {
     
 }
 
+void fixPeepholes(string& s) {
+    // special peephole optimizations...
+    strreplace(s, " what am ", " what are ");
+    strreplace(s, " What am ", " What are ");
+    strreplace(s, " you want I ", " you want me ");
+    strreplace(s, "here am ", "here are ");
+    strreplace(s, " with I ", " with me ");
+    strreplace(s, " am me ", " I am ");
+    strreplace(s, " me can ", " I can ");
+    strreplace(s, " you am ", " you are ");
+    strreplace(s, " you was ", " you were ");
+}
 
 // swap pronouns
 void fixpronouns(string& s) {
@@ -940,15 +986,7 @@ void fixpronouns(string& s) {
     strreplace(s, " `I ", " I ");
     strreplace(s, " `me ", " me ");
 
-    // special peephole optimizations...
-    strreplace(s, " what am ", " what are ");
-    strreplace(s, " What am ", " What are ");
-    strreplace(s, " you want I ", " you want me ");
-    strreplace(s, "here am ", "here are "); // not necessarily a replacement, but that's okay
-    strreplace(s, " with I ", " with me "); // not necessarily a replacement, but that's okay
-    strreplace(s, " am me ", " I am "); // not necessarily a replacement, but that's okay
-    strreplace(s, " me can ", " I can "); // not necessarily a replacement, but that's okay
-    strreplace(s, " you am ", " you are "); // not necessarily a replacement, but that's okay
+    fixPeepholes(s);
 
     s = s.substr(1, s.length() - 2);
     s[0] = toupper(s[0]);
@@ -1125,16 +1163,16 @@ size_t namefind(string &str, string &x, bool &nosplit) {
         return string::npos;
     }
 
-    // post-comma makes it okay (end of phrase)
-    if (NULL != strchr(",", str[p+x.length()])) {
-        if (debug) printf("<!-- ACCEPT: followed by comma -->\n");
+    // post-comma or ellipsis makes it okay (end of phrase)
+    if (NULL != strchr(",`", str[p+x.length()])) {
+        if (debug) printf("<!-- ACCEPT: followed by comma or ellipsis -->\n");
         return p;
     }
 
     // if no punctuation, it has to be a space or apostrophe after, otherwise we are part of another word
     // (apostrophe for possessive (name's thing))
-    if (NULL == strchr(" '!?.`", str[p+x.length()])) {
-      if (debug) printf("<!-- reject: not followed by space or puncutation -->\n");
+    if (NULL == strchr(" '!?.", str[p+x.length()])) {
+      if (debug) printf("<!-- reject: not followed by space or punctuation -->\n");
       return string::npos;
     }
 
@@ -1471,6 +1509,34 @@ void fixbuf(char *buf, int &len) {
         memmove(p, p+1, len-(p-buf));
         --len;
     }
+    
+    // we can't properly search on multiple sentences on one line when
+    // doing more than one word searching. So, if we read any lines
+    // like that we need to change them into run-on sentences (better
+    // than losing our place) and we can fix the databases as we go.
+    while ((p = strstr(buf, ". ")) != NULL) {
+        *p=',';
+        while ((*p)&&(*p < 'a')) ++p;
+        if ((*p >= 'A') && (*p <= 'Z')) p+=32;  // make lowercase ASCII
+    }
+    while ((p = strstr(buf, "! ")) != NULL) {
+        *p=',';
+        while ((*p)&&(*p < 'a')) ++p;
+        if ((*p >= 'A') && (*p <= 'Z')) p+=32;  // make lowercase ASCII
+    }
+    
+}
+
+// fix a single line before using it
+// right now looking for double spaces
+void fixline(string &line) {
+    size_t p = 1;
+    while (p != string::npos) {
+        p = line.find("  ");
+        if (p != string::npos) {
+            line.replace(p, 2, " ");
+        }
+    }
 }
 
 // quote <char number>
@@ -1732,6 +1798,7 @@ void runscene(int who1, int who2, int count, int count2) {
                 }
                 // add the string to the chat
                 fixpronouns(s);
+                fixline(s);
                 buf3 = (char*)realloc(buf3, len3 + 1 + s.length());
                 buf3[len3] = 0;
                 if (NULL == buf3) {
@@ -1768,6 +1835,7 @@ void runscene(int who1, int who2, int count, int count2) {
                 }
                 // add the string to the chat
                 fixpronouns(s);
+                fixline(s);
                 buf4 = (char*)realloc(buf4, len4 + 1 + s.length());
                 buf4[len4] = 0;
                 if (NULL == buf4) {
@@ -1803,6 +1871,8 @@ int main(int argc, char* argv[]) {
         printf("Command must be passed. then list, quote or scene.\n");
         return 99;
     }
+
+testloop:
 
     // get the names from the disk
     populateNameList();
@@ -1864,6 +1934,11 @@ int main(int argc, char* argv[]) {
     } else {
         printf("Did not recognize the command\n");
     }
+
+#ifdef _DEBUG
+    // for testing only
+    goto testloop;
+#endif
 
     return 0;
 }
