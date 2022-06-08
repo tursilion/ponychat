@@ -1,9 +1,13 @@
 Your Majesty
 Wolfman
 Winklebottom
+Warden Wrath
 Waddles
+Viney
+Vice Principal Luna
 Utamu
 Ushari
+Uncle Timon
 Uncle Scar
 Uncle Hank
 Twily
@@ -13,8 +17,11 @@ Trembley
 Topsy
 Toby Determined
 Toby
+Titan
+Timmy
 Time Baby
 Tiifu
+Tibbles
 Thompson
 Thatherton
 Teeth
@@ -30,14 +37,20 @@ Star Swirl
 Stanley
 Stanford Pines
 Stanford
+Sprout
 Spikey-Wikey
 Sonata Blaze
 Sonata
+Snowfall Frost
+Snowfall
+Smooze
 Sky
 Skeedaddle
 Shujaa
 Sheriff Blubs
+Sergei
 Scoot
+Roselle
 Roger
 Ripley
 Rare
@@ -49,19 +62,27 @@ Queen Rani
 Queen Janna
 Q
 Pumkpin Cake
+Pua
 Princess Twilight
+Prim
 Pound Cake
 Pops
 Pony Tones
 Pink Pony
 Pine Tree
+Phyllis
 Philomena
+Philip
 Peewee
 Pear Butter
+Owl Lady
+Owlbert
 Octavio
 Nyuni
 Norman
 Nirmala
+Nevareth
+Nancy
 Mwenzi
 Mtoto
 Ms Powerful
@@ -75,6 +96,7 @@ Mr Kahn
 Mr Holloway
 Mr Big
 Mother
+Morton
 Mom
 Miss Rarity
 Minh
@@ -84,14 +106,17 @@ Mermando
 Mbuni
 Mbeya
 Ma Tembo
+Mattholomule
 Marius
 Manimal
 Makuu
 Makucha
 Ma Hooffield
 Madoa
+Luzura
+Lulu
 Lofty
-little Spike
+Little Spike
 Little B
 Lily
 Lickety Split
@@ -101,30 +126,40 @@ Laini
 Ladybird
 Kinyonga
 King Grover
+Kikimora
+Kiki
 Kifaru
 Kiburi
 Kahn Jr
 Junebug
 Joseph
+Jorge
+Jo Rita
 John Redcorn
 Jimmy Witchard
 Jimmy
 Jamal
 Impossibly Rich
+Hyraxie
+Hum Drum
 Holloway
 Harrington
 Hank's wife
+Half-a-Witch
 Hadithi
+Gus
 Gummy
 Grunkle Stan
 Greta
 Greggy C
 Grandfather
 Good Hank
+Golden Guard
 Glurk
 Ghost-Eyes
 GH
 General Seaspray
+General
 Gar-Gar
 Gaea Everfree
 Gabe
@@ -137,6 +172,9 @@ Featherweight
 Fatty
 Father
 Enrique
+Emira
+Edric
+Eda
 Ed
 Dundee
 Dooley
@@ -151,6 +189,8 @@ Daddy
 Dad
 Crash
 Counselor Starlight
+Commander Ironhead
+Collector
 Coco Pommel
 Chungu
 Chuluun
@@ -158,11 +198,14 @@ Chubby Z
 Castle
 Carl
 Captain Wuzz
+Caleb
 Bupu
 Buckley's Angel
 Buckley
+Braxas
 Boy Scout
 Bon Bon
+Bon
 Bloomberg
 Binga
 Big MacIntosh
@@ -174,50 +217,10 @@ Aunt Peggy
 Aunt Bee
 Ann
 Andy
+Alphabittle
 Ajabu
 AJ
-8 Ball
-Alphabittle
-Sprout
-Phyllis
-Jorge
-Smooze
 Adegast
-Edric
-Emira
-Kikimora
-Mattholomule
-Roselle
-Tibbles
-Viney
-Warden Wrath
-Eda
-Kiki
-Owl Lady
-Nevareth
-Gus
-Half-a-Witch
-Braxas
-Owlbert
-Morton
-Titan
-Jo Rita
-Pua
-Bon
-Timmy
-General
-Hum Drum
-Sergei
-Commander Ironhead
-Vice Principal Luna
-Snowfall Frost
-Snowfall
-Uncle Timon
-Lulu
-Caleb
-Golden Guard
-Luzura
-Philip
-Collector
-Nancy
-Prim
+8 Ball
+
+
