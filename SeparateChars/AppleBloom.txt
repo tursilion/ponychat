@@ -59,7 +59,6 @@ Oops, apples.
 Delicious and nutritious, and so many uses!
 You can eat 'em.
 Play with 'em.
-[grunt]
 Create fine art for your home with 'em.
 You have to be crazy not to get a bushel of your very own.
 You, sir, care t' buy some apples?
@@ -146,7 +145,6 @@ How could I have forgotten Pinkie Pie was hosting the party?
 How could I have forgotten it was at Sugarcube Corner?
 I have to get out of here before anypony sees me.
 Okay, Apple Bloom, almost there.
-[grunt]
 Just sumt'n I, uh, pulled together last minute.
 Uh, I have a cutie mark.
 Since, Um, Earlier today.
@@ -1058,7 +1056,6 @@ Who put pillows on this rake?
 [growls]
 Hey, Applejack!
 Watch me buck these apples on my own without anythin' bad happenin' to me!
-[grunts]
 Huh?
 [growls]
 Oh, for the love of, You've gone and baby-proofed everythin'!

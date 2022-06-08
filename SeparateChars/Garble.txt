@@ -61,7 +61,6 @@ Let's fly!
 Alright, Spike.
 Since you're our rookie dragon, you get to lure the parents away from the nest.
 Well go on, then!
-[hushed]
 We haven't got all day, Spike!
 What the...
 We take the hatchlings, of course!
@@ -106,17 +105,13 @@ You can't even fly!
 Good luck!
 Just kidding.
 I hope you lose.
-[scream]
-[grunts]
 Don't leave me here, Spike!
 Ha-ha!
 Knew you'd do it.
 Your pony friends made you soft.
 For what?
 I didn't say thank you.
-[sniffs]
 Wow, you even smell like ponies.
-[sniffs]
 Or is it coming from over there?
 Huh, I like your style.
 Have I met you before?
@@ -135,7 +130,6 @@ What the?
 [growls]
 Argh!
 Whoa!
-[frustrated grunt]
 I'm sick and tired of you two helping each other!
 Dragons don't do helping!
 What?
@@ -163,11 +157,9 @@ It sure looks like mine.
 But I might consider racing you for it.
 Um, I mean you.
 [blows raspberry]
-[grunts]
 Lord Ember only commanded us to be nice to ponies.
 She never said anything about pony-loving dragons.
 I guess we'll find out!
-[grunts]
 Aaah!
 Ugh.
 Why is he always hiding behind ponies?
@@ -221,7 +213,6 @@ Cannonball!
 Woo-hoo!
 [laughs]
 Oops?
-[insincere]
 My bad.
 Feelin' better already.
 [groans]

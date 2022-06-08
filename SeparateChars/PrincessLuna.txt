@@ -208,7 +208,6 @@ It has jumped into another dream!
 I am sorry, but if I am to stop it, I must follow it where you cannot.
 I followed the Tantabus here.
 Now I need only find?
-[grunts]
 I can see the Tantabus has already turned your slumbers into a nightmare!
 I am so sorry, my friends.
 I failed.
@@ -237,7 +236,6 @@ No, it is already here!
 I am so sorry!
 I brought this upon you!
 But I will end it now!
-[grunts]
 It, is taking all my strength just to hold this massive dream together!
 You will have to stop it!
 I truly wish I did not have to ask this of you!

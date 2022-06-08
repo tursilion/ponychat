@@ -220,7 +220,6 @@ Eeyup.
 Eeyup.
 Eeyup.
 Nnnope.
-[grunts]
 Nnnope.
 Eeyup!
 Nnope.
@@ -255,7 +254,6 @@ Eeyup!
 Yup!
 Yup!
 Oh, yeah!
-[grunts]
 Eeyup.
 Eeyup.
 Yup.

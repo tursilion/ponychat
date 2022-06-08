@@ -5,9 +5,6 @@
 [pants]
 [squeak]
 [sigh]
-[thumps on ground]
-[blows whistle]
-[blows whistle]
 [screams]
 [Wilhelm scream]
 [chitters dizzily]
@@ -20,9 +17,7 @@
 [blows raspberry]
 [giggles]
 [whimpers]
-[grunts]
 [growls]
-[thumping on table]
 [growls mischievously]
 [blows raspberry]
 [growls]
@@ -35,7 +30,6 @@
 [chitters]
 [chitters]
 [growls]
-[gulps, burps]
 whooooaaaa!
 Whoa-whoa-whoa-whoa, hang on, hold up!
 Am I a pony?
