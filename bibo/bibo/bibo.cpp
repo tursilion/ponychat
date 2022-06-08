@@ -60,6 +60,9 @@ std::vector<const char*> used; // used start addresses to avoid loops
 // to see if that helps educate the talkers
 #define CHATPRELOAD 30
 
+void fixline(string &line);
+void fixpronouns(string& s);
+void fixPeepholes(string &s);
 
 #ifdef _WIN32
 #include <windows.h>
@@ -69,10 +72,6 @@ std::vector<const char*> used; // used start addresses to avoid loops
 #define IMGPATH "D:\\work\\ponychat\\images\\*.png"
 HANDLE hSrch;
 WIN32_FIND_DATA findDat;
-
-void fixline(string &line);
-void fixpronouns(string& s);
-void fixPeepholes(string &s);
 
 bool opendirect(string path, string /*ext*/) {
     hSrch = FindFirstFile(path.c_str(), &findDat);
