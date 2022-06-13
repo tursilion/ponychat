@@ -387,7 +387,7 @@ string findNoun(const string& str) {
         }
         // build up the output word
         p += x.length();
-        size_t p2 = str.find_first_of(" `,.?!", p);
+        size_t p2 = str.find_first_of(" `,.?!]", p);
         if (p2 == string::npos) {
           // no end of string?
           outstr = str.substr(p);
@@ -603,7 +603,7 @@ string pullword(char* buf, int len, int& pos) {
 // return a pointer inside buf to /the end/ of to an instance of 'w'
 // as far as we know, this string must exist at least once!
 // NULL return is an unexpected failure and caller should quit
-const char *findNewPos(const char *buf, int len, std::string &w) {
+const char *findNewPos(const char *buf, int len, std::string &w, bool failOkay) {
 #ifndef NEWCHAINS
     // old version works - but introduces bias when the words are
     // not evenly distributed. But it's fast!
@@ -669,6 +669,9 @@ loopsearch:
     // this lets us out of cases that repeat a set of words excessively,
     // we can loop forever on those.
     if ((list.empty())&&(!used.empty())) {
+        if (failOkay) {
+            return NULL;
+        }
         if (--loopRetry < 1) {
             printf("<!-- infinite loop break -->\n");
             return NULL;
@@ -732,19 +735,24 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
     int pos = rand() % len1;  // force the new string to start in the char's voice
     if (noun.length() > 0) {
         // try to find a noun match in buf1 only
-        int x = findnocase(buf,noun,pos);
-        if ((x > -1)&&(x < len1)) {
-            if (x > 0) {
-                // seek to start of line
-                while (--x > 0) {
-                  if (buf1[x] == '\n') { ++x; break; }
-                }
-            }
-            // save it off and clear the noun
-            printf("<!-- Found match for subject '%s' -->\n", noun.c_str());
-            noun = "";
-            pos = x;
+        // using findNewPos lets us take advantage of the random hits and used list
+        const char *pNoun = findNewPos(buf1, len1, noun, true);
+        if (NULL != pNoun) {
+          int x = pNoun-buf1;
+          if ((x > -1)&&(x < len1)) {
+              if (x > 0) {
+                  // seek to start of line
+                  while (--x > 0) {
+                    if (buf1[x] == '\n') { ++x; break; }
+                  }
+              }
+              // save it off and clear the noun
+              printf("<!-- Found match for subject '%s' -->\n", noun.c_str());
+              noun = "";
+              pos = x;
+           }
         }
+
     }
     if ((pos > 0)&&(buf[pos-1] != '\n')) {
         // seek to the beginning of next line
@@ -816,10 +824,10 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         } else {
           sw = w;
         }
-        const char *p = findNewPos(buf, len, sw);
+        const char *p = findNewPos(buf, len, sw, false);
 #else
 
-        const char *p = findNewPos(buf, len, w);
+        const char *p = findNewPos(buf, len, w, false);
 #endif
 
 
@@ -1547,7 +1555,7 @@ void runquote(int who, int count) {
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
     }
-    printf("\n<html><body>\n");
+    printf("\n<html><head><title=\"Random toon scene\"></head><body>\n");
     addstyle();
 
     while (--w > 0) {
@@ -1610,9 +1618,7 @@ void runquote(int who, int count) {
 
     // and finally, generate the bottom image
     makepic(fn, "");
-
     printf("\n</body></html>\n");
-
 }
 
 // scene <char1> <char2>
@@ -1747,7 +1753,7 @@ void runscene(int who1, int who2, int count, int count2) {
     // special case for databases with a blank lines
     fixbuf(buf2, len2);
 
-    printf("\n<html><body>\n");
+    printf("\n<html><head><title=\"Random toon scene\"></head><body>\n");
     addstyle();
 
     // now start babbling
