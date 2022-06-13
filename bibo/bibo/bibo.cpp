@@ -1555,7 +1555,7 @@ void runquote(int who, int count) {
     if (!opendirect(SRCPATH, ".txt")) {
         printf("No dir\n");
     }
-    printf("\n<html><body>\n");
+    printf("\n<html><head><title=\"Random toon scene\"></head><body>\n");
     addstyle();
 
     while (--w > 0) {
@@ -1618,9 +1618,7 @@ void runquote(int who, int count) {
 
     // and finally, generate the bottom image
     makepic(fn, "");
-
     printf("\n</body></html>\n");
-
 }
 
 // scene <char1> <char2>
@@ -1755,7 +1753,7 @@ void runscene(int who1, int who2, int count, int count2) {
     // special case for databases with a blank lines
     fixbuf(buf2, len2);
 
-    printf("\n<html><body>\n");
+    printf("\n<html><head><title=\"Random toon scene\"></head><body>\n");
     addstyle();
 
     // now start babbling
