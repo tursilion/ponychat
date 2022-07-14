@@ -1120,6 +1120,21 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
     str = first + on + str.substr(p+tstname.length());
     printf("<!-- replace '%s' with '%s' -->\n", tstname.c_str(), on.c_str());
 
+    // see if there are other instances we can copy... we can check explicitly
+    size_t newtst=p;
+    for(;;) {
+      newtst = str.find(tstname,newtst);
+      if (string::npos != newtst) {
+        first="";
+        if ((newtst > 0)&&(newtst+tstname.length() < str.length())) {
+            first = str.substr(0,newtst);
+        }
+        str = first + on + str.substr(newtst+tstname.length());
+        continue;
+      }
+      break;
+    }
+
     replacedName = on;
     replacedNamePos = p;
 
