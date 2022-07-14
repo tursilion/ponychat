@@ -37,6 +37,8 @@ vector<string> adjectives;  // adjective exceptions from the database
 int replacedNamePos;        // global for the replaced name position
 std::string replacedName;   // global for the replaced name
 std::vector<const char*> used; // used start addresses to avoid loops
+std::string primerText;     // extracted from the background filename to give some context
+std::string bgname;         // selected background image
 
 // enable this to make the text go left/right instead of all stacked on the left
 // it was hard to make that work right so I want to save the code ;)
@@ -457,10 +459,10 @@ void getsizes(const string &name1, int &width, int &voff) {
     }
 }
 
-// generate the bottom picture...
-void makepic(const string &fn1, const string &fn2) {
+// select a background so we can extract the hint prep text from it
+// stored in the global bgname and primerText
+void choosebg() {
     int numpics = 0;
-    string bgname, name1, name2;
     // work out how many pics there are...
     if (!opendirect(IMGPATH, ".png")) return;
     for (;;) {
@@ -473,7 +475,6 @@ void makepic(const string &fn1, const string &fn2) {
 
     // now do it for real
     if (!opendirect(IMGPATH, ".png")) return;
-    printf("<div class=\"parent\">\n");
 
     int img = rand() % numpics + 1;
 #ifdef GFX_TEST
@@ -481,20 +482,43 @@ void makepic(const string &fn1, const string &fn2) {
 #endif
     char buf[1024];
     sprintf(buf, "bg%d_by_", img);
-    printf("<!-- %s -->\n", buf);
+    printf("<!-- %s* -->\n", buf);
+    primerText.clear();
+    bgname.clear();
 
     for (;;) {
         if (getfilename().substr(0, strlen(buf)) == buf) {
             // got it!
             bgname = getfilename();
-            printf("<img style=\"border: 1px solid black;\" width=\"100%%\" src=\"/ponyimages/%s\">\n", bgname.c_str());
+            // find the primer text, if any
+            size_t x = bgname.find('~');
+            if (std::string::npos != x) {
+                primerText = bgname.substr(x+1);
+                x = primerText.find('.');
+                if (std::string::npos != x) {
+                    primerText = primerText.substr(0, x+1);
+                }
+                printf("<!-- Primer: '%s' -->\n", primerText.c_str());
+                primerText += '\n';
+            }
             break;
         }
         if (!nextdir()) break;
     }
     klosedir();
+}
 
+// generate the bottom picture... assumes choosebg was already called
+void makepic(const string &fn1, const string &fn2) {
     string clss;
+    string name1, name2;
+    char buf[1024];
+
+    printf("<div class=\"parent\">\n");
+    if (!bgname.empty()) {
+        printf("<img style=\"border: 1px solid black;\" width=\"100%%\" src=\"/ponyimages/%s\">\n", bgname.c_str());
+    }
+
     int offsetSize;  // used to calculate centering
     if (fn2.empty()) {
         clss = "over-img3";
@@ -1617,6 +1641,22 @@ void runquote(int who, int count) {
     // special case for databases with a blank lines and other fixups
     fixbuf(buf1, len1);
 
+    // select the background in order to get the prep text
+    choosebg();
+
+    // insert the primerText if any
+    if (!primerText.empty()) {
+        fixline(primerText);
+        buf1 = (char*)realloc(buf1, len1 + 1 + primerText.length());
+        buf3[len1] = 0;
+        if (NULL == buf1) {
+            printf("realloc failed\n");
+            return;
+        }
+        strcat(&buf1[len1], primerText.c_str());
+        len1 += (int)primerText.length();
+    }
+
     // now start babbling
     int cnt = count;
     if (count > MAXLINES) count = 0;
@@ -1771,9 +1811,36 @@ void runscene(int who1, int who2, int count, int count2) {
     printf("\n<html><head><title=\"Random toon scene\"></head><body>\n");
     addstyle();
 
+    // select the background in order to get the prep text
+    choosebg();
+
     // now start babbling
     len3 = 0;
     len4 = 0;
+
+    // insert the primerText if any
+    if (!primerText.empty()) {
+        fixline(primerText);
+        buf3 = (char*)realloc(buf3, len3 + 1 + primerText.length());
+        buf3[len3] = 0;
+        if (NULL == buf3) {
+            printf("realloc failed\n");
+            return;
+        }
+        strcat(&buf3[len3], primerText.c_str());
+        len3 += (int)primerText.length();
+
+        buf4 = (char*)realloc(buf4, len4 + 1 + primerText.length());
+        buf4[len4] = 0;
+        if (NULL == buf4) {
+            printf("realloc failed\n");
+            return;
+        }
+        strcat(&buf4[len4], primerText.c_str());
+        len4 += (int)primerText.length();
+    }
+
+    // go to work
     string globalnoun1,globalnoun2;
     int lps = count;
     if (lps > MAXLINES) lps = 0;
@@ -1806,7 +1873,11 @@ void runscene(int who1, int who2, int count, int count2) {
                 // noun testing...
                 string noun = findNoun(s);
                 if (lp>=CHATPRELOAD) printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
-                if (!noun.empty()) globalnoun2 = noun;
+                if (!noun.empty()) {
+                    globalnoun2 = ' ';
+                    globalnoun2 += noun;
+                    globalnoun2 += ' ';
+                }
                 ////
                 replacedNamePos = -1;
                 nameSubstitution(s, un1, un2);
@@ -1843,7 +1914,11 @@ void runscene(int who1, int who2, int count, int count2) {
                 // noun testing
                 string noun = findNoun(s);
                 if (lp>=CHATPRELOAD) printf("<!-- New subject guess: '%s' -->\n", noun.c_str());
-                if (!noun.empty()) globalnoun1 = noun;
+                if (!noun.empty()) {
+                    globalnoun1 = ' ';
+                    globalnoun1 += noun;
+                    globalnoun1 += ' ';
+                }
                 ////
                 replacedNamePos = -1;
                 nameSubstitution(s, un2, un1);

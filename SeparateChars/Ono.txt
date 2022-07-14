@@ -77,7 +77,7 @@ They're facing off against Basi!
 Okay, Kion!
 The oryxes are all untangled now.
 Uh, I don't think there's time to eat.
-The hyenas, crocs and jackals are back in the Pride Lands!
+The hyenas, crocs and jackals are back in the Pridelands!
 They're still coming, Kion!
 Looks like they're after some antelope!
 You'll see them once we get through these trees!
@@ -437,7 +437,7 @@ They're coming from up there.
 Affirmative.
 False alarm everyone!
 No hyenas here!
-I saw Janja and his hyenas sneaking into the Pride Lands yesterday.
+I saw Janja and his hyenas sneaking into the Pridelands yesterday.
 Affirmative!
 The sky's probably the safest place to be.
 Told you the sky was the safest place to be.
@@ -537,7 +537,7 @@ Here they come!
 No sign of Janja.
 Maybe we should let them stay.
 After all, hyenas are scavengers.
-By cleaning up after everyone, they'd actually be helping the Circle of Life in the Pride Lands.
+By cleaning up after everyone, they'd actually be helping the Circle of Life in the Pridelands.
 Affirmative.
 [gasps] 
 Hapana!
@@ -561,7 +561,7 @@ The Tree of Life has so much to see.
 She's the leader of some very bad lions and hyenas.
 Affirmative.
 Indeed.
-The first landmark back to the Pride Lands is a giant lake.
+The first landmark back to the Pridelands is a giant lake.
 Indeed it's prefectlysafe.
 So, Kion.
 how will you get acrosss?
@@ -607,7 +607,7 @@ Hapana!
 Kion!
 Your Majesty!
 The crocodiles are everywhere!
-They've moved in to watering holes all over the Pride Lands!
+They've moved in to watering holes all over the Pridelands!
 Maybe my mistake wasn't such a disaster after all
 Here they come.
 Ugh!
@@ -720,7 +720,7 @@ It's gotta be Flat Ridge Rock!
 Well, this rock
 He's over here!
 Huh, Hapana.
-Looks like Janja and his clan are heading back into the Pride Lands!
+Looks like Janja and his clan are heading back into the Pridelands!
 Oh, no!
 Affirmative.
 What?
@@ -787,7 +787,7 @@ After all this time?
 Hadithi!
 Hadithi?
 The legendary eagle?
-Every bird in the Pride Lands has heard of him!
+Every bird in the Pridelands has heard of him!
 But you don't have to be a bird to have heard of Hadithi.
 Creator of the Hadithi Spin?
 Three mid-air loops and a corkscrew?
@@ -1019,7 +1019,7 @@ Kulinda, wait!
 We need to work together!
 Listen, I have an idea.
 Nice catch.
-For the last time, hawk, you need leave to the Pride Lands!
+For the last time, hawk, you need leave to the Pridelands!
 Now!
 Well good.
 Hey, She likes it!
@@ -1191,7 +1191,7 @@ Here we are.
 Zebra grazing ground.
 You're all back home.
 My pleasure.
-Keeping everyone in the Pride Lands safe is the Lion Guard's duty.
+Keeping everyone in the Pridelands safe is the Lion Guard's duty.
 [gasps] 
 Hyenas?
 Hapana!
@@ -1481,7 +1481,7 @@ Sharp rocks coming up!
 I mean, you're coming down on sharp rocks!
 Beshte!
 Incoming!
-Oh, good thing we had the Pride Lands strongest with us.
+Oh, good thing we had the Pridelands strongest with us.
 Or maybe not.
 Affirmative.
 Oh, I know why we keep hitting dead ends.
@@ -1647,7 +1647,7 @@ Kion found me pretty fast, too.
 I have to admit, for someone your size, you're a surprisingly
 I'm not sure he does.
 On my way!
-But there aren't any leopards living in the Pride Lands.
+But there aren't any leopards living in the Pridelands.
 I'm on it!
 Hapana!
 Everyone!
@@ -1723,7 +1723,7 @@ The galagos are in trouble!
 Hapana!
 Everyone!
 Everyone!
-Kiburi and his crocs, they're back in the Pride Lands.
+Kiburi and his crocs, they're back in the Pridelands.
 It's a very delicate situation!
 Odd.
 Pangolins only spray when they're threatened.
@@ -1940,7 +1940,7 @@ She's here!
 She here's!
 We have the best view of all.
 Indeed!
-The water treaty between the Pride Lands and the Back Lands is very serious.
+The water treaty between the Pridelands and the Back Lands is very serious.
 Looks like it.
 I don't like the look of those cloud.
 Well, it is raining high up in the sky.
@@ -2143,7 +2143,7 @@ It even lets them talk over long distances!
 He's right!
 Yup.
 Twiga's on the move.
-It's when the King brings together key animal leaders to discuss matters of great importance to the Pride Lands.
+It's when the King brings together key animal leaders to discuss matters of great importance to the Pridelands.
 Hapana!
 He's right!
 It's Makuu!
@@ -2347,7 +2347,7 @@ There are more badguys than rocks.
 I’m glad I got my sight back.
 I would’ve believed that if I hadn't seen it.
 You barely made a splash.
-But the Pride Lands doesn't have any leopards.
+But the Pridelands doesn't have any leopards.
 On it!
 Uh-oh.
 We have to go.
