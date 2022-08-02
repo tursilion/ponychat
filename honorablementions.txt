@@ -101,8 +101,10 @@ Mr Holloway
 Mr Big
 Mother
 Morton
+Moody Root
 Mom
 Miss Rarity
+Miss
 Minh
 Mike
 Mewmew
@@ -171,6 +173,7 @@ Gaea Everfree
 Gabe
 Gabby Gums
 Furaha
+Flash
 Fidel
 Fiddleford
 Fern Flare
@@ -191,17 +194,20 @@ Didi
 Di
 Dhahabu
 Deep Chris
+Dashie
 Daddy
 Dad
 Crony
 Crash
 Counselor Starlight
 Commander Ironhead
+Colonel
 Collector
 Coco Pommel
 Chungu
 Chuluun
 Chubby Z
+Chip
 Castle
 Carl
 Captain Wuzz
@@ -231,5 +237,3 @@ AJ
 Adegast
 Abuelita
 8 Ball
-
-
