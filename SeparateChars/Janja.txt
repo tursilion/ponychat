@@ -801,8 +801,8 @@ The fur brains are actually right.
 Kion's Roars are huge when his friends and family are threatened!
 Yeah.
 And then when Kion roars, we can bring back a legend!
-Scar was such a legend&lt;/i&gt;
-Yeah, Scar will help us win with all his great advice &lt;/i&gt;
+Scar was such a legend&lt.../i&gt...
+Yeah, Scar will help us win with all his great advice &lt.../i&gt...
 Come on, everyone.
 All together.
 You got it, Ushari.

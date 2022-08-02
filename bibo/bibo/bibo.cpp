@@ -252,7 +252,8 @@ const char* strsearch(const char* a, int len, const char* b) {
                   out=' ';
                   p1+=2;
                 }
-                if (NULL != strchr("!?.[]", out)) out = ' '; // no comma or backtick (...), I want to search on them
+                if (NULL != strchr("[]", out)) { ++p1; continue; }  // ignore square brackets in match
+                if (NULL != strchr("!?.", out)) out = ' '; // no comma or backtick (...), I want to search on them
 
                 if (out < ' ') out = ' ';
                 if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
@@ -903,6 +904,14 @@ finish:
             output[output.length() - 1] = '.';
             output += ' ';
         }
+        // special case - for noises only we have "] " at the end, so need to check back 3
+	else if (output[output.length()-2] == ' ') {
+          if (NULL == strchr("`.!?]", output[output.length() - 3])) {
+              output[output.length() - 1] = '.';
+              output += ' ';
+          }
+        }
+
     }
 
     // finally, translate ` back to ... for output...

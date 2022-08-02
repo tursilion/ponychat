@@ -54,7 +54,7 @@ That box contains your wings.
 You can take them and leave the game, or you can carry on aimlessly wandering this maze.
 Your choice.
 Well, well, well.
-Somepony broke the no wings; no magic rule.
+Somepony broke the no wings... no magic rule.
 Game's over, my little ponies.
 You didn't find your precious elements.
 [mewl]
@@ -1626,7 +1626,7 @@ I do not get this game.
 I will?
 From the Sugarcube Corner, look for your next clue.
 Red, delicious, sweet like you.
-Find it; you'll know what to do.
+Find it... you'll know what to do.
 [groans]
 He should stick to bucking apples.
 Those terrible riddles on the apples were very clear on the location.
