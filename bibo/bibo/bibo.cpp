@@ -252,8 +252,15 @@ const char* strsearch(const char* a, int len, const char* b) {
                   out=' ';
                   p1+=2;
                 }
-                if (NULL != strchr("[]", out)) { ++p1; continue; }  // ignore square brackets in match
-                if (NULL != strchr("!?.", out)) out = ' '; // no comma or backtick (...), I want to search on them
+//              if (NULL != strchr("[]", out)) { ++p1; continue; }  // ignore square brackets in match
+                if (NULL != strchr("!?.", out)) {
+                    out = ' '; // no comma or backtick (...), I want to search on them
+                    if (*(p1+1)==' ') {
+                        // don't create a double space condition
+                        ++p1;
+                        continue;
+                    }
+                }
 
                 if (out < ' ') out = ' ';
                 if (toupper(out) == toupper(*p2)) { ++p1; ++p2; continue; }
@@ -390,7 +397,7 @@ string findNoun(const string& str) {
         }
         // build up the output word
         p += x.length();
-        size_t p2 = str.find_first_of(" `,.?!]", p);
+        size_t p2 = str.find_first_of(" `,.?!", p);
         if (p2 == string::npos) {
           // no end of string?
           outstr = str.substr(p);
@@ -607,6 +614,7 @@ void makepic(const string &fn1, const string &fn2) {
 }
 
 // pull the current word and return it, update pos
+// phrases in square brackets are considered ONE word
 string pullword(char* buf, int len, int& pos) {
     while ((pos < len) && (NULL != strchr(" .`", buf[pos]))) ++pos; // spaces and ...
     if (pos >= len) {
@@ -617,10 +625,19 @@ string pullword(char* buf, int len, int& pos) {
         // end of line
         return string("");
     }
-    // return till next whitespace
+    // return till next whitespace, unless in brackets
     string x;
-    while (buf[pos] > ' ') {
-        x += buf[pos++];
+    if (buf[pos] == '[') {
+        // bracket mode
+        while ((buf[pos] >= ' ')&&(buf[pos] != ']')) {
+            x += buf[pos++];
+        }
+        x += ']';
+        if (buf[pos] == ']') ++pos;
+    } else {
+        while (buf[pos] > ' ') {
+            x += buf[pos++];
+        }
     }
     return x;
 }
@@ -800,6 +817,13 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         int cnt = rand() % 5 + 1;  // random count to try and maintain a sentence
 #endif
         for (int idx = 0; idx < cnt; ++idx) {
+            if (idx>0) {
+                // a little post-processing on the first word pulled before we store it
+                if ((w.length()>0) && (NULL != strchr("!?`,.", w[0]))) w=w.substr(1);
+                while ((w.length()>0) && (NULL != strchr("!?.", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
+                w = ' ' + w + ' ';
+            }
+
             lw = w;  // remember last word
             w = pullword(buf, len, pos);
             if (w.empty()) break;
@@ -832,16 +856,16 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
         if (c == '!') break;
 
         // find a new instance of this same word
-        if ((w.length()>0) && (NULL != strchr("!?`,.[", w[0]))) w=w.substr(1);
-        while ((w.length()>0) && (NULL != strchr("!?.]", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
+        if ((w.length()>0) && (NULL != strchr("!?`,.", w[0]))) w=w.substr(1);
+        while ((w.length()>0) && (NULL != strchr("!?.", w[w.length()-1]))) w=w.substr(0,w.length()-1); // keep comma at end
         w = ' ' + w + ' ';
 
 
 #if 1
         // test last two words - problem may be punctuation...
         // it kind of works, but it doesn't mix them up much, the databases are too small
-        if ((lw.length()>0) && (NULL != strchr("!?`,.[ ", lw[0]))) lw=lw.substr(1);
-        while ((lw.length()>0) && (NULL != strchr("!?.] ", lw[lw.length()-1]))) lw=lw.substr(0,lw.length()-1); // keep comma at end
+        if ((lw.length()>0) && (NULL != strchr("!?`,. ", lw[0]))) lw=lw.substr(1);
+        while ((lw.length()>0) && (NULL != strchr("!?. ", lw[lw.length()-1]))) lw=lw.substr(0,lw.length()-1); // keep comma at end
         if (lw.length() > 0) {
           sw = ' ' + lw + w;
           fixPeepholes(sw);
@@ -873,7 +897,9 @@ string generateLine(char *buf1, int len1, char *buf2, int len2, string &noun) {
     }
 
 finish:
+#if 0
     // look for open brace with no close, and add one (asides, etc)
+    // todo: might not happen anymore?
     bool brace = false;
     for (unsigned int idx = 0; idx < output.length(); ++idx) {
         if (output[idx] == '[') {
@@ -892,6 +918,7 @@ finish:
         output[output.length() - 1] = ']';
         output += ' ';
     }
+#endif
 
     // make sure we got something - blank lines in the database give us empty strings
     // (which the caller will deal with)
@@ -899,7 +926,7 @@ finish:
         // capitalize first letter
         output[0] = toupper(output[0]);
 
-        // special case - for noises only we have "] " at the end, so need to check back 3
+    // special case - for noises only we have "] " at the end, so need to check back 3
 	if (output[output.length()-2] == ' ') {
           if (NULL == strchr("`.!?]", output[output.length() - 3])) {
               output[output.length() - 1] = '.';
@@ -1151,6 +1178,20 @@ bool replaceName(const string &tstname, string &str, const string &n, size_t p) 
         first = str.substr(0,p);
     }
     str = first + on + str.substr(p+tstname.length());
+    if (tstname == on) {
+        // don't replace self with self
+        replacedName = "";
+        replacedNamePos = -1;
+        printf("<!-- skipping replace '%s' with '%s' -->\n", tstname.c_str(), on.c_str());
+        return false;
+    }
+    if (on.find(tstname) != string::npos) {
+        // also don't replace if it's a substring
+        replacedName = "";
+        replacedNamePos = -1;
+        printf("<!-- refusing to replace '%s' with '%s' -->\n", tstname.c_str(), on.c_str());
+    }
+
     printf("<!-- replace '%s' with '%s' -->\n", tstname.c_str(), on.c_str());
 
     // see if there are other instances we can copy... we can check explicitly
@@ -1579,7 +1620,12 @@ void fixbuf(char *buf, int &len) {
         while ((*p)&&(*p < 'a')) ++p;
         if ((*p >= 'A') && (*p <= 'Z')) p+=32;  // make lowercase ASCII
     }
-    
+
+    // the last thing to do is make sure there are no double spaces anywhere
+    while ((p = strstr(buf, "  ")) != NULL) {
+        memmove(p, p+1, len-(p-buf));
+        --len;
+    }
 }
 
 // fix a single line before using it
