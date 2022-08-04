@@ -899,17 +899,17 @@ finish:
         // capitalize first letter
         output[0] = toupper(output[0]);
 
-        // if no punctuation at end, add one (space also at end)
-        if (NULL == strchr("`.!?]", output[output.length() - 2])) {
-            output[output.length() - 1] = '.';
-            output += ' ';
-        }
         // special case - for noises only we have "] " at the end, so need to check back 3
-	else if (output[output.length()-2] == ' ') {
+	if (output[output.length()-2] == ' ') {
           if (NULL == strchr("`.!?]", output[output.length() - 3])) {
               output[output.length() - 1] = '.';
               output += ' ';
           }
+        }
+        // if no punctuation at end, add one (space also at end)
+        else if (NULL == strchr("`.!?]", output[output.length() - 2])) {
+            output[output.length() - 1] = '.';
+            output += ' ';
         }
 
     }
