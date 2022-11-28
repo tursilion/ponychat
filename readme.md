@@ -7,3 +7,5 @@ It can also generate a monologue from a single character, and the intent is some
 It started out with a bunch of pony characters, then I added a bunch of other cartoons. The text files still contain some errors - some are better than others. I've been editting them to simplify punctuation and clean up typos, and try to make them more consistent between each other (which helps).
 
 Anyway, this is completely unsupported.
+
+See it run at https://harmlesslion.com/cgi-bin/ponychat.cgi
