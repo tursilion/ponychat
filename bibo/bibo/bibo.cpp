@@ -1703,7 +1703,7 @@ void runquote(int who, int count) {
     if (!primerText.empty()) {
         fixline(primerText);
         buf1 = (char*)realloc(buf1, len1 + 1 + primerText.length());
-        buf3[len1] = 0;
+        buf1[len1] = 0;
         if (NULL == buf1) {
             printf("realloc failed\n");
             return;
